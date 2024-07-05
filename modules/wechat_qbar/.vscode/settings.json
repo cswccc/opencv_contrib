@@ -4,6 +4,9 @@
         "unordered_set": "cpp",
         "limits": "cpp",
         "new": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "iosfwd": "cpp",
+        "vector": "cpp",
+        "ios": "cpp"
     }
 }

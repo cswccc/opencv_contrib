@@ -37,9 +37,8 @@ DataMatrixReader::DataMatrixReader() :
 decoder_() {
 }
 
-Ref<Result> DataMatrixReader::decode(Ref<BinaryBitmap> image, DecodeHints hints, std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings) {
+Ref<Result> DataMatrixReader::decode(Ref<BinaryBitmap> image, DecodeHints hints) {
     (void)hints;
-    (void)reader_time_consumings;
     reader_call_path_ = "";
     
     

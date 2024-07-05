@@ -28,7 +28,4 @@ dependencies: \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPoint.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/DecodeHints.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPointCallback.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_time.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Integer.h

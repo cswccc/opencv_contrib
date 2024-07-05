@@ -33,8 +33,7 @@ using zxing::ErrorHandler;
 
 const int MAX_DECODE_FAIL_RETRY = 100;
 
-Ref<Result> PDF417Reader::decode(Ref<BinaryBitmap> image, DecodeHints hints, std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings) {
-    (void)reader_time_consumings;
+Ref<Result> PDF417Reader::decode(Ref<BinaryBitmap> image, DecodeHints hints) {
     Ref<DecoderResult> decoderResult;
     
     reader_call_path_ = "";

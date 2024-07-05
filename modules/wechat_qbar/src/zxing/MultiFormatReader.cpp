@@ -57,8 +57,7 @@ Ref<Result> MultiFormatReader::decode(Ref<BinaryBitmap> image) {
 }
 
 Ref<Result> MultiFormatReader::decode(Ref<BinaryBitmap> image, 
-                                      DecodeHints hints,
-                                      std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings) {
+                                      DecodeHints hints) {
     reader_call_path_ = "";
     
     setHints(hints);
@@ -68,7 +67,7 @@ Ref<Result> MultiFormatReader::decode(Ref<BinaryBitmap> image,
     {
         reader_call_path_ += readers_[i]->name();
         readers_[i]->setDecodeID(decodeID_);
-        Ref<Result> rst = readers_[i]->decode(image, hints, reader_time_consumings);
+        Ref<Result> rst = readers_[i]->decode(image, hints);
         reader_call_path_ += readers_[i]->reader_call_path_;
         if (rst == NULL)
         {

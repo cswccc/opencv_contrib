@@ -124,8 +124,7 @@ public:
     OneDReader();
     using Reader::decode;
     virtual Ref<Result> decode(Ref<BinaryBitmap> image,
-                               DecodeHints hints,
-                               std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings = NULL);
+                               DecodeHints hints);
     
     // Implementations must not throw any exceptions. If a barcode is not found on this row,
     // a empty ref should be returned e.g. return Ref<Result>();

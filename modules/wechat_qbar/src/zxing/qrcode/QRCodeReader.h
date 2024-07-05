@@ -111,7 +111,7 @@ public:
     std::string name() { return "qrcode";  }
     
     Ref<Result> decode(Ref<BinaryBitmap> image);
-    Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints, std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings = NULL);
+    Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints);
     
     Ref<Result> decodeMore(Ref<BinaryBitmap> image, Ref<BitMatrix> imageBitMatrix, DecodeHints hints, ErrorHandler & err_handler);
     

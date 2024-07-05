@@ -17,7 +17,6 @@ dependencies: \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ReaderException.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/DecodeHints.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BarcodeFormat.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/KMeans.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/INIReader.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/MathUtils.h

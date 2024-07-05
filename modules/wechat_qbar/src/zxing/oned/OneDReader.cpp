@@ -47,9 +47,7 @@ OneDReader::OneDReader() {
 
 
 Ref<Result> OneDReader::decode(Ref<BinaryBitmap> image, 
-                               DecodeHints hints,
-                               std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings) {
-    (void)reader_time_consumings;
+                               DecodeHints hints) {
     ErrorHandler err_handler;
     Ref<Result> rst = doDecode(image, hints, err_handler);
     if (err_handler.ErrCode() == 0)

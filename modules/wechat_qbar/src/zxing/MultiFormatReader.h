@@ -40,8 +40,7 @@ public:
     
     Ref<Result> decode(Ref<BinaryBitmap> image);
     Ref<Result> decode(Ref<BinaryBitmap> image,
-                       DecodeHints hints,
-                       std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings = NULL);
+                       DecodeHints hints);
     Ref<Result> decodeWithState(Ref<BinaryBitmap> image);
     void setHints(DecodeHints hints);
     

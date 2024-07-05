@@ -60,12 +60,10 @@ QRCodeReader::QRCodeReader() :decoder_()
 
 Ref<Result> QRCodeReader::decode(Ref<BinaryBitmap> image)
 {
-    return decode(image, DecodeHints::DEFAULT_HINT, NULL);
+    return decode(image, DecodeHints::DEFAULT_HINT);
 }
 
-Ref<Result> QRCodeReader::decode(Ref<BinaryBitmap> image, DecodeHints hints, std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings) {
-    (void)reader_time_consumings;
-    
+Ref<Result> QRCodeReader::decode(Ref<BinaryBitmap> image, DecodeHints hints) {
     reader_call_path_ = "";
     
     // Binarize image using the Histogram Binarized method and be binarized

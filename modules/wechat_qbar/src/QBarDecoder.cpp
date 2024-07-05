@@ -136,7 +136,7 @@ int QBarDecoder::Decode(Ref<LuminanceSource> source, Ref<Result> &result, Decode
 
     try
     {
-        result = reader_.decode(binary_bitmap, decodeHints, &reader_time_consumings_);
+        result = reader_.decode(binary_bitmap, decodeHints);
         res = (result == NULL) ? 1 : 0;
     }
     catch (std::exception &e)

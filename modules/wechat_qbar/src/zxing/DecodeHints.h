@@ -24,8 +24,6 @@
 #include <zxing/ResultPointCallback.h>
 #include <zxing/ErrorHandler.h>
 
-#include <tscan/debug_info.h>
-
 #ifdef USE_LANGUAGEICONFIG
 #include <string>
 #endif
@@ -50,8 +48,6 @@ struct CORNER_POINT
 
 class DecodeHints {
 public:
-    ::tscan::debug::DebugInfo debug_info_;  // now just for debug or log
-    
     std::vector<CORNER_POINT> qbar_points;
     
 private:

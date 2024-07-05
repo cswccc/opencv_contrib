@@ -20,7 +20,6 @@ dependencies: \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BarcodeFormat.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPointCallback.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPoint.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/IntMatrix.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/BitArrayWriter.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDimensionalCodeWriter.h \
@@ -40,8 +39,6 @@ dependencies: \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/LuminanceSource.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ByteMatrix.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_time.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Writer.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAWriter.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Writer.h \

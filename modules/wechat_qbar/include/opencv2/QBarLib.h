@@ -6,15 +6,6 @@
 #include <QBarEncoder.h>
 #include <unordered_set>
 
-namespace tscan {
-class ReaderTimeConsuming;
-class QBarTimeConsuming;
-
-namespace debug{
-class DebugInfo;
-}  // namespace debug
-}  // namespace tscan
-
 #ifdef _WIN32
 #define __attribute__()
 #define __attribute__(x)
@@ -40,8 +31,8 @@ public:
     /// @return 0:函数正常执行,<0：函数非正常执行,-1：未执行Init函数即执行本函数, -2：传入参数错误或传入reader为空
     void SetReaders(const std::unordered_set<QBAR_READER> &readers);
 
-    QBAR_RESULT Decode(uint8_t* imageData, int width, int height);
-    std::vector<QBAR_RESULT> ScanImage(uint8_t* imageData, int width, int height);
+    QBAR_RESULT Decode(cv::Mat &image);
+    std::vector<QBAR_RESULT> ScanImage(cv::Mat &image);
     /// 获取当前库版本号.
     /// @return 当前版本号
     static std::string GetVersion();

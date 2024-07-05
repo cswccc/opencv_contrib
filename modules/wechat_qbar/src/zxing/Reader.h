@@ -24,8 +24,6 @@
 #include <zxing/DecodeHints.h>
 #include <zxing/ErrorHandler.h>
 
-#include <tscan/result.h>
-#include <tscan/comm/tscan_time.h>
 
 namespace zxing {
 
@@ -35,7 +33,7 @@ protected:
 
 public:
     virtual Ref<Result> decode(Ref<BinaryBitmap> image);
-    virtual Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints, std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings = NULL) = 0;
+    virtual Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints) = 0;
     
     
     virtual ~Reader();

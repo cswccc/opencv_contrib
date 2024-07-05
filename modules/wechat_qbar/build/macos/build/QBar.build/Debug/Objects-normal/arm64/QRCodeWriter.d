@@ -18,7 +18,6 @@ dependencies: \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BarcodeFormat.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPointCallback.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPoint.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/IntMatrix.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/BitArrayWriter.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/include/opencv2/QbarStruct.h \

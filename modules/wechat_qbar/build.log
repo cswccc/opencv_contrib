@@ -4,7 +4,7 @@
 -- [QBar]   CMAKE_BUILD_TYPE = Debug
 -- [QBar] ================================================================
 -- [QBar]   QBar_WITH_ICONV                        = ON
--- Configuring done (0.1s)
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos
 Command line invocation:
@@ -45,8 +45,8 @@ ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeD
 
 ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
 
-Build description signature: 8ec0a1254ffa0f8d67f2d7190846be78
-Build description path: /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/XCBuildData/8ec0a1254ffa0f8d67f2d7190846be78.xcbuilddata
+Build description signature: 2184a1d7656c027fabcdab8d86b978a6
+Build description path: /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/XCBuildData/2184a1d7656c027fabcdab8d86b978a6.xcbuilddata
 ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache
     cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/QBar.xcodeproj
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache
@@ -56,13 +56,14 @@ PhaseScriptExecution Generate\ CMakeFiles/ZERO_CHECK /Users/caoshiwen/work/openc
     /bin/sh -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/ZERO_CHECK.build/Script-1C9AF764BA7127917CF162AE.sh
 make: `/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/CMakeFiles/cmake.check_cache' is up to date.
 
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/QBar.xcodeproj: warning: The macOS deployment target 'MACOSX_DEPLOYMENT_TARGET' is set to 10.12, but the range of supported deployment target versions is 10.13 to 14.5.99. (in target 'QBar' from project 'QBar')
 WriteAuxiliaryFile /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/QBar.LinkFileList (in target 'QBar' from project 'QBar')
     cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
     write-file /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/QBar.LinkFileList
 
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-ff6328342dec8e09e1a430b1fbab0d74.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-5fa859b8e012589669458d9fc7b46a9a.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
     cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-ff6328342dec8e09e1a430b1fbab0d74.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-ff6328342dec8e09e1a430b1fbab0d74.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-ff6328342dec8e09e1a430b1fbab0d74.o
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-5fa859b8e012589669458d9fc7b46a9a.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-5fa859b8e012589669458d9fc7b46a9a.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-5fa859b8e012589669458d9fc7b46a9a.o
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.cpp:21:
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.h:26:
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
@@ -78,9 +79,9 @@ In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/s
     ~~~~~~ ~~~~~~~~~^~~~~~
 3 warnings generated.
 
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-89acc1000e35e48d6257a0c4f875a8c9.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-aa46be299172ec11ec6c81843a0b0ba6.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
     cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-89acc1000e35e48d6257a0c4f875a8c9.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-89acc1000e35e48d6257a0c4f875a8c9.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-89acc1000e35e48d6257a0c4f875a8c9.o
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-aa46be299172ec11ec6c81843a0b0ba6.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-aa46be299172ec11ec6c81843a0b0ba6.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-aa46be299172ec11ec6c81843a0b0ba6.o
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.cpp:21:
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.h:25:
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
@@ -93,9 +94,430 @@ In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/s
     ~~~~~~ ~~~~~~~~~^~~~~~
 2 warnings generated.
 
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/result-2bb1eea1d8160287f31d59b5cad2e35a.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-9a4cf70995ab6a5ecdc374fa31c7f600.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
     cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/result-2bb1eea1d8160287f31d59b5cad2e35a.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/result-2bb1eea1d8160287f31d59b5cad2e35a.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/result-2bb1eea1d8160287f31d59b5cad2e35a.o
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-9a4cf70995ab6a5ecdc374fa31c7f600.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-9a4cf70995ab6a5ecdc374fa31c7f600.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-9a4cf70995ab6a5ecdc374fa31c7f600.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GridSampler.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp:688:22: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    int max = vector.size();
+        ~~~   ~~~~~~~^~~~~~
+2 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-8bed9335c4b52ace650245174eb825c4.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-8bed9335c4b52ace650245174eb825c4.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-8bed9335c4b52ace650245174eb825c4.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-8bed9335c4b52ace650245174eb825c4.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp:19:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DetectorResult.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp:444:41: note: in instantiation of member function 'zxing::Array<int>::size' requested here
+    counters->values().assign(counters->size(), 0);
+                                        ^
+2 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-7a14267d82fecbc9613d865bbc513d2b.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-7a14267d82fecbc9613d865bbc513d2b.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-7a14267d82fecbc9613d865bbc513d2b.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-7a14267d82fecbc9613d865bbc513d2b.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.h:23:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h:26:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.h:26:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
+    if (!mirrored || points->size() < 3) {
+                             ^
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.h:23:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h:26:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp:264:39: note: in instantiation of member function 'zxing::Array<char>::size' requested here
+    int numCodewords = codewordBytes->size();
+                                      ^
+3 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-67d9dd0c2dc8f032a442521bec6025b6.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-67d9dd0c2dc8f032a442521bec6025b6.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-67d9dd0c2dc8f032a442521bec6025b6.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-67d9dd0c2dc8f032a442521bec6025b6.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:21:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h:26:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:77:38: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    int dataBlocksCount = dataBlocks.size();
+        ~~~~~~~~~~~~~~~   ~~~~~~~~~~~^~~~~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:21:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h:26:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:21:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.h:27:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
+    if (!mirrored || points->size() < 3) {
+                             ^
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:21:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h:26:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:43:39: note: in instantiation of member function 'zxing::Array<char>::size' requested here
+    int numCodewords = codewordBytes->size();
+                                      ^
+4 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-e4afa862b83540f01ea8151f881eb0ef.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-e4afa862b83540f01ea8151f881eb0ef.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-e4afa862b83540f01ea8151f881eb0ef.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-e4afa862b83540f01ea8151f881eb0ef.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp:23:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.h:25:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp:23:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.h:28:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
+    if (!mirrored || points->size() < 3) {
+                             ^
+2 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-0e67cf986bba44e302c01ea2115358c3.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-0e67cf986bba44e302c01ea2115358c3.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-0e67cf986bba44e302c01ea2115358c3.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-0e67cf986bba44e302c01ea2115358c3.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.h:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:54:44: warning: comparison between NULL and non-pointer ('bool' and NULL) [-Wnull-arithmetic]
+    if (err_handler.ErrCode() || codewords == NULL) {
+                                 ~~~~~~~~~ ^  ~~~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.h:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ErrorCorrection.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
+    if (!mirrored || points->size() < 3) {
+                             ^
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.h:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:87:29: note: in instantiation of member function 'zxing::Array<int>::size' requested here
+    int cwsize = codewords->size();
+                            ^
+4 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-dff44dcd7d6ac1cbe380b4c85a1f4451.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-dff44dcd7d6ac1cbe380b4c85a1f4451.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-dff44dcd7d6ac1cbe380b4c85a1f4451.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-dff44dcd7d6ac1cbe380b4c85a1f4451.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.h:22:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
+    if (!mirrored || points->size() < 3) {
+                             ^
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.h:22:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:69:33: note: in instantiation of member function 'zxing::Array<BigInteger>::size' requested here
+    for (int i = 2; i < EXP900->size(); i++) {
+                                ^
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.h:22:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:116:36: note: in instantiation of member function 'zxing::Array<int>::size' requested here
+        if (codeIndex < codewords->size())
+                                   ^
+4 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-c266e1bc94c2ae53252f1874f06bb608.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-c266e1bc94c2ae53252f1874f06bb608.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-c266e1bc94c2ae53252f1874f06bb608.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-c266e1bc94c2ae53252f1874f06bb608.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DetectorResult.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:22:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.h:32:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/PatternResult.h:59:70: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    int getPossibleAlignmentCount(){return possibleAlignmentPatterns.size();}
+                                    ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:22:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.h:138:66: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    int getPossiblePatternCount(){return possiblePatternResults_.size();}
+                                  ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:241:27: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            min_sum_idx = i;
+                        ~ ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:246:27: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            max_sum_idx = i;
+                        ~ ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:251:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            min_diff_idx = i;
+                         ~ ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:256:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            max_diff_idx = i;
+                         ~ ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1134:17: warning: unused variable 'pt1' [-Wunused-variable]
+    cv::Point2f pt1 = corner_list[min_sum_idx];
+                ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1135:17: warning: unused variable 'pt2' [-Wunused-variable]
+    cv::Point2f pt2 = corner_list[max_sum_idx];
+                ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1136:17: warning: unused variable 'pt3' [-Wunused-variable]
+    cv::Point2f pt3 = corner_list[min_diff_idx];
+                ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1137:17: warning: unused variable 'pt4' [-Wunused-variable]
+    cv::Point2f pt4 = corner_list[max_diff_idx];
+                ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1115:27: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            min_sum_idx = i;
+                        ~ ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1120:27: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            max_sum_idx = i;
+                        ~ ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1125:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            min_diff_idx = i;
+                         ~ ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1130:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            max_diff_idx = i;
+                         ~ ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1183:68: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return possiblePatternResults_[idx]->possibleAlignmentPatterns.size();
+    ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1194:76: warning: unused parameter 'hints' [-Wunused-parameter]
+Ref<DetectorResult> Detector::getResultViaAlignmentMore(DecodeHints const& hints, size_t patternIdx, size_t alignmentIndex, ArrayRef< Ref<ResultPoint> > points, int dimension, float module_size, int mode, ErrorHandler & err_handler)
+                                                                           ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1194:154: warning: unused parameter 'points' [-Wunused-parameter]
+Ref<DetectorResult> Detector::getResultViaAlignmentMore(DecodeHints const& hints, size_t patternIdx, size_t alignmentIndex, ArrayRef< Ref<ResultPoint> > points, int dimension, float module_size, int mode, ErrorHandler & err_handler)
+                                                                                                                                                         ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1346:120: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+        if (getPossibleAlignmentPointsMore(patternIdx, alignmentIndex, dimension, module_size, alignmentPatternCenters.size()) == 0) {
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                     ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1617:69: warning: unused parameter 'hints' [-Wunused-parameter]
+Ref<DetectorResult> Detector::getResultViaPoints(DecodeHints const& hints, int dimension, std::vector<cv::Point2f>& pts_src, std::vector<cv::Point2f>& pts_dst, bool is_homo,  ErrorHandler & err_handler)
+                                                                    ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1742:70: warning: unused parameter 'hints' [-Wunused-parameter]
+Ref<PatternResult> Detector::processFinderPatternInfo(::DecodeHints& hints, Ref<FinderPatternInfo> info, ErrorHandler & err_handler)
+                                                                     ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2287:53: warning: unused parameter 'topLeft' [-Wunused-parameter]
+                                   Ref<ResultPoint> topLeft, Ref<ResultPoint> topRight, Ref<ResultPoint> bottomLeft,
+                                                    ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2287:79: warning: unused parameter 'topRight' [-Wunused-parameter]
+                                   Ref<ResultPoint> topLeft, Ref<ResultPoint> topRight, Ref<ResultPoint> bottomLeft,
+                                                                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2287:106: warning: unused parameter 'bottomLeft' [-Wunused-parameter]
+                                   Ref<ResultPoint> topLeft, Ref<ResultPoint> topRight, Ref<ResultPoint> bottomLeft,
+                                                                                                         ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2376:42: warning: variable 'yy' set but not used [-Wunused-but-set-variable]
+    double x = 0, y = 0, xx = 0, xy = 0, yy = 0, tem = 0;
+                                         ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2344:29: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    int old_num = oldPoints.size();
+        ~~~~~~~   ~~~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2372:25: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    int num = fitPoints.size();
+        ~~~   ~~~~~~~~~~^~~~~~
+27 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-8c4f6bdb90525e639c1a6d3af97dcb13.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-8c4f6bdb90525e639c1a6d3af97dcb13.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-8c4f6bdb90525e639c1a6d3af97dcb13.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-8c4f6bdb90525e639c1a6d3af97dcb13.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp:23:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.h:26:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Mode.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.h:26:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp:86:49: warning: unused parameter 'src' [-Wunused-parameter]
+                                    const char* src,
+                                                ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp:226:65: warning: unused parameter 'hints' [-Wunused-parameter]
+                                               Hashtable const& hints,
+                                                                ^
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp:23:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.h:26:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Mode.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.h:26:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp:23:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.h:30:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
+    if (!mirrored || points->size() < 3) {
+                             ^
+4 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-e414f194986953d633ba26eb0c6f0542.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-e414f194986953d633ba26eb0c6f0542.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-e414f194986953d633ba26eb0c6f0542.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-e414f194986953d633ba26eb0c6f0542.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp:21:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.h:26:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp:68:45: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    int longerBlocksStartAt = result.size() - 1;
+        ~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~^~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp:21:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.h:26:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp:67:62: note: in instantiation of member function 'zxing::Array<char>::size' requested here
+    int shorterBlocksTotalCodewords = result[0]->codewords_->size();
+                                                             ^
+3 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-4f81a75b555007124c397492977d73e3.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-4f81a75b555007124c397492977d73e3.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-4f81a75b555007124c397492977d73e3.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-4f81a75b555007124c397492977d73e3.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp:21:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp:78:45: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    int longerBlocksStartAt = result.size() - 1;
+        ~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~^~~
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp:21:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp:77:62: note: in instantiation of member function 'zxing::Array<char>::size' requested here
+    int shorterBlocksTotalCodewords = result[0]->codewords_->size();
+                                                             ^
+3 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-805fa5757768dad818f13b9c53620091.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-805fa5757768dad818f13b9c53620091.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-805fa5757768dad818f13b9c53620091.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-805fa5757768dad818f13b9c53620091.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp:21:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.h:24:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp:31:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    bool bit = mirror_ ? bitMatrix_->get(y, x) : bitMatrix_->get(x, y);
+                                     ~~~    ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp:31:42: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    bool bit = mirror_ ? bitMatrix_->get(y, x) : bitMatrix_->get(x, y);
+                                     ~~~ ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp:31:69: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    bool bit = mirror_ ? bitMatrix_->get(y, x) : bitMatrix_->get(x, y);
+                                                             ~~~    ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp:31:66: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    bool bit = mirror_ ? bitMatrix_->get(y, x) : bitMatrix_->get(x, y);
+                                                             ~~~ ^
+5 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-733cf62d80f8a1b12bcb823ceca6bd81.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-733cf62d80f8a1b12bcb823ceca6bd81.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-733cf62d80f8a1b12bcb823ceca6bd81.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-733cf62d80f8a1b12bcb823ceca6bd81.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp:21:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp:30:31: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return bitMatrix_->get(x, y) ? (versionBits << 1) | 0x1 : versionBits << 1;
+                       ~~~    ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp:30:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return bitMatrix_->get(x, y) ? (versionBits << 1) | 0x1 : versionBits << 1;
+                       ~~~ ^
+3 warnings generated.
+
+CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-41dc75bd4f8e747c0814cbf34cb9fcae.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
+    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-41dc75bd4f8e747c0814cbf34cb9fcae.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-41dc75bd4f8e747c0814cbf34cb9fcae.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-41dc75bd4f8e747c0814cbf34cb9fcae.o
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp:26:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.h:26:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
+  ArrayRef(const ArrayRef<Y> &other) :
+                              ^
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return values_.size();
+    ~~~~~~ ~~~~~~~~^~~~~~
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp:138:64: note: in instantiation of member function 'zxing::Array<int>::size' requested here
+                if (eraseCount_ >= static_cast<int>(erasures_->size())) {
+                                                               ^
+2 warnings generated.
 
 CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/Demo.build/Debug/Objects-normal/arm64/main.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'Demo' from project 'QBar')
     cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
@@ -190,14 +612,15 @@ In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/i
          <opencv2/QBarStruct.h>
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp:1:
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/include/opencv2/QbarLib.h:5:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarDecoder.h:40:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarInfoFilter.hpp:17:10: warning: non-portable path to file '"opencv2/QBarStruct.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarDecoder.h:34:
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarInfoFilter.hpp:17:
+10: warning: non-portable path to file '"opencv2/QBarStruct.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
 #include "opencv2/QbarStruct.h"
          ^~~~~~~~~~~~~~~~~~~~~~
          "opencv2/QBarStruct.h"
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp:1:
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/include/opencv2/QbarLib.h:5:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarDecoder.h:43:
+In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarDecoder.h:37:
 /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/qbar_detector.hpp:3:10: warning: non-portable path to file '<opencv2/QBarStruct.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
 #include <opencv2/QbarStruct.h>
          ^~~~~~~~~~~~~~~~~~~~~~
@@ -208,17 +631,7 @@ In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/i
 #include <opencv2/QbarStruct.h>
          ^~~~~~~~~~~~~~~~~~~~~~
          <opencv2/QBarStruct.h>
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp:8:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/stb_image.h:4679:11: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
-    if (b >= sizeof(z->size))
-        ~ ^  ~~~~~~~~~~~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/stb_image.h:7980:13: warning: variable 'out_size' set but not used [-Wunused-but-set-variable]
-        int out_size = 0;
-            ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/stb_image.h:7981:13: warning: variable 'delays_size' set but not used [-Wunused-but-set-variable]
-        int delays_size = 0;
-            ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp:83:22: warning: comparison of integers of different signs: 'int' and 'size_type' (aka 'unsigned long') [-Wsign-compare]
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp:36:22: warning: comparison of integers of different signs: 'int' and 'size_type' (aka 'unsigned long') [-Wsign-compare]
     for(int i = 0; i < results.size(); i++)
                    ~ ^ ~~~~~~~~~~~~~~
 In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp:1:
@@ -244,448 +657,7 @@ In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/s
 /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/INIReader.h:53:20: warning: unused function 'GetIniParser' [-Wunused-function]
 static INIReader * GetIniParser()
                    ^
-17 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Result-88ad01b478ae0d8220c565f3c0f25282.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Result-88ad01b478ae0d8220c565f3c0f25282.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Result-88ad01b478ae0d8220c565f3c0f25282.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Result-88ad01b478ae0d8220c565f3c0f25282.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.cpp:100:42: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
-    if (idx < 0 || idx >= resultPoints_->size()) return;
-                                         ^
-2 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-6fe9bc07c1066b9e474c1f904ae656ae.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-6fe9bc07c1066b9e474c1f904ae656ae.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-6fe9bc07c1066b9e474c1f904ae656ae.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-6fe9bc07c1066b9e474c1f904ae656ae.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp:19:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DetectorResult.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp:444:41: note: in instantiation of member function 'zxing::Array<int>::size' requested here
-    counters->values().assign(counters->size(), 0);
-                                        ^
-2 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-9830d748684fe327b5b498b3ea6e1644.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-9830d748684fe327b5b498b3ea6e1644.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-9830d748684fe327b5b498b3ea6e1644.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-9830d748684fe327b5b498b3ea6e1644.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DetectorResult.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.h:32:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/PatternResult.h:59:70: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    int getPossibleAlignmentCount(){return possibleAlignmentPatterns.size();}
-                                    ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:22:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.h:138:66: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    int getPossiblePatternCount(){return possiblePatternResults_.size();}
-                                  ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:241:27: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-            min_sum_idx = i;
-                        ~ ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:246:27: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-            max_sum_idx = i;
-                        ~ ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:251:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-            min_diff_idx = i;
-                         ~ ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:256:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-            max_diff_idx = i;
-                         ~ ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1134:17: warning: unused variable 'pt1' [-Wunused-variable]
-    cv::Point2f pt1 = corner_list[min_sum_idx];
-                ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1135:17: warning: unused variable 'pt2' [-Wunused-variable]
-    cv::Point2f pt2 = corner_list[max_sum_idx];
-                ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1136:17: warning: unused variable 'pt3' [-Wunused-variable]
-    cv::Point2f pt3 = corner_list[min_diff_idx];
-                ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1137:17: warning: unused variable 'pt4' [-Wunused-variable]
-    cv::Point2f pt4 = corner_list[max_diff_idx];
-                ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1115:27: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-            min_sum_idx = i;
-                        ~ ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1120:27: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-            max_sum_idx = i;
-                        ~ ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1125:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-            min_diff_idx = i;
-                         ~ ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1130:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-            max_diff_idx = i;
-                         ~ ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1183:68: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return possiblePatternResults_[idx]->possibleAlignmentPatterns.size();
-    ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1194:76: warning: unused parameter 'hints' [-Wunused-parameter]
-Ref<DetectorResult> Detector::getResultViaAlignmentMore(DecodeHints const& hints, size_t patternIdx, size_t alignmentIndex, ArrayRef< Ref<ResultPoint> > points, int dimension, float module_size, int mode, ErrorHandler & err_handler)
-                                                                           ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1194:154: warning: unused parameter 'points' [-Wunused-parameter]
-Ref<DetectorResult> Detector::getResultViaAlignmentMore(DecodeHints const& hints, size_t patternIdx, size_t alignmentIndex, ArrayRef< Ref<ResultPoint> > points, int dimension, float module_size, int mode, ErrorHandler & err_handler)
-                                                                                                                                                         ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1346:120: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-        if (getPossibleAlignmentPointsMore(patternIdx, alignmentIndex, dimension, module_size, alignmentPatternCenters.size()) == 0) {
-            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                     ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1617:69: warning: unused parameter 'hints' [-Wunused-parameter]
-Ref<DetectorResult> Detector::getResultViaPoints(DecodeHints const& hints, int dimension, std::vector<cv::Point2f>& pts_src, std::vector<cv::Point2f>& pts_dst, bool is_homo,  ErrorHandler & err_handler)
-                                                                    ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:1742:70: warning: unused parameter 'hints' [-Wunused-parameter]
-Ref<PatternResult> Detector::processFinderPatternInfo(::DecodeHints& hints, Ref<FinderPatternInfo> info, ErrorHandler & err_handler)
-                                                                     ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2287:53: warning: unused parameter 'topLeft' [-Wunused-parameter]
-                                   Ref<ResultPoint> topLeft, Ref<ResultPoint> topRight, Ref<ResultPoint> bottomLeft,
-                                                    ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2287:79: warning: unused parameter 'topRight' [-Wunused-parameter]
-                                   Ref<ResultPoint> topLeft, Ref<ResultPoint> topRight, Ref<ResultPoint> bottomLeft,
-                                                                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2287:106: warning: unused parameter 'bottomLeft' [-Wunused-parameter]
-                                   Ref<ResultPoint> topLeft, Ref<ResultPoint> topRight, Ref<ResultPoint> bottomLeft,
-                                                                                                         ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2376:42: warning: variable 'yy' set but not used [-Wunused-but-set-variable]
-    double x = 0, y = 0, xx = 0, xy = 0, yy = 0, tem = 0;
-                                         ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2344:29: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    int old_num = oldPoints.size();
-        ~~~~~~~   ~~~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp:2372:25: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    int num = fitPoints.size();
-        ~~~   ~~~~~~~~~~^~~~~~
-27 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-bc6911b229362f84d08d2c5ace5eefa5.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-bc6911b229362f84d08d2c5ace5eefa5.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-bc6911b229362f84d08d2c5ace5eefa5.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-bc6911b229362f84d08d2c5ace5eefa5.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.h:23:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h:26:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.h:26:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
-    if (!mirrored || points->size() < 3) {
-                             ^
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.h:23:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h:26:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp:264:39: note: in instantiation of member function 'zxing::Array<char>::size' requested here
-    int numCodewords = codewordBytes->size();
-                                      ^
-3 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-07b7a0d5c4103fca4346da854703d210.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-07b7a0d5c4103fca4346da854703d210.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-07b7a0d5c4103fca4346da854703d210.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-07b7a0d5c4103fca4346da854703d210.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GridSampler.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp:688:22: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    int max = vector.size();
-        ~~~   ~~~~~~~^~~~~~
-2 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-14d4bfb46e6682e6dd0d6e13bc0fc63c.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-14d4bfb46e6682e6dd0d6e13bc0fc63c.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-14d4bfb46e6682e6dd0d6e13bc0fc63c.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-14d4bfb46e6682e6dd0d6e13bc0fc63c.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:21:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h:26:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:77:38: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    int dataBlocksCount = dataBlocks.size();
-        ~~~~~~~~~~~~~~~   ~~~~~~~~~~~^~~~~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:21:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h:26:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:21:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.h:27:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
-    if (!mirrored || points->size() < 3) {
-                             ^
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:21:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h:26:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp:43:39: note: in instantiation of member function 'zxing::Array<char>::size' requested here
-    int numCodewords = codewordBytes->size();
-                                      ^
-4 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-12d9276450f10ae04f91a74fa4d2d730.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-12d9276450f10ae04f91a74fa4d2d730.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-12d9276450f10ae04f91a74fa4d2d730.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-12d9276450f10ae04f91a74fa4d2d730.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.h:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:54:44: warning: comparison between NULL and non-pointer ('bool' and NULL) [-Wnull-arithmetic]
-    if (err_handler.ErrCode() || codewords == NULL) {
-                                 ~~~~~~~~~ ^  ~~~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.h:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ErrorCorrection.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
-    if (!mirrored || points->size() < 3) {
-                             ^
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.h:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp:87:29: note: in instantiation of member function 'zxing::Array<int>::size' requested here
-    int cwsize = codewords->size();
-                            ^
-4 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-cab997eb2a781dee835bd88b25d3229f.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-cab997eb2a781dee835bd88b25d3229f.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-cab997eb2a781dee835bd88b25d3229f.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-cab997eb2a781dee835bd88b25d3229f.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp:23:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.h:26:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Mode.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.h:26:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp:86:49: warning: unused parameter 'src' [-Wunused-parameter]
-                                    const char* src,
-                                                ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp:226:65: warning: unused parameter 'hints' [-Wunused-parameter]
-                                               Hashtable const& hints,
-                                                                ^
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp:23:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.h:26:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Mode.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.h:26:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp:23:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.h:30:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
-    if (!mirrored || points->size() < 3) {
-                             ^
-4 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-a60ff7f3899128b727184240c86e4882.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-a60ff7f3899128b727184240c86e4882.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-a60ff7f3899128b727184240c86e4882.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-a60ff7f3899128b727184240c86e4882.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp:21:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp:78:45: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    int longerBlocksStartAt = result.size() - 1;
-        ~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~^~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp:21:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp:77:62: note: in instantiation of member function 'zxing::Array<char>::size' requested here
-    int shorterBlocksTotalCodewords = result[0]->codewords_->size();
-                                                             ^
-3 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-4fdd02eee16591523f2c417582db29b0.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-4fdd02eee16591523f2c417582db29b0.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-4fdd02eee16591523f2c417582db29b0.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-4fdd02eee16591523f2c417582db29b0.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp:23:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.h:25:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp:23:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.h:28:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
-    if (!mirrored || points->size() < 3) {
-                             ^
-2 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-01cc64452ef94835203b61dc1cd84ab9.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-01cc64452ef94835203b61dc1cd84ab9.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-01cc64452ef94835203b61dc1cd84ab9.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-01cc64452ef94835203b61dc1cd84ab9.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.h:22:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h:28:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h:78:30: note: in instantiation of member function 'zxing::Array<zxing::Ref<zxing::ResultPoint>>::size' requested here
-    if (!mirrored || points->size() < 3) {
-                             ^
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.h:22:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:69:33: note: in instantiation of member function 'zxing::Array<BigInteger>::size' requested here
-    for (int i = 2; i < EXP900->size(); i++) {
-                                ^
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:22:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.h:22:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp:116:36: note: in instantiation of member function 'zxing::Array<int>::size' requested here
-        if (codeIndex < codewords->size())
-                                   ^
-4 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-8d9a041d7b1d42fb1ad34d55bc589370.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-8d9a041d7b1d42fb1ad34d55bc589370.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-8d9a041d7b1d42fb1ad34d55bc589370.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-8d9a041d7b1d42fb1ad34d55bc589370.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp:21:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.h:26:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp:68:45: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    int longerBlocksStartAt = result.size() - 1;
-        ~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~^~~
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp:21:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.h:26:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp:67:62: note: in instantiation of member function 'zxing::Array<char>::size' requested here
-    int shorterBlocksTotalCodewords = result[0]->codewords_->size();
-                                                             ^
-3 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-ffaaf4e5ef6979c2d313063f63dfd38c.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-ffaaf4e5ef6979c2d313063f63dfd38c.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-ffaaf4e5ef6979c2d313063f63dfd38c.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-ffaaf4e5ef6979c2d313063f63dfd38c.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp:21:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.h:24:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp:31:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    bool bit = mirror_ ? bitMatrix_->get(y, x) : bitMatrix_->get(x, y);
-                                     ~~~    ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp:31:42: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    bool bit = mirror_ ? bitMatrix_->get(y, x) : bitMatrix_->get(x, y);
-                                     ~~~ ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp:31:69: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    bool bit = mirror_ ? bitMatrix_->get(y, x) : bitMatrix_->get(x, y);
-                                                             ~~~    ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp:31:66: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    bool bit = mirror_ ? bitMatrix_->get(y, x) : bitMatrix_->get(x, y);
-                                                             ~~~ ^
-5 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-f0432213397c85468abea37366b59884.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-f0432213397c85468abea37366b59884.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-f0432213397c85468abea37366b59884.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-f0432213397c85468abea37366b59884.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp:26:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.h:26:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:72:20: warning: implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return values_.size();
-    ~~~~~~ ~~~~~~~~^~~~~~
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp:138:64: note: in instantiation of member function 'zxing::Array<int>::size' requested here
-                if (eraseCount_ >= static_cast<int>(erasures_->size())) {
-                                                               ^
-2 warnings generated.
-
-CompileC /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-03829ae3725395539d2195380845f5b5.o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'QBar' from project 'QBar')
-    cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -ivfsstatcache /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long @/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/af3fcb34312c57c0f52879cdce924b91-common-args.resp -MMD -MT dependencies -MF /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-03829ae3725395539d2195380845f5b5.d --serialize-diagnostics /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-03829ae3725395539d2195380845f5b5.dia -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp -o /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-03829ae3725395539d2195380845f5b5.o
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp:21:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h:25:
-In file included from /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h:24:
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h:120:31: warning: unused parameter 'other' [-Wunused-parameter]
-  ArrayRef(const ArrayRef<Y> &other) :
-                              ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp:30:31: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return bitMatrix_->get(x, y) ? (versionBits << 1) | 0x1 : versionBits << 1;
-                       ~~~    ^
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp:30:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-    return bitMatrix_->get(x, y) ? (versionBits << 1) | 0x1 : versionBits << 1;
-                       ~~~ ^
-3 warnings generated.
+14 warnings generated.
 
 Libtool /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/src/Debug/libQBar.a normal (in target 'QBar' from project 'QBar')
     cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar
@@ -713,45 +685,38 @@ PhaseScriptExecution Generate\ CMakeFiles/ALL_BUILD /Users/caoshiwen/work/opencv
     /bin/sh -c /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/ALL_BUILD.build/Script-F96AC24295BCC71A104A2A8E.sh
 Build all projects
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-1f659cdebbb88977d38aec986715a403.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-b0b65a8cc63299423b0cf1ebd7fa98ce.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-3b618581ff18d45168dcb46462e2a7a1.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-d0118cd1223016cfab38abfee7eabde0.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-6bc3aed0472ea0915c09dfc446536c12.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/BitMatrixParser-f6ade7400269bd1c94d8946991a3a60e.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-8ae338bf7ea67b8eb3cf4db7637557bd.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-9d16f35d79da2dfe8cb5caf148a3ca5f.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-d7a1146da68154499f4938dea375dff9.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DataBlock-ea653f617ad02f8db879c74c8fbe4e55.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-1211fa730459c16956710a756f126e4a.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-1fba2051b20914ea7af731ced72c9543.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-84ee839ce4b7abbd5151ef143158a113.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-8e9f067de0b8e19b204705ec46f70fb6.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-f6ae07da42ee89fd147863ab05f15047.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/DecodedBitStreamParser-981e9c1d7a15fd305fe761e0d143c879.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-0e72f9512bca605d712d62767e4fb974.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-4e68378f981ed9165a7088822dedcd42.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-61e66ceb33dd4205a2249c0c917a3755.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-adefcf659d772b0efbbf77f52baa9747.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-d35e6eff0e15dacdaef2c3227734daa6.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Decoder-d1a9cfb82c233809a24d0641b180e48d.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-4fd75e68939e484d3cd092290c784fb1.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-b8551805b106ec8fe9b22a8ed526596f.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-5ffc46e856bd2e48c3d24b49887d1b38.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-d1726a2f3a37476561e8a8d2abf35cb3.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Detector-8891e99fcec0ca6d4a0df128f87199f1.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-98610626c87ce3d9dc620b74fe51434d.o'
 
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Result-cf32d21cd9d8a7b2a4a1d5a4294186eb.o'
-
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-cc19337384ef22482bb755a133282414.o'
-
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-da18950d6eaf1d03884528bb3eacd48c.o'
-
-note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/result-ef314a0258cf64171ff7c57081fc32fb.o'
+note: Removed stale file '/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/Debug/Objects-normal/arm64/Version-9942ebcf25a5205f38fd96d8c5c5b9e1.o'
 
 /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/QBar.xcodeproj: warning: The macOS deployment target 'MACOSX_DEPLOYMENT_TARGET' is set to 10.12, but the range of supported deployment target versions is 10.13 to 14.5.99. (in target 'ZERO_CHECK' from project 'QBar')
 note: Run script build phase 'Generate CMakeFiles/ZERO_CHECK' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ZERO_CHECK' from project 'QBar')
-/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/QBar.xcodeproj: warning: The macOS deployment target 'MACOSX_DEPLOYMENT_TARGET' is set to 10.12, but the range of supported deployment target versions is 10.13 to 14.5.99. (in target 'QBar' from project 'QBar')
 /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/QBar.xcodeproj: warning: The macOS deployment target 'MACOSX_DEPLOYMENT_TARGET' is set to 10.12, but the range of supported deployment target versions is 10.13 to 14.5.99. (in target 'Demo' from project 'QBar')
 ** BUILD SUCCEEDED **
 
@@ -791,8 +756,8 @@ ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeD
 
 ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
 
-Build description signature: 2c85098ea9038edb149679ec728ec918
-Build description path: /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/XCBuildData/2c85098ea9038edb149679ec728ec918.xcbuilddata
+Build description signature: a3ff2350b644c089424c43c98c390640
+Build description path: /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/XCBuildData/a3ff2350b644c089424c43c98c390640.xcbuilddata
 ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache
     cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/QBar.xcodeproj
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o /var/folders/h5/nrwv5r3n3875_qdyhvv3kkrw0000gn/C/com.apple.DeveloperTools/15.4-15F31d/Xcode/SDKStatCaches.noindex/macosx14.5-23F73-7e3fd6dc4171e65dbd154ba8db3956d2.sdkstatcache

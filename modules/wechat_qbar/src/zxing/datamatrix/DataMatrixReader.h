@@ -36,7 +36,7 @@ private:
 public:
     DataMatrixReader();
     std::string name() { return "datamatrix"; }
-    virtual Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints, std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings = NULL);
+    virtual Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints);
     Ref<Result> decodeMore(Ref<BinaryBitmap> image, Ref<BitMatrix> imageBitMatrix, DecodeHints hints, ErrorHandler & err_handler);
     virtual ~DataMatrixReader();
 };

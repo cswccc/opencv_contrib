@@ -31,12 +31,6 @@
 #include <BinarizerMgr.h>
 #include <opencv2/QbarStruct.h>
 
-// tscan
-#include <tscan/result.h>
-#include <tscan/debug_info.h>
-#include <tscan/comm/tscan_time.h>
-#include <tscan/comm/tscan_string.h>
-
 #include "QBarInfoFilter.hpp"
 
 //ai
@@ -70,7 +64,6 @@ private:
     zxing::MultiFormatReader reader_;
     BinarizerMgr binarizer_mgr_;
     std::unordered_set<QBAR_READER> readers_;
-    std::vector<tscan::ReaderTimeConsuming> reader_time_consumings_;
     std::string output_charset_ = "UTF-8";
 
     //AI Model

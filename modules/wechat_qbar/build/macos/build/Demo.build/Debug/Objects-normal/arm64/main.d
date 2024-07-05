@@ -24,9 +24,6 @@ dependencies: \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BarcodeFormat.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/DecodeHints.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPointCallback.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_time.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GlobalHistogramBinarizer.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/HybridBinarizer.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/FastWindowBinarizer.h \
@@ -56,10 +53,8 @@ dependencies: \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarSource.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/BinarizerMgr.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/include/opencv2/QbarStruct.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_string.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarInfoFilter.hpp \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/qbar_detector.hpp \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/align.hpp \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/sr_scale/super_scale.hpp \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarEncoder.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/stb_image.h
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarEncoder.h

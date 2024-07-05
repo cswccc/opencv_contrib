@@ -27,15 +27,15 @@ void QBar::SetReaders(const std::unordered_set<QBAR_READER> &readers)
     qbarDecode_->SetReaders(readers);
 }
 
-QBAR_RESULT QBar::Decode(uint8_t* imageData, int width, int height)
+QBAR_RESULT QBar::Decode(cv::Mat &image)
 {
-    cv::Mat image(height, width, CV_8UC1, imageData);
+    // cv::Mat image(height, width, CV_8UC1, imageData);
     return qbarDecode_->Decode(image);
 }
 
-std::vector<QBAR_RESULT> QBar::ScanImage(uint8_t* imageData, int width, int height)
+std::vector<QBAR_RESULT> QBar::ScanImage(cv::Mat &image)
 {
-    cv::Mat image(height, width, CV_8UC1, imageData);
+    // cv::Mat image(height, width, CV_8UC1, imageData);
     return qbarDecode_->ScanImage(image);
 }
 

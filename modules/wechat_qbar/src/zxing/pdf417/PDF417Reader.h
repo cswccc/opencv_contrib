@@ -41,8 +41,7 @@ private:
 public:
     std::string name() { return "pdf417"; }
     using Reader::decode;
-    Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints,
-                       std::vector<tscan::ReaderTimeConsuming> * reader_time_consumings = NULL);
+    Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints);
     
     void reset();
 };

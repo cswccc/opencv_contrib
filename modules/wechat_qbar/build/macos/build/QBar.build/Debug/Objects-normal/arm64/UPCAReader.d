@@ -24,8 +24,5 @@ dependencies: \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BarcodeFormat.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/DecodeHints.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPointCallback.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.h \
-  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_time.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/FormatException.h \
   /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ReaderException.h
