@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Counted.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Array.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGFPoly.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ErrorHandler.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGF.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Str.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/QRCodeDecoderMetaData.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPoint.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ZXing.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/IllegalArgumentException.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Exception.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ReaderException.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitSource.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ChecksumException.h \
+  /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonException.h

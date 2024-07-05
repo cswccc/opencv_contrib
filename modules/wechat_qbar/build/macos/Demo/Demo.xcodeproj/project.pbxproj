@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		17462FA18A414F349F78FC1A /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5809B718F40D4857909F9700 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				482B31A495684735B97469F0 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D500A07EEFC3432EAACB48D8 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 934D9318CE5A4980A26071F9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				E317898524FEFA7752F94902 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				C1E0A6D5EA914ED3B3C76C5F /* PBXTargetDependency */,
+				36F14AE02BC64DF4BBCAFAD4 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F2BB07BA0AA14D25AECB626A /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 20C3C9A49D664D2C99DF8D83 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				D58408DF09189FCAD5FE5ED5 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		78F95440D1894F0EA1F3B76B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9D953596D737402986681BC0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/CMakeLists.txt */; };
+		7FE428A1D5754CBF84D284C0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp */ = {isa = PBXBuildFile; fileRef = B5548BC726C84785A8814112 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		CBF9B48BAD4742148ADCEFFF /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		8E428A8EAE4E436E9B0CA2D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8633F06FF3B44C50BBA1E227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D500A07EEFC3432EAACB48D8;
+			remoteInfo = ALL_BUILD;
+		};
+		A5EBAD60501541F995267949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8633F06FF3B44C50BBA1E227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BB07BA0AA14D25AECB626A;
+			remoteInfo = ZERO_CHECK;
+		};
+		B4F6F7D51A52454CBF938464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8633F06FF3B44C50BBA1E227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93946AAB01004344AA5340F4;
+			remoteInfo = Demo;
+		};
+		F1220C3F874E49369F22555D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8633F06FF3B44C50BBA1E227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BB07BA0AA14D25AECB626A;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C76E5A296734D9082120105 /* Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Demo; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D953596D737402986681BC0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B5548BC726C84785A8814112 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		BB82EB8F3D154FD58158ECBD /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6549BE4EE191432CA34967B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		145C061938A34F03A1ADC9E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C76E5A296734D9082120105 /* Demo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B0084237A0B42C5BD9AC082 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				88D7944B47E9471BA9BBF58D /* CMake Rules */,
+				BB82EB8F3D154FD58158ECBD /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		6AF013BAD7274A1CB66AD689 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88D7944B47E9471BA9BBF58D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		97424CAEBC134A9990CC91C8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5548BC726C84785A8814112 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D62DEE3595A34F59B4EED457 = {
+			isa = PBXGroup;
+			children = (
+				F72AAA96D7AC48AA927DAD5B /* Demo */,
+				4B0084237A0B42C5BD9AC082 /* ALL_BUILD */,
+				145C061938A34F03A1ADC9E0 /* Products */,
+				6AF013BAD7274A1CB66AD689 /* Frameworks */,
+				F4B61F36A5B94CE1A13A7F67 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		F4B61F36A5B94CE1A13A7F67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F72AAA96D7AC48AA927DAD5B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				97424CAEBC134A9990CC91C8 /* Source Files */,
+				9D953596D737402986681BC0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/CMakeLists.txt */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93946AAB01004344AA5340F4 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B9936F731744D090C79EDC /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				492B0A6DC2014E18BB5C564B /* Sources */,
+				6549BE4EE191432CA34967B8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A284E51C90274D42B48D55D3 /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 1C76E5A296734D9082120105 /* Demo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8633F06FF3B44C50BBA1E227 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+			};
+			buildConfigurationList = CAEA6C2C904549C0924E5585 /* Build configuration list for PBXProject "Demo" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				CBF9B48BAD4742148ADCEFFF /* Debug */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = D62DEE3595A34F59B4EED457;
+			projectDirPath = /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd;
+			projectRoot = "";
+			targets = (
+				D500A07EEFC3432EAACB48D8 /* ALL_BUILD */,
+				93946AAB01004344AA5340F4 /* Demo */,
+				F2BB07BA0AA14D25AECB626A /* ZERO_CHECK */,
+				17462FA18A414F349F78FC1A /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo
+  /opt/homebrew/Cellar/cmake/3.29.6/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D58408DF09189FCAD5FE5ED5 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo
+  make -f /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		E317898524FEFA7752F94902 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		492B0A6DC2014E18BB5C564B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE428A1D5754CBF84D284C0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36F14AE02BC64DF4BBCAFAD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BB07BA0AA14D25AECB626A /* ZERO_CHECK */;
+			targetProxy = A5EBAD60501541F995267949 /* PBXContainerItemProxy */;
+		};
+		482B31A495684735B97469F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D500A07EEFC3432EAACB48D8 /* ALL_BUILD */;
+			targetProxy = 8E428A8EAE4E436E9B0CA2D7 /* PBXContainerItemProxy */;
+		};
+		A284E51C90274D42B48D55D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BB07BA0AA14D25AECB626A /* ZERO_CHECK */;
+			targetProxy = F1220C3F874E49369F22555D /* PBXContainerItemProxy */;
+		};
+		C1E0A6D5EA914ED3B3C76C5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93946AAB01004344AA5340F4 /* Demo */;
+			targetProxy = B4F6F7D51A52454CBF938464 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08DC1018342B4CD8BCB2EC85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		0C6233A29AE84C13AC047C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SYMROOT = /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build;
+			};
+			name = Debug;
+		};
+		2633D8405A474BEE9F2DFC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2732CE50A7194F22861E586C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6951D06F4F434BE89DF79C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/../include,/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/Users/caoshiwen/opencv/build/install/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -fPIC -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long -x objective-c++        '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/src/Debug/libQBar.a,"-framework Accelerate","-framework Metal","-framework MetalPerformanceShaders","-liconv","-lz",/Users/caoshiwen/opencv/build/install/lib/libopencv_gapi.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_highgui.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_ml.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_objdetect.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_photo.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_stitching.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_video.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_calib3d.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_dnn.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_features2d.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_flann.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_videoio.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_imgcodecs.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_imgproc.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_core.4.10.0.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Demo;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/caoshiwen/opencv/build/install/include/opencv4,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/Demo.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06B9936F731744D090C79EDC /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6951D06F4F434BE89DF79C60 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		20C3C9A49D664D2C99DF8D83 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2633D8405A474BEE9F2DFC91 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5809B718F40D4857909F9700 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DC1018342B4CD8BCB2EC85 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		934D9318CE5A4980A26071F9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2732CE50A7194F22861E586C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CAEA6C2C904549C0924E5585 /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6233A29AE84C13AC047C0E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8633F06FF3B44C50BBA1E227 /* Project object */;
+}

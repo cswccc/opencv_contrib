@@ -1,0 +1,3 @@
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/install/macos/include/QBarLib.h
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/install/macos/include/QBarStruct.h
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/install/macos/lib/libQBar.a

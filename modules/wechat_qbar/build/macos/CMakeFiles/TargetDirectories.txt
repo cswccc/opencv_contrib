@@ -1,0 +1,9 @@
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/CMakeFiles/install.dir
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/CMakeFiles/ALL_BUILD.dir
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/CMakeFiles/ZERO_CHECK.dir
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/src/CMakeFiles/QBar.dir
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/src/CMakeFiles/install.dir
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo/CMakeFiles/Demo.dir
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo/CMakeFiles/install.dir
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo/CMakeFiles/ALL_BUILD.dir
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo/CMakeFiles/ZERO_CHECK.dir

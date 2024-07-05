@@ -1,0 +1,49 @@
+
+#ifndef QBARIMPORTOPENCV_H
+#define QBARIMPORTOPENCV_H
+
+namespace {
+#if CV_VERSION_EPOCH != 2
+int _CV_RGBA2RGB = cv::COLOR_RGBA2RGB;
+int _CV_BGRA2RGB = cv::COLOR_BGRA2RGB;
+int _CV_BGR2RGB = cv::COLOR_BGR2RGB;
+int _CV_BGR2GRAY = cv::COLOR_BGR2GRAY;
+int _CV_GRAY2RGB = cv::COLOR_GRAY2RGB;
+int _CV_GRAY2BGR = cv::COLOR_GRAY2BGR;
+int _CV_RGBA2GRAY = cv::COLOR_RGBA2GRAY;
+int _CV_BGRA2GRAY = cv::COLOR_BGRA2GRAY;
+int _CV_RGB2GRAY = cv::COLOR_RGB2GRAY;
+int _CV_BGR2BGRA = cv::COLOR_BGR2BGRA;
+#else
+int _CV_RGBA2RGB = CV_RGBA2RGB;
+int _CV_BGRA2RGB = CV_BGRA2RGB;
+int _CV_BGR2RGB = CV_BGR2RGB;
+int _CV_BGR2GRAY = CV_BGR2GRAY;
+int _CV_GRAY2RGB = CV_GRAY2RGB;
+int _CV_GRAY2BGR = CV_GRAY2BGR;
+int _CV_RGBA2GRAY = CV_RGBA2GRAY;
+int _CV_BGRA2GRAY = CV_BGRA2GRAY;
+int _CV_RGB2GRAY = CV_RGB2GRAY;
+int _CV_BGR2BGRA = CV_BGR2BGRA;
+#endif
+}  // namespace
+
+namespace {
+#if CV_VERSION_EPOCH != 2
+int _CV_RANSAC = cv::RANSAC;
+#else
+int _CV_RANSAC = CV_RANSAC;
+#endif
+}  // namespace
+
+namespace {
+#if CV_VERSION_EPOCH != 2
+int _CV_FILLED = cv::FILLED;
+#else
+int _CV_FILLED = CV_FILLED;
+#endif
+}  // namespace
+
+
+
+#endif

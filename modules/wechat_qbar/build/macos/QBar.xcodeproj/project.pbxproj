@@ -1,0 +1,1201 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		17462FA18A414F349F78FC1A /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C6271124439A4D31BCB423BD /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				AC79C3CD92EB49BD9E4B1D0E /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D500A07EEFC3432EAACB48D8 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B05532FD9E554300B98FA75F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F96AC24295BCC71A104A2A8E /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				2986EF264D784F25A65EAE7F /* PBXTargetDependency */,
+				A4C5A443D0054BF48052331A /* PBXTargetDependency */,
+				3D350461F77A4321B6371F59 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F2BB07BA0AA14D25AECB626A /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E447F8F7DF5A47268FAEEC9C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1C9AF764BA7127917CF162AE /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00A168D31EF540F58D1E61FC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPatternFinder.cpp */ = {isa = PBXBuildFile; fileRef = 2CF7BB468589454EAC0EF638 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPatternFinder.cpp */; };
+		021E7A39F8B943F7B6E2FD8E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp */ = {isa = PBXBuildFile; fileRef = F793A971275844338FCD2874 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp */; };
+		024D15B05B4942DE97207308 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GreyscaleLuminanceSource.cpp */ = {isa = PBXBuildFile; fileRef = 090044DC4F0C40A592192257 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GreyscaleLuminanceSource.cpp */; };
+		027C5D91F61947A0B447CF78 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ModulusGF.cpp */ = {isa = PBXBuildFile; fileRef = 2E8E434251794C70A6B38804 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ModulusGF.cpp */; };
+		045C2402F2394A499DE406CF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.cpp */ = {isa = PBXBuildFile; fileRef = A34B8326A4BA4775B2097509 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.cpp */; };
+		092DFB4A1B8948D4AEFD25E8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarDecoder.cpp */ = {isa = PBXBuildFile; fileRef = 93373C37A77649F49F961DC4 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarDecoder.cpp */; };
+		09A1FD57594E40EBA98F1A1D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code128Writer.cpp */ = {isa = PBXBuildFile; fileRef = E8BE40B586AD45EC88F80F34 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code128Writer.cpp */; };
+		0A86E4853FF04D6CB2BADBA0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonException.cpp */ = {isa = PBXBuildFile; fileRef = 490C2FD34DBF40FF98D4D1D7 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonException.cpp */; };
+		13A8277923B540FF95728FEC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.cpp */ = {isa = PBXBuildFile; fileRef = 1CA0FB0E119E49D8AE024C56 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.cpp */; };
+		18E85453674C4F818D301F97 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAWriter.cpp */ = {isa = PBXBuildFile; fileRef = D7577A909E9344ECA4FC68FD /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAWriter.cpp */; };
+		1982E1550460460B9C770A3A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Exception.cpp */ = {isa = PBXBuildFile; fileRef = CA0A56C25484476399EB36A9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Exception.cpp */; };
+		199BC50ED35C4B07871C3745 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ByteMatrix.cpp */ = {isa = PBXBuildFile; fileRef = EB9AA2C9524349A49E9165B7 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ByteMatrix.cpp */; };
+		1B67CBEBEB5E455B99721627 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Writer.cpp */ = {isa = PBXBuildFile; fileRef = 4DC414FFD82B4C8EBFB72A1B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Writer.cpp */; };
+		1C0FC474D3AC49199CB087CA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/IntMatrix.cpp */ = {isa = PBXBuildFile; fileRef = 30111E446A574AB890A40B41 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/IntMatrix.cpp */; };
+		1C3E2995CB6D47F98A51881E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/PatternResult.cpp */ = {isa = PBXBuildFile; fileRef = 8CA0692C8CAF48ED9F37643B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/PatternResult.cpp */; };
+		1CFDA3727DC54884AA00D0E0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxmatrix3.cpp */ = {isa = PBXBuildFile; fileRef = 6A53A0FB75F549EB9D97B607 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxmatrix3.cpp */; };
+		2104886C6227499394E86F36 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN13Reader.cpp */ = {isa = PBXBuildFile; fileRef = 75835DB3F3BE4E0A9FC1AAAE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN13Reader.cpp */; };
+		22276C9ABA2E4BB692E4BDF1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp */ = {isa = PBXBuildFile; fileRef = AB87CF645362458298EBEB34 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp */; };
+		240496525F1948E7A7F1159D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7E3BF632BB8A4F82BDA0605C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/CMakeLists.txt */; };
+		2444E71539F1481E84AD5FFB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/QRCodeWriter.cpp */ = {isa = PBXBuildFile; fileRef = BD5FB23EB4294E2082FBCE53 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/QRCodeWriter.cpp */; };
+		26036D669A104CA3A41F1177 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.cpp */ = {isa = PBXBuildFile; fileRef = 1EB6201257594A169B3D6575 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.cpp */; };
+		268EC52B59F246F382FC6ABA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEANReader.cpp */ = {isa = PBXBuildFile; fileRef = A87881E016574DC9B1E5B435 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEANReader.cpp */; };
+		29837D66FD584051B180FAE5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxmessage.cpp */ = {isa = PBXBuildFile; fileRef = 17986D18A5084B49A1FDE9E5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxmessage.cpp */; };
+		2AADBBC3C42D4D9983520A69 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/LinesSampler.cpp */ = {isa = PBXBuildFile; fileRef = 0DFE4605F93B4F49AE5790D9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/LinesSampler.cpp */; };
+		2B2D4686B22A45F180550D22 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Str.cpp */ = {isa = PBXBuildFile; fileRef = 10C5743F9B904AA8B05A0BDE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Str.cpp */; };
+		2E06F280A4484016A67A96C0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.cpp */ = {isa = PBXBuildFile; fileRef = 846679942A0942569A056784 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.cpp */; };
+		2E762D8212AC4844B0882A0E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.cpp */ = {isa = PBXBuildFile; fileRef = E51F8EAFB624416A8BE0A584 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.cpp */; };
+		2F9E6C9040034EB780A177C6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp */ = {isa = PBXBuildFile; fileRef = DFF1DE3D152144A8BD4E85B1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp */; };
+		30BB56793B234227A7D35D9D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGFPoly.cpp */ = {isa = PBXBuildFile; fileRef = FFEA34D49CC744A39715EA4B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGFPoly.cpp */; };
+		3198ECC356A7404284E9176D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp */ = {isa = PBXBuildFile; fileRef = C2D28CE4E2FF48BABC1B5310 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp */; };
+		337FB9399F1144478A240C89 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Binarizer.cpp */ = {isa = PBXBuildFile; fileRef = DDC6DF9C9A7B465BA6817309 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Binarizer.cpp */; };
+		340B131AB37545928272B4B8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxplacemod.cpp */ = {isa = PBXBuildFile; fileRef = 4A2AED231710434CB6B4F491 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxplacemod.cpp */; };
+		34CFBBB7FDFA42E1AB486930 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.cpp */ = {isa = PBXBuildFile; fileRef = 22456B216D2C436DAB0161B2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.cpp */; };
+		3AE0A68917814036827D9E48 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GridSampler.cpp */ = {isa = PBXBuildFile; fileRef = BA774650B0E9443E809B23C5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GridSampler.cpp */; };
+		3DFCECFD14CA47CD9673943A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Reader.cpp */ = {isa = PBXBuildFile; fileRef = 2BF207FB19D04A279C59C91A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Reader.cpp */; };
+		3FC0F2CFBF0A46F4AC6A0380 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code128Reader.cpp */ = {isa = PBXBuildFile; fileRef = ADBB7E9FE6D244B59AB7466D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code128Reader.cpp */; };
+		40741291BD084F65960C8845 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tools/debug_log.cpp */ = {isa = PBXBuildFile; fileRef = 86722A916E074E569F339D23 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tools/debug_log.cpp */; };
+		43EE870CD1C34F068F53943A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ImageCut.cpp */ = {isa = PBXBuildFile; fileRef = 64D5BF8961414A2DA890399E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ImageCut.cpp */; };
+		487380E2E6274120ABD46E78 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.cpp */ = {isa = PBXBuildFile; fileRef = 426A5579F347443A82B1F13E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.cpp */; };
+		49AC5AC4B08D4ABCA4BBB374 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/ErrorCorrectionLevel.cpp */ = {isa = PBXBuildFile; fileRef = 716A0CE288A646B2BAA6F2A2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/ErrorCorrectionLevel.cpp */; };
+		4A74D992FF4C432AB2C9C849 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarInfoFilter.cpp */ = {isa = PBXBuildFile; fileRef = 7CBCF0A55DE04C4AB6A77D95 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarInfoFilter.cpp */; };
+		4CD24F5CFEF1427197A6417B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/StringUtils.cpp */ = {isa = PBXBuildFile; fileRef = F3A924891F9C433DBE2CFA5A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/StringUtils.cpp */; };
+		50DA28BFE3BA49618C3BE49E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code25Reader.cpp */ = {isa = PBXBuildFile; fileRef = A5D3C2388BC7456794C46CD5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code25Reader.cpp */; };
+		54BBDB0CB57045A89161C43F /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigUnsigned.cc */ = {isa = PBXBuildFile; fileRef = 60E6824B679344E187C01005 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigUnsigned.cc */; };
+		54C0FF4E70BA492AB065A8C4 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataMask.cpp */ = {isa = PBXBuildFile; fileRef = D51D447D5BF640E68ED15930 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataMask.cpp */; };
+		56B4B21314594C8AA950E5FC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/DetectorException.cpp */ = {isa = PBXBuildFile; fileRef = A72EF199336647AF8D09E10A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/DetectorException.cpp */; };
+		58F9460A85654DFAAB7F9F03 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp */ = {isa = PBXBuildFile; fileRef = 6403BBC77FD64CD5A3898F48 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp */; };
+		5AB898803BAF4721A70EDB78 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/DecodeHints.cpp */ = {isa = PBXBuildFile; fileRef = 35740C52428F469591F805F5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/DecodeHints.cpp */; };
+		5BC7A2C6C3774EC18CA4F6A0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp */ = {isa = PBXBuildFile; fileRef = 155702C3FA5746BCB2CB223A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp */; };
+		5DB6AE90DDBE47B79372D8E5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN13Writer.cpp */ = {isa = PBXBuildFile; fileRef = 91ED7EB059E247ABACCBD625 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN13Writer.cpp */; };
+		5F38ACC6F22A4B069B2D33D1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/MultiFormatReader.cpp */ = {isa = PBXBuildFile; fileRef = 41230932CD69496AB1624A20 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/MultiFormatReader.cpp */; };
+		61A3EAEA964347B8BD467F32 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/BMP.cpp */ = {isa = PBXBuildFile; fileRef = B303FDBB159043B2933F3B4D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/BMP.cpp */; };
+		685238E7786D405383D53885 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp */ = {isa = PBXBuildFile; fileRef = 6E7A13F228D146E2AD831885 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp */; };
+		6A931A8B50E540D98F37A367 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/MonochromeRectangleDetector.cpp */ = {isa = PBXBuildFile; fileRef = 44D53EB0EA7544E29A63E36E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/MonochromeRectangleDetector.cpp */; };
+		6B39439F9CDF4D959425FF1A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/FastWindowBinarizer.cpp */ = {isa = PBXBuildFile; fileRef = 37BC71376A5F4F8CACE20DCC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/FastWindowBinarizer.cpp */; };
+		6C9B512B7C9548FAA04D1329 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDReader.cpp */ = {isa = PBXBuildFile; fileRef = 2DB04F1F6760464794D111F9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDReader.cpp */; };
+		6ED2D3086FD446E5A459F0F6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/UnicomBlock.cpp */ = {isa = PBXBuildFile; fileRef = 875562A6C53A4028A52E0CE0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/UnicomBlock.cpp */; };
+		7345FAE399EC4D29A590CD66 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/ini.c */ = {isa = PBXBuildFile; fileRef = 2C9731DF523849699694708D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/ini.c */; };
+		738210FFD0BE455C9E8BDF69 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarLib.cpp */ = {isa = PBXBuildFile; fileRef = A6972582B24B4CE6A1D49364 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarLib.cpp */; };
+		74437D4032C74C1CACC64E39 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAReader.cpp */ = {isa = PBXBuildFile; fileRef = E7FA4933C2A248038E7104A8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAReader.cpp */; };
+		74D3DD17F1884C75BFAEBA91 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPoint.cpp */ = {isa = PBXBuildFile; fileRef = 73A2AFAB1429465BA9EEF9BE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPoint.cpp */; };
+		761F08171EF14DBF9B113992 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigIntegerUtils.cc */ = {isa = PBXBuildFile; fileRef = D58301ACF4F1464EAE1D3240 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigIntegerUtils.cc */; };
+		780C1BEF706A43EAA191F44D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/MultiFormatUPCEANReader.cpp */ = {isa = PBXBuildFile; fileRef = 010838A3123C440D90C5789E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/MultiFormatUPCEANReader.cpp */; };
+		78A921BF6C474760A4BAB688 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPattern.cpp */ = {isa = PBXBuildFile; fileRef = 024067A7B45140D8B3375877 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPattern.cpp */; };
+		7A47F4E880F14E8EBD63B7FE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultIO.cpp */ = {isa = PBXBuildFile; fileRef = D5522F989A8A4FD488F13C57 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultIO.cpp */; };
+		7E48A657A72742DCB5F34920 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/CharacterSetECI.cpp */ = {isa = PBXBuildFile; fileRef = 9D5487DCBEB94DB7824988DA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/CharacterSetECI.cpp */; };
+		7E4FBD8A2D38461E8CF24040 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/INIReader.cpp */ = {isa = PBXBuildFile; fileRef = 7F9B73A2DACC40AFAFE26545 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/INIReader.cpp */; };
+		7F427F11106D454786D2A3D5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/ITFReader.cpp */ = {isa = PBXBuildFile; fileRef = B2A8143402C1428EAA0EA065 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/ITFReader.cpp */; };
+		808D2AF5D32144BDB79A1C9E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/align.cpp */ = {isa = PBXBuildFile; fileRef = 1C5B75CC2F024A409C4C8968 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/align.cpp */; };
+		8217CECEF6B94D169F68CEFB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/sr_scale/super_scale.cpp */ = {isa = PBXBuildFile; fileRef = 27E815E3A80C47A18B8162F9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/sr_scale/super_scale.cpp */; };
+		82A372F5B4A84DF69DE34868 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPatternInfo.cpp */ = {isa = PBXBuildFile; fileRef = 59392605AD95496B8DA32F84 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPatternInfo.cpp */; };
+		82D398EAFFB941899D5EA10D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/SimpleAdaptiveBinarizer.cpp */ = {isa = PBXBuildFile; fileRef = D7BE9024E59B4A3B87E88644 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/SimpleAdaptiveBinarizer.cpp */; };
+		84E72942BAEC4D719750E174 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/CornerPoint.cpp */ = {isa = PBXBuildFile; fileRef = 6B352CE9CCD94AC895B00D01 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/CornerPoint.cpp */; };
+		8646EC52DC7C41568874D21C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/FormatException.cpp */ = {isa = PBXBuildFile; fileRef = 65EEFD1BE920470BA897A91C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/FormatException.cpp */; };
+		888BBA21EAE746189930B8C6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp */ = {isa = PBXBuildFile; fileRef = 5B26C8419785428C94D147AE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp */; };
+		89163A37C393468CA022A781 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/DataMatrixReader.cpp */ = {isa = PBXBuildFile; fileRef = 79609076D465445096A886AA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/DataMatrixReader.cpp */; };
+		8DC537FA9ED949FBA3AE24CB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPointCallback.cpp */ = {isa = PBXBuildFile; fileRef = 4489CE4C4BAB47FC8B425B8E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPointCallback.cpp */; };
+		90FB545C4D3646479D577E5E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.cpp */ = {isa = PBXBuildFile; fileRef = 2B5FB2B67A114C5D849FDAF9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.cpp */; };
+		9177C9B01AA6495F8EA95FEC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarSource.cpp */ = {isa = PBXBuildFile; fileRef = 9F797DEF25F74A5E911A416C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarSource.cpp */; };
+		91B7A2CCB5CB44BEAC519756 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp */ = {isa = PBXBuildFile; fileRef = 36DAFF7D5AE54B7FA307FC8C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp */; };
+		938519F13F4744CB8F0E2CAE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/CodaBarWriter.cpp */ = {isa = PBXBuildFile; fileRef = 45FCEA82FD8E43838B5FD3F9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/CodaBarWriter.cpp */; };
+		93EF897903D24737A71CD206 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GlobalHistogramBinarizer.cpp */ = {isa = PBXBuildFile; fileRef = D76C7365E6E34E6781C95C4A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GlobalHistogramBinarizer.cpp */; };
+		93F37B7D335844C1A96F65F3 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/BitArrayWriter.cpp */ = {isa = PBXBuildFile; fileRef = 0B75EA5588C742BBA97E7CE2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/BitArrayWriter.cpp */; };
+		94AE1E780F90449F9B868A97 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GreyscaleRotatedLuminanceSource.cpp */ = {isa = PBXBuildFile; fileRef = 4391222269B94BD885F39AAE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GreyscaleRotatedLuminanceSource.cpp */; };
+		9AB7B35E8BA04D3682947C45 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp */ = {isa = PBXBuildFile; fileRef = 9409363DA1D646BCBD22018F /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp */; };
+		9C6E015EBD7C42A08EF80871 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/CodaBarReader.cpp */ = {isa = PBXBuildFile; fileRef = 1C1C8693E69D4FB7A483FB33 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/CodaBarReader.cpp */; };
+		9D67E149E2EF4F61975CCED0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/ITFWriter.cpp */ = {isa = PBXBuildFile; fileRef = B7816AA8691D4F99AB3765EF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/ITFWriter.cpp */; };
+		9FC7B09E53E3467B9EE73C1A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.cpp */ = {isa = PBXBuildFile; fileRef = 6CE1841F19F64EAD9927A9B5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.cpp */; };
+		A0201634CFB549869985D9AE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.cpp */ = {isa = PBXBuildFile; fileRef = FEA7D3AB863E4D21A7649408 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.cpp */; };
+		A209FC787B014F9FAFA78F1D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ModulusPoly.cpp */ = {isa = PBXBuildFile; fileRef = DF26580F1906496EB20AEC4E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ModulusPoly.cpp */; };
+		A415CD8FB7574C3F83B20EB8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DetectorResult.cpp */ = {isa = PBXBuildFile; fileRef = 7F2CF5CD042E49C18AD58DFF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DetectorResult.cpp */; };
+		A4983B40F0BC4F5EABF1B2F1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/NewGridSampler.cpp */ = {isa = PBXBuildFile; fileRef = 28114A16C8374B879AB541FC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/NewGridSampler.cpp */; };
+		A62F5C838695498AA7D65F37 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxvector2.cpp */ = {isa = PBXBuildFile; fileRef = 687A56C560CA418BB906B1EF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxvector2.cpp */; };
+		A804F259B6E04FD0AAF7A85C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/PerspectiveTransform.cpp */ = {isa = PBXBuildFile; fileRef = 32BDB6B8068240F3BF8A1345 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/PerspectiveTransform.cpp */; };
+		AAE1B49AE8A14D5EB971360C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/AlignmentPattern.cpp */ = {isa = PBXBuildFile; fileRef = 3AF347DACE5E40CAB9BB6CEC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/AlignmentPattern.cpp */; };
+		ABA8DAF101EE4FEBB0EEE046 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp */ = {isa = PBXBuildFile; fileRef = 78F6DD7E883F437C95101229 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp */; };
+		AEC44036F4274BB492CEFE3C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/InvertedLuminanceSource.cpp */ = {isa = PBXBuildFile; fileRef = 025C8D375774480891BCF2DA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/InvertedLuminanceSource.cpp */; };
+		B09D782869E648E7A647FB5B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/BinarizerMgr.cpp */ = {isa = PBXBuildFile; fileRef = C1B2EE6595F24A0AB38B22B9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/BinarizerMgr.cpp */; };
+		B2329FCA8E724CC286D7E7C8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/KMeans.cpp */ = {isa = PBXBuildFile; fileRef = 987F49A26464474890E9934D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/KMeans.cpp */; };
+		B5F8B8BB63AF475FB22CD7D1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp */ = {isa = PBXBuildFile; fileRef = 575DC734B5F64FB48745DF57 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp */; };
+		BAF773D71CB24180ABF24F08 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/WhiteRectangleDetector.cpp */ = {isa = PBXBuildFile; fileRef = C67309373E114F3CB1B69E87 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/WhiteRectangleDetector.cpp */; };
+		BC10E8E51E454A0FA5104C7A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/MultiFormatOneDReader.cpp */ = {isa = PBXBuildFile; fileRef = 8B2267C2CC2646F2B39F7FDD /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/MultiFormatOneDReader.cpp */; };
+		BDAF18BC5C5E40AD9841693E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxreedsol.cpp */ = {isa = PBXBuildFile; fileRef = 6EBA08BA3D1046A3A6699E4C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxreedsol.cpp */; };
+		BF49C642E68A47149C04CA40 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Mode.cpp */ = {isa = PBXBuildFile; fileRef = 7B0B5C03E67F40D4A49C3178 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Mode.cpp */; };
+		C161A92EE579442083B2FA50 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarEncoder.cpp */ = {isa = PBXBuildFile; fileRef = 2B1CF3D5CC3C4D57B332824C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarEncoder.cpp */; };
+		C420197E57DD434AB56A49D9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitSource.cpp */ = {isa = PBXBuildFile; fileRef = 2437AE1DA13F4C2297BD41BB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitSource.cpp */; };
+		C6E2056AD14C453FB307694C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Writer.cpp */ = {isa = PBXBuildFile; fileRef = A08E0721E6814403B271A273 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Writer.cpp */; };
+		C714E72C332B46498D45F2B4 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtximage.cpp */ = {isa = PBXBuildFile; fileRef = CCB150884D514F7895885ADC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtximage.cpp */; };
+		C7857B00A8B6454BA8F74BED /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6AB0E952A862481CAA8675DB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/CMakeLists.txt */; };
+		C7F0CF9FDC044DCEBFA3BA3D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp */ = {isa = PBXBuildFile; fileRef = 92D18C76E2844C939EF36824 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp */; };
+		CBC26062CD35411EB24CA974 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDimensionalCodeWriter.cpp */ = {isa = PBXBuildFile; fileRef = E0AED59FB95843F7B8916599 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDimensionalCodeWriter.cpp */; };
+		CEC2186C507C45F9A11E0BA8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/IllegalArgumentException.cpp */ = {isa = PBXBuildFile; fileRef = 3CAF26EFCA7241F7A7D121FC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/IllegalArgumentException.cpp */; };
+		D26981BB987C45149FF3F01D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigInteger.cc */ = {isa = PBXBuildFile; fileRef = F3FC106E7C094915B8BA2305 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigInteger.cc */; };
+		D4D32469D9A24ED88D325270 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/QRCodeReader.cpp */ = {isa = PBXBuildFile; fileRef = EC6C460283D1457FAA0DEB47 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/QRCodeReader.cpp */; };
+		D6ECE129472046798119C997 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxbytelist.cpp */ = {isa = PBXBuildFile; fileRef = 7226B9F48ADC471AAC6FE46B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxbytelist.cpp */; };
+		D835B75D118F458480E028B3 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEANWriter.cpp */ = {isa = PBXBuildFile; fileRef = A956D61E1E0C479FAB09686D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEANWriter.cpp */; };
+		D841913B2A3644BB80AFB747 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigIntegerAlgorithms.cc */ = {isa = PBXBuildFile; fileRef = 181BF102EBDA4C26BA3C85FB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigIntegerAlgorithms.cc */; };
+		D904E2E6618A405BA8E23F3F /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ErrorHandler.cpp */ = {isa = PBXBuildFile; fileRef = 9804DDB959BA4B0CAFEFAEC0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ErrorHandler.cpp */; };
+		DA7CCE3A2DD94B55B1EB9168 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.cpp */ = {isa = PBXBuildFile; fileRef = CA87FFA099A84582A6B40855 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.cpp */; };
+		DD6AD2C849A2420FAC9911FF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/FormatInformation.cpp */ = {isa = PBXBuildFile; fileRef = 4F907832C9244BB9ABD08E8B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/FormatInformation.cpp */; };
+		DF15F4780026444CBF42B132 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArrayIO.cpp */ = {isa = PBXBuildFile; fileRef = 44262F72F7FE42C1943C4898 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArrayIO.cpp */; };
+		DF261850EF1345A59D3C8D5E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/ReedSolomonEncoder.cpp */ = {isa = PBXBuildFile; fileRef = 81A0ACDC2168400F9CEC8903 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/ReedSolomonEncoder.cpp */; };
+		E0E49EAC7E1B475FA983E669 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_string.cpp */ = {isa = PBXBuildFile; fileRef = 718959BA60B84726B3CDB933 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_string.cpp */; };
+		E123EB0B38344AF1B57000D5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigUnsignedInABase.cc */ = {isa = PBXBuildFile; fileRef = 13BA7167BB18441BB9B460B2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigUnsignedInABase.cc */; };
+		E45F5F52C85E4DE19860414A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/qbar_detector.cpp */ = {isa = PBXBuildFile; fileRef = 57D1D92719A1429BA8BAB70C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/qbar_detector.cpp */; };
+		E5745F8DAD5D4E1AA65DD899 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_time.cpp */ = {isa = PBXBuildFile; fileRef = 21306324392546EAAAC3461A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_time.cpp */; };
+		E869B8A85C034220A03802E7 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Reader.cpp */ = {isa = PBXBuildFile; fileRef = 4767CA2F56C447E582E7FC61 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Reader.cpp */; };
+		EA94A8EADD6241288B85985A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ErrorCorrection.cpp */ = {isa = PBXBuildFile; fileRef = 13A8158DCE4C4DD98037FEA3 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ErrorCorrection.cpp */; };
+		ED083055402F4128A83DB98C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/AlignmentPatternFinder.cpp */ = {isa = PBXBuildFile; fileRef = 6C44183D114F4CDF94D79BDF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/AlignmentPatternFinder.cpp */; };
+		F25D75ED5A4A4FE3A6ED0024 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ChecksumException.cpp */ = {isa = PBXBuildFile; fileRef = D467CE3C085E4A33B6B76218 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ChecksumException.cpp */; };
+		F2694BA21B40417EB5704296 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BarcodeFormat.cpp */ = {isa = PBXBuildFile; fileRef = D80D72C1B7514EBF94EA9EA0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BarcodeFormat.cpp */; };
+		F322DFC1E4A843F7A4A8F236 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp */ = {isa = PBXBuildFile; fileRef = EC085F78B9424590A546BB1C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp */; };
+		F352E46F445243A1A3A4EC96 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGF.cpp */ = {isa = PBXBuildFile; fileRef = C356B28E95334BC799867BD2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGF.cpp */; };
+		F8B93C11509F4D348E54D9F7 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/LuminanceSource.cpp */ = {isa = PBXBuildFile; fileRef = EA7C64C7A91B401B81772330 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/LuminanceSource.cpp */; };
+		F9429C6808D04718A4AB145B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDResultPoint.cpp */ = {isa = PBXBuildFile; fileRef = 1737D639DF7D4355BA201FE5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDResultPoint.cpp */; };
+		FC4C08D5A86D44AEB73E1CFD /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxdecode.cpp */ = {isa = PBXBuildFile; fileRef = 48225531D9DF4FD6BDEE0FD8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxdecode.cpp */; };
+		FCBCF631929D490BA62845C6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxsymbol.cpp */ = {isa = PBXBuildFile; fileRef = 0BFA3163999548AD88D41E4E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxsymbol.cpp */; };
+		FD419032EDE749B5996C86B6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/HybridBinarizer.cpp */ = {isa = PBXBuildFile; fileRef = 965254FF192D43F9851F700B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/HybridBinarizer.cpp */; };
+		FD5494282EB74AB09281D4B5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.cpp */ = {isa = PBXBuildFile; fileRef = 110D9C8CA17641B9874A07C6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.cpp */; };
+		FD61A942E6034D5B8166832C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Compress.cpp */ = {isa = PBXBuildFile; fileRef = 75565E969877445383384A46 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Compress.cpp */; };
+		FE66FF1DB9084799BB7846E5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code93Reader.cpp */ = {isa = PBXBuildFile; fileRef = 830A2179F83141699F01960F /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code93Reader.cpp */; };
+		FF9EE0A5C52040909ECA7407 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp */ = {isa = PBXBuildFile; fileRef = CDB79413C3844F508A832B8B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp */; };
+		FFDEA47207284E029BC231C2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEReader.cpp */ = {isa = PBXBuildFile; fileRef = 8B30412131EC4A268B7DB85A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEReader.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		BCACF7A15E45466587A4D41D /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		3E6AA8AAA79B4EB58E6D34CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6991CEFE19EB42EB81F1D8C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93946AAB01004344AA5340F4;
+			remoteInfo = Demo;
+		};
+		9491DA0AB5F64DE1B2CE594C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6991CEFE19EB42EB81F1D8C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D500A07EEFC3432EAACB48D8;
+			remoteInfo = ALL_BUILD;
+		};
+		D951F15A54B144EA9A5BBCEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6991CEFE19EB42EB81F1D8C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BB07BA0AA14D25AECB626A;
+			remoteInfo = ZERO_CHECK;
+		};
+		E21AC7D085104FD7A77607E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6991CEFE19EB42EB81F1D8C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BB07BA0AA14D25AECB626A;
+			remoteInfo = ZERO_CHECK;
+		};
+		F764DBAEEAF0427B86963E5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6991CEFE19EB42EB81F1D8C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F1A908A7B48413DBA9CF68F;
+			remoteInfo = QBar;
+		};
+		FCDFA74329B34C2B95DDA171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6991CEFE19EB42EB81F1D8C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F1A908A7B48413DBA9CF68F;
+			remoteInfo = QBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010838A3123C440D90C5789E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/MultiFormatUPCEANReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MultiFormatUPCEANReader.cpp; path = src/zxing/oned/MultiFormatUPCEANReader.cpp; sourceTree = SOURCE_ROOT; };
+		024067A7B45140D8B3375877 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPattern.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FinderPattern.cpp; path = src/zxing/qrcode/detector/FinderPattern.cpp; sourceTree = SOURCE_ROOT; };
+		025C8D375774480891BCF2DA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/InvertedLuminanceSource.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InvertedLuminanceSource.cpp; path = src/zxing/InvertedLuminanceSource.cpp; sourceTree = SOURCE_ROOT; };
+		090044DC4F0C40A592192257 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GreyscaleLuminanceSource.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GreyscaleLuminanceSource.cpp; path = src/zxing/common/GreyscaleLuminanceSource.cpp; sourceTree = SOURCE_ROOT; };
+		0B75EA5588C742BBA97E7CE2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/BitArrayWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BitArrayWriter.cpp; path = src/zxing/qrcode/encoder/BitArrayWriter.cpp; sourceTree = SOURCE_ROOT; };
+		0BFA3163999548AD88D41E4E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxsymbol.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dmtxsymbol.cpp; path = src/zxing/datamatrix/libdmtx/dmtxsymbol.cpp; sourceTree = SOURCE_ROOT; };
+		0DFE4605F93B4F49AE5790D9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/LinesSampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LinesSampler.cpp; path = src/zxing/pdf417/detector/LinesSampler.cpp; sourceTree = SOURCE_ROOT; };
+		10C5743F9B904AA8B05A0BDE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Str.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Str.cpp; path = src/zxing/common/Str.cpp; sourceTree = SOURCE_ROOT; };
+		110D9C8CA17641B9874A07C6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = debug_info.cpp; path = src/tscan/debug_info.cpp; sourceTree = SOURCE_ROOT; };
+		13A8158DCE4C4DD98037FEA3 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ErrorCorrection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ErrorCorrection.cpp; path = src/zxing/pdf417/decoder/ec/ErrorCorrection.cpp; sourceTree = SOURCE_ROOT; };
+		13BA7167BB18441BB9B460B2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigUnsignedInABase.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BigUnsignedInABase.cc; path = src/bigint/BigUnsignedInABase.cc; sourceTree = SOURCE_ROOT; };
+		155702C3FA5746BCB2CB223A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DataBlock.cpp; path = src/zxing/qrcode/decoder/DataBlock.cpp; sourceTree = SOURCE_ROOT; };
+		1737D639DF7D4355BA201FE5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDResultPoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OneDResultPoint.cpp; path = src/zxing/oned/OneDResultPoint.cpp; sourceTree = SOURCE_ROOT; };
+		17986D18A5084B49A1FDE9E5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxmessage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dmtxmessage.cpp; path = src/zxing/datamatrix/libdmtx/dmtxmessage.cpp; sourceTree = SOURCE_ROOT; };
+		181BF102EBDA4C26BA3C85FB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigIntegerAlgorithms.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BigIntegerAlgorithms.cc; path = src/bigint/BigIntegerAlgorithms.cc; sourceTree = SOURCE_ROOT; };
+		1C1C8693E69D4FB7A483FB33 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/CodaBarReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CodaBarReader.cpp; path = src/zxing/oned/CodaBarReader.cpp; sourceTree = SOURCE_ROOT; };
+		1C5B75CC2F024A409C4C8968 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/align.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = align.cpp; path = src/detector/align.cpp; sourceTree = SOURCE_ROOT; };
+		1CA0FB0E119E49D8AE024C56 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Version.cpp; path = src/zxing/qrcode/Version.cpp; sourceTree = SOURCE_ROOT; };
+		1EB6201257594A169B3D6575 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Reader.cpp; path = src/zxing/Reader.cpp; sourceTree = SOURCE_ROOT; };
+		209B5050FE7E4058B541C84E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		21306324392546EAAAC3461A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_time.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tscan_time.cpp; path = src/tscan/comm/tscan_time.cpp; sourceTree = SOURCE_ROOT; };
+		22456B216D2C436DAB0161B2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DecoderResult.cpp; path = src/zxing/common/DecoderResult.cpp; sourceTree = SOURCE_ROOT; };
+		2437AE1DA13F4C2297BD41BB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitSource.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BitSource.cpp; path = src/zxing/common/BitSource.cpp; sourceTree = SOURCE_ROOT; };
+		27E815E3A80C47A18B8162F9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/sr_scale/super_scale.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = super_scale.cpp; path = src/sr_scale/super_scale.cpp; sourceTree = SOURCE_ROOT; };
+		28114A16C8374B879AB541FC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/NewGridSampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NewGridSampler.cpp; path = src/zxing/common/NewGridSampler.cpp; sourceTree = SOURCE_ROOT; };
+		2B1CF3D5CC3C4D57B332824C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarEncoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = QBarEncoder.cpp; path = src/QBarEncoder.cpp; sourceTree = SOURCE_ROOT; };
+		2B5FB2B67A114C5D849FDAF9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Result.cpp; path = src/zxing/Result.cpp; sourceTree = SOURCE_ROOT; };
+		2BF207FB19D04A279C59C91A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Reader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EAN8Reader.cpp; path = src/zxing/oned/EAN8Reader.cpp; sourceTree = SOURCE_ROOT; };
+		2C9731DF523849699694708D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/ini.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ini.c; path = src/zxing/common/util/ini.c; sourceTree = SOURCE_ROOT; };
+		2CF7BB468589454EAC0EF638 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPatternFinder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FinderPatternFinder.cpp; path = src/zxing/qrcode/detector/FinderPatternFinder.cpp; sourceTree = SOURCE_ROOT; };
+		2DB04F1F6760464794D111F9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OneDReader.cpp; path = src/zxing/oned/OneDReader.cpp; sourceTree = SOURCE_ROOT; };
+		2E8E434251794C70A6B38804 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ModulusGF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ModulusGF.cpp; path = src/zxing/pdf417/decoder/ec/ModulusGF.cpp; sourceTree = SOURCE_ROOT; };
+		30111E446A574AB890A40B41 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/IntMatrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IntMatrix.cpp; path = src/zxing/qrcode/encoder/IntMatrix.cpp; sourceTree = SOURCE_ROOT; };
+		32BDB6B8068240F3BF8A1345 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/PerspectiveTransform.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PerspectiveTransform.cpp; path = src/zxing/common/PerspectiveTransform.cpp; sourceTree = SOURCE_ROOT; };
+		3568C3BE1C5E453BA1FC96B8 /* Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Demo; sourceTree = BUILT_PRODUCTS_DIR; };
+		35740C52428F469591F805F5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/DecodeHints.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DecodeHints.cpp; path = src/zxing/DecodeHints.cpp; sourceTree = SOURCE_ROOT; };
+		36DAFF7D5AE54B7FA307FC8C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = demos/cmd/main.cpp; sourceTree = SOURCE_ROOT; };
+		37BC71376A5F4F8CACE20DCC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/FastWindowBinarizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FastWindowBinarizer.cpp; path = src/zxing/common/FastWindowBinarizer.cpp; sourceTree = SOURCE_ROOT; };
+		3AF347DACE5E40CAB9BB6CEC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/AlignmentPattern.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AlignmentPattern.cpp; path = src/zxing/qrcode/detector/AlignmentPattern.cpp; sourceTree = SOURCE_ROOT; };
+		3CAF26EFCA7241F7A7D121FC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/IllegalArgumentException.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IllegalArgumentException.cpp; path = src/zxing/common/IllegalArgumentException.cpp; sourceTree = SOURCE_ROOT; };
+		41230932CD69496AB1624A20 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/MultiFormatReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MultiFormatReader.cpp; path = src/zxing/MultiFormatReader.cpp; sourceTree = SOURCE_ROOT; };
+		426A5579F347443A82B1F13E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BitArray.cpp; path = src/zxing/common/BitArray.cpp; sourceTree = SOURCE_ROOT; };
+		4391222269B94BD885F39AAE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GreyscaleRotatedLuminanceSource.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GreyscaleRotatedLuminanceSource.cpp; path = src/zxing/common/GreyscaleRotatedLuminanceSource.cpp; sourceTree = SOURCE_ROOT; };
+		44262F72F7FE42C1943C4898 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArrayIO.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BitArrayIO.cpp; path = src/zxing/common/BitArrayIO.cpp; sourceTree = SOURCE_ROOT; };
+		4489CE4C4BAB47FC8B425B8E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPointCallback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ResultPointCallback.cpp; path = src/zxing/ResultPointCallback.cpp; sourceTree = SOURCE_ROOT; };
+		44D53EB0EA7544E29A63E36E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/MonochromeRectangleDetector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MonochromeRectangleDetector.cpp; path = src/zxing/common/detector/MonochromeRectangleDetector.cpp; sourceTree = SOURCE_ROOT; };
+		45FCEA82FD8E43838B5FD3F9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/CodaBarWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CodaBarWriter.cpp; path = src/zxing/oned/CodaBarWriter.cpp; sourceTree = SOURCE_ROOT; };
+		4767CA2F56C447E582E7FC61 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Reader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Code39Reader.cpp; path = src/zxing/oned/Code39Reader.cpp; sourceTree = SOURCE_ROOT; };
+		48225531D9DF4FD6BDEE0FD8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxdecode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dmtxdecode.cpp; path = src/zxing/datamatrix/libdmtx/dmtxdecode.cpp; sourceTree = SOURCE_ROOT; };
+		490C2FD34DBF40FF98D4D1D7 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonException.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ReedSolomonException.cpp; path = src/zxing/common/reedsolomon/ReedSolomonException.cpp; sourceTree = SOURCE_ROOT; };
+		4A2AED231710434CB6B4F491 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxplacemod.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dmtxplacemod.cpp; path = src/zxing/datamatrix/libdmtx/dmtxplacemod.cpp; sourceTree = SOURCE_ROOT; };
+		4DC414FFD82B4C8EBFB72A1B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Writer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Code39Writer.cpp; path = src/zxing/oned/Code39Writer.cpp; sourceTree = SOURCE_ROOT; };
+		4F907832C9244BB9ABD08E8B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/FormatInformation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FormatInformation.cpp; path = src/zxing/qrcode/FormatInformation.cpp; sourceTree = SOURCE_ROOT; };
+		575DC734B5F64FB48745DF57 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BitMatrixParser.cpp; path = src/zxing/datamatrix/decoder/BitMatrixParser.cpp; sourceTree = SOURCE_ROOT; };
+		57D1D92719A1429BA8BAB70C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/qbar_detector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = qbar_detector.cpp; path = src/detector/qbar_detector.cpp; sourceTree = SOURCE_ROOT; };
+		59392605AD95496B8DA32F84 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPatternInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FinderPatternInfo.cpp; path = src/zxing/qrcode/detector/FinderPatternInfo.cpp; sourceTree = SOURCE_ROOT; };
+		5B26C8419785428C94D147AE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BitMatrixParser.cpp; path = src/zxing/pdf417/decoder/BitMatrixParser.cpp; sourceTree = SOURCE_ROOT; };
+		60E6824B679344E187C01005 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigUnsigned.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BigUnsigned.cc; path = src/bigint/BigUnsigned.cc; sourceTree = SOURCE_ROOT; };
+		6403BBC77FD64CD5A3898F48 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BitMatrixParser.cpp; path = src/zxing/qrcode/decoder/BitMatrixParser.cpp; sourceTree = SOURCE_ROOT; };
+		64D5BF8961414A2DA890399E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ImageCut.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImageCut.cpp; path = src/zxing/common/ImageCut.cpp; sourceTree = SOURCE_ROOT; };
+		65EEFD1BE920470BA897A91C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/FormatException.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FormatException.cpp; path = src/zxing/FormatException.cpp; sourceTree = SOURCE_ROOT; };
+		687A56C560CA418BB906B1EF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxvector2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dmtxvector2.cpp; path = src/zxing/datamatrix/libdmtx/dmtxvector2.cpp; sourceTree = SOURCE_ROOT; };
+		6A53A0FB75F549EB9D97B607 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxmatrix3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dmtxmatrix3.cpp; path = src/zxing/datamatrix/libdmtx/dmtxmatrix3.cpp; sourceTree = SOURCE_ROOT; };
+		6AB0E952A862481CAA8675DB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6B352CE9CCD94AC895B00D01 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/CornerPoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CornerPoint.cpp; path = src/zxing/datamatrix/detector/CornerPoint.cpp; sourceTree = SOURCE_ROOT; };
+		6C44183D114F4CDF94D79BDF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/AlignmentPatternFinder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AlignmentPatternFinder.cpp; path = src/zxing/qrcode/detector/AlignmentPatternFinder.cpp; sourceTree = SOURCE_ROOT; };
+		6CE1841F19F64EAD9927A9B5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Version.cpp; path = src/zxing/datamatrix/Version.cpp; sourceTree = SOURCE_ROOT; };
+		6E7A13F228D146E2AD831885 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DataBlock.cpp; path = src/zxing/datamatrix/decoder/DataBlock.cpp; sourceTree = SOURCE_ROOT; };
+		6EBA08BA3D1046A3A6699E4C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxreedsol.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dmtxreedsol.cpp; path = src/zxing/datamatrix/libdmtx/dmtxreedsol.cpp; sourceTree = SOURCE_ROOT; };
+		716A0CE288A646B2BAA6F2A2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/ErrorCorrectionLevel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ErrorCorrectionLevel.cpp; path = src/zxing/qrcode/ErrorCorrectionLevel.cpp; sourceTree = SOURCE_ROOT; };
+		718959BA60B84726B3CDB933 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tscan_string.cpp; path = src/tscan/comm/tscan_string.cpp; sourceTree = SOURCE_ROOT; };
+		7226B9F48ADC471AAC6FE46B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxbytelist.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dmtxbytelist.cpp; path = src/zxing/datamatrix/libdmtx/dmtxbytelist.cpp; sourceTree = SOURCE_ROOT; };
+		73A2AFAB1429465BA9EEF9BE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ResultPoint.cpp; path = src/zxing/ResultPoint.cpp; sourceTree = SOURCE_ROOT; };
+		75565E969877445383384A46 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Compress.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Compress.cpp; path = src/zxing/common/Compress.cpp; sourceTree = SOURCE_ROOT; };
+		75835DB3F3BE4E0A9FC1AAAE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN13Reader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EAN13Reader.cpp; path = src/zxing/oned/EAN13Reader.cpp; sourceTree = SOURCE_ROOT; };
+		78F6DD7E883F437C95101229 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Detector.cpp; path = src/zxing/pdf417/detector/Detector.cpp; sourceTree = SOURCE_ROOT; };
+		79609076D465445096A886AA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/DataMatrixReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DataMatrixReader.cpp; path = src/zxing/datamatrix/DataMatrixReader.cpp; sourceTree = SOURCE_ROOT; };
+		7B0B5C03E67F40D4A49C3178 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Mode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Mode.cpp; path = src/zxing/qrcode/decoder/Mode.cpp; sourceTree = SOURCE_ROOT; };
+		7CBCF0A55DE04C4AB6A77D95 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarInfoFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = QBarInfoFilter.cpp; path = src/QBarInfoFilter.cpp; sourceTree = SOURCE_ROOT; };
+		7E3BF632BB8A4F82BDA0605C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = demos/cmd/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7F2CF5CD042E49C18AD58DFF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DetectorResult.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetectorResult.cpp; path = src/zxing/common/DetectorResult.cpp; sourceTree = SOURCE_ROOT; };
+		7F9B73A2DACC40AFAFE26545 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/INIReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = INIReader.cpp; path = src/zxing/common/util/INIReader.cpp; sourceTree = SOURCE_ROOT; };
+		81A0ACDC2168400F9CEC8903 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/ReedSolomonEncoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ReedSolomonEncoder.cpp; path = src/zxing/qrcode/encoder/ReedSolomonEncoder.cpp; sourceTree = SOURCE_ROOT; };
+		830A2179F83141699F01960F /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code93Reader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Code93Reader.cpp; path = src/zxing/oned/Code93Reader.cpp; sourceTree = SOURCE_ROOT; };
+		846679942A0942569A056784 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ReedSolomonDecoder.cpp; path = src/zxing/common/reedsolomon/ReedSolomonDecoder.cpp; sourceTree = SOURCE_ROOT; };
+		86722A916E074E569F339D23 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tools/debug_log.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = debug_log.cpp; path = src/tscan/comm/tools/debug_log.cpp; sourceTree = SOURCE_ROOT; };
+		875562A6C53A4028A52E0CE0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/UnicomBlock.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UnicomBlock.cpp; path = src/zxing/common/UnicomBlock.cpp; sourceTree = SOURCE_ROOT; };
+		8B2267C2CC2646F2B39F7FDD /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/MultiFormatOneDReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MultiFormatOneDReader.cpp; path = src/zxing/oned/MultiFormatOneDReader.cpp; sourceTree = SOURCE_ROOT; };
+		8B30412131EC4A268B7DB85A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UPCEReader.cpp; path = src/zxing/oned/UPCEReader.cpp; sourceTree = SOURCE_ROOT; };
+		8CA0692C8CAF48ED9F37643B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/PatternResult.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PatternResult.cpp; path = src/zxing/qrcode/detector/PatternResult.cpp; sourceTree = SOURCE_ROOT; };
+		91ED7EB059E247ABACCBD625 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN13Writer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EAN13Writer.cpp; path = src/zxing/oned/EAN13Writer.cpp; sourceTree = SOURCE_ROOT; };
+		92D18C76E2844C939EF36824 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Detector.cpp; path = src/zxing/qrcode/detector/Detector.cpp; sourceTree = SOURCE_ROOT; };
+		93373C37A77649F49F961DC4 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarDecoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = QBarDecoder.cpp; path = src/QBarDecoder.cpp; sourceTree = SOURCE_ROOT; };
+		9409363DA1D646BCBD22018F /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Decoder.cpp; path = src/zxing/qrcode/decoder/Decoder.cpp; sourceTree = SOURCE_ROOT; };
+		965254FF192D43F9851F700B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/HybridBinarizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HybridBinarizer.cpp; path = src/zxing/common/HybridBinarizer.cpp; sourceTree = SOURCE_ROOT; };
+		9804DDB959BA4B0CAFEFAEC0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ErrorHandler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ErrorHandler.cpp; path = src/zxing/ErrorHandler.cpp; sourceTree = SOURCE_ROOT; };
+		987F49A26464474890E9934D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/KMeans.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = KMeans.cpp; path = src/zxing/common/KMeans.cpp; sourceTree = SOURCE_ROOT; };
+		9D5487DCBEB94DB7824988DA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/CharacterSetECI.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CharacterSetECI.cpp; path = src/zxing/common/CharacterSetECI.cpp; sourceTree = SOURCE_ROOT; };
+		9F797DEF25F74A5E911A416C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarSource.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = QBarSource.cpp; path = src/QBarSource.cpp; sourceTree = SOURCE_ROOT; };
+		A08E0721E6814403B271A273 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Writer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EAN8Writer.cpp; path = src/zxing/oned/EAN8Writer.cpp; sourceTree = SOURCE_ROOT; };
+		A34B8326A4BA4775B2097509 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = result.cpp; path = src/tscan/result.cpp; sourceTree = SOURCE_ROOT; };
+		A5D3C2388BC7456794C46CD5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code25Reader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Code25Reader.cpp; path = src/zxing/oned/Code25Reader.cpp; sourceTree = SOURCE_ROOT; };
+		A6972582B24B4CE6A1D49364 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarLib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = QBarLib.cpp; path = src/QBarLib.cpp; sourceTree = SOURCE_ROOT; };
+		A72EF199336647AF8D09E10A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/DetectorException.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetectorException.cpp; path = src/zxing/datamatrix/detector/DetectorException.cpp; sourceTree = SOURCE_ROOT; };
+		A87881E016574DC9B1E5B435 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEANReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UPCEANReader.cpp; path = src/zxing/oned/UPCEANReader.cpp; sourceTree = SOURCE_ROOT; };
+		A956D61E1E0C479FAB09686D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEANWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UPCEANWriter.cpp; path = src/zxing/oned/UPCEANWriter.cpp; sourceTree = SOURCE_ROOT; };
+		AB87CF645362458298EBEB34 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Decoder.cpp; path = src/zxing/datamatrix/decoder/Decoder.cpp; sourceTree = SOURCE_ROOT; };
+		ADBB7E9FE6D244B59AB7466D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code128Reader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Code128Reader.cpp; path = src/zxing/oned/Code128Reader.cpp; sourceTree = SOURCE_ROOT; };
+		B20D38F8817B49F9BDFC6A36 /* QBar */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libQBar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2A8143402C1428EAA0EA065 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/ITFReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ITFReader.cpp; path = src/zxing/oned/ITFReader.cpp; sourceTree = SOURCE_ROOT; };
+		B303FDBB159043B2933F3B4D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/BMP.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BMP.cpp; path = src/zxing/common/util/BMP.cpp; sourceTree = SOURCE_ROOT; };
+		B7816AA8691D4F99AB3765EF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/ITFWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ITFWriter.cpp; path = src/zxing/oned/ITFWriter.cpp; sourceTree = SOURCE_ROOT; };
+		BA774650B0E9443E809B23C5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GridSampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GridSampler.cpp; path = src/zxing/common/GridSampler.cpp; sourceTree = SOURCE_ROOT; };
+		BD5FB23EB4294E2082FBCE53 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/QRCodeWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = QRCodeWriter.cpp; path = src/zxing/qrcode/QRCodeWriter.cpp; sourceTree = SOURCE_ROOT; };
+		C1B2EE6595F24A0AB38B22B9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/BinarizerMgr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BinarizerMgr.cpp; path = src/BinarizerMgr.cpp; sourceTree = SOURCE_ROOT; };
+		C2D28CE4E2FF48BABC1B5310 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DecodedBitStreamParser.cpp; path = src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp; sourceTree = SOURCE_ROOT; };
+		C356B28E95334BC799867BD2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GenericGF.cpp; path = src/zxing/common/reedsolomon/GenericGF.cpp; sourceTree = SOURCE_ROOT; };
+		C67309373E114F3CB1B69E87 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/WhiteRectangleDetector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WhiteRectangleDetector.cpp; path = src/zxing/common/detector/WhiteRectangleDetector.cpp; sourceTree = SOURCE_ROOT; };
+		CA0A56C25484476399EB36A9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Exception.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Exception.cpp; path = src/zxing/Exception.cpp; sourceTree = SOURCE_ROOT; };
+		CA87FFA099A84582A6B40855 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BinaryBitmap.cpp; path = src/zxing/BinaryBitmap.cpp; sourceTree = SOURCE_ROOT; };
+		CCB150884D514F7895885ADC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtximage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dmtximage.cpp; path = src/zxing/datamatrix/libdmtx/dmtximage.cpp; sourceTree = SOURCE_ROOT; };
+		CDB79413C3844F508A832B8B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DecodedBitStreamParser.cpp; path = src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp; sourceTree = SOURCE_ROOT; };
+		D467CE3C085E4A33B6B76218 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ChecksumException.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ChecksumException.cpp; path = src/zxing/ChecksumException.cpp; sourceTree = SOURCE_ROOT; };
+		D51D447D5BF640E68ED15930 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataMask.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DataMask.cpp; path = src/zxing/qrcode/decoder/DataMask.cpp; sourceTree = SOURCE_ROOT; };
+		D5522F989A8A4FD488F13C57 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultIO.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ResultIO.cpp; path = src/zxing/ResultIO.cpp; sourceTree = SOURCE_ROOT; };
+		D58301ACF4F1464EAE1D3240 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigIntegerUtils.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BigIntegerUtils.cc; path = src/bigint/BigIntegerUtils.cc; sourceTree = SOURCE_ROOT; };
+		D7577A909E9344ECA4FC68FD /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UPCAWriter.cpp; path = src/zxing/oned/UPCAWriter.cpp; sourceTree = SOURCE_ROOT; };
+		D76C7365E6E34E6781C95C4A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GlobalHistogramBinarizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GlobalHistogramBinarizer.cpp; path = src/zxing/common/GlobalHistogramBinarizer.cpp; sourceTree = SOURCE_ROOT; };
+		D7BE9024E59B4A3B87E88644 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/SimpleAdaptiveBinarizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SimpleAdaptiveBinarizer.cpp; path = src/zxing/common/SimpleAdaptiveBinarizer.cpp; sourceTree = SOURCE_ROOT; };
+		D80D72C1B7514EBF94EA9EA0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BarcodeFormat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BarcodeFormat.cpp; path = src/zxing/BarcodeFormat.cpp; sourceTree = SOURCE_ROOT; };
+		DDC6DF9C9A7B465BA6817309 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Binarizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Binarizer.cpp; path = src/zxing/Binarizer.cpp; sourceTree = SOURCE_ROOT; };
+		DF26580F1906496EB20AEC4E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ModulusPoly.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ModulusPoly.cpp; path = src/zxing/pdf417/decoder/ec/ModulusPoly.cpp; sourceTree = SOURCE_ROOT; };
+		DFF1DE3D152144A8BD4E85B1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DecodedBitStreamParser.cpp; path = src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp; sourceTree = SOURCE_ROOT; };
+		E0AED59FB95843F7B8916599 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDimensionalCodeWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OneDimensionalCodeWriter.cpp; path = src/zxing/oned/OneDimensionalCodeWriter.cpp; sourceTree = SOURCE_ROOT; };
+		E51F8EAFB624416A8BE0A584 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PDF417Reader.cpp; path = src/zxing/pdf417/PDF417Reader.cpp; sourceTree = SOURCE_ROOT; };
+		E7FA4933C2A248038E7104A8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UPCAReader.cpp; path = src/zxing/oned/UPCAReader.cpp; sourceTree = SOURCE_ROOT; };
+		E8BE40B586AD45EC88F80F34 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code128Writer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Code128Writer.cpp; path = src/zxing/oned/Code128Writer.cpp; sourceTree = SOURCE_ROOT; };
+		EA7C64C7A91B401B81772330 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/LuminanceSource.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LuminanceSource.cpp; path = src/zxing/LuminanceSource.cpp; sourceTree = SOURCE_ROOT; };
+		EB9AA2C9524349A49E9165B7 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ByteMatrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ByteMatrix.cpp; path = src/zxing/common/ByteMatrix.cpp; sourceTree = SOURCE_ROOT; };
+		EC085F78B9424590A546BB1C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Decoder.cpp; path = src/zxing/pdf417/decoder/Decoder.cpp; sourceTree = SOURCE_ROOT; };
+		EC6C460283D1457FAA0DEB47 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/QRCodeReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = QRCodeReader.cpp; path = src/zxing/qrcode/QRCodeReader.cpp; sourceTree = SOURCE_ROOT; };
+		F3A924891F9C433DBE2CFA5A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/StringUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StringUtils.cpp; path = src/zxing/common/StringUtils.cpp; sourceTree = SOURCE_ROOT; };
+		F3FC106E7C094915B8BA2305 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigInteger.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BigInteger.cc; path = src/bigint/BigInteger.cc; sourceTree = SOURCE_ROOT; };
+		F793A971275844338FCD2874 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Detector.cpp; path = src/zxing/datamatrix/detector/Detector.cpp; sourceTree = SOURCE_ROOT; };
+		FEA7D3AB863E4D21A7649408 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BitMatrix.cpp; path = src/zxing/common/BitMatrix.cpp; sourceTree = SOURCE_ROOT; };
+		FFEA34D49CC744A39715EA4B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGFPoly.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GenericGFPoly.cpp; path = src/zxing/common/reedsolomon/GenericGFPoly.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50317F1128A5456B90F66230 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E512257BEF724F37BED9ED40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10A9F376DACB4BCE8342056D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3E10F0C4E6784D069CFCAC55 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1B2EE6595F24A0AB38B22B9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/BinarizerMgr.cpp */,
+				93373C37A77649F49F961DC4 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarDecoder.cpp */,
+				2B1CF3D5CC3C4D57B332824C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarEncoder.cpp */,
+				7CBCF0A55DE04C4AB6A77D95 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarInfoFilter.cpp */,
+				A6972582B24B4CE6A1D49364 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarLib.cpp */,
+				9F797DEF25F74A5E911A416C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarSource.cpp */,
+				F3FC106E7C094915B8BA2305 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigInteger.cc */,
+				181BF102EBDA4C26BA3C85FB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigIntegerAlgorithms.cc */,
+				D58301ACF4F1464EAE1D3240 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigIntegerUtils.cc */,
+				60E6824B679344E187C01005 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigUnsigned.cc */,
+				13BA7167BB18441BB9B460B2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigUnsignedInABase.cc */,
+				1C5B75CC2F024A409C4C8968 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/align.cpp */,
+				57D1D92719A1429BA8BAB70C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/qbar_detector.cpp */,
+				27E815E3A80C47A18B8162F9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/sr_scale/super_scale.cpp */,
+				86722A916E074E569F339D23 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tools/debug_log.cpp */,
+				718959BA60B84726B3CDB933 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_string.cpp */,
+				21306324392546EAAAC3461A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_time.cpp */,
+				110D9C8CA17641B9874A07C6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.cpp */,
+				A34B8326A4BA4775B2097509 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.cpp */,
+				D80D72C1B7514EBF94EA9EA0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BarcodeFormat.cpp */,
+				DDC6DF9C9A7B465BA6817309 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Binarizer.cpp */,
+				CA87FFA099A84582A6B40855 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.cpp */,
+				D467CE3C085E4A33B6B76218 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ChecksumException.cpp */,
+				35740C52428F469591F805F5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/DecodeHints.cpp */,
+				9804DDB959BA4B0CAFEFAEC0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ErrorHandler.cpp */,
+				CA0A56C25484476399EB36A9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Exception.cpp */,
+				65EEFD1BE920470BA897A91C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/FormatException.cpp */,
+				025C8D375774480891BCF2DA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/InvertedLuminanceSource.cpp */,
+				EA7C64C7A91B401B81772330 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/LuminanceSource.cpp */,
+				41230932CD69496AB1624A20 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/MultiFormatReader.cpp */,
+				1EB6201257594A169B3D6575 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.cpp */,
+				2B5FB2B67A114C5D849FDAF9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.cpp */,
+				D5522F989A8A4FD488F13C57 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultIO.cpp */,
+				73A2AFAB1429465BA9EEF9BE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPoint.cpp */,
+				4489CE4C4BAB47FC8B425B8E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPointCallback.cpp */,
+				426A5579F347443A82B1F13E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.cpp */,
+				44262F72F7FE42C1943C4898 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArrayIO.cpp */,
+				FEA7D3AB863E4D21A7649408 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.cpp */,
+				2437AE1DA13F4C2297BD41BB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitSource.cpp */,
+				EB9AA2C9524349A49E9165B7 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ByteMatrix.cpp */,
+				9D5487DCBEB94DB7824988DA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/CharacterSetECI.cpp */,
+				75565E969877445383384A46 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Compress.cpp */,
+				22456B216D2C436DAB0161B2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.cpp */,
+				7F2CF5CD042E49C18AD58DFF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DetectorResult.cpp */,
+				37BC71376A5F4F8CACE20DCC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/FastWindowBinarizer.cpp */,
+				D76C7365E6E34E6781C95C4A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GlobalHistogramBinarizer.cpp */,
+				090044DC4F0C40A592192257 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GreyscaleLuminanceSource.cpp */,
+				4391222269B94BD885F39AAE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GreyscaleRotatedLuminanceSource.cpp */,
+				BA774650B0E9443E809B23C5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GridSampler.cpp */,
+				965254FF192D43F9851F700B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/HybridBinarizer.cpp */,
+				3CAF26EFCA7241F7A7D121FC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/IllegalArgumentException.cpp */,
+				64D5BF8961414A2DA890399E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ImageCut.cpp */,
+				987F49A26464474890E9934D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/KMeans.cpp */,
+				28114A16C8374B879AB541FC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/NewGridSampler.cpp */,
+				32BDB6B8068240F3BF8A1345 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/PerspectiveTransform.cpp */,
+				D7BE9024E59B4A3B87E88644 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/SimpleAdaptiveBinarizer.cpp */,
+				10C5743F9B904AA8B05A0BDE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Str.cpp */,
+				F3A924891F9C433DBE2CFA5A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/StringUtils.cpp */,
+				875562A6C53A4028A52E0CE0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/UnicomBlock.cpp */,
+				44D53EB0EA7544E29A63E36E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/MonochromeRectangleDetector.cpp */,
+				C67309373E114F3CB1B69E87 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/WhiteRectangleDetector.cpp */,
+				C356B28E95334BC799867BD2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGF.cpp */,
+				FFEA34D49CC744A39715EA4B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGFPoly.cpp */,
+				846679942A0942569A056784 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.cpp */,
+				490C2FD34DBF40FF98D4D1D7 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonException.cpp */,
+				B303FDBB159043B2933F3B4D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/BMP.cpp */,
+				7F9B73A2DACC40AFAFE26545 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/INIReader.cpp */,
+				2C9731DF523849699694708D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/ini.c */,
+				79609076D465445096A886AA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/DataMatrixReader.cpp */,
+				6CE1841F19F64EAD9927A9B5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.cpp */,
+				575DC734B5F64FB48745DF57 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp */,
+				6E7A13F228D146E2AD831885 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp */,
+				CDB79413C3844F508A832B8B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp */,
+				AB87CF645362458298EBEB34 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp */,
+				6B352CE9CCD94AC895B00D01 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/CornerPoint.cpp */,
+				F793A971275844338FCD2874 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp */,
+				A72EF199336647AF8D09E10A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/DetectorException.cpp */,
+				7226B9F48ADC471AAC6FE46B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxbytelist.cpp */,
+				48225531D9DF4FD6BDEE0FD8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxdecode.cpp */,
+				CCB150884D514F7895885ADC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtximage.cpp */,
+				6A53A0FB75F549EB9D97B607 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxmatrix3.cpp */,
+				17986D18A5084B49A1FDE9E5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxmessage.cpp */,
+				4A2AED231710434CB6B4F491 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxplacemod.cpp */,
+				6EBA08BA3D1046A3A6699E4C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxreedsol.cpp */,
+				0BFA3163999548AD88D41E4E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxsymbol.cpp */,
+				687A56C560CA418BB906B1EF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxvector2.cpp */,
+				1C1C8693E69D4FB7A483FB33 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/CodaBarReader.cpp */,
+				45FCEA82FD8E43838B5FD3F9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/CodaBarWriter.cpp */,
+				ADBB7E9FE6D244B59AB7466D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code128Reader.cpp */,
+				E8BE40B586AD45EC88F80F34 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code128Writer.cpp */,
+				A5D3C2388BC7456794C46CD5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code25Reader.cpp */,
+				4767CA2F56C447E582E7FC61 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Reader.cpp */,
+				4DC414FFD82B4C8EBFB72A1B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Writer.cpp */,
+				830A2179F83141699F01960F /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code93Reader.cpp */,
+				75835DB3F3BE4E0A9FC1AAAE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN13Reader.cpp */,
+				91ED7EB059E247ABACCBD625 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN13Writer.cpp */,
+				2BF207FB19D04A279C59C91A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Reader.cpp */,
+				A08E0721E6814403B271A273 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Writer.cpp */,
+				B2A8143402C1428EAA0EA065 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/ITFReader.cpp */,
+				B7816AA8691D4F99AB3765EF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/ITFWriter.cpp */,
+				8B2267C2CC2646F2B39F7FDD /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/MultiFormatOneDReader.cpp */,
+				010838A3123C440D90C5789E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/MultiFormatUPCEANReader.cpp */,
+				2DB04F1F6760464794D111F9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDReader.cpp */,
+				1737D639DF7D4355BA201FE5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDResultPoint.cpp */,
+				E0AED59FB95843F7B8916599 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDimensionalCodeWriter.cpp */,
+				E7FA4933C2A248038E7104A8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAReader.cpp */,
+				D7577A909E9344ECA4FC68FD /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAWriter.cpp */,
+				A87881E016574DC9B1E5B435 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEANReader.cpp */,
+				A956D61E1E0C479FAB09686D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEANWriter.cpp */,
+				8B30412131EC4A268B7DB85A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEReader.cpp */,
+				E51F8EAFB624416A8BE0A584 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.cpp */,
+				5B26C8419785428C94D147AE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp */,
+				C2D28CE4E2FF48BABC1B5310 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp */,
+				EC085F78B9424590A546BB1C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp */,
+				13A8158DCE4C4DD98037FEA3 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ErrorCorrection.cpp */,
+				2E8E434251794C70A6B38804 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ModulusGF.cpp */,
+				DF26580F1906496EB20AEC4E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ModulusPoly.cpp */,
+				78F6DD7E883F437C95101229 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp */,
+				0DFE4605F93B4F49AE5790D9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/LinesSampler.cpp */,
+				716A0CE288A646B2BAA6F2A2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/ErrorCorrectionLevel.cpp */,
+				4F907832C9244BB9ABD08E8B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/FormatInformation.cpp */,
+				EC6C460283D1457FAA0DEB47 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/QRCodeReader.cpp */,
+				BD5FB23EB4294E2082FBCE53 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/QRCodeWriter.cpp */,
+				1CA0FB0E119E49D8AE024C56 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.cpp */,
+				6403BBC77FD64CD5A3898F48 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp */,
+				155702C3FA5746BCB2CB223A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp */,
+				D51D447D5BF640E68ED15930 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataMask.cpp */,
+				DFF1DE3D152144A8BD4E85B1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp */,
+				9409363DA1D646BCBD22018F /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp */,
+				7B0B5C03E67F40D4A49C3178 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Mode.cpp */,
+				3AF347DACE5E40CAB9BB6CEC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/AlignmentPattern.cpp */,
+				6C44183D114F4CDF94D79BDF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/AlignmentPatternFinder.cpp */,
+				92D18C76E2844C939EF36824 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp */,
+				024067A7B45140D8B3375877 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPattern.cpp */,
+				2CF7BB468589454EAC0EF638 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPatternFinder.cpp */,
+				59392605AD95496B8DA32F84 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPatternInfo.cpp */,
+				8CA0692C8CAF48ED9F37643B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/PatternResult.cpp */,
+				0B75EA5588C742BBA97E7CE2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/BitArrayWriter.cpp */,
+				30111E446A574AB890A40B41 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/IntMatrix.cpp */,
+				81A0ACDC2168400F9CEC8903 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/ReedSolomonEncoder.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3F4F67B167ED4E69A6D75B6D = {
+			isa = PBXGroup;
+			children = (
+				503A2E1B44C4463BAD702646 /* ALL_BUILD */,
+				8EA4A948F9D44F6DA57BA215 /* QBar */,
+				7ED4EFB9B97347EDA2EEF299 /* Demo */,
+				8113032040A941BCADFA7DEC /* Products */,
+				89CE09BF7BE04A5EBDB21BCB /* Frameworks */,
+				E5CBB42DF9E347FB892AC6B4 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		503A2E1B44C4463BAD702646 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				10A9F376DACB4BCE8342056D /* CMake Rules */,
+				209B5050FE7E4058B541C84E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		7ED4EFB9B97347EDA2EEF299 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F0DF6DCB8BEB446CA51220CD /* Source Files */,
+				7E3BF632BB8A4F82BDA0605C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/CMakeLists.txt */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		8113032040A941BCADFA7DEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3568C3BE1C5E453BA1FC96B8 /* Demo */,
+				B20D38F8817B49F9BDFC6A36 /* QBar */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89CE09BF7BE04A5EBDB21BCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EA4A948F9D44F6DA57BA215 /* QBar */ = {
+			isa = PBXGroup;
+			children = (
+				3E10F0C4E6784D069CFCAC55 /* Source Files */,
+				6AB0E952A862481CAA8675DB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/CMakeLists.txt */,
+			);
+			name = QBar;
+			sourceTree = "<group>";
+		};
+		E5CBB42DF9E347FB892AC6B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F0DF6DCB8BEB446CA51220CD /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				36DAFF7D5AE54B7FA307FC8C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F1A908A7B48413DBA9CF68F /* QBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB13C752A0E3467FB088E0E8 /* Build configuration list for PBXNativeTarget "QBar" */;
+			buildPhases = (
+				C50589E73B2C4088AC39C3BB /* Sources */,
+				50317F1128A5456B90F66230 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D7C817CC9E841538BF89565 /* PBXTargetDependency */,
+			);
+			name = QBar;
+			productName = QBar;
+			productReference = B20D38F8817B49F9BDFC6A36 /* QBar */;
+			productType = "com.apple.product-type.library.static";
+		};
+		93946AAB01004344AA5340F4 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D096FC24CC5E46919BC7ABAA /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				89EC799FA7AE4677A1C39633 /* Sources */,
+				E512257BEF724F37BED9ED40 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7870140CF5CF403990D770F8 /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 3568C3BE1C5E453BA1FC96B8 /* Demo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6991CEFE19EB42EB81F1D8C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+			};
+			buildConfigurationList = F4A8830CCC754966B1383DE7 /* Build configuration list for PBXProject "QBar" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				BCACF7A15E45466587A4D41D /* Debug */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 3F4F67B167ED4E69A6D75B6D;
+			projectDirPath = /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar;
+			projectRoot = "";
+			targets = (
+				D500A07EEFC3432EAACB48D8 /* ALL_BUILD */,
+				93946AAB01004344AA5340F4 /* Demo */,
+				5F1A908A7B48413DBA9CF68F /* QBar */,
+				F2BB07BA0AA14D25AECB626A /* ZERO_CHECK */,
+				17462FA18A414F349F78FC1A /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C9AF764BA7127917CF162AE /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos
+  make -f /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos
+  /opt/homebrew/Cellar/cmake/3.29.6/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F96AC24295BCC71A104A2A8E /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89EC799FA7AE4677A1C39633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B7A2CCB5CB44BEAC519756 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/cmd/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C50589E73B2C4088AC39C3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09D782869E648E7A647FB5B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/BinarizerMgr.cpp */,
+				092DFB4A1B8948D4AEFD25E8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarDecoder.cpp */,
+				C161A92EE579442083B2FA50 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarEncoder.cpp */,
+				4A74D992FF4C432AB2C9C849 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarInfoFilter.cpp */,
+				738210FFD0BE455C9E8BDF69 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarLib.cpp */,
+				9177C9B01AA6495F8EA95FEC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/QBarSource.cpp */,
+				D26981BB987C45149FF3F01D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigInteger.cc */,
+				D841913B2A3644BB80AFB747 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigIntegerAlgorithms.cc */,
+				761F08171EF14DBF9B113992 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigIntegerUtils.cc */,
+				54BBDB0CB57045A89161C43F /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigUnsigned.cc */,
+				E123EB0B38344AF1B57000D5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/bigint/BigUnsignedInABase.cc */,
+				808D2AF5D32144BDB79A1C9E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/align.cpp */,
+				E45F5F52C85E4DE19860414A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/detector/qbar_detector.cpp */,
+				8217CECEF6B94D169F68CEFB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/sr_scale/super_scale.cpp */,
+				40741291BD084F65960C8845 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tools/debug_log.cpp */,
+				E0E49EAC7E1B475FA983E669 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_string.cpp */,
+				E5745F8DAD5D4E1AA65DD899 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/comm/tscan_time.cpp */,
+				FD5494282EB74AB09281D4B5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/debug_info.cpp */,
+				045C2402F2394A499DE406CF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/tscan/result.cpp */,
+				F2694BA21B40417EB5704296 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BarcodeFormat.cpp */,
+				337FB9399F1144478A240C89 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Binarizer.cpp */,
+				DA7CCE3A2DD94B55B1EB9168 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/BinaryBitmap.cpp */,
+				F25D75ED5A4A4FE3A6ED0024 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ChecksumException.cpp */,
+				5AB898803BAF4721A70EDB78 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/DecodeHints.cpp */,
+				D904E2E6618A405BA8E23F3F /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ErrorHandler.cpp */,
+				1982E1550460460B9C770A3A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Exception.cpp */,
+				8646EC52DC7C41568874D21C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/FormatException.cpp */,
+				AEC44036F4274BB492CEFE3C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/InvertedLuminanceSource.cpp */,
+				F8B93C11509F4D348E54D9F7 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/LuminanceSource.cpp */,
+				5F38ACC6F22A4B069B2D33D1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/MultiFormatReader.cpp */,
+				26036D669A104CA3A41F1177 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Reader.cpp */,
+				90FB545C4D3646479D577E5E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/Result.cpp */,
+				7A47F4E880F14E8EBD63B7FE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultIO.cpp */,
+				74D3DD17F1884C75BFAEBA91 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPoint.cpp */,
+				8DC537FA9ED949FBA3AE24CB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/ResultPointCallback.cpp */,
+				487380E2E6274120ABD46E78 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArray.cpp */,
+				DF15F4780026444CBF42B132 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitArrayIO.cpp */,
+				A0201634CFB549869985D9AE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitMatrix.cpp */,
+				C420197E57DD434AB56A49D9 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/BitSource.cpp */,
+				199BC50ED35C4B07871C3745 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ByteMatrix.cpp */,
+				7E48A657A72742DCB5F34920 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/CharacterSetECI.cpp */,
+				FD61A942E6034D5B8166832C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Compress.cpp */,
+				34CFBBB7FDFA42E1AB486930 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DecoderResult.cpp */,
+				A415CD8FB7574C3F83B20EB8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/DetectorResult.cpp */,
+				6B39439F9CDF4D959425FF1A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/FastWindowBinarizer.cpp */,
+				93EF897903D24737A71CD206 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GlobalHistogramBinarizer.cpp */,
+				024D15B05B4942DE97207308 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GreyscaleLuminanceSource.cpp */,
+				94AE1E780F90449F9B868A97 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GreyscaleRotatedLuminanceSource.cpp */,
+				3AE0A68917814036827D9E48 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/GridSampler.cpp */,
+				FD419032EDE749B5996C86B6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/HybridBinarizer.cpp */,
+				CEC2186C507C45F9A11E0BA8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/IllegalArgumentException.cpp */,
+				43EE870CD1C34F068F53943A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/ImageCut.cpp */,
+				B2329FCA8E724CC286D7E7C8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/KMeans.cpp */,
+				A4983B40F0BC4F5EABF1B2F1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/NewGridSampler.cpp */,
+				A804F259B6E04FD0AAF7A85C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/PerspectiveTransform.cpp */,
+				82D398EAFFB941899D5EA10D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/SimpleAdaptiveBinarizer.cpp */,
+				2B2D4686B22A45F180550D22 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/Str.cpp */,
+				4CD24F5CFEF1427197A6417B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/StringUtils.cpp */,
+				6ED2D3086FD446E5A459F0F6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/UnicomBlock.cpp */,
+				6A931A8B50E540D98F37A367 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/MonochromeRectangleDetector.cpp */,
+				BAF773D71CB24180ABF24F08 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/detector/WhiteRectangleDetector.cpp */,
+				F352E46F445243A1A3A4EC96 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGF.cpp */,
+				30BB56793B234227A7D35D9D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/GenericGFPoly.cpp */,
+				2E06F280A4484016A67A96C0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonDecoder.cpp */,
+				0A86E4853FF04D6CB2BADBA0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/reedsolomon/ReedSolomonException.cpp */,
+				61A3EAEA964347B8BD467F32 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/BMP.cpp */,
+				7E4FBD8A2D38461E8CF24040 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/INIReader.cpp */,
+				7345FAE399EC4D29A590CD66 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/common/util/ini.c */,
+				89163A37C393468CA022A781 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/DataMatrixReader.cpp */,
+				9FC7B09E53E3467B9EE73C1A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/Version.cpp */,
+				B5F8B8BB63AF475FB22CD7D1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/BitMatrixParser.cpp */,
+				685238E7786D405383D53885 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DataBlock.cpp */,
+				FF9EE0A5C52040909ECA7407 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/DecodedBitStreamParser.cpp */,
+				22276C9ABA2E4BB692E4BDF1 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/decoder/Decoder.cpp */,
+				84E72942BAEC4D719750E174 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/CornerPoint.cpp */,
+				021E7A39F8B943F7B6E2FD8E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/Detector.cpp */,
+				56B4B21314594C8AA950E5FC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/detector/DetectorException.cpp */,
+				D6ECE129472046798119C997 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxbytelist.cpp */,
+				FC4C08D5A86D44AEB73E1CFD /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxdecode.cpp */,
+				C714E72C332B46498D45F2B4 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtximage.cpp */,
+				1CFDA3727DC54884AA00D0E0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxmatrix3.cpp */,
+				29837D66FD584051B180FAE5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxmessage.cpp */,
+				340B131AB37545928272B4B8 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxplacemod.cpp */,
+				BDAF18BC5C5E40AD9841693E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxreedsol.cpp */,
+				FCBCF631929D490BA62845C6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxsymbol.cpp */,
+				A62F5C838695498AA7D65F37 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/datamatrix/libdmtx/dmtxvector2.cpp */,
+				9C6E015EBD7C42A08EF80871 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/CodaBarReader.cpp */,
+				938519F13F4744CB8F0E2CAE /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/CodaBarWriter.cpp */,
+				3FC0F2CFBF0A46F4AC6A0380 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code128Reader.cpp */,
+				09A1FD57594E40EBA98F1A1D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code128Writer.cpp */,
+				50DA28BFE3BA49618C3BE49E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code25Reader.cpp */,
+				E869B8A85C034220A03802E7 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Reader.cpp */,
+				1B67CBEBEB5E455B99721627 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code39Writer.cpp */,
+				FE66FF1DB9084799BB7846E5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/Code93Reader.cpp */,
+				2104886C6227499394E86F36 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN13Reader.cpp */,
+				5DB6AE90DDBE47B79372D8E5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN13Writer.cpp */,
+				3DFCECFD14CA47CD9673943A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Reader.cpp */,
+				C6E2056AD14C453FB307694C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/EAN8Writer.cpp */,
+				7F427F11106D454786D2A3D5 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/ITFReader.cpp */,
+				9D67E149E2EF4F61975CCED0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/ITFWriter.cpp */,
+				BC10E8E51E454A0FA5104C7A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/MultiFormatOneDReader.cpp */,
+				780C1BEF706A43EAA191F44D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/MultiFormatUPCEANReader.cpp */,
+				6C9B512B7C9548FAA04D1329 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDReader.cpp */,
+				F9429C6808D04718A4AB145B /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDResultPoint.cpp */,
+				CBC26062CD35411EB24CA974 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/OneDimensionalCodeWriter.cpp */,
+				74437D4032C74C1CACC64E39 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAReader.cpp */,
+				18E85453674C4F818D301F97 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCAWriter.cpp */,
+				268EC52B59F246F382FC6ABA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEANReader.cpp */,
+				D835B75D118F458480E028B3 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEANWriter.cpp */,
+				FFDEA47207284E029BC231C2 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/oned/UPCEReader.cpp */,
+				2E762D8212AC4844B0882A0E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/PDF417Reader.cpp */,
+				888BBA21EAE746189930B8C6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/BitMatrixParser.cpp */,
+				3198ECC356A7404284E9176D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/DecodedBitStreamParser.cpp */,
+				F322DFC1E4A843F7A4A8F236 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/Decoder.cpp */,
+				EA94A8EADD6241288B85985A /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ErrorCorrection.cpp */,
+				027C5D91F61947A0B447CF78 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ModulusGF.cpp */,
+				A209FC787B014F9FAFA78F1D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/decoder/ec/ModulusPoly.cpp */,
+				ABA8DAF101EE4FEBB0EEE046 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/Detector.cpp */,
+				2AADBBC3C42D4D9983520A69 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/pdf417/detector/LinesSampler.cpp */,
+				49AC5AC4B08D4ABCA4BBB374 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/ErrorCorrectionLevel.cpp */,
+				DD6AD2C849A2420FAC9911FF /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/FormatInformation.cpp */,
+				D4D32469D9A24ED88D325270 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/QRCodeReader.cpp */,
+				2444E71539F1481E84AD5FFB /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/QRCodeWriter.cpp */,
+				13A8277923B540FF95728FEC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/Version.cpp */,
+				58F9460A85654DFAAB7F9F03 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/BitMatrixParser.cpp */,
+				5BC7A2C6C3774EC18CA4F6A0 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataBlock.cpp */,
+				54C0FF4E70BA492AB065A8C4 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DataMask.cpp */,
+				2F9E6C9040034EB780A177C6 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/DecodedBitStreamParser.cpp */,
+				9AB7B35E8BA04D3682947C45 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Decoder.cpp */,
+				BF49C642E68A47149C04CA40 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/decoder/Mode.cpp */,
+				AAE1B49AE8A14D5EB971360C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/AlignmentPattern.cpp */,
+				ED083055402F4128A83DB98C /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/AlignmentPatternFinder.cpp */,
+				C7F0CF9FDC044DCEBFA3BA3D /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/Detector.cpp */,
+				78A921BF6C474760A4BAB688 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPattern.cpp */,
+				00A168D31EF540F58D1E61FC /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPatternFinder.cpp */,
+				82A372F5B4A84DF69DE34868 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/FinderPatternInfo.cpp */,
+				1C3E2995CB6D47F98A51881E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/detector/PatternResult.cpp */,
+				93F37B7D335844C1A96F65F3 /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/BitArrayWriter.cpp */,
+				1C0FC474D3AC49199CB087CA /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/IntMatrix.cpp */,
+				DF261850EF1345A59D3C8D5E /* /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/zxing/qrcode/encoder/ReedSolomonEncoder.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2986EF264D784F25A65EAE7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F1A908A7B48413DBA9CF68F /* QBar */;
+			targetProxy = F764DBAEEAF0427B86963E5F /* PBXContainerItemProxy */;
+		};
+		3D350461F77A4321B6371F59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BB07BA0AA14D25AECB626A /* ZERO_CHECK */;
+			targetProxy = E21AC7D085104FD7A77607E7 /* PBXContainerItemProxy */;
+		};
+		5D7C817CC9E841538BF89565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BB07BA0AA14D25AECB626A /* ZERO_CHECK */;
+			targetProxy = D951F15A54B144EA9A5BBCEC /* PBXContainerItemProxy */;
+		};
+		7870140CF5CF403990D770F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F1A908A7B48413DBA9CF68F /* QBar */;
+			targetProxy = FCDFA74329B34C2B95DDA171 /* PBXContainerItemProxy */;
+		};
+		A4C5A443D0054BF48052331A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93946AAB01004344AA5340F4 /* Demo */;
+			targetProxy = 3E6AA8AAA79B4EB58E6D34CE /* PBXContainerItemProxy */;
+		};
+		AC79C3CD92EB49BD9E4B1D0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D500A07EEFC3432EAACB48D8 /* ALL_BUILD */;
+			targetProxy = 9491DA0AB5F64DE1B2CE594C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0318D186400B4FE6AE24452B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/src/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/../include,/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (" -fPIC -Wall         ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -fPIC -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long -x objective-c++        '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = QBar;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/caoshiwen/opencv/build/install/include/opencv4,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/QBar.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		033BA8887BC64C99BEE9398B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		21BEDD8CC7C7478485EA50C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/Demo/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src/../include,/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/Users/caoshiwen/opencv/build/install/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -fPIC -Wall -Wall -Wextra -Wno-unknown-pragmas -Wno-long-long -x objective-c++        '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/src/Debug/libQBar.a,"-framework Accelerate","-framework Metal","-framework MetalPerformanceShaders","-liconv","-lz",/Users/caoshiwen/opencv/build/install/lib/libopencv_gapi.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_highgui.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_ml.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_objdetect.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_photo.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_stitching.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_video.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_calib3d.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_dnn.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_features2d.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_flann.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_videoio.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_imgcodecs.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_imgproc.4.10.0.dylib,/Users/caoshiwen/opencv/build/install/lib/libopencv_core.4.10.0.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Demo;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/caoshiwen/opencv/build/install/include/opencv4,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build/Demo.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		33DF279C1F8A4F7C85138D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		90C2BC6AA4054C93AC574BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F7D073EB87B64B9589D5C0D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SYMROOT = /Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/build/macos/build;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B05532FD9E554300B98FA75F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033BA8887BC64C99BEE9398B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C6271124439A4D31BCB423BD /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DF279C1F8A4F7C85138D84 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D096FC24CC5E46919BC7ABAA /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BEDD8CC7C7478485EA50C8 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E447F8F7DF5A47268FAEEC9C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C2BC6AA4054C93AC574BD5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB13C752A0E3467FB088E0E8 /* Build configuration list for PBXNativeTarget "QBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0318D186400B4FE6AE24452B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F4A8830CCC754966B1383DE7 /* Build configuration list for PBXProject "QBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D073EB87B64B9589D5C0D7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6991CEFE19EB42EB81F1D8C7 /* Project object */;
+}
