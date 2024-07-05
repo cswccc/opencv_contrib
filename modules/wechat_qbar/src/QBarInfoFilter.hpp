@@ -14,7 +14,7 @@
 #include <vector>
 #include <algorithm>
 #include <math.h>
-#include "opencv2/QbarStruct.h"
+#include "opencv2/QBarStruct.h"
 
 const int MAX_CACHE_FRAME = 15;
 namespace cv {

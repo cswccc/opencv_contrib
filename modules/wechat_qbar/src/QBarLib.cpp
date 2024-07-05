@@ -1,4 +1,4 @@
-#include <opencv2/QbarLib.h>
+#include <opencv2/QBarLib.h>
 #include <QBarDecoder.h>
 #include <QBarEncoder.h>
 #include <QBarImportOpenCV.h>

@@ -7,7 +7,7 @@
 
 #import "QBarSDK.h"
 #include <memory>
-#include "opencv2/QbarLib.h"
+#include "opencv2/QBarLib.h"
 
 @interface QBarSDK ()
 @property (nonatomic, assign) QBar qbar;

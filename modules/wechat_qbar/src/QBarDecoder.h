@@ -29,7 +29,7 @@
 // qbar
 #include <QBarSource.h>
 #include <BinarizerMgr.h>
-#include <opencv2/QbarStruct.h>
+#include <opencv2/QBarStruct.h>
 
 #include "QBarInfoFilter.hpp"
 

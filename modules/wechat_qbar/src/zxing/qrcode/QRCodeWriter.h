@@ -29,7 +29,7 @@
 #include <zxing/ErrorHandler.h>
 #include <string>
 
-#include <opencv2/QbarStruct.h>
+#include <opencv2/QBarStruct.h>
 #include "opencv2/opencv.hpp"
 
 using namespace cv::QBarAI;

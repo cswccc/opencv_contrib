@@ -1,6 +1,6 @@
 #pragma once
 #include <opencv2/opencv.hpp>
-#include <opencv2/QbarStruct.h>
+#include <opencv2/QBarStruct.h>
 #include <memory>
 
 namespace cv {
