@@ -36,6 +36,6 @@ private:
     int crop_y_;
     bool rotate90_;
 };
-}
-}
+}  // namespace QBarAI
+}  // namespace cv
 #endif  // __DETECTOR_ALIGN_HPP_

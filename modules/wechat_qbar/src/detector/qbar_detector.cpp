@@ -7,7 +7,7 @@ namespace QBarAI
     int QBarDetector::Init(const std::string &config_path)
     {
         std::string root = config_path.rfind('/') == std::string::npos ? "./" : config_path.substr(0, config_path.rfind('/'));
-        cv::FileStorage fs(config_path, cv::FileStorage::READ);
+        FileStorage fs(config_path, FileStorage::READ);
         if (!fs.isOpened())
         {
             std::cout << "----- Config file not exists" << std::endl;
@@ -26,12 +26,12 @@ namespace QBarAI
         } 
         try
         {
-            cv::dnn::Net network = cv::dnn::readNetFromONNX(detPath);
+            dnn::Net network = dnn::readNetFromONNX(detPath);
             if(network.empty())
             {
                 return -101;
             }
-            this->qbar_detector = std::make_shared<cv::dnn::Net>(network);
+            this->qbar_detector = std::make_shared<dnn::Net>(network);
         }
         catch (const std::exception &e)
         {
@@ -41,14 +41,14 @@ namespace QBarAI
         return 0;
     }
 
-    int QBarDetector::Detect(const cv::Mat &image,std::vector<DetectInfo> &bboxes)
+    int QBarDetector::Detect(const Mat &image,std::vector<DetectInfo> &bboxes)
     {
-        cv::Mat input_blob;
+        Mat input_blob;
         int ret = this->pre_process_det(image,input_blob);
 
-        input_blob = cv::dnn::blobFromImage(input_blob);
+        input_blob = dnn::blobFromImage(input_blob);
 
-        std::vector<cv::Mat> outputs;
+        std::vector<Mat> outputs;
 
         //forward
 
@@ -91,7 +91,7 @@ namespace QBarAI
     
 
 
-    int QBarDetector::pre_process_det(const cv::Mat &image,cv::Mat &out_blob)
+    int QBarDetector::pre_process_det(const Mat &image,Mat &out_blob)
     {
         
         int minInputSize = this->short_side;
@@ -100,10 +100,10 @@ namespace QBarAI
         int setHeight = minInputSize;
 
 
-        //如果图像的宽和高都小于640, 则长边对齐448
-        if (image.cols <= maxInputSize && image.rows <= maxInputSize){
+        // If the width and height of the image are both less than 640, then align the long edge 448
+        if (image.cols <= maxInputSize && image.rows <= maxInputSize) {
             minInputSize = 448;
-            if (image.cols  >= image.rows)
+            if (image.cols >= image.rows)
             {
                 setWidth = minInputSize;
                 setHeight = std::ceil(image.rows * 1.0 * minInputSize / image.cols);
@@ -114,7 +114,7 @@ namespace QBarAI
                 setWidth = std::ceil(image.cols * 1.0 * minInputSize / image.rows);
             }
         }
-        else //如果图像的宽和高都大于640, 则保证面积不大于minInputSize*minInputSize
+        else // If the width or height of the image is greater than 640, ensure that the area is not greater than minInputSize * minInputSize
         {
             float resizeRatio = sqrt(image.cols * image.rows * 1.0 / (minInputSize * minInputSize));
             setWidth = image.cols / resizeRatio;
@@ -124,14 +124,14 @@ namespace QBarAI
         setHeight = static_cast<int>((setHeight + 32 - 1) / 32) * 32;
         setWidth = static_cast<int>((setWidth + 32 - 1) / 32) * 32;
 
-        cv::resize(image,out_blob,cv::Size(setWidth, setHeight));
+        resize(image,out_blob,Size(setWidth, setHeight));
         out_blob.convertTo(out_blob,CV_32FC1,1.0f/128.0f);
-        out_blob = out_blob - cv::Scalar(1.0);
+        out_blob = out_blob - Scalar(1.0);
         return 0;
     }
 
 
-    int QBarDetector::post_process_det(std::vector<cv::Mat> outputs,float scoreThres1, float scoreThres2, float inputWidth,float inputHeight,std::vector<BoxInfo>& dets)
+    int QBarDetector::post_process_det(std::vector<Mat> outputs,float scoreThres1, float scoreThres2, float inputWidth,float inputHeight,std::vector<BoxInfo>& dets)
     {
         // step 1: extract
         std::vector<std::vector<int>> outShape(6);
@@ -380,5 +380,5 @@ namespace QBarAI
             }
         }
     }
-}
-}
+}  // namespace QBarAI
+}  // namespace cv

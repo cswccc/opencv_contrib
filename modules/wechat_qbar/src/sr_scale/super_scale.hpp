@@ -13,7 +13,6 @@
 #include "opencv2/imgproc.hpp"
 namespace cv {
 namespace QBarAI {
-// using namespace cv;
 using namespace std;
 
 class SuperScale {
@@ -24,10 +23,10 @@ public:
     Mat ProcessImageScale(const Mat &src, float scale, const bool &use_sr, int sr_max_size = 160);
 
 private:
-    std::shared_ptr<cv::dnn::Net> qbar_sr;
+    std::shared_ptr<dnn::Net> qbar_sr;
     bool net_loaded_ = false;
-    int SuperResoutionScale(const cv::Mat &src, cv::Mat &dst);
+    int SuperResoutionScale(const Mat &src, Mat &dst);
 };
-}
-}
+}  // namespace QBarAI
+}  // namesapce cv
 #endif  // __SCALE_SUPER_SCALE_HPP_

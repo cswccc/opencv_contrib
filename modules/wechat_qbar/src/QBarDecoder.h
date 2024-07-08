@@ -72,6 +72,6 @@ private:
     std::shared_ptr<SuperScale> sr_;
 
 };
-}
-}
+}  // namespace QBarAI
+}  // namespace cv
 #endif

@@ -362,5 +362,5 @@ std::vector<float> QBarDecoder::getScaleList(const int width, const int height) 
     if (width < 640 && height < 640) return {1.0, 0.5};
     return {0.5, 1.0};
 }
-}
-}
+}  // namespace QBarAI
+}  // namespace cv

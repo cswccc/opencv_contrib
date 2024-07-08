@@ -161,11 +161,11 @@ int QBarEncoder::EncodeOneD(QBAR_IMAGE& code, const std::string content, QBAR_CO
 // ================= QRCODE VISUALIZE ========== //
 void QBarEncoder::MakeQRCodeImage(const QBAR_IMAGE& code, const QBarDrawParam& param, QBarImageInfo& buf)
 {
-    cv::Mat img;
+    Mat img;
     QRCodeWriter::QBarQRCode(code, param, img);
     if (param.image_mode_ == IMAGE_COLOR)
     {
-        // cv::imencode(".jpg", img, buf);
+        // imencode(".jpg", img, buf);
         buf.image_format_ = PIX_FMT_RGB888;
         buf.width_ = img.cols;
         buf.height_ = img.rows;
@@ -174,7 +174,7 @@ void QBarEncoder::MakeQRCodeImage(const QBAR_IMAGE& code, const QBarDrawParam& p
     }
     else
     {
-        // cv::imencode(".png", img, buf);
+        // imencode(".png", img, buf);
         buf.image_format_ = PIX_FMT_RGBA8888;
         buf.width_ = img.cols;
         buf.height_ = img.rows;
@@ -183,15 +183,15 @@ void QBarEncoder::MakeQRCodeImage(const QBAR_IMAGE& code, const QBarDrawParam& p
     }
 }
 
-void QBarEncoder::GetDominantColors(cv::Mat& image,
+void QBarEncoder::GetDominantColors(Mat& image,
                                    std::vector<std::vector<int>>& domi_colors)
 {
     QRCodeWriter::GetDominantColors(image, domi_colors);
 }
 
 int QBarEncoder::MakeRoundQRCodeImage(const QBAR_IMAGE& code,
-                                     cv::Mat& eye_image,
-                                     cv::Mat& module_image,
+                                     Mat& eye_image,
+                                     Mat& module_image,
                                      int box_size,
                                      QBarImageInfo& buf)
 {
@@ -204,7 +204,7 @@ int QBarEncoder::MakeRoundQRCodeImage(const QBAR_IMAGE& code,
     int image_width = width * box_size;
     int image_height = height * box_size;
     
-    cv::Mat img_rgba(image_height, image_width, CV_8UC4, cv::Scalar(255, 255, 255, 0));
+    Mat img_rgba(image_height, image_width, CV_8UC4, Scalar(255, 255, 255, 0));
     
     QRCodeWriter::DrawRoundQRCode(eye_image, module_image, code, box_size, img_rgba);
     
@@ -213,15 +213,15 @@ int QBarEncoder::MakeRoundQRCodeImage(const QBAR_IMAGE& code,
     buf.height_ = img_rgba.rows;
     buf.image_data_ = new uint8_t[buf.width_ * buf.height_ * 4];
     memcpy(buf.image_data_, img_rgba.data, buf.width_ * buf.height_ * 4);
-    // cv::imencode(".png", img_rgba, buf);
+    // imencode(".png", img_rgba, buf);
     
     return 0;
 }
 
 int QBarEncoder::MakePersonalQRCodeImage(const QBAR_IMAGE& code,
-                                        cv::Mat& eye_image,
-                                        cv::Mat& module_image,
-                                        cv::Mat& logo_image,
+                                        Mat& eye_image,
+                                        Mat& module_image,
+                                        Mat& logo_image,
                                         int box_size,
                                         QBarImageInfo& buf,
                                         bool is_white, bool is_group)
@@ -235,7 +235,7 @@ int QBarEncoder::MakePersonalQRCodeImage(const QBAR_IMAGE& code,
     int image_width = width * box_size;
     int image_height = height * box_size;
     
-    cv::Mat img_rgba(image_height, image_width, CV_8UC4, cv::Scalar(255, 255, 255, 0));
+    Mat img_rgba(image_height, image_width, CV_8UC4, Scalar(255, 255, 255, 0));
     
     if (is_white)
     {
@@ -251,16 +251,16 @@ int QBarEncoder::MakePersonalQRCodeImage(const QBAR_IMAGE& code,
     buf.height_ = img_rgba.rows;
     buf.image_data_ = new uint8_t[buf.width_ * buf.height_ * 4];
     memcpy(buf.image_data_, img_rgba.data, buf.width_ * buf.height_ * 4);
-    // cv::imencode(".png", img_rgba, buf);
+    // imencode(".png", img_rgba, buf);
     
     return 0;
 }
 
 int QBarEncoder::MakePersonalColorQRCodeImage(const QBAR_IMAGE& code,
-                                             cv::Mat& eye_image,
-                                             cv::Mat& module_image,
-                                             cv::Mat& logo_image,
-                                             cv::Mat& head_image,
+                                             Mat& eye_image,
+                                             Mat& module_image,
+                                             Mat& logo_image,
+                                             Mat& head_image,
                                              int box_size,
                                              QBarImageInfo& buf)
 {
@@ -273,7 +273,7 @@ int QBarEncoder::MakePersonalColorQRCodeImage(const QBAR_IMAGE& code,
     int image_width = width * box_size;
     int image_height = height * box_size;
     
-    cv::Mat img_rgba(image_height, image_width, CV_8UC4, cv::Scalar(255, 255, 255, 0));
+    Mat img_rgba(image_height, image_width, CV_8UC4, Scalar(255, 255, 255, 0));
     
     QRCodeWriter::DrawPersonalQRCode(eye_image, module_image, logo_image, code, box_size, img_rgba, false, false);
     
@@ -286,9 +286,9 @@ int QBarEncoder::MakePersonalColorQRCodeImage(const QBAR_IMAGE& code,
     buf.height_ = img_rgba.rows;
     buf.image_data_ = new uint8_t[buf.width_ * buf.height_ * 4];
     memcpy(buf.image_data_, img_rgba.data, buf.width_ * buf.height_ * 4);
-    // cv::imencode(".png", img_rgba, buf);
+    // imencode(".png", img_rgba, buf);
     
     return 0;
 }
-}
-}
+}  // namespace QBarAI
+}  // namespace cv

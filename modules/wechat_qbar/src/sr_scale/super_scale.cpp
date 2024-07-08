@@ -6,7 +6,6 @@
 // Copyright (C) 2020 THL A29 Limited, a Tencent company. All rights reserved.
 #include "super_scale.hpp"
 #include <iostream>
-// using namespace cv;
 
 #define CLIP(x, x1, x2) max(x1, min(x, x2))
 namespace cv {
@@ -14,7 +13,7 @@ namespace QBarAI {
 int SuperScale::Init(const std::string &config_path) {
     
     std::string root = config_path.rfind('/') == std::string::npos ? "./" : config_path.substr(0, config_path.rfind('/'));
-    cv::FileStorage fs(config_path, cv::FileStorage::READ);
+    FileStorage fs(config_path, FileStorage::READ);
     if (!fs.isOpened())
     {
         std::cout << "----- Config file not exists" << std::endl;
@@ -23,12 +22,12 @@ int SuperScale::Init(const std::string &config_path) {
     std::string srPath = root + "/" + (std::string)fs["MODEL"];
     try
     {
-        cv::dnn::Net network = cv::dnn::readNetFromONNX(srPath);
+        dnn::Net network = dnn::readNetFromONNX(srPath);
         if(network.empty())
         {
             return -101;
         }
-        this->qbar_sr = std::make_shared<cv::dnn::Net>(network);
+        this->qbar_sr = std::make_shared<dnn::Net>(network);
     }
     catch (const std::exception &e)
     {
@@ -65,7 +64,7 @@ Mat SuperScale::ProcessImageScale(const Mat &src, float scale, const bool &use_s
 
 int SuperScale::SuperResoutionScale(const Mat &src, Mat &dst) {
    
-    cv::resize(src, dst, Size(), 2, 2, INTER_CUBIC);
+    resize(src, dst, Size(), 2, 2, INTER_CUBIC);
     // Mat blob;
     // dnn::blobFromImage(src, blob, 1.0 / 255, Size(src.cols, src.rows), {0.0f}, false, false);
 
@@ -83,5 +82,5 @@ int SuperScale::SuperResoutionScale(const Mat &src, Mat &dst) {
     // }
     return 0;
 }
-}
-}
+}  // namesapce QBarAI
+}  // namesapce cv

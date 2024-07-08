@@ -61,5 +61,5 @@ void BinarizerMgr::SetNextOnceBinarizer(int iBinarizerIndex)
 {
     m_iNextOnceBinarizer = iBinarizerIndex;
 }
-}
-}
+}  // namespace QBarAI
+}  // namesapce cv

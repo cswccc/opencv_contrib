@@ -35,8 +35,6 @@
 #include<iostream>
 #include <queue>
 
-#include <QBarImportOpenCV.h>
-
 using std::ostringstream;
 using std::abs;
 using std::min;
@@ -1458,7 +1456,7 @@ Ref<DetectorResult> Detector::getResultViaAlignmentMore(DecodeHints const& hints
     if (mode == 0 || mode == 2 || mode == 4)  // use homograph to fit points
     {
         if (count < 4) return Ref<DetectorResult>();
-        cv::Mat H = cv::findHomography(pts_src, pts_dst, _CV_RANSAC);
+        cv::Mat H = cv::findHomography(pts_src, pts_dst, cv::RANSAC);
         
         Ref<BitMatrix> bits(sampleGrid(image_, dimension, H, err_handler));
         if (err_handler.ErrCode())
@@ -1620,7 +1618,7 @@ Ref<DetectorResult> Detector::getResultViaPoints(DecodeHints const& hints, int d
     {
         if (pts_src.size() < 4) return Ref<DetectorResult>();
         
-        cv::Mat H = cv::findHomography(pts_src, pts_dst, _CV_RANSAC);
+        cv::Mat H = cv::findHomography(pts_src, pts_dst, cv::RANSAC);
         
         Ref<BitMatrix> bits(sampleGrid(image_, dimension, H, err_handler));
         if (err_handler.ErrCode())

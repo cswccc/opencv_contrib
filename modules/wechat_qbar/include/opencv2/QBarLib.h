@@ -31,8 +31,8 @@ public:
     /// @return 0:函数正常执行,<0：函数非正常执行,-1：未执行Init函数即执行本函数, -2：传入参数错误或传入reader为空
     void SetReaders(const std::unordered_set<QBAR_READER> &readers);
 
-    QBAR_RESULT Decode(cv::Mat &image);
-    std::vector<QBAR_RESULT> ScanImage(cv::Mat &image);
+    QBAR_RESULT Decode(Mat &image);
+    std::vector<QBAR_RESULT> ScanImage(Mat &image);
     /// 获取当前库版本号.
     /// @return 当前版本号
     static std::string GetVersion();
@@ -69,6 +69,6 @@ public:
     static int MakePersonColorQRCode(const QBAR_IMAGE& code, const QBAR_ENCODE_CONFIG& config, QBarImageInfo& buf);
     static void GetDominantColors(QBarImageInfo& image, std::vector<std::vector<int>>& domi_colors);
 };
-}
-}
+}  // namespace QBarAI
+}  // namespace cv
 #endif

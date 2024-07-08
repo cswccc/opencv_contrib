@@ -26,8 +26,6 @@
 #include <zxing/qrcode/QRCodeWriter.h>
 #include <zxing/qrcode/encoder/BitArrayWriter.h>
 
-#include "QBarImportOpenCV.h"
-
 #include<iostream>
 #include <stdio.h>
 
@@ -1533,9 +1531,9 @@ void QRCodeWriter::QBarQRCode(const QBAR_IMAGE& code, const QBarDrawParam& param
         };
         
         for (int i = 0; i < 3; i++) {
-            cv::circle(img, centers[i], 3.5 * box_size, fg_color, _CV_FILLED);
-            cv::circle(img, centers[i], 2.5 * box_size, bg_color, _CV_FILLED);
-            cv::circle(img, centers[i], 1.5 * box_size, fg_color, _CV_FILLED);
+            cv::circle(img, centers[i], 3.5 * box_size, fg_color, cv::FILLED);
+            cv::circle(img, centers[i], 2.5 * box_size, bg_color, cv::FILLED);
+            cv::circle(img, centers[i], 1.5 * box_size, fg_color, cv::FILLED);
         }
     }
     else if (param.eye_shape_ == EYE_SQUARE)
@@ -1574,9 +1572,9 @@ void QRCodeWriter::QBarQRCode(const QBAR_IMAGE& code, const QBarDrawParam& param
         };
         
         for (int i = 0; i < 3; i++) {
-            cv::rectangle(img, left_top_points_1[i], right_bottom_points_1[i], fg_color, _CV_FILLED);
-            cv::rectangle(img, left_top_points_2[i], right_bottom_points_2[i], bg_color, _CV_FILLED);
-            cv::rectangle(img, left_top_points_3[i], right_bottom_points_3[i], fg_color, _CV_FILLED);
+            cv::rectangle(img, left_top_points_1[i], right_bottom_points_1[i], fg_color, cv::FILLED);
+            cv::rectangle(img, left_top_points_2[i], right_bottom_points_2[i], bg_color, cv::FILLED);
+            cv::rectangle(img, left_top_points_3[i], right_bottom_points_3[i], fg_color, cv::FILLED);
         }
     }
     
@@ -1592,7 +1590,7 @@ void QRCodeWriter::QBarQRCode(const QBAR_IMAGE& code, const QBarDrawParam& param
                 int offset = i * width + j;
                 if (static_cast<int>(code.data[offset]) > 0) {
                     cv::Point center((i + 0.5) * box_size, (j + 0.5) * box_size);
-                    cv::circle(img, center, 0.5 * box_size, fg_color, _CV_FILLED);
+                    cv::circle(img, center, 0.5 * box_size, fg_color, cv::FILLED);
                 }
             }
         }

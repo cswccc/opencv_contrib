@@ -63,5 +63,5 @@ Mat Align::crop(const Mat &inputImg, const Mat &srcPts, const float paddingW, co
     if (rotate90_) dst = dst.t();  // transpose
     return dst;
 }
-}
-}
+}  // namespace QBarAI
+}  // namespace cv

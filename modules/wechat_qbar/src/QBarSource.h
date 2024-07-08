@@ -85,5 +85,5 @@ public:
         return maxDataHeight*maxDataWidth;
     }
 };
-}
-}
+}  // namespace QBarAI
+}  // namespace cv

@@ -41,5 +41,5 @@ private:
     int m_iNextOnceBinarizer;
     std::vector<BINARIZER> m_vecRotateBinarizer;
 };
-}
-}
+}  // namespace QBarAI
+}  // namesapce cv

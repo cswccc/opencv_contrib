@@ -63,6 +63,6 @@ private:
     
     int window_len_;
 };
-}
-}
+}  // namespace QBarAI
+}  // namespace cv
 #endif /* QBarInfoFilter_hpp */

@@ -459,5 +459,5 @@ void QBarSource::denoseLuminanceSource(int inter){
 Ref<ByteMatrix> QBarSource::getByteMatrix()const{
     return Ref<ByteMatrix>(new ByteMatrix(getWidth(), getHeight(), getMatrix()));
 }
-}
-}
+}  // namespace QBarAI
+}  // namespace cv

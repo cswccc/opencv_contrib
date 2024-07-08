@@ -400,6 +400,6 @@ struct QBAR_ENCODE_CONFIG
     PersonalParam personal_param_;
     QBarDrawParam draw_param_;
 };
-}
-}
+}  // namespace QBarAI
+}  // namespace cv
 #endif  // QBAR_AI_QBAR_QBARSTRUCT_H_

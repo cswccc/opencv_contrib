@@ -79,20 +79,20 @@ namespace QBarAI {
             QBarDetector(){};
             ~QBarDetector(){};
             int Init(const std::string &config_path);
-            int Detect(const cv::Mat &image,std::vector<DetectInfo> &bboxes);
+            int Detect(const Mat &image,std::vector<DetectInfo> &bboxes);
 
     
         private:
-            int post_process_det(std::vector<cv::Mat> outputs,float scoreThres1, float scoreThres2, float inputWidth,float inputHeight,std::vector<BoxInfo>& dets);
-            int pre_process_det(const cv::Mat &image,cv::Mat &out_blob);
+            int post_process_det(std::vector<Mat> outputs,float scoreThres1, float scoreThres2, float inputWidth,float inputHeight,std::vector<BoxInfo>& dets);
+            int pre_process_det(const Mat &image,Mat &out_blob);
             void multiclass_nms(std::vector<BoxInfo> &input_boxes, std::vector<BoxInfo> &output_boxes, float thr, int inputWidth, int inputHeight);
             void decode_infer(float *clsPred, float *disPred, int stride, std::vector<std::vector<BoxInfo>> &results, const std::vector<int> &outShapeCls, const std::vector<int> &outShapeDis, float scoreThres,float inputHeight,float inputWidth);
             void nms(std::vector<BoxInfo>& input_boxes, float NMS_THRESH);
     
         private:
-            std::shared_ptr<cv::dnn::Net> qbar_detector;
+            std::shared_ptr<dnn::Net> qbar_detector;
             int long_side = 480;
             int short_side = 640;
     };
-}
-}
+}  // namespace QBarAI
+}  // namespace cv
