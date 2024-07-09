@@ -18,21 +18,50 @@ std::string GetImagePathFromArgs(int argc, char *argv[])
     return DEFAULT_TEST_IMAGE_PATH;
 }
 
-void imageInput(QBar &qbar, cv::Mat &grayscale_image) {
-    std::vector<QBAR_RESULT> results = qbar.ScanImage(grayscale_image);
-    for(int i = 0; i < results.size(); i++)
-    {
-        if(results[i].typeID!=0)
-        {
-            std::cout << "Decode success!" << std::endl;
-            std::cout << "Type: " << results[i].typeName << std::endl;
-            std::cout << "Data: " << results[i].data << std::endl;
-        }
-         else
-        {
-            std::cout << "Decode failed!" << std::endl;
-        }
+cv::Mat visualize(const cv::Mat& image, std::vector<QBAR_RESULT>& results, float fps = -1.f) {
+    static cv::Scalar box_color{0, 255, 0};
+    static std::vector<cv::Scalar> landmark_color{
+        cv::Scalar(255,   0,   0), // right eye
+        cv::Scalar(  0,   0, 255), // left eye
+        cv::Scalar(  0, 255,   0), // nose tip
+        cv::Scalar(255,   0, 255), // right mouth corner
+        cv::Scalar(  0, 255, 255)  // left mouth corner
+    };
+    static cv::Scalar text_color{0, 255, 0};
+
+    auto output_image = image.clone();
+
+    if (fps >= 0) {
+        cv::putText(output_image, cv::format("FPS: %.2f", fps), cv::Point(0, 15), cv::FONT_HERSHEY_SIMPLEX, 0.5, text_color, 2);
     }
+
+    for (int i = 0; i < results.size(); i++) {
+        std::cout << "Type: " << results[i].typeName << std::endl;
+        std::cout << "Data: " << results[i].data << std::endl;
+        std::string info = results[i].data;
+        cout << "points number: " << results[i].points.size() << endl;
+        for (int j= 0 ; j < results[i].points.size(); j++) {
+            cv::Point point(results[i].points[j].y, results[i].points[j].x);
+            cv::circle(output_image, point, 5, landmark_color[j % landmark_color.size()], -1);
+            cout << results[i].points[j].x << ' ' << results[i].points[j].y << endl;
+        }
+        cout << "----" << endl;
+    }
+
+    return output_image;
+}
+
+void imageInput(QBar &qbar, cv::Mat &image) {
+    cv::Mat grayscale_image;
+    cv::cvtColor(image, grayscale_image, cv::COLOR_BGR2GRAY);
+    
+    std::vector<QBAR_RESULT> results = qbar.ScanImage(grayscale_image);
+
+    auto res_frame = visualize(image, results);
+
+    cv::namedWindow("Wechat QBar", cv::WINDOW_AUTOSIZE);
+    cv::imshow("Wechat QBar", res_frame);
+    cv::waitKey(0);
 }
 
 void cameraInput(QBar &qbar) {
@@ -49,12 +78,16 @@ void cameraInput(QBar &qbar) {
             std:: cout << "No frames grabbed!\n";
             break;
         }
+        cv::Mat grayscale_image;
+        cv::cvtColor(frame, grayscale_image, cv::COLOR_BGR2GRAY);
 
         tick_meter.start();
         std::vector<QBAR_RESULT> results = qbar.ScanImage(grayscale_image);
         tick_meter.stop();
 
-        cv::imshow("Wechat QBar", frame);
+        auto res_frame = visualize(frame, results, (float)tick_meter.getFPS());
+
+        cv::imshow("Wechat QBar", res_frame);
 
         tick_meter.reset();
     }
@@ -63,7 +96,7 @@ void cameraInput(QBar &qbar) {
 int main(int argc, char *argv[])
 {
     std::string image_path = GetImagePathFromArgs(argc, argv);
-    cv::Mat grayscale_image = cv::imread(image_path, cv::IMREAD_GRAYSCALE);
+    cv::Mat image = cv::imread(image_path);
 
     QBar qbar;
     QBAR_MODE mode;
@@ -72,9 +105,9 @@ int main(int argc, char *argv[])
     mode.qbar_ml_mode.super_resolution_model_path_ = "models/sr/qbar_sr.yml";
     qbar.SetReaders({ONED_BARCODE, QRCODE, PDF417, DATAMATRIX});
     qbar.Init(mode);
-    //QBAR_RESULT result = qbar.Decode(grayscale_image, width, height);
     
-    imageInput(qbar, grayscale_image);
+    imageInput(qbar, image);
+    // cameraInput(qbar);
 
     return 0;
 }
