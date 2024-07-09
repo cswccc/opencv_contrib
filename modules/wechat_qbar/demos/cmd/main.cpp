@@ -5,7 +5,7 @@ using namespace cv;
 using namespace cv::QBarAI;
 
 
-#define DEFAULT_TEST_IMAGE_PATH "/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/common/images/test.jpg"
+#define DEFAULT_TEST_IMAGE_PATH "/home/cswccc/Work/opencv_contrib/modules/wechat_qbar/demos/common/images/test.jpg"
 
 std::string GetImagePathFromArgs(int argc, char *argv[])
 {
@@ -41,8 +41,8 @@ cv::Mat visualize(const cv::Mat& image, std::vector<QBAR_RESULT>& results, float
         std::string info = results[i].data;
         cout << "points number: " << results[i].points.size() << endl;
         for (int j= 0 ; j < results[i].points.size(); j++) {
-            cv::Point point(results[i].points[j].y, results[i].points[j].x);
-            cv::circle(output_image, point, 5, landmark_color[j % landmark_color.size()], -1);
+            cv::Point point(results[i].points[j].x, results[i].points[j].y);
+            cv::circle(output_image, point, 5, landmark_color[i % landmark_color.size()], -1);
             cout << results[i].points[j].x << ' ' << results[i].points[j].y << endl;
         }
         cout << "----" << endl;

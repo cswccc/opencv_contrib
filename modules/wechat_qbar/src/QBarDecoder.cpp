@@ -316,6 +316,16 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
                 result = this->Decode(scaled_img);
                 if(result.typeID!=0)
                 {
+                    vector<Point2f> points_qr;
+                    for (size_t i = 0; i < result.points.size(); i++) {
+                        Point2f point(result.points[i].x / cur_scale, result.points[i].y / cur_scale);
+                        points_qr.push_back(point);
+                    }
+                    points_qr = aligner.warpBack(points_qr);
+                    for (size_t i = 0; i < points_qr.size(); i++) {
+                        result.points[i].x = points_qr[i].x;
+                        result.points[i].y = points_qr[i].y;
+                    }
                     break;
                 }
             }
