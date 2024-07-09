@@ -64,22 +64,15 @@ Mat SuperScale::ProcessImageScale(const Mat &src, float scale, const bool &use_s
 
 int SuperScale::SuperResoutionScale(const Mat &src, Mat &dst) {
    
-    resize(src, dst, Size(), 2, 2, INTER_CUBIC);
-    // Mat blob;
-    // dnn::blobFromImage(src, blob, 1.0 / 255, Size(src.cols, src.rows), {0.0f}, false, false);
+    // cv::resize(src, dst, Size(), 2, 2, INTER_CUBIC);
+    Mat blob;
+    dnn::blobFromImage(src, blob, 1.0, Size(src.cols, src.rows), {0.0f}, false, false);
 
-    // srnet_.setInput(blob);
-    // auto prob = srnet_.forward();
+    qbar_sr->setInput(blob);
+    auto prob = qbar_sr->forward();
 
-    // dst = Mat(prob.size[2], prob.size[3], CV_8UC1);
-
-    // for (int row = 0; row < prob.size[2]; row++) {
-    //     const float *prob_score = prob.ptr<float>(0, 0, row);
-    //     for (int col = 0; col < prob.size[3]; col++) {
-    //         float pixel = prob_score[col] * 255.0;
-    //         dst.at<uint8_t>(row, col) = static_cast<uint8_t>(CLIP(pixel, 0.0f, 255.0f));
-    //     }
-    // }
+    dst = Mat(prob.size[2], prob.size[3], CV_32F, prob.ptr<float>());
+    dst.convertTo(dst, CV_8UC1);
     return 0;
 }
 }  // namesapce QBarAI
