@@ -5,7 +5,8 @@ using namespace cv;
 using namespace cv::QBarAI;
 
 
-#define DEFAULT_TEST_IMAGE_PATH "/home/cswccc/Work/opencv_contrib/modules/wechat_qbar/demos/common/images/test.jpg"
+// #define DEFAULT_TEST_IMAGE_PATH "/home/cswccc/Work/opencv_contrib/modules/wechat_qbar/demos/common/images/test.jpg"
+#define DEFAULT_TEST_IMAGE_PATH "/Users/caoshiwen/work/opencv_contrib/modules/wechat_qbar/demos/common/images/test_sr.png"
 
 std::string GetImagePathFromArgs(int argc, char *argv[])
 {
@@ -40,11 +41,32 @@ cv::Mat visualize(const cv::Mat& image, std::vector<QBAR_RESULT>& results, float
         std::cout << "Data: " << results[i].data << std::endl;
         std::string info = results[i].data;
         cout << "points number: " << results[i].points.size() << endl;
+
+        int ux = -1, ly = -1, dx = -1, ry = -1;
         for (int j= 0 ; j < results[i].points.size(); j++) {
             cv::Point point(results[i].points[j].x, results[i].points[j].y);
             cv::circle(output_image, point, 5, landmark_color[i % landmark_color.size()], -1);
             cout << results[i].points[j].x << ' ' << results[i].points[j].y << endl;
+
+            if (ly == -1 || ly > results[i].points[j].y) {
+                ly = results[i].points[j].y;
+            }
+            if (ry == -1 || ry < results[i].points[j].y) {
+                ry = results[i].points[j].y;
+            }
+            if (dx == -1 || dx > results[i].points[j].x) {
+                dx = results[i].points[j].x;
+            }
+            if (ux == -1 || ux < results[i].points[j].x) {
+                ux = results[i].points[j].x;
+            }
         }
+        cv::Size textSize = cv::getTextSize(results[i].data.c_str(), cv::FONT_HERSHEY_DUPLEX, 0.5, 1, 0);
+
+        int text_x = (ux + dx) / 2 - textSize.width / 2;
+        int text_y = (ly + ry) / 2 + textSize.height / 2;
+
+        cv::putText(output_image, cv::format("%s", results[i].data.c_str()), cv::Point(text_x, text_y), cv::FONT_HERSHEY_DUPLEX, 0.5, text_color, 1);
         cout << "----" << endl;
     }
 
@@ -106,8 +128,8 @@ int main(int argc, char *argv[])
     qbar.SetReaders({ONED_BARCODE, QRCODE, PDF417, DATAMATRIX});
     qbar.Init(mode);
     
-    imageInput(qbar, image);
-    // cameraInput(qbar);
-
+    // imageInput(qbar, image);
+    cameraInput(qbar);
+ 
     return 0;
 }
