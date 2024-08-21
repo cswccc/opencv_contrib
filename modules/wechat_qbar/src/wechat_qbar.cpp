@@ -32,16 +32,22 @@ QBar::QBar(const std::string& detection_model_path_,
     p->Init(mode);
 }
 
-std::vector<std::pair<std::string, std::string>> QBar::detectAndDecode(Mat img) {
+std::vector<std::pair<std::string, std::string>> QBar::detectAndDecode(InputArray img, OutputArrayOfArrays points) {
     CV_Assert(!img.empty());
     CV_CheckDepthEQ(img.depth(), CV_8U, "");
 
-    cv::Mat grayscale_image;
-    cv::cvtColor(img, grayscale_image, cv::COLOR_BGR2GRAY);
+    Mat input_img;
+    int incn = img.channels();
+    CV_Check(incn, incn == 1 || incn == 3 || incn == 4, "");
+    if (incn == 3 || incn == 4) {
+        cvtColor(img, input_img, COLOR_BGR2GRAY);
+    } else {
+        input_img = img.getMat();
+    }
 
     std::vector<std::pair<std::string, std::string>> ret;
 
-    std::vector<QBAR_RESULT> results = p->ScanImage(grayscale_image);
+    std::vector<QBAR_RESULT> results = p->ScanImage(input_img);
 
     for (int i = 0; i < results.size(); i++) {
         ret.push_back(make_pair(results[i].typeName, results[i].data));
