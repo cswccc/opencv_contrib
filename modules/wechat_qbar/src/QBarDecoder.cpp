@@ -299,15 +299,12 @@ int QBarDecoder::InitAIModel(QBAR_ML_MODE &ml_mode){
 
 std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
 {
-    cout << srcImage.size << endl;
     std::vector<QBAR_RESULT> qbar_results;
     if(_init_ai_model_)
     {
         
-        cout << "detect" << endl;
         std::vector<DetectInfo> _detect_results_;
         detector_->Detect(srcImage, _detect_results_);
-        cout << "finish" << endl;
 
         for(int i = 0; i < _detect_results_.size(); i++)
         {
@@ -339,7 +336,6 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
             {
                 qbar_results.push_back(result);
             }
-            cout << "get points" << endl;
         }
     }
     else
@@ -350,7 +346,6 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
             qbar_results.push_back(result);
         }
     }
-    cout << "Finish" << endl;
     return qbar_results;
 }
 

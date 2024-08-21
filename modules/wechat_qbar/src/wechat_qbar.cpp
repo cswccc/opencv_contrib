@@ -36,20 +36,12 @@ std::vector<std::string> QBar::detectAndDecode(Mat img) {
     CV_Assert(!img.empty());
     CV_CheckDepthEQ(img.depth(), CV_8U, "");
 
-    cout << "img1" << endl;
-
     cv::Mat grayscale_image;
     cv::cvtColor(img, grayscale_image, cv::COLOR_BGR2GRAY);
 
-    cout << "img" << endl;
-
     std::vector<std::string> ret;
 
-    cout << "ret" << endl;
-
     std::vector<QBAR_RESULT> results = p->ScanImage(grayscale_image);
-
-    cout << 666 << endl;
 
     for (int i = 0; i < results.size(); i++) {
         std::cout << "Type: " << results[i].typeName << " Data: " << results[i].data;
