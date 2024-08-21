@@ -49,8 +49,27 @@ std::vector<std::pair<std::string, std::string>> QBar::detectAndDecode(InputArra
 
     std::vector<QBAR_RESULT> results = p->ScanImage(input_img);
 
-    for (int i = 0; i < results.size(); i++) {
+    
+    for (size_t i = 0; i < results.size(); i++) {
         ret.push_back(make_pair(results[i].typeName, results[i].data));
+    }
+
+    vector<Mat> tmp_points;
+    if (points.needed()) {
+        for (size_t i = 0; i < results.size(); i++) {
+            auto point_to_save = Mat(results[i].points.size(), 2, CV_32FC1);
+            for (size_t j = 0; j < results[i].points.size(); j++) {
+                point_to_save.at<float>(j, 0) = results[i].points[j].x;
+                point_to_save.at<float>(j, 1) = results[i].points[j].y;
+            }
+
+            Mat tmp_point;
+            tmp_points.push_back(tmp_point);
+            point_to_save.convertTo(((OutputArray)tmp_points[i]), CV_32FC2);
+        }
+
+        points.createSameSize(tmp_points, CV_32FC2);
+        points.assign(tmp_points);
     }
 
     return ret;
