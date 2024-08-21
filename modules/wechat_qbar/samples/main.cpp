@@ -5,7 +5,7 @@
 using namespace cv;
 using namespace std;
 
-Mat visualize(const Mat image, vector<Mat> points, vector<pair<string, string>> res, float fps=-1.f) {
+Mat visualize(const Mat image, vector<Mat> points, vector<string> res, float fps=-1.f) {
     static cv::Scalar text_color{0, 255, 0};
 
     auto output_image = image.clone();
@@ -29,12 +29,12 @@ Mat visualize(const Mat image, vector<Mat> points, vector<pair<string, string>> 
         center_x /= points[i].rows;
         center_y /= points[i].rows;
 
-        cv::Size textSize = cv::getTextSize(res[i].second.c_str(), cv::FONT_HERSHEY_DUPLEX, 0.5, 1, 0);
+        cv::Size textSize = cv::getTextSize(res[i].c_str(), cv::FONT_HERSHEY_DUPLEX, 0.5, 1, 0);
 
         int text_x = center_x - textSize.width / 2;
         int text_y = center_y + textSize.height / 2;
 
-        cv::putText(output_image, cv::format("%s", res[i].second.c_str()), cv::Point(text_x, text_y), cv::FONT_HERSHEY_DUPLEX, 0.5, text_color, 1);
+        cv::putText(output_image, cv::format("%s", res[i].c_str()), cv::Point(text_x, text_y), cv::FONT_HERSHEY_DUPLEX, 0.5, text_color, 1);
     }
 
     return output_image;
@@ -73,8 +73,7 @@ int main(int argc, char *argv[])
         std::cout << cv::format("%zu codes detected:\n", res.size());
         for (size_t i = 0; i < res.size(); i++) {
             std::cout << "Code " << i << ":\n";
-            std::cout << "Type: " << res[i].first << '\n';
-            std::cout << "Data: " << res[i].second << '\n';
+            std::cout << "Data: " << res[i] << '\n';
         }
 
         if (save_flag || vis_flag) {

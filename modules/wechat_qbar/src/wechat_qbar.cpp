@@ -32,7 +32,7 @@ QBar::QBar(const std::string& detection_model_path_,
     p->Init(mode);
 }
 
-std::vector<std::pair<std::string, std::string>> QBar::detectAndDecode(InputArray img, OutputArrayOfArrays points) {
+std::vector<std::string> QBar::detectAndDecode(InputArray img, OutputArrayOfArrays points) {
     CV_Assert(!img.empty());
     CV_CheckDepthEQ(img.depth(), CV_8U, "");
 
@@ -45,13 +45,13 @@ std::vector<std::pair<std::string, std::string>> QBar::detectAndDecode(InputArra
         input_img = img.getMat();
     }
 
-    std::vector<std::pair<std::string, std::string>> ret;
+    std::vector<std::string> ret;
 
     std::vector<QBAR_RESULT> results = p->ScanImage(input_img);
 
     
     for (size_t i = 0; i < results.size(); i++) {
-        ret.push_back(make_pair(results[i].typeName, results[i].data));
+        ret.push_back(results[i].data);
     }
 
     vector<Mat> tmp_points;
