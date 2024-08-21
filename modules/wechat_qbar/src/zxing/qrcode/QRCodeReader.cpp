@@ -20,11 +20,11 @@
  */
 
 
-#include <zxing/qrcode/QRCodeReader.h>
-#include <zxing/qrcode/QRCodeWriter.h>
-#include <zxing/qrcode/detector/Detector.h>
-#include <zxing/ReaderException.h>
-#include <zxing/common/BitArray.h>
+#include <zxing/qrcode/QRCodeReader.hpp>
+#include <zxing/qrcode/QRCodeWriter.hpp>
+#include <zxing/qrcode/detector/Detector.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/common/BitArray.hpp>
 #include <time.h>
 
 #include <set>
@@ -33,7 +33,7 @@
 #include <windows.h>
 #endif
 
-#include "opencv2/opencv.hpp"
+#include "opencv2/core.hpp"
 
 using zxing::ErrorHandler;
 

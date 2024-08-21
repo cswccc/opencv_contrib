@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#include <zxing/common/BitArray.h>
+#include <zxing/common/BitArray.hpp>
 
 using std::vector;
 using zxing::BitArray;

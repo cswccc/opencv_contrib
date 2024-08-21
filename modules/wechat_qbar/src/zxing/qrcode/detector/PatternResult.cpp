@@ -1,4 +1,4 @@
-#include <zxing/qrcode/detector/PatternResult.h>
+#include <zxing/qrcode/detector/PatternResult.hpp>
 
 // VC++
 using namespace zxing;

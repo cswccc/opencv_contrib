@@ -23,8 +23,8 @@
  *                    parsed now.
  */
 
-#include <zxing/pdf417/decoder/BitMatrixParser.h>
-#include <zxing/ErrorHandler.h>
+#include <zxing/pdf417/decoder/BitMatrixParser.hpp>
+#include <zxing/ErrorHandler.hpp>
 
 using zxing::pdf417::decoder::BitMatrixParser;
 using zxing::ArrayRef;

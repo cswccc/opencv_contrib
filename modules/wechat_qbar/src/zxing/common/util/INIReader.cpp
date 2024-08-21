@@ -5,8 +5,8 @@
 //
 // https:// github.com/benhoyt/inih
 
-#include <zxing/common/util/ini.h>
-#include  <zxing/common/util/INIReader.h>
+#include <zxing/common/util/ini.hpp>
+#include  <zxing/common/util/INIReader.hpp>
 
 #include <cctype>
 #include <cstdlib>

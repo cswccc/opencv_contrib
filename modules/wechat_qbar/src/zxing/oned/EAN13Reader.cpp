@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-#include "EAN13Reader.h"
-#include <zxing/NotFoundException.h>
+#include "EAN13Reader.hpp"
+#include <zxing/NotFoundException.hpp>
 
-#include <zxing/oned/OneDConstant.h>
+#include <zxing/oned/OneDConstant.hpp>
 
 using namespace zxing;
 using namespace oned;

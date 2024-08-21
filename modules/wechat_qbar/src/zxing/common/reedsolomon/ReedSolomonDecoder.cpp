@@ -19,10 +19,10 @@
 #include <iostream>
 
 #include <memory>
-#include <zxing/common/reedsolomon/ReedSolomonDecoder.h>
-#include <zxing/common/reedsolomon/ReedSolomonException.h>
-#include <zxing/common/IllegalArgumentException.h>
-#include <zxing/IllegalStateException.h>
+#include <zxing/common/reedsolomon/ReedSolomonDecoder.hpp>
+#include <zxing/common/reedsolomon/ReedSolomonException.hpp>
+#include <zxing/common/IllegalArgumentException.hpp>
+#include <zxing/IllegalStateException.hpp>
 
 using std::vector;
 using zxing::Ref;

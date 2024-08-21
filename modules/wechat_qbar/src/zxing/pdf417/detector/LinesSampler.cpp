@@ -16,10 +16,10 @@
  */
 
 #include <map>
-#include <zxing/pdf417/detector/LinesSampler.h>
-#include <zxing/pdf417/decoder/BitMatrixParser.h>
-#include <zxing/NotFoundException.h>
-#include <zxing/common/Point.h>
+#include <zxing/pdf417/detector/LinesSampler.hpp>
+#include <zxing/pdf417/decoder/BitMatrixParser.hpp>
+#include <zxing/NotFoundException.hpp>
+#include <zxing/common/Point.hpp>
 #include <iostream>
 #include <cmath>
 #include <cstdio>

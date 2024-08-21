@@ -19,7 +19,7 @@
  * limitations under the License.
  */
 
-#include <zxing/qrcode/ErrorCorrectionLevel.h>
+#include <zxing/qrcode/ErrorCorrectionLevel.hpp>
 
 using std::string;
 using zxing::ErrorHandler;

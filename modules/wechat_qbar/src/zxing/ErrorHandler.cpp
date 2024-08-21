@@ -16,7 +16,7 @@
 
 #include <stdio.h>
 
-#include "ErrorHandler.h"
+#include "ErrorHandler.hpp"
 
 using namespace zxing;
 

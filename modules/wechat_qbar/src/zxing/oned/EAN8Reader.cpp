@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-#include "EAN8Reader.h"
-#include <zxing/ReaderException.h>
+#include "EAN8Reader.hpp"
+#include <zxing/ReaderException.hpp>
 
 using std::vector;
 using zxing::oned::EAN8Reader;

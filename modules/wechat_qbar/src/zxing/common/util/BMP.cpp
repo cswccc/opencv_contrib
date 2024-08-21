@@ -6,7 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#include "BMP.h"
+#include "BMP.hpp"
 
 #include<string.h>
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <zxing/oned/ITFWriter.h>
+#include <zxing/oned/ITFWriter.hpp>
 
 using namespace zxing;
 using namespace oned;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <zxing/oned/Code39Writer.h>
+#include <zxing/oned/Code39Writer.hpp>
 
 using namespace zxing;
 

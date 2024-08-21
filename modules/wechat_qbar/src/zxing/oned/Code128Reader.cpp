@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.h>
-#include <zxing/oned/Code128Reader.h>
-#include <zxing/oned/OneDResultPoint.h>
-#include <zxing/common/Array.h>
-#include <zxing/ReaderException.h>
-#include <zxing/NotFoundException.h>
-#include <zxing/FormatException.h>
-#include <zxing/ChecksumException.h>
-#include <zxing/oned/OneDConstant.h>
-#include <zxing/ErrorHandler.h>
+#include <zxing/ZXing.hpp>
+#include <zxing/oned/Code128Reader.hpp>
+#include <zxing/oned/OneDResultPoint.hpp>
+#include <zxing/common/Array.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/NotFoundException.hpp>
+#include <zxing/FormatException.hpp>
+#include <zxing/ChecksumException.hpp>
+#include <zxing/oned/OneDConstant.hpp>
+#include <zxing/ErrorHandler.hpp>
 
 // Add charset for Code128
-#include <zxing/common/StringUtils.h>
+#include <zxing/common/StringUtils.hpp>
 
 #include <math.h>
 #include <string.h>

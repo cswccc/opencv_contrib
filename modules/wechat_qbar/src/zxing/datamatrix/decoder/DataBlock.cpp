@@ -18,8 +18,8 @@
  * limitations under the License.
  */
 
-#include <zxing/datamatrix/decoder/DataBlock.h>
-#include <zxing/common/IllegalArgumentException.h>
+#include <zxing/datamatrix/decoder/DataBlock.hpp>
+#include <zxing/common/IllegalArgumentException.hpp>
 
 namespace zxing {
 namespace datamatrix {

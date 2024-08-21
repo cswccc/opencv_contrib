@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.h>
-#include <zxing/oned/MultiFormatOneDReader.h>
-#include <zxing/oned/MultiFormatUPCEANReader.h>
-#include <zxing/oned/Code39Reader.h>
-#include <zxing/oned/Code128Reader.h>
-#include <zxing/oned/Code93Reader.h>
-#include <zxing/oned/Code25Reader.h>
-#include <zxing/oned/CodaBarReader.h>
-#include <zxing/oned/ITFReader.h>
-#include <zxing/ReaderException.h>
-#include <zxing/NotFoundException.h>
+#include <zxing/ZXing.hpp>
+#include <zxing/oned/MultiFormatOneDReader.hpp>
+#include <zxing/oned/MultiFormatUPCEANReader.hpp>
+#include <zxing/oned/Code39Reader.hpp>
+#include <zxing/oned/Code128Reader.hpp>
+#include <zxing/oned/Code93Reader.hpp>
+#include <zxing/oned/Code25Reader.hpp>
+#include <zxing/oned/CodaBarReader.hpp>
+#include <zxing/oned/ITFReader.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/NotFoundException.hpp>
 
 using zxing::Ref;
 using zxing::Result;

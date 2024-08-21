@@ -1,5 +1,5 @@
-#include "opencv2/opencv.hpp"
-#include <QBarDecoder.h>
+#include "opencv2/core.hpp"
+#include <QBarDecoder.hpp>
 
 #ifdef __NEON__
 #include <arm_neon.h>
@@ -24,6 +24,8 @@ defined(__MINGW32__) || defined(__BORLANDC__)
 using namespace zxing::common;
 using namespace zxing;
 using namespace zxing::qrcode;
+using namespace cv;
+using namespace cv::dnn;
 
 #ifdef _WIN32
 #include <time.h>
@@ -291,17 +293,21 @@ int QBarDecoder::InitAIModel(QBAR_ML_MODE &ml_mode){
         return ret;
     }
     _init_ai_model_ = true;
+
+    return ret;
 }
 
 std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
 {
-    
+    cout << srcImage.size << endl;
     std::vector<QBAR_RESULT> qbar_results;
     if(_init_ai_model_)
     {
         
+        cout << "detect" << endl;
         std::vector<DetectInfo> _detect_results_;
         detector_->Detect(srcImage, _detect_results_);
+        cout << "finish" << endl;
 
         for(int i = 0; i < _detect_results_.size(); i++)
         {
@@ -333,6 +339,7 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
             {
                 qbar_results.push_back(result);
             }
+            cout << "get points" << endl;
         }
     }
     else
@@ -343,6 +350,7 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
             qbar_results.push_back(result);
         }
     }
+    cout << "Finish" << endl;
     return qbar_results;
 }
 

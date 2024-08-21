@@ -18,16 +18,16 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.h>
-#include <zxing/oned/MultiFormatUPCEANReader.h>
-#include <zxing/oned/EAN13Reader.h>
-#include <zxing/oned/EAN8Reader.h>
-#include <zxing/oned/UPCEReader.h>
-#include <zxing/oned/UPCAReader.h>
-#include <zxing/oned/OneDResultPoint.h>
-#include <zxing/common/Array.h>
-#include <zxing/ReaderException.h>
-#include <zxing/NotFoundException.h>
+#include <zxing/ZXing.hpp>
+#include <zxing/oned/MultiFormatUPCEANReader.hpp>
+#include <zxing/oned/EAN13Reader.hpp>
+#include <zxing/oned/EAN8Reader.hpp>
+#include <zxing/oned/UPCEReader.hpp>
+#include <zxing/oned/UPCAReader.hpp>
+#include <zxing/oned/OneDResultPoint.hpp>
+#include <zxing/common/Array.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/NotFoundException.hpp>
 #include <math.h>
 
 using zxing::NotFoundException;

@@ -12,16 +12,16 @@ BigInteger classes that represent nonnegative integers and signed integers,
 respectively.  Most of the C++ arithmetic operators are overloaded for these
 classes, so big-integer calculations are as easy as:
 
-    #include "BigIntegerLibrary.hh"
+    #include "BigIntegerLibrary.hpp"
     
     BigInteger a = 65536;
     cout << (a * a * a * a * a * a * a * a);
     
     (prints 340282366920938463463374607431768211456)
 
-The code in `sample.cc' demonstrates the most important features of the library.
+The code in `sample.cpp' demonstrates the most important features of the library.
 To get started quickly, read the code and explanations in that file and run it.
-If you want more detail or a feature not shown in `sample.cc', consult the
+If you want more detail or a feature not shown in `sample.cpp', consult the
 consult the actual header and source files, which are thoroughly commented.
 
 This library emphasizes ease of use and clarity of implementation over speed;
@@ -32,10 +32,10 @@ otherwise).
 
 Compiling programs that use the library
 ---------------------------------------
-The library consists of a folder full of C++ header files (`.hh') and source
-files (`.cc').  Your own programs should `#include' the necessary header files
+The library consists of a folder full of C++ header files (`.hpp') and source
+files (`.cpp').  Your own programs should `#include' the necessary header files
 and link with the source files.  A makefile that builds the sample program
-(`sample.cc') is included; you can adapt it to replace the sample with your own
+(`sample.cpp') is included; you can adapt it to replace the sample with your own
 program.
 
 Alternatively, you can use your own build system or IDE.  In that case, you must

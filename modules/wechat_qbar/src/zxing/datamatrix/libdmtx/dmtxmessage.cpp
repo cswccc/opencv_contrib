@@ -5,9 +5,9 @@
 //  Created by wechatcv on 2022/5/5.
 //
 
-#include "dmtxmessage.h"
-#include "dmtxsymbol.h"
-#include "common.h"
+#include "dmtxmessage.hpp"
+#include "dmtxsymbol.hpp"
+#include "common.hpp"
 
 #include <limits.h>
 #include "stdlib.h"

@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-#include <zxing/qrcode/encoder/ReedSolomonEncoder.h>
-#include <zxing/common/reedsolomon/ReedSolomonException.h>
-#include <zxing/common/IllegalArgumentException.h>
-#include <zxing/IllegalStateException.h>
+#include <zxing/qrcode/encoder/ReedSolomonEncoder.hpp>
+#include <zxing/common/reedsolomon/ReedSolomonException.hpp>
+#include <zxing/common/IllegalArgumentException.hpp>
+#include <zxing/IllegalStateException.hpp>
 
 namespace zxing {
 

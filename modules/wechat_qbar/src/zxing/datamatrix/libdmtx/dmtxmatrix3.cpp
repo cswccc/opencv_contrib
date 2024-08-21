@@ -5,7 +5,7 @@
 //  Created by wechatcv on 2022/5/5.
 //
 
-#include "dmtxmatrix3.h"
+#include "dmtxmatrix3.hpp"
 
 #include <string.h>
 #include <math.h>

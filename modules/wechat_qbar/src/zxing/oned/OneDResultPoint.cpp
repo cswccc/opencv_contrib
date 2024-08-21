@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 
-#include "OneDResultPoint.h"
+#include "OneDResultPoint.hpp"
 
 namespace zxing {
 namespace oned {

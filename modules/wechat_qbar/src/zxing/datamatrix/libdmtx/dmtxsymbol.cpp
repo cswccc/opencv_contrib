@@ -5,9 +5,9 @@
 //  Created by wechatcv on 2022/5/7.
 //
 
-#include "dmtxsymbol.h"
+#include "dmtxsymbol.hpp"
 
-#include "common.h"
+#include "common.hpp"
 
 namespace dmtx {
 

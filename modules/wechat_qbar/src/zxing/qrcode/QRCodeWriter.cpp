@@ -18,13 +18,13 @@
  * limitations under the License.
  */
 
-#include <zxing/qrcode/QRCodeWriter.h>
-#include <zxing/qrcode/encoder/IntMatrix.h>
-#include <zxing/qrcode/encoder/ReedSolomonEncoder.h>
-#include <zxing/Exception.h>
-#include <zxing/qrcode/Version.h>
-#include <zxing/qrcode/QRCodeWriter.h>
-#include <zxing/qrcode/encoder/BitArrayWriter.h>
+#include <zxing/qrcode/QRCodeWriter.hpp>
+#include <zxing/qrcode/encoder/IntMatrix.hpp>
+#include <zxing/qrcode/encoder/ReedSolomonEncoder.hpp>
+#include <zxing/Exception.hpp>
+#include <zxing/qrcode/Version.hpp>
+#include <zxing/qrcode/QRCodeWriter.hpp>
+#include <zxing/qrcode/encoder/BitArrayWriter.hpp>
 
 #include<iostream>
 #include <stdio.h>

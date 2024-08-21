@@ -7,12 +7,12 @@ fi
 #CODE_TYPE=datamatrix
 CODE_TYPE=$1
 
-grep "NotFoundException.h" * -rn |grep $CODE_TYPE
-grep "ChecksumException.h" * -rn |grep $CODE_TYPE
-grep "Exception.h" * -rn |grep $CODE_TYPE
-grep "ReaderException.h" * -rn |grep $CODE_TYPE
-grep "IllegalArgumentException.h" * -rn |grep $CODE_TYPE
-grep "ReedSolomonException.h" * -rn |grep $CODE_TYPE
-grep "FormatException.h" * -rn |grep $CODE_TYPE
-grep "DetectorException.h" * -rn |grep $CODE_TYPE
-grep "IllegalStateException.h" * -rn |grep $CODE_TYPE    
+grep "NotFoundException.hpp" * -rn |grep $CODE_TYPE
+grep "ChecksumException.hpp" * -rn |grep $CODE_TYPE
+grep "Exception.hpp" * -rn |grep $CODE_TYPE
+grep "ReaderException.hpp" * -rn |grep $CODE_TYPE
+grep "IllegalArgumentException.hpp" * -rn |grep $CODE_TYPE
+grep "ReedSolomonException.hpp" * -rn |grep $CODE_TYPE
+grep "FormatException.hpp" * -rn |grep $CODE_TYPE
+grep "DetectorException.hpp" * -rn |grep $CODE_TYPE
+grep "IllegalStateException.hpp" * -rn |grep $CODE_TYPE    

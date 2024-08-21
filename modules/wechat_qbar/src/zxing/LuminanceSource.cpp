@@ -19,9 +19,9 @@
  */
 
 #include <sstream>
-#include <zxing/LuminanceSource.h>
-#include <zxing/InvertedLuminanceSource.h>
-#include <zxing/common/IllegalArgumentException.h>
+#include <zxing/LuminanceSource.hpp>
+#include <zxing/InvertedLuminanceSource.hpp>
+#include <zxing/common/IllegalArgumentException.hpp>
 
 using zxing::Ref;
 using zxing::LuminanceSource;

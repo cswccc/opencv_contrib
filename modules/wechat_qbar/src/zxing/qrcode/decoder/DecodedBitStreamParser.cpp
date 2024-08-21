@@ -19,11 +19,11 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.h>
-#include <zxing/qrcode/decoder/DecodedBitStreamParser.h>
-#include <zxing/common/CharacterSetECI.h>
-#include <zxing/FormatException.h>
-#include <zxing/common/StringUtils.h>
+#include <zxing/ZXing.hpp>
+#include <zxing/qrcode/decoder/DecodedBitStreamParser.hpp>
+#include <zxing/common/CharacterSetECI.hpp>
+#include <zxing/FormatException.hpp>
+#include <zxing/common/StringUtils.hpp>
 #include <iostream>
 #ifndef NO_ICONV_INSIDE
 #include <iconv.h>

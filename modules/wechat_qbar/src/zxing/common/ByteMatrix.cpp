@@ -1,6 +1,6 @@
 
-#include <zxing/common/ByteMatrix.h>
-#include <zxing/common/IllegalArgumentException.h>
+#include <zxing/common/ByteMatrix.hpp>
+#include <zxing/common/IllegalArgumentException.hpp>
 
 #include <iostream>
 #include <sstream>

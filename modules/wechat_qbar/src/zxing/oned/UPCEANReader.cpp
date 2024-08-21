@@ -18,15 +18,15 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.h>
-#include <zxing/oned/UPCEANReader.h>
-#include <zxing/oned/OneDResultPoint.h>
-#include <zxing/ReaderException.h>
-#include <zxing/FormatException.h>
-#include <zxing/NotFoundException.h>
-#include <zxing/ChecksumException.h>
+#include <zxing/ZXing.hpp>
+#include <zxing/oned/UPCEANReader.hpp>
+#include <zxing/oned/OneDResultPoint.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/FormatException.hpp>
+#include <zxing/NotFoundException.hpp>
+#include <zxing/ChecksumException.hpp>
 
-#include <zxing/oned/OneDConstant.h>
+#include <zxing/oned/OneDConstant.hpp>
 
 using std::vector;
 using std::string;

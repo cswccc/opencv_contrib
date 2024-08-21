@@ -5,7 +5,7 @@
 //  Created by wechatcv on 2022/5/5.
 //
 
-#include "dmtxvector2.h"
+#include "dmtxvector2.hpp"
 
 #include <math.h>
 

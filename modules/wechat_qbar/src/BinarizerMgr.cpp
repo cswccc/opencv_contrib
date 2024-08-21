@@ -1,6 +1,6 @@
-#include "BinarizerMgr.h"
+#include "BinarizerMgr.hpp"
 
-#include "QBarSource.h"
+#include "QBarSource.hpp"
 
 using namespace zxing;
 

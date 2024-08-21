@@ -19,9 +19,9 @@
  */
 
 
-#include <zxing/common/GreyscaleRotatedLuminanceSource.h>
-#include <zxing/common/IllegalArgumentException.h>
-#include <zxing/common/ByteMatrix.h>
+#include <zxing/common/GreyscaleRotatedLuminanceSource.hpp>
+#include <zxing/common/IllegalArgumentException.hpp>
+#include <zxing/common/ByteMatrix.hpp>
 
 using zxing::ArrayRef;
 using zxing::GreyscaleRotatedLuminanceSource;

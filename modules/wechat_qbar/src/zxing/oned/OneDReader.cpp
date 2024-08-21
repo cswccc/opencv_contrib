@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.h>
-#include <zxing/BarcodeFormat.h>
-#include <zxing/oned/OneDReader.h>
-#include <zxing/ReaderException.h>
-#include <zxing/oned/OneDResultPoint.h>
-#include <zxing/NotFoundException.h>
+#include <zxing/ZXing.hpp>
+#include <zxing/BarcodeFormat.hpp>
+#include <zxing/oned/OneDReader.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/oned/OneDResultPoint.hpp>
+#include <zxing/NotFoundException.hpp>
 #include <math.h>
 #include <limits.h>
 

@@ -18,8 +18,8 @@
  * limitations under the License.
  */
 
-#include <zxing/DecodeHints.h>
-#include <zxing/common/IllegalArgumentException.h>
+#include <zxing/DecodeHints.hpp>
+#include <zxing/common/IllegalArgumentException.hpp>
 
 using zxing::Ref;
 using zxing::ResultPointCallback;

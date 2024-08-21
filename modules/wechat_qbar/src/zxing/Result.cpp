@@ -19,7 +19,7 @@
  * limitations under the License.
  */
 
-#include <zxing/Result.h>
+#include <zxing/Result.hpp>
 
 using zxing::Result;
 using zxing::Ref;

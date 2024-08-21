@@ -10,7 +10,7 @@ namespace QBarAI
         FileStorage fs(config_path, FileStorage::READ);
         if (!fs.isOpened())
         {
-            std::cout << "----- Config file not exists" << std::endl;
+            // std::cout << "----- Config file not exists" << std::endl;
             return -1;
         }
         std::string detPath = root + "/" + (std::string)fs["MODEL"];
@@ -86,7 +86,8 @@ namespace QBarAI
                 bboxes.push_back(object);
             }
         }
-    
+
+        return ret;
     }
     
 

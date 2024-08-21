@@ -20,8 +20,8 @@
  
  */
 
-#include <zxing/ZXing.h>
-#include <zxing/Exception.h>
+#include <zxing/ZXing.hpp>
+#include <zxing/Exception.hpp>
 #include <string.h>
 
 using zxing::Exception;

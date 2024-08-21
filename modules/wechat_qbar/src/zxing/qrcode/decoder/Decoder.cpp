@@ -19,16 +19,16 @@
  * limitations under the License.
  */
 
-#include <zxing/qrcode/decoder/Decoder.h>
-#include <zxing/qrcode/decoder/QRCodeDecoderMetaData.h>
-#include <zxing/qrcode/ErrorCorrectionLevel.h>
-#include <zxing/qrcode/Version.h>
-#include <zxing/qrcode/decoder/DataBlock.h>
-#include <zxing/qrcode/decoder/DecodedBitStreamParser.h>
-#include <zxing/ReaderException.h>
-#include <zxing/ChecksumException.h>
-#include <zxing/FormatException.h>
-#include <zxing/common/reedsolomon/ReedSolomonException.h>
+#include <zxing/qrcode/decoder/Decoder.hpp>
+#include <zxing/qrcode/decoder/QRCodeDecoderMetaData.hpp>
+#include <zxing/qrcode/ErrorCorrectionLevel.hpp>
+#include <zxing/qrcode/Version.hpp>
+#include <zxing/qrcode/decoder/DataBlock.hpp>
+#include <zxing/qrcode/decoder/DecodedBitStreamParser.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/ChecksumException.hpp>
+#include <zxing/FormatException.hpp>
+#include <zxing/common/reedsolomon/ReedSolomonException.hpp>
 #include <iostream>
 
 using zxing::qrcode::Decoder;

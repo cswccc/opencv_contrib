@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <zxing/oned/OneDimensionalCodeWriter.h>
+#include <zxing/oned/OneDimensionalCodeWriter.hpp>
 
 using namespace zxing;
 using namespace oned;

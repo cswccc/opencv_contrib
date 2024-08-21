@@ -18,9 +18,9 @@
  * limitations under the License.
  */
 
-#include <zxing/common/FastWindowBinarizer.h>
+#include <zxing/common/FastWindowBinarizer.hpp>
 
-#include <zxing/common/IllegalArgumentException.h>
+#include <zxing/common/IllegalArgumentException.hpp>
 
 using namespace zxing;
 

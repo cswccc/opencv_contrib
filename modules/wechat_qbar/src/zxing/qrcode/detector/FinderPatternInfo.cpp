@@ -18,7 +18,7 @@
  * limitations under the License.
  */
 
-#include <zxing/qrcode/detector/FinderPatternInfo.h>
+#include <zxing/qrcode/detector/FinderPatternInfo.hpp>
 #include <stdio.h>
 
 namespace zxing {

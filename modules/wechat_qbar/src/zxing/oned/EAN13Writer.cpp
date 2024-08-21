@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <zxing/oned/EAN13Writer.h>
+#include <zxing/oned/EAN13Writer.hpp>
 
 using namespace zxing;
 using namespace oned;

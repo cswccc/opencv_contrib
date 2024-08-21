@@ -16,11 +16,11 @@
  */
 
 #include <stdint.h>
-#include <bigint/BigIntegerUtils.hh>
-#include <zxing/FormatException.h>
-#include <zxing/ErrorHandler.h>
-#include <zxing/pdf417/decoder/DecodedBitStreamParser.h>
-#include <zxing/common/DecoderResult.h>
+#include <bigint/BigIntegerUtils.hpp>
+#include <zxing/FormatException.hpp>
+#include <zxing/ErrorHandler.hpp>
+#include <zxing/pdf417/decoder/DecodedBitStreamParser.hpp>
+#include <zxing/common/DecoderResult.hpp>
 
 using std::string;
 using zxing::pdf417::DecodedBitStreamParser;

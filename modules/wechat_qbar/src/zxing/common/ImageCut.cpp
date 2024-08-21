@@ -1,4 +1,4 @@
-#include "ImageCut.h"
+#include "ImageCut.hpp"
 
 #include <cstdio>
 

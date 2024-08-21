@@ -18,7 +18,7 @@
  * limitations under the License.
  */
 
-#include <zxing/qrcode/encoder/IntMatrix.h>
+#include <zxing/qrcode/encoder/IntMatrix.hpp>
 
 using zxing::qrcode::IntMatrix;
 

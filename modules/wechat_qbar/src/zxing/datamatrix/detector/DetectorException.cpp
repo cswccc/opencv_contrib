@@ -5,7 +5,7 @@
  *      Author: luiz
  */
 
-#include "DetectorException.h"
+#include "DetectorException.hpp"
 
 namespace zxing {
 namespace datamatrix {

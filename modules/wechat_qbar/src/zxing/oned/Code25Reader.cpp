@@ -1,9 +1,9 @@
-#include "Code25Reader.h"
-#include <zxing/oned/OneDResultPoint.h>
-#include <zxing/common/Array.h>
-#include <zxing/ReaderException.h>
-#include <zxing/NotFoundException.h>
-#include <zxing/ChecksumException.h>
+#include "Code25Reader.hpp"
+#include <zxing/oned/OneDResultPoint.hpp>
+#include <zxing/common/Array.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/NotFoundException.hpp>
+#include <zxing/ChecksumException.hpp>
 #include <math.h>
 #include <limits.h>
 
@@ -20,7 +20,7 @@ using zxing::oned::Code25Reader;
 // VC++
 using zxing::BitArray;
 
-#include <zxing/oned/OneDConstant.h>
+#include <zxing/oned/OneDConstant.hpp>
 using namespace zxing;
 using namespace oned;
 using namespace zxing::oned::constant::Code25;

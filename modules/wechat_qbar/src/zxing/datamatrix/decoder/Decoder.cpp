@@ -18,15 +18,15 @@
  * limitations under the License.
  */
 
-#include <zxing/datamatrix/decoder/Decoder.h>
-#include <zxing/datamatrix/decoder/BitMatrixParser.h>
-#include <zxing/datamatrix/decoder/DataBlock.h>
-#include <zxing/datamatrix/decoder/DecodedBitStreamParser.h>
-#include <zxing/datamatrix/Version.h>
-#include <zxing/ReaderException.h>
-#include <zxing/ChecksumException.h>
-#include <zxing/common/reedsolomon/ReedSolomonException.h>
-#include <zxing/ErrorHandler.h>
+#include <zxing/datamatrix/decoder/Decoder.hpp>
+#include <zxing/datamatrix/decoder/BitMatrixParser.hpp>
+#include <zxing/datamatrix/decoder/DataBlock.hpp>
+#include <zxing/datamatrix/decoder/DecodedBitStreamParser.hpp>
+#include <zxing/datamatrix/Version.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/ChecksumException.hpp>
+#include <zxing/common/reedsolomon/ReedSolomonException.hpp>
+#include <zxing/ErrorHandler.hpp>
 
 using zxing::Ref;
 using zxing::DecoderResult;

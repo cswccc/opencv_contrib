@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.h>
-#include <zxing/oned/ITFReader.h>
-#include <zxing/oned/OneDResultPoint.h>
-#include <zxing/common/Array.h>
-#include <zxing/ReaderException.h>
-#include <zxing/FormatException.h>
-#include <zxing/NotFoundException.h>
+#include <zxing/ZXing.hpp>
+#include <zxing/oned/ITFReader.hpp>
+#include <zxing/oned/OneDResultPoint.hpp>
+#include <zxing/common/Array.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/FormatException.hpp>
+#include <zxing/NotFoundException.hpp>
 #include <math.h>
 
 using std::vector;
@@ -36,7 +36,7 @@ using zxing::oned::ITFReader;
 // VC++
 using zxing::BitArray;
 
-#include <zxing/oned/OneDConstant.h>
+#include <zxing/oned/OneDConstant.hpp>
 using namespace zxing;
 using namespace oned;
 

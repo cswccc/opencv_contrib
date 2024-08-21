@@ -18,9 +18,9 @@
  * limitations under the License.
  */
 
-#include <zxing/common/GridSampler.h>
-#include <zxing/common/PerspectiveTransform.h>
-#include <zxing/ReaderException.h>
+#include <zxing/common/GridSampler.hpp>
+#include <zxing/common/PerspectiveTransform.hpp>
+#include <zxing/ReaderException.hpp>
 #include <iostream>
 #include <sstream>
 

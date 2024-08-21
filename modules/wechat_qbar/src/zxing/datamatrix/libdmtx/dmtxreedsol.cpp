@@ -5,9 +5,9 @@
 //  Created by wechatcv on 2022/5/7.
 //
 
-#include "dmtxreedsol.h"
-#include "dmtxbytelist.h"
-#include "dmtxsymbol.h"
+#include "dmtxreedsol.hpp"
+#include "dmtxbytelist.hpp"
+#include "dmtxsymbol.hpp"
 
 #include <math.h>
 

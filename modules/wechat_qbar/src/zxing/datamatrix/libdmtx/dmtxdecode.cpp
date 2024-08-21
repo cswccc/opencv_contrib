@@ -5,15 +5,15 @@
 //  Created by wechatcv on 2022/5/7.
 //
 
-#include "dmtxdecode.h"
-#include "dmtxmessage.h"
-#include "dmtximage.h"
-#include "dmtxmatrix3.h"
-#include "dmtxsymbol.h"
-#include "dmtxplacemod.h"
-#include "dmtxbytelist.h"
-#include "dmtxreedsol.h"
-#include "dmtxvector2.h"
+#include "dmtxdecode.hpp"
+#include "dmtxmessage.hpp"
+#include "dmtximage.hpp"
+#include "dmtxmatrix3.hpp"
+#include "dmtxsymbol.hpp"
+#include "dmtxplacemod.hpp"
+#include "dmtxbytelist.hpp"
+#include "dmtxreedsol.hpp"
+#include "dmtxvector2.hpp"
 
 
 #include <stdlib.h>

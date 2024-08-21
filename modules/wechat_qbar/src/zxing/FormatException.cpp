@@ -19,7 +19,7 @@
  * limitations under the License.
  */
 
-#include <zxing/FormatException.h>
+#include <zxing/FormatException.hpp>
 
 namespace zxing {
 

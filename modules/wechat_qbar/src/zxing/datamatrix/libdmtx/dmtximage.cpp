@@ -5,8 +5,8 @@
 //  Created by wechatcv on 2022/5/5.
 //
 
-#include "dmtximage.h"
-#include "common.h"
+#include "dmtximage.hpp"
+#include "common.hpp"
 
 namespace dmtx {
 

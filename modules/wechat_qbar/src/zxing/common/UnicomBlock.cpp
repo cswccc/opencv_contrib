@@ -1,4 +1,4 @@
-#include <zxing/common/UnicomBlock.h>
+#include <zxing/common/UnicomBlock.hpp>
 #include <stdio.h>
 
 

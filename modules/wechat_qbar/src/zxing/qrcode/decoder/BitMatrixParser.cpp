@@ -18,8 +18,8 @@
  * limitations under the License.
  */
 
-#include <zxing/qrcode/decoder/BitMatrixParser.h>
-#include <zxing/qrcode/decoder/DataMask.h>
+#include <zxing/qrcode/decoder/BitMatrixParser.hpp>
+#include <zxing/qrcode/decoder/DataMask.hpp>
 #include <stdio.h>
 
 using zxing::ErrorHandler;

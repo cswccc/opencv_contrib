@@ -19,8 +19,8 @@
  * limitations under the License.
  */
 
-#include <zxing/NotFoundException.h>
-#include <zxing/common/detector/MonochromeRectangleDetector.h>
+#include <zxing/NotFoundException.hpp>
+#include <zxing/common/detector/MonochromeRectangleDetector.hpp>
 #include <sstream>
 
 #include<iostream>

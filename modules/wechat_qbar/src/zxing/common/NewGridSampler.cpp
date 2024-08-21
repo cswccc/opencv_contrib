@@ -1,7 +1,7 @@
-#include <zxing/common/NewGridSampler.h>
-#include <zxing/common/PerspectiveTransform.h>
-#include <zxing/ReaderException.h>
-#include <zxing/common/util/INIReader.h>
+#include <zxing/common/NewGridSampler.hpp>
+#include <zxing/common/PerspectiveTransform.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/common/util/INIReader.hpp>
 
 #include <iostream>
 #include <sstream>

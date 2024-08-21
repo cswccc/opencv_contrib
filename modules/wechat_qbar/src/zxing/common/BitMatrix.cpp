@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-#include <zxing/common/BitMatrix.h>
-#include <zxing/common/IllegalArgumentException.h>
+#include <zxing/common/BitMatrix.hpp>
+#include <zxing/common/IllegalArgumentException.hpp>
 
 #include <climits>
 #include <iostream>

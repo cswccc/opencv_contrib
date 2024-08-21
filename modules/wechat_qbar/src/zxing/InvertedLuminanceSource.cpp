@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.h>
-#include <zxing/InvertedLuminanceSource.h>
-#include <zxing/common/ByteMatrix.h>
+#include <zxing/ZXing.hpp>
+#include <zxing/InvertedLuminanceSource.hpp>
+#include <zxing/common/ByteMatrix.hpp>
 
 using zxing::boolean;
 using zxing::Ref;

@@ -15,7 +15,7 @@
  */
 
 
-#include <zxing/oned/EAN8Writer.h>
+#include <zxing/oned/EAN8Writer.hpp>
 
 using namespace zxing;
 using namespace oned;

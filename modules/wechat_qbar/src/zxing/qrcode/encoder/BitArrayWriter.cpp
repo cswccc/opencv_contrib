@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-#include <zxing/qrcode/encoder/BitArrayWriter.h>
-#include <zxing/common/Array.h>
+#include <zxing/qrcode/encoder/BitArrayWriter.hpp>
+#include <zxing/common/Array.hpp>
 
 using zxing::Array;
 using zxing::ArrayRef;

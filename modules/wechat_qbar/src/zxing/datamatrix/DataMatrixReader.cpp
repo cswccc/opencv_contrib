@@ -19,12 +19,12 @@
  * limitations under the License.
  */
 
-#include <zxing/datamatrix/DataMatrixReader.h>
-#include <zxing/datamatrix/detector/Detector.h>
-#include <zxing/ErrorHandler.h>
+#include <zxing/datamatrix/DataMatrixReader.hpp>
+#include <zxing/datamatrix/detector/Detector.hpp>
+#include <zxing/ErrorHandler.hpp>
 
-#include <zxing/datamatrix/libdmtx/dmtxdecode.h>
-#include <zxing/datamatrix/libdmtx/dmtxmessage.h>
+#include <zxing/datamatrix/libdmtx/dmtxdecode.hpp>
+#include <zxing/datamatrix/libdmtx/dmtxmessage.hpp>
 
 #include <string.h>
 

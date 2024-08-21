@@ -19,13 +19,13 @@
  * limitations under the License.
  */
 
-#include <zxing/qrcode/detector/FinderPatternFinder.h>
-#include <zxing/ReaderException.h>
-#include <zxing/ErrorHandler.h>
-#include <zxing/DecodeHints.h>
-#include <zxing/common/KMeans.h>
-#include <zxing/common/util/INIReader.h>
-#include <zxing/common/detector/MathUtils.h>
+#include <zxing/qrcode/detector/FinderPatternFinder.hpp>
+#include <zxing/ReaderException.hpp>
+#include <zxing/ErrorHandler.hpp>
+#include <zxing/DecodeHints.hpp>
+#include <zxing/common/KMeans.hpp>
+#include <zxing/common/util/INIReader.hpp>
+#include <zxing/common/detector/MathUtils.hpp>
 
 #include <climits>
 #include <cmath>

@@ -18,9 +18,9 @@
  * limitations under the License.
  */
 
-#include <zxing/common/SimpleAdaptiveBinarizer.h>
-#include <zxing/NotFoundException.h>
-#include <zxing/common/Array.h>
+#include <zxing/common/SimpleAdaptiveBinarizer.hpp>
+#include <zxing/NotFoundException.hpp>
+#include <zxing/common/Array.hpp>
 #include <cstdlib>
 
 using namespace zxing;

@@ -17,9 +17,9 @@
  * 2012-09-19 HFN translation from Java into C++
  */
 
-#include <zxing/pdf417/decoder/ec/ErrorCorrection.h>
-#include <zxing/pdf417/decoder/ec/ModulusPoly.h>
-#include <zxing/pdf417/decoder/ec/ModulusGF.h>
+#include <zxing/pdf417/decoder/ec/ErrorCorrection.hpp>
+#include <zxing/pdf417/decoder/ec/ModulusPoly.hpp>
+#include <zxing/pdf417/decoder/ec/ModulusGF.hpp>
 
 using std::vector;
 using zxing::Ref;

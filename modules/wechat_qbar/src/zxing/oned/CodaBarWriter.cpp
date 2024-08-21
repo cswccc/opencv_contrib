@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <zxing/oned/CodaBarWriter.h>
+#include <zxing/oned/CodaBarWriter.hpp>
 
 using namespace zxing;
 using namespace oned;

@@ -15,7 +15,7 @@ same day.  The topmost version listed is the one you have.
 	to bea good way to write a single sed script that worked for
 	both), so I re-wrote the script in perl.
 
-- Renamed testsuite.cc to testsuite32.cc and added a new testsuite
+- Renamed testsuite.cpp to testsuite32.cpp and added a new testsuite
 	specifically targeted at 64-bit machines.
 
 - Changed the makefile to choose whether to use testsuite32 or testsuite64
@@ -76,19 +76,19 @@ Other notable changes:
 - Added BigUnsigned functions setBlock, bitLength, getBit, setBit.
 - The bit-shifting operations now support negative shift amounts, which shift in
   the other direction.
-- Added some big-integer algorithms in BigIntegerAlgorithms.hh: gcd,
+- Added some big-integer algorithms in BigIntegerAlgorithms.hpp: gcd,
   extendedEuclidean, modinv, modexp.
 
 2007.07.07
 ----------
 Update the "Running the sample program produces this output:" comment in
-sample.cc for the bitwise operators.
+sample.cpp for the bitwise operators.
 
 2007.06.14
 ----------
 - Implement << and >> for BigUnsigned in response to email from Marco Schulze.
 - Fix name: DOTR_ALIASED -> DTRT_ALIASED.
-- Demonstrate all bitwise operators (&, |, ^, <<, >>) in sample.cc.
+- Demonstrate all bitwise operators (&, |, ^, <<, >>) in sample.cpp.
 
 2007.02.16
 ----------
@@ -104,7 +104,7 @@ I ran the sample program using valgrind and discovered a `delete s' that should 
 
 2006.05.01
 ----------
-I fixed incorrect results reported by Mohand Mezmaz and related memory corruption on platforms where Blk is bigger than int.  I replaced (1 << x) with (Blk(1) << x) in two places in BigUnsigned.cc.
+I fixed incorrect results reported by Mohand Mezmaz and related memory corruption on platforms where Blk is bigger than int.  I replaced (1 << x) with (Blk(1) << x) in two places in BigUnsigned.cpp.
 
 2006.04.24
 ----------
@@ -112,7 +112,7 @@ Two bug fixes: BigUnsigned "++x" no longer segfaults when x grows in length, and
 
 2006.02.26
 ----------
-A few tweaks in preparation for a group to distribute the library.  The project Web site has moved; I updated the references.  I fixed a typo and added a missing function in NumberlikeArray.hh.  I'm using Eclipse now, so you get Eclipse project files.
+A few tweaks in preparation for a group to distribute the library.  The project Web site has moved; I updated the references.  I fixed a typo and added a missing function in NumberlikeArray.hpp.  I'm using Eclipse now, so you get Eclipse project files.
 
 2005.03.30
 ----------
@@ -142,7 +142,7 @@ I believe that, at this point, the Big Integer Library makes no assumptions abou
 ----------
 This is a _major_ upgrade to the library.  Among the things that have changed:
 
-I wrote the original version of the library, particularly the four ``classical algorithms'' in `BigUnsigned.cc', using array indexing.  Then I rewrote it to use pointers because I thought that would be faster.  But recently, I revisited the code in `BigUnsigned.cc' and found that I could not begin to understand what it was doing.
+I wrote the original version of the library, particularly the four ``classical algorithms'' in `BigUnsigned.cpp', using array indexing.  Then I rewrote it to use pointers because I thought that would be faster.  But recently, I revisited the code in `BigUnsigned.cpp' and found that I could not begin to understand what it was doing.
 
 I have decided that the drawbacks of pointers, increased coding difficulty and reduced code readability, far outweigh their speed benefits.  Plus, any modern optimizing compiler should produce fast code either way.  Therefore, I rewrote the library to use array indexing again.  (Thank goodness for regular-expression find-and-replace.  It saved me a lot of time.)
 
@@ -150,7 +150,7 @@ The put-here operations `divide' and `modulo' of each of `BigUnsigned' and `BigI
 
 There is a new class `BigUnsignedInABase' that is like `BigUnsigned' but uses a user-specified, small base instead of `256 ^ sizeof(unsigned long)'.  Much of the code common to the two has been factored out into `NumberlikeArray'.
 
-`BigUnsignedInABase' facilitates conversion between `BigUnsigned's and digit-by-digit string representations using `std::string'.  Convenience routines to do this conversion are in `BigIntegerUtils.hh'.  `iostream' compatibility has been improved.
+`BigUnsignedInABase' facilitates conversion between `BigUnsigned's and digit-by-digit string representations using `std::string'.  Convenience routines to do this conversion are in `BigIntegerUtils.hpp'.  `iostream' compatibility has been improved.
 
 I would like to thank Chris Morbitzer for the e-mail message that catalyzed this major upgrade.  He wanted a way to convert a string to a BigInteger.  One thing just led to another, roughly in reverse order from how they are listed here.
 

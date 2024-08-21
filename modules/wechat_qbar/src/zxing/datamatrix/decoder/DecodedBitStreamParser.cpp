@@ -19,10 +19,10 @@
  * limitations under the License.
  */
 
-#include <zxing/FormatException.h>
-#include <zxing/datamatrix/decoder/DecodedBitStreamParser.h>
+#include <zxing/FormatException.hpp>
+#include <zxing/datamatrix/decoder/DecodedBitStreamParser.hpp>
 #include <iostream>
-#include <zxing/common/DecoderResult.h>
+#include <zxing/common/DecoderResult.hpp>
 
 namespace zxing {
 namespace datamatrix {

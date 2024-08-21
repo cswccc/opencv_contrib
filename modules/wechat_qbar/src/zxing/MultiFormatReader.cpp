@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.h>
-#include <zxing/MultiFormatReader.h>
-#include <zxing/qrcode/QRCodeReader.h>
-#include <zxing/ErrorHandler.h>
+#include <zxing/ZXing.hpp>
+#include <zxing/MultiFormatReader.hpp>
+#include <zxing/qrcode/QRCodeReader.hpp>
+#include <zxing/ErrorHandler.hpp>
 
 #ifndef USE_QRCODE_ONLY
-#include <zxing/datamatrix/DataMatrixReader.h>
-#include <zxing/pdf417/PDF417Reader.h>
-#include <zxing/oned/MultiFormatOneDReader.h>
+#include <zxing/datamatrix/DataMatrixReader.hpp>
+#include <zxing/pdf417/PDF417Reader.hpp>
+#include <zxing/oned/MultiFormatOneDReader.hpp>
 #endif
 
-#include <zxing/ReaderException.h>
+#include <zxing/ReaderException.hpp>
 
 #include <iostream>
 

@@ -5,10 +5,10 @@
 //  Created by wechatcv on 2022/5/7.
 //
 
-#include "dmtxplacemod.h"
-#include "dmtxsymbol.h"
+#include "dmtxplacemod.hpp"
+#include "dmtxsymbol.hpp"
 
-#include "common.h"
+#include "common.hpp"
 
 namespace dmtx {
 
