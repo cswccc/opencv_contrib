@@ -25,7 +25,7 @@ public:
 
     ~QBar() {};
 
-    CV_WRAP std::vector<std::string> detectAndDecode(Mat img);
+    CV_WRAP std::vector<std::pair<std::string, std::string>> detectAndDecode(Mat img);
     CV_WRAP std::string GetVersion();
     
 protected:
