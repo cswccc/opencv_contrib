@@ -20,12 +20,12 @@
  */
 
 #include <map>
-#include <zxing/ResultPoint.hpp>
-#include <zxing/common/GridSampler.hpp>
-#include <zxing/common/ByteMatrix.hpp>
-#include <zxing/datamatrix/detector/Detector.hpp>
-#include <zxing/common/detector/MathUtils.hpp>
-#include <zxing/NotFoundException.hpp>
+#include <zxing/result_point.hpp>
+#include <zxing/common/grid_sampler.hpp>
+#include <zxing/common/byte_matrix.hpp>
+#include <zxing/datamatrix/detector/detector.hpp>
+#include <zxing/common/detector/math_utils.hpp>
+#include <zxing/not_found_exception.hpp>
 #include <sstream>
 #include <cstdlib>
 

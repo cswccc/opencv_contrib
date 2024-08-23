@@ -20,10 +20,10 @@
  * limitations under the License.
  */
 
-#include <zxing/oned/OneDReader.hpp>
-#include <zxing/common/BitArray.hpp>
-#include <zxing/Result.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/oned/one_dreader.hpp>
+#include <zxing/common/bit_array.hpp>
+#include <zxing/result.hpp>
+#include <zxing/error_handler.hpp>
 
 namespace zxing {
 namespace oned {

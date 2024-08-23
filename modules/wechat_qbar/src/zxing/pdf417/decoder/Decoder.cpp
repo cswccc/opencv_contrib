@@ -19,12 +19,12 @@
  * http:// code.google.com/p/zxing/issues/attachmentText?id=817&aid=8170033000&name = pdf417-java-reed-solomon-error-correction-2.patch&token = 0819f5d7446ae2814fd91385eeec6a11
  */
 
-#include <zxing/pdf417/PDF417Reader.hpp>
-#include <zxing/pdf417/decoder/Decoder.hpp>
-#include <zxing/pdf417/decoder/BitMatrixParser.hpp>
-#include <zxing/pdf417/decoder/DecodedBitStreamParser.hpp>
-#include <zxing/ReaderException.hpp>
-#include <zxing/common/reedsolomon/ReedSolomonException.hpp>
+#include <zxing/pdf417/pdf417reader.hpp>
+#include <zxing/pdf417/decoder/decoder.hpp>
+#include <zxing/pdf417/decoder/bit_matrix_parser.hpp>
+#include <zxing/pdf417/decoder/decoded_bit_stream_parser.hpp>
+#include <zxing/reader_exception.hpp>
+#include <zxing/common/reedsolomon/reed_solomon_exception.hpp>
 
 
 using zxing::pdf417::decoder::Decoder;

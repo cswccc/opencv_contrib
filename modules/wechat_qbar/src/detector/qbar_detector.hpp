@@ -2,7 +2,7 @@
 #include <opencv2/core.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/dnn.hpp>
-#include <QBarStruct.hpp>
+#include <qbarstruct.hpp>
 #include <memory>
 
 namespace cv {

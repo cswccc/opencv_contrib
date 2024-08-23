@@ -19,11 +19,11 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.hpp>
-#include <zxing/qrcode/decoder/Mode.hpp>
-#include <zxing/common/Counted.hpp>
-#include <zxing/ReaderException.hpp>
-#include <zxing/qrcode/Version.hpp>
+#include <zxing/zxing.hpp>
+#include <zxing/qrcode/decoder/mode.hpp>
+#include <zxing/common/counted.hpp>
+#include <zxing/reader_exception.hpp>
+#include <zxing/qrcode/version.hpp>
 #include <sstream>
 
 using zxing::qrcode::Mode;

@@ -18,9 +18,9 @@
  * limitations under the License.
  */
 
-#include <zxing/qrcode/Version.hpp>
-#include <zxing/qrcode/FormatInformation.hpp>
-#include <zxing/FormatException.hpp>
+#include <zxing/qrcode/version.hpp>
+#include <zxing/qrcode/format_information.hpp>
+#include <zxing/format_exception.hpp>
 #include <limits>
 #include <iostream>
 #include <cstdarg>

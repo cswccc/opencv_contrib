@@ -21,10 +21,10 @@
  * limitations under the License.
  */
 
-#include <zxing/ReaderException.hpp>
-#include <zxing/common/BitMatrix.hpp>
-#include <zxing/common/Counted.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/reader_exception.hpp>
+#include <zxing/common/bit_matrix.hpp>
+#include <zxing/common/counted.hpp>
+#include <zxing/error_handler.hpp>
 #include <vector>
 
 namespace zxing {

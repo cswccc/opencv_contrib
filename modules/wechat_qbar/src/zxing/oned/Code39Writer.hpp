@@ -19,17 +19,17 @@
 
 // package com.google.zxing.oned;
 
-#include <zxing/BarcodeFormat.hpp>
+#include <zxing/barcode_format.hpp>
 // import com.google.zxing.EncodeHintType;
-#include <zxing/Exception.hpp>
-#include <zxing/common/BitMatrix.hpp>
+#include <zxing/exception.hpp>
+#include <zxing/common/bit_matrix.hpp>
 
 #include <map>
 
-#include <zxing/oned/OneDimensionalCodeWriter.hpp>
-#include <zxing/oned/OneDConstant.hpp>
-#include <zxing/oned/Code39Reader.hpp>
-#include <zxing/common/Str.hpp>
+#include <zxing/oned/one_dimensional_code_writer.hpp>
+#include <zxing/oned/one_dconstant.hpp>
+#include <zxing/oned/code39reader.hpp>
+#include <zxing/common/str.hpp>
 
 using namespace zxing::oned::constant::Code39;
 

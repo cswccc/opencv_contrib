@@ -21,13 +21,13 @@
  * limitations under the License.
  */
 
-#include <zxing/pdf417/decoder/ec/ErrorCorrection.hpp>
-#include <zxing/pdf417/decoder/ec/ModulusGF.hpp>
-#include <zxing/ErrorHandler.hpp>
-#include <zxing/common/Counted.hpp>
-#include <zxing/common/Array.hpp>
-#include <zxing/common/DecoderResult.hpp>
-#include <zxing/common/BitMatrix.hpp>
+#include <zxing/pdf417/decoder/ec/error_correction.hpp>
+#include <zxing/pdf417/decoder/ec/modulus_gf.hpp>
+#include <zxing/error_handler.hpp>
+#include <zxing/common/counted.hpp>
+#include <zxing/common/array.hpp>
+#include <zxing/common/decoder_result.hpp>
+#include <zxing/common/bit_matrix.hpp>
 
 namespace zxing {
 namespace pdf417 {

@@ -17,13 +17,13 @@
 #ifndef __UPCA_WRITER_H__
 #define __UPCA_WRITER_H__
 
-#include <zxing/BarcodeFormat.hpp>
-#include <zxing/Exception.hpp>
-#include <zxing/common/BitMatrix.hpp>
+#include <zxing/barcode_format.hpp>
+#include <zxing/exception.hpp>
+#include <zxing/common/bit_matrix.hpp>
 
-#include <zxing/oned/OneDimensionalCodeWriter.hpp>
+#include <zxing/oned/one_dimensional_code_writer.hpp>
 
-#include <zxing/oned/EAN13Writer.hpp>
+#include <zxing/oned/ean13writer.hpp>
 
 namespace zxing {
 namespace oned {

@@ -1,4 +1,4 @@
-#include <zxing/common/Compress.hpp>
+#include <zxing/common/compress.hpp>
 
 #include <assert.h>
 #include <sys/types.h>

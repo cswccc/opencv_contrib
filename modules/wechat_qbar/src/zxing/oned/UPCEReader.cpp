@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-#include <zxing/ZXing.hpp>
-#include <zxing/oned/UPCEReader.hpp>
-#include <zxing/ReaderException.hpp>
+#include <zxing/zxing.hpp>
+#include <zxing/oned/upcereader.hpp>
+#include <zxing/reader_exception.hpp>
 
 using std::string;
 using std::vector;

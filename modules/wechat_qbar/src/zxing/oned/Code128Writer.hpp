@@ -17,13 +17,13 @@
 #ifndef QBAR_AI_QBAR_ZXING_ONED_CODE128WRITER_H_
 #define QBAR_AI_QBAR_ZXING_ONED_CODE128WRITER_H_
 
-#include <zxing/ZXing.hpp>
-#include <zxing/BarcodeFormat.hpp>
-#include <zxing/Exception.hpp>
-#include <zxing/common/IllegalArgumentException.hpp>
-#include <zxing/common/BitMatrix.hpp>
-#include <zxing/oned/OneDimensionalCodeWriter.hpp>
-#include <zxing/common/Integer.hpp>
+#include <zxing/zxing.hpp>
+#include <zxing/barcode_format.hpp>
+#include <zxing/exception.hpp>
+#include <zxing/common/illegal_argument_exception.hpp>
+#include <zxing/common/bit_matrix.hpp>
+#include <zxing/oned/one_dimensional_code_writer.hpp>
+#include <zxing/common/integer.hpp>
 
 #include <map>
 

@@ -17,14 +17,14 @@
 #ifndef __EAN13_WRITER_H__
 #define __EAN13_WRITER_H__
 
-#include <zxing/BarcodeFormat.hpp>
-#include <zxing/FormatException.hpp>
-#include <zxing/Exception.hpp>
-#include <zxing/common/BitMatrix.hpp>
-#include <zxing/oned/UPCEANWriter.hpp>
-#include <zxing/oned/UPCEANReader.hpp>
-#include <zxing/oned/OneDConstant.hpp>
-#include <zxing/common/Integer.hpp>
+#include <zxing/barcode_format.hpp>
+#include <zxing/format_exception.hpp>
+#include <zxing/exception.hpp>
+#include <zxing/common/bit_matrix.hpp>
+#include <zxing/oned/upceanwriter.hpp>
+#include <zxing/oned/upceanreader.hpp>
+#include <zxing/oned/one_dconstant.hpp>
+#include <zxing/common/integer.hpp>
 #include <map>
 
 using zxing::oned::UPCEANReader;

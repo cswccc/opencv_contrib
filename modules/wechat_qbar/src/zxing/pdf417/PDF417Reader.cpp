@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-#include <zxing/pdf417/PDF417Reader.hpp>
-#include <zxing/pdf417/detector/Detector.hpp>
-#include <zxing/pdf417/detector/LinesSampler.hpp>
+#include <zxing/pdf417/pdf417reader.hpp>
+#include <zxing/pdf417/detector/detector.hpp>
+#include <zxing/pdf417/detector/lines_sampler.hpp>
 
 using zxing::Ref;
 using zxing::Result;

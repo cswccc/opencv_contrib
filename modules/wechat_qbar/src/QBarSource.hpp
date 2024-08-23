@@ -15,10 +15,10 @@
  */
 
 #pragma once
-#include <zxing/LuminanceSource.hpp>
-#include <zxing/LuminanceSource.hpp>
-#include <zxing/common/ByteMatrix.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/luminance_source.hpp>
+#include <zxing/luminance_source.hpp>
+#include <zxing/common/byte_matrix.hpp>
+#include <zxing/error_handler.hpp>
 
 namespace cv {
 namespace QBarAI {

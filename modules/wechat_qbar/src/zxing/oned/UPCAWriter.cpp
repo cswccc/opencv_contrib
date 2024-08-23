@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <zxing/oned/UPCAWriter.hpp>
+#include <zxing/oned/upcawriter.hpp>
 
 using namespace zxing;
 using namespace oned;

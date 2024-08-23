@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#include "QBarSource.hpp"
-#include <zxing/common/IllegalArgumentException.hpp>
+#include "qbarsource.hpp"
+#include <zxing/common/illegal_argument_exception.hpp>
 #include <iostream>
 #include <sstream>
 #include <cstdlib>
@@ -27,7 +27,7 @@
 #include "../cli/src/lodepng.h"
 
 // Added BMP util
-#include <zxing/common/util/BMP.hpp>
+#include <zxing/common/util/bmp.hpp>
 #endif
 
 using std::string;

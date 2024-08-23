@@ -1,5 +1,5 @@
 //
-//  QBarInfoFilter.hpp
+//  qbarinfofilter.hpp
 //  QBar
 //
 //  Created by merrickmei(梅利健) on 2019/7/15.
@@ -14,7 +14,7 @@
 #include <vector>
 #include <algorithm>
 #include <math.h>
-#include "QBarStruct.hpp"
+#include "qbarstruct.hpp"
 
 const int MAX_CACHE_FRAME = 15;
 namespace cv {

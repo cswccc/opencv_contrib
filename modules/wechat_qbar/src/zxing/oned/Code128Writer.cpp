@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <zxing/oned/Code128Writer.hpp>
+#include <zxing/oned/code128writer.hpp>
 
 #include <map>
 

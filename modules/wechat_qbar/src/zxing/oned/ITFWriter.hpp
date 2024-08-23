@@ -17,15 +17,15 @@
 #ifndef __ITF_WRITER_H__
 #define __ITF_WRITER_H__
 
-#include <zxing/BarcodeFormat.hpp>
-#include <zxing/Exception.hpp>
-#include <zxing/common/BitMatrix.hpp>
+#include <zxing/barcode_format.hpp>
+#include <zxing/exception.hpp>
+#include <zxing/common/bit_matrix.hpp>
 
 #include <map>
 
-#include <zxing/oned/OneDimensionalCodeWriter.hpp>
-#include <zxing/oned/OneDConstant.hpp>
-#include <zxing/common/Character.hpp>
+#include <zxing/oned/one_dimensional_code_writer.hpp>
+#include <zxing/oned/one_dconstant.hpp>
+#include <zxing/common/character.hpp>
 
 using namespace zxing::oned::constant::ITF;
 

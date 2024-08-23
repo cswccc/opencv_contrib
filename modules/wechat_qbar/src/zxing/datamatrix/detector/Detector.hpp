@@ -22,12 +22,12 @@
  * limitations under the License.
  */
 
-#include <zxing/common/Counted.hpp>
-#include <zxing/common/DetectorResult.hpp>
-#include <zxing/common/BitMatrix.hpp>
-#include <zxing/common/PerspectiveTransform.hpp>
-#include <zxing/common/detector/WhiteRectangleDetector.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/common/counted.hpp>
+#include <zxing/common/detector_result.hpp>
+#include <zxing/common/bit_matrix.hpp>
+#include <zxing/common/perspective_transform.hpp>
+#include <zxing/common/detector/white_rectangle_detector.hpp>
+#include <zxing/error_handler.hpp>
 
 namespace zxing {
 namespace datamatrix {

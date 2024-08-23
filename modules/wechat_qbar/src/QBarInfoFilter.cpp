@@ -6,7 +6,7 @@
 //  Copyright © 2019 Valiantliu. All rights reserved.
 //
 
-#include "QBarInfoFilter.hpp"
+#include "qbarinfofilter.hpp"
 
 namespace cv {
 namespace QBarAI {

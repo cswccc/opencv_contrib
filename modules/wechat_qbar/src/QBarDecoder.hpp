@@ -9,29 +9,29 @@
 #include <unordered_set>
 
 // zxing
-#include <zxing/ZXing.hpp>
-#include <zxing/common/Counted.hpp>
-#include <zxing/Binarizer.hpp>
-#include <zxing/MultiFormatReader.hpp>
-#include <zxing/Result.hpp>
-#include <zxing/common/GlobalHistogramBinarizer.hpp>
-#include <zxing/common/HybridBinarizer.hpp>
-#include <zxing/common/FastWindowBinarizer.hpp>
-#include <zxing/common/SimpleAdaptiveBinarizer.hpp>
-#include <zxing/common/ImageCut.hpp>
-#include <zxing/common/UnicomBlock.hpp>
-#include <zxing/qrcode/QRCodeReader.hpp>
-#include <zxing/BinaryBitmap.hpp>
-#include <zxing/DecodeHints.hpp>
-#include <zxing/common/StringUtils.hpp>
-#include <zxing/common/util/INIReader.hpp>
+#include <zxing/zxing.hpp>
+#include <zxing/common/counted.hpp>
+#include <zxing/binarizer.hpp>
+#include <zxing/multi_format_reader.hpp>
+#include <zxing/result.hpp>
+#include <zxing/common/global_histogram_binarizer.hpp>
+#include <zxing/common/hybrid_binarizer.hpp>
+#include <zxing/common/fast_window_binarizer.hpp>
+#include <zxing/common/simple_adaptive_binarizer.hpp>
+#include <zxing/common/image_cut.hpp>
+#include <zxing/common/unicom_block.hpp>
+#include <zxing/qrcode/qrcode_reader.hpp>
+#include <zxing/binary_bitmap.hpp>
+#include <zxing/decode_hints.hpp>
+#include <zxing/common/string_utils.hpp>
+#include <zxing/common/util/inireader.hpp>
 
 // qbar
-#include <QBarSource.hpp>
-#include <BinarizerMgr.hpp>
-#include <QBarStruct.hpp>
+#include <qbarsource.hpp>
+#include <binarzermgr.hpp>
+#include <qbarstruct.hpp>
 
-#include "QBarInfoFilter.hpp"
+#include "qbarinfofilter.hpp"
 
 //ai
 #include "detector/qbar_detector.hpp"

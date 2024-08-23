@@ -19,7 +19,7 @@
  * limitations under the License.
  */
 
-#include <zxing/common/Str.hpp>
+#include <zxing/common/str.hpp>
 #include <cstring>
 
 using std::string;

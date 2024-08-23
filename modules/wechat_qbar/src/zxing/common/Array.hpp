@@ -23,7 +23,7 @@
 
 #include <vector>
 
-#include <zxing/common/Counted.hpp>
+#include <zxing/common/counted.hpp>
 
 namespace zxing {
 

@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-#include "Code93Reader.hpp"
-#include <zxing/oned/OneDResultPoint.hpp>
-#include <zxing/common/Array.hpp>
-#include <zxing/ReaderException.hpp>
-#include <zxing/FormatException.hpp>
-#include <zxing/NotFoundException.hpp>
-#include <zxing/ChecksumException.hpp>
+#include "code93reader.hpp"
+#include <zxing/oned/one_dresult_point.hpp>
+#include <zxing/common/array.hpp>
+#include <zxing/reader_exception.hpp>
+#include <zxing/format_exception.hpp>
+#include <zxing/not_found_exception.hpp>
+#include <zxing/checksum_exception.hpp>
 #include <math.h>
 #include <limits.h>
 
@@ -37,7 +37,7 @@ using zxing::oned::Code93Reader;
 // VC++
 using zxing::BitArray;
 
-#include <zxing/oned/OneDConstant.hpp>
+#include <zxing/oned/one_dconstant.hpp>
 using namespace zxing;
 using namespace oned;
 using namespace zxing::oned::constant::Code93;

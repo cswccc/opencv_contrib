@@ -21,9 +21,9 @@
  * limitations under the License.
  */
 
-#include <zxing/common/Counted.hpp>
-#include <zxing/qrcode/Version.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/common/counted.hpp>
+#include <zxing/qrcode/version.hpp>
+#include <zxing/error_handler.hpp>
 
 namespace zxing {
 namespace qrcode {

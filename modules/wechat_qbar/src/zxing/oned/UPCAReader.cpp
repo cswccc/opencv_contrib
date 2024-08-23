@@ -18,8 +18,8 @@
  * limitations under the License.
  */
 
-#include "UPCAReader.hpp"
-#include <zxing/FormatException.hpp>
+#include "upcareader.hpp"
+#include <zxing/format_exception.hpp>
 
 using zxing::oned::UPCAReader;
 using zxing::Ref;

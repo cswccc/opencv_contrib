@@ -23,7 +23,7 @@
  * @author dsbnatut@gmail.com (Kazuki Nishiura)
  */
 
-#include <zxing/oned/UPCEANWriter.hpp>
+#include <zxing/oned/upceanwriter.hpp>
 
 using namespace zxing;
 using namespace oned;

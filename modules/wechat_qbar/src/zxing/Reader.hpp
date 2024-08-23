@@ -19,10 +19,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#include <zxing/BinaryBitmap.hpp>
-#include <zxing/Result.hpp>
-#include <zxing/DecodeHints.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/binary_bitmap.hpp>
+#include <zxing/result.hpp>
+#include <zxing/decode_hints.hpp>
+#include <zxing/error_handler.hpp>
 
 
 namespace zxing {

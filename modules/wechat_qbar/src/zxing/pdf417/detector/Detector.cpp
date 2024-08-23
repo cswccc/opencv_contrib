@@ -16,11 +16,11 @@
  */
 
 #include <limits>
-#include <zxing/pdf417/detector/Detector.hpp>
-#include <zxing/pdf417/detector/LinesSampler.hpp>
-#include <zxing/common/GridSampler.hpp>
-#include <zxing/common/detector/JavaMath.hpp>
-#include <zxing/common/detector/MathUtils.hpp>
+#include <zxing/pdf417/detector/detector.hpp>
+#include <zxing/pdf417/detector/lines_sampler.hpp>
+#include <zxing/common/grid_sampler.hpp>
+#include <zxing/common/detector/java_math.hpp>
+#include <zxing/common/detector/math_utils.hpp>
 #include <iostream>
 
 using std::max;

@@ -21,10 +21,10 @@
  * limitations under the License.
  */
 
-#include <zxing/Reader.hpp>
-#include <zxing/pdf417/decoder/Decoder.hpp>
-#include <zxing/DecodeHints.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/reader.hpp>
+#include <zxing/pdf417/decoder/decoder.hpp>
+#include <zxing/decode_hints.hpp>
+#include <zxing/error_handler.hpp>
 
 namespace zxing {
 namespace pdf417 {

@@ -26,7 +26,7 @@
 #include <string>
 #include <iostream>
 #include <sstream>
-#include <zxing/common/Counted.hpp>
+#include <zxing/common/counted.hpp>
 
 #include <stdio.h>
 #include <stdlib.h>

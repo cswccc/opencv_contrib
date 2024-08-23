@@ -21,12 +21,12 @@
  * limitations under the License.
  */
 
-#include <zxing/common/reedsolomon/ReedSolomonDecoder.hpp>
-#include <zxing/common/Counted.hpp>
-#include <zxing/common/Array.hpp>
-#include <zxing/common/DecoderResult.hpp>
-#include <zxing/common/BitMatrix.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/common/reedsolomon/reed_solomon_decoder.hpp>
+#include <zxing/common/counted.hpp>
+#include <zxing/common/array.hpp>
+#include <zxing/common/decoder_result.hpp>
+#include <zxing/common/bit_matrix.hpp>
+#include <zxing/error_handler.hpp>
 
 namespace zxing {
 namespace datamatrix {

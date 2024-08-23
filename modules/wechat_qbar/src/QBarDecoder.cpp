@@ -1,5 +1,5 @@
 #include "opencv2/core.hpp"
-#include <QBarDecoder.hpp>
+#include <qbardecoder.hpp>
 
 #ifdef __NEON__
 #include <arm_neon.h>

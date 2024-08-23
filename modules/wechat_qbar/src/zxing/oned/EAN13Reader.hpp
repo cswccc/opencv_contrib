@@ -21,9 +21,9 @@
  * limitations under the License.
  */
 
-#include <zxing/oned/UPCEANReader.hpp>
-#include <zxing/Result.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/oned/upceanreader.hpp>
+#include <zxing/result.hpp>
+#include <zxing/error_handler.hpp>
 
 namespace zxing {
 namespace oned {

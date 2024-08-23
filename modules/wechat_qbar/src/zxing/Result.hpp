@@ -21,11 +21,11 @@
  */
 
 #include <string>
-#include <zxing/common/Array.hpp>
-#include <zxing/common/Counted.hpp>
-#include <zxing/common/Str.hpp>
-#include <zxing/ResultPoint.hpp>
-#include <zxing/BarcodeFormat.hpp>
+#include <zxing/common/array.hpp>
+#include <zxing/common/counted.hpp>
+#include <zxing/common/str.hpp>
+#include <zxing/result_point.hpp>
+#include <zxing/barcode_format.hpp>
 #include <stdint.h>
 
 namespace zxing {

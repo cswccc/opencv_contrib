@@ -26,8 +26,8 @@
 #ifndef __UPCEAN_WRITER_H__
 #define __UPCEAN_WRITER_H__
 
-#include <zxing/oned/OneDimensionalCodeWriter.hpp>
-#include <zxing/oned/OneDConstant.hpp>
+#include <zxing/oned/one_dimensional_code_writer.hpp>
+#include <zxing/oned/one_dconstant.hpp>
 
 using namespace zxing;
 using namespace oned;

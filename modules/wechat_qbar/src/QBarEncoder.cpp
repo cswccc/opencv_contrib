@@ -1,18 +1,18 @@
-#include <QBarEncoder.hpp>
+#include <qbarencoder.hpp>
 
-#include <zxing/qrcode/QRCodeWriter.hpp>
-#include <zxing/qrcode/ErrorCorrectionLevel.hpp>
+#include <zxing/qrcode/qrcode_writer.hpp>
+#include <zxing/qrcode/error_correction_level.hpp>
 
 using namespace zxing::qrcode;
 
-#include <zxing/oned/OneDimensionalCodeWriter.hpp>
-#include <zxing/oned/Code128Writer.hpp>
-#include <zxing/oned/EAN13Writer.hpp>
-#include <zxing/oned/EAN8Writer.hpp>
-#include <zxing/oned/UPCAWriter.hpp>
-#include <zxing/oned/Code39Writer.hpp>
-#include <zxing/oned/ITFWriter.hpp>
-#include <zxing/oned/CodaBarWriter.hpp>
+#include <zxing/oned/one_dimensional_code_writer.hpp>
+#include <zxing/oned/code128writer.hpp>
+#include <zxing/oned/ean13writer.hpp>
+#include <zxing/oned/ean8writer.hpp>
+#include <zxing/oned/upcawriter.hpp>
+#include <zxing/oned/code39writer.hpp>
+#include <zxing/oned/itfwriter.hpp>
+#include <zxing/oned/coda_bar_writer.hpp>
 
 using namespace zxing::oned;
 

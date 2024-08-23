@@ -1,5 +1,5 @@
-#include <zxing/common/KMeans.hpp>
-#include <zxing/common/util/INIReader.hpp>
+#include <zxing/common/kmeans.hpp>
+#include <zxing/common/util/inireader.hpp>
 
 #include<iostream>
 #include<cmath>

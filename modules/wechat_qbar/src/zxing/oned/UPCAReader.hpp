@@ -20,9 +20,9 @@
  * limitations under the License.
  */
 
-#include <zxing/oned/EAN13Reader.hpp>
-#include <zxing/DecodeHints.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/oned/ean13reader.hpp>
+#include <zxing/decode_hints.hpp>
+#include <zxing/error_handler.hpp>
 
 namespace zxing {
 namespace oned {

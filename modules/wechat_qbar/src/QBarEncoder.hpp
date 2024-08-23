@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include <QBarStruct.hpp>
+#include <qbarstruct.hpp>
 
 #include "opencv2/core.hpp"
 

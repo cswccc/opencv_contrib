@@ -21,17 +21,17 @@
  * limitations under the License.
  */
 
-#include <zxing/common/Counted.hpp>
-#include <zxing/common/DetectorResult.hpp>
-#include <zxing/common/BitMatrix.hpp>
-#include <zxing/qrcode/detector/AlignmentPattern.hpp>
-#include <zxing/common/PerspectiveTransform.hpp>
-#include <zxing/ResultPointCallback.hpp>
-#include <zxing/qrcode/detector/FinderPatternInfo.hpp>
-#include <zxing/qrcode/detector/FinderPattern.hpp>
-#include <zxing/qrcode/detector/PatternResult.hpp>
-#include <zxing/common/UnicomBlock.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/common/counted.hpp>
+#include <zxing/common/detector_result.hpp>
+#include <zxing/common/bit_matrix.hpp>
+#include <zxing/qrcode/detector/alignment_pattern.hpp>
+#include <zxing/common/perspective_transform.hpp>
+#include <zxing/result_point_callback.hpp>
+#include <zxing/qrcode/detector/finder_pattern_info.hpp>
+#include <zxing/qrcode/detector/finder_pattern.hpp>
+#include <zxing/qrcode/detector/pattern_result.hpp>
+#include <zxing/common/unicom_block.hpp>
+#include <zxing/error_handler.hpp>
 #include <vector>
 
 #include "opencv2/calib3d.hpp"

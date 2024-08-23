@@ -20,11 +20,11 @@
  * limitations under the License.
  */
 
-#include <zxing/LuminanceSource.hpp>
-#include <zxing/common/BitArray.hpp>
-#include <zxing/common/BitMatrix.hpp>
-#include <zxing/common/Counted.hpp>
-#include <zxing/ErrorHandler.hpp>
+#include <zxing/luminance_source.hpp>
+#include <zxing/common/bit_array.hpp>
+#include <zxing/common/bit_matrix.hpp>
+#include <zxing/common/counted.hpp>
+#include <zxing/error_handler.hpp>
 
 namespace zxing {
 

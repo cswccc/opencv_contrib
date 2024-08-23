@@ -1,9 +1,9 @@
 #pragma once
 
-#include <zxing/oned/OneDReader.hpp>
-#include <zxing/common/BitArray.hpp>
-#include <zxing/ErrorHandler.hpp>
-#include <zxing/Result.hpp>
+#include <zxing/oned/one_dreader.hpp>
+#include <zxing/common/bit_array.hpp>
+#include <zxing/error_handler.hpp>
+#include <zxing/result.hpp>
 
 namespace zxing {
 namespace oned {
