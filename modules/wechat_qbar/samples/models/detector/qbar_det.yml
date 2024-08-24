@@ -1,0 +1,4 @@
+%YAML:1.0
+MODEL: "qbar_det.onnx"
+LONG_SIDE: 640
+SHORT_SIDE: 480
