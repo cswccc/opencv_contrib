@@ -74,9 +74,11 @@ public:
     void tvDenoising() const;
     
     bool isCropSupported() const;
+    using LuminanceSource::crop;
     zxing::Ref<LuminanceSource> crop(int left, int top, int width, int height, zxing::ErrorHandler & err_handler) const;
     
     bool isRotateSupported() const;
+    using LuminanceSource::rotateCounterClockwise;
     zxing::Ref<LuminanceSource> rotateCounterClockwise(zxing::ErrorHandler & err_handler) const;
     
     void reverseHorizontal(int width, int height);

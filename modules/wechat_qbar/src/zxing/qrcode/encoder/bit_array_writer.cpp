@@ -96,9 +96,9 @@ vector<int>& BitArrayWriter::getBitArrayWriter() {
 
 void BitArrayWriter::reverse() {
     ArrayRef<int> newBits(bits->size());
-    int size = this->size;
-    for (int i = 0; i < size; i++) {
-        if (get(size - i - 1))
+    int size_ = this->size;
+    for (int i = 0; i < size_; i++) {
+        if (get(size_ - i - 1))
         {
             newBits[i >> logBits] |= 1 << (i & bitsMask);
         }

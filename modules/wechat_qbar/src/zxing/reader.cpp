@@ -41,6 +41,8 @@ float Reader::getPossibleFix() {
 
 int Reader::getQrcodeInfo(const void * &pQBarQrcodeInfo)
 {
+    (void)pQBarQrcodeInfo;
+    
     return 0;
 }
 

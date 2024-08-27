@@ -551,7 +551,7 @@ vector<Ref<FinderPatternInfo> > FinderPatternFinder::getPatternInfos(ErrorHandle
     vector<ModuleSizeBucket> moduleSizeBucket(pSize);
     
     int maxCount = 0;
-    int maxIdx = 0;
+    // int maxIdx = 0;
     
     for (int i = 0; i < pSize; i++)
     {
@@ -572,7 +572,7 @@ vector<Ref<FinderPatternInfo> > FinderPatternFinder::getPatternInfos(ErrorHandle
         if (moduleSizeBucket[moduleSizeIdx].count > maxCount)
         {
             maxCount = moduleSizeBucket[moduleSizeIdx].count;
-            maxIdx = moduleSizeIdx;
+            // maxIdx = moduleSizeIdx;
         }
     }
     

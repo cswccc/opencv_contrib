@@ -398,7 +398,7 @@ static int _calculateBCHCode(int value, int poly) {
 // Make bit vector of type information. On success, store the result in "bits"
 // and return true. Encode error correction level and mask pattern. See 8.9 of
 // JISX0510:2004 (p.45) for details.
-int _makeTypeInfoBits(ErrorCorrectionLevel& ecLevel, int maskPattern, BitArrayWriter& bits) {
+static int _makeTypeInfoBits(ErrorCorrectionLevel& ecLevel, int maskPattern, BitArrayWriter& bits) {
     if (!QRCodeWriter::isValidMaskPattern(maskPattern)) {
         return -1;
     }
@@ -1171,6 +1171,8 @@ static void _appendECI(CharacterSetECI* eci, BitArrayWriter& bits) {
 // since our primary use is to show QR code on desktop screens. We don't need
 // very strong error correction for this purpose.
 QRCodeWriter QRCodeWriter::encode(const std::string& content, ErrorCorrectionLevel& ecLevel, int forceVersion, bool flag, const std::string& encoding) {
+    (void)flag;
+    
     QRCodeWriter qrCode;
     flag = true;
     
@@ -1348,6 +1350,9 @@ QRCodeWriter QRCodeWriter::encode(const std::string& content, ErrorCorrectionLev
 
 QRCodeWriter QRCodeWriter::encodeMicro(const std::string& content, ErrorCorrectionLevel& ecLevel, bool flag, const std::string& encoding)
 {
+    (void)encoding;
+    (void)flag;
+
     QRCodeWriter qrCode;
     flag = false;
     
@@ -1760,7 +1765,7 @@ static int AdjustColor(std::vector<QBAR_COLOR>& colors, std::vector<std::vector<
 }
 
 
-bool Xsort(const QBAR_COLOR& a, const QBAR_COLOR& b)
+static bool Xsort(const QBAR_COLOR& a, const QBAR_COLOR& b)
 {
     return a.count > b.count;
 }

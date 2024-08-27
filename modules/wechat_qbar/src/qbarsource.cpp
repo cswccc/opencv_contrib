@@ -210,6 +210,7 @@ Ref<QBarSource> QBarSource::create(unsigned char* pixels, int width, int height,
 
 Ref<QBarSource> QBarSource::create(unsigned char* pixels, int width, int height, int left, int top, int cropWidth, int cropHeight, int comps, int pixelStep, bool needReverseHorizontal, zxing::ErrorHandler & err_handler) 
 {
+    (void)needReverseHorizontal;
     return Ref<QBarSource>(new QBarSource(pixels, width, height, left, top, cropWidth, cropHeight, comps, pixelStep, false, err_handler));
 }
 
@@ -394,6 +395,8 @@ Ref<LuminanceSource> QBarSource::rotateCounterClockwise(ErrorHandler & err_handl
 
 void QBarSource::reverseHorizontal(int width, int height) 
 {
+    (void)width;
+    (void)height;
 }
 
 zxing::ArrayRef<char> QBarSource::downSample(zxing::ArrayRef<char> image, int& width, int& height, int pixelStep){

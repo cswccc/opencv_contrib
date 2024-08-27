@@ -306,7 +306,7 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
         std::vector<DetectInfo> _detect_results_;
         detector_->Detect(srcImage, _detect_results_);
 
-        for(int i = 0; i < _detect_results_.size(); i++)
+        for(size_t i = 0; i < _detect_results_.size(); i++)
         {
             Align aligner;
             Mat crop_image = this->cropObj(srcImage, _detect_results_[i], aligner);
@@ -320,14 +320,14 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
                 if(result.typeID!=0)
                 {
                     vector<Point2f> points_qr;
-                    for (size_t i = 0; i < result.points.size(); i++) {
-                        Point2f point(result.points[i].x / cur_scale, result.points[i].y / cur_scale);
+                    for (size_t j = 0; j < result.points.size(); j++) {
+                        Point2f point(result.points[j].x / cur_scale, result.points[j].y / cur_scale);
                         points_qr.push_back(point);
                     }
                     points_qr = aligner.warpBack(points_qr);
-                    for (size_t i = 0; i < points_qr.size(); i++) {
-                        result.points[i].x = points_qr[i].x;
-                        result.points[i].y = points_qr[i].y;
+                    for (size_t j = 0; j < points_qr.size(); j++) {
+                        result.points[j].x = points_qr[j].x;
+                        result.points[j].y = points_qr[j].y;
                     }
                     break;
                 }

@@ -125,9 +125,9 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
         cv::Point2f pt = cur_point_list.back();
         cur_point_list.pop_back();
         
-        int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
+        int x_ = static_cast<int>(pt.x), y_ = static_cast<int>(pt.y);
         for (int i = 0; i < 4; i++) {
-            int grow_x = x + DIR[i][0], grow_y = y + DIR[i][1];
+            int grow_x = x_ + DIR[i][0], grow_y = y_ + DIR[i][1];
             // 是否边缘点
             if (grow_x < min_x || grow_y < min_y || grow_x > max_x || grow_y > max_y)
                 return -1;
@@ -158,9 +158,9 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
         cv::Point2f pt = next_point_list.back();
         next_point_list.pop_back();
         
-        int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
+        int x_ = static_cast<int>(pt.x), y_ = static_cast<int>(pt.y);
         for (int i = 0; i < 4; i++) {
-            int grow_x = x + DIR[i][0], grow_y = y + DIR[i][1];
+            int grow_x = x_ + DIR[i][0], grow_y = y_ + DIR[i][1];
             // 是否边缘点
             if (grow_x < min_x || grow_y < min_y || grow_x > max_x || grow_y > max_y){
                 return -1;
@@ -192,10 +192,10 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
         cv::Point2f pt = cur_point_list.back();
         cur_point_list.pop_back();
         
-        int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
+        int x_ = static_cast<int>(pt.x), y_ = static_cast<int>(pt.y);
         bool has_add = false;
         for (int i = 0; i < 4; i++) {
-            int grow_x = x + DIR[i][0], grow_y = y + DIR[i][1];
+            int grow_x = x_ + DIR[i][0], grow_y = y_ + DIR[i][1];
             
             // 是否边缘点
             if (grow_x < min_x || grow_y < min_y || grow_x > max_x || grow_y > max_y)
@@ -995,32 +995,32 @@ int Detector::getPossibleAlignmentPatterRect(float x, float y) {
         cv::Point2f pt = point_list.front();
         point_list.pop();
         
-        int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
-        if (flag_mat.at<uchar>(y, x) == 255) continue;
-        flag_mat.at<uchar>(y, x) = 255;
+        int x_ = static_cast<int>(pt.x), y_ = static_cast<int>(pt.y);
+        if (flag_mat.at<uchar>(y_, x_) == 255) continue;
+        flag_mat.at<uchar>(y_, x_) = 255;
         
         bool flag1 = false, flag2 = false, flag3 = false, flag4 = false;
-        if ((x - 1) >= min_x && image_->get(x - 1, y))
+        if ((x_ - 1) >= min_x && image_->get(x_ - 1, y_))
         {
-            if (flag_mat.at<uchar>(y, x - 1) == 0)
+            if (flag_mat.at<uchar>(y_, x_ - 1) == 0)
                 point_list.push(cv::Point2f(pt.x - 1, pt.y));
             flag1 = true;
         }
-        if ((x + 1) <= max_x && image_->get(x + 1, y))
+        if ((x_ + 1) <= max_x && image_->get(x_ + 1, y_))
         {
-            if (flag_mat.at<uchar>(y, x + 1) == 0)
+            if (flag_mat.at<uchar>(y_, x_ + 1) == 0)
                 point_list.push(cv::Point2f(pt.x + 1, pt.y));
             flag2 = true;
         }
-        if ((y - 1) >= min_y && image_->get(x, y - 1))
+        if ((y_ - 1) >= min_y && image_->get(x_, y_ - 1))
         {
-            if (flag_mat.at<uchar>(y - 1, x) == 0)
-                point_list.push(cv::Point2f(pt.x, pt.y - 1));
-            flag3 = true;
+            if (flag_mat.at<uchar>(y_ - 1, x_) == 0)
+            point_list.push(cv::Point2f(pt.x, pt.y - 1));
+        flag3 = true;
         }
-        if ((y + 1) <= max_y && image_->get(x, y + 1))
+        if ((y_ + 1) <= max_y && image_->get(x_, y_ + 1))
         {
-            if (flag_mat.at<uchar>(y + 1, x) == 0)
+            if (flag_mat.at<uchar>(y_ + 1, x_) == 0)
                 point_list.push(cv::Point2f(pt.x, pt.y + 1));
             flag4 = true;
         }
@@ -1066,32 +1066,32 @@ int Detector::getPossibleAlignmentPatterRect(float x, float y) {
         cv::Point2f pt = point_list.front();
         point_list.pop();
         
-        int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
-        if (flag_mat.at<uchar>(y, x) == 255) continue;
-        flag_mat.at<uchar>(y, x) = 255;
+        int x_ = static_cast<int>(pt.x), y_ = static_cast<int>(pt.y);
+        if (flag_mat.at<uchar>(y_, x_) == 255) continue;
+        flag_mat.at<uchar>(y_, x_) = 255;
         
         bool flag1 = false, flag2 = false, flag3 = false, flag4 = false;
-        if ((x - 1) >= min_x && !image_->get(x - 1, y))
+        if ((x_ - 1) >= min_x && !image_->get(x_ - 1, y_))
         {
-            if (flag_mat.at<uchar>(y, x - 1) == 0)
+            if (flag_mat.at<uchar>(y_, x_ - 1) == 0)
                 point_list.push(cv::Point2f(pt.x - 1, pt.y));
             flag1 = true;
         }
-        if ((x + 1) <= max_x && !image_->get(x + 1, y))
+        if ((x_ + 1) <= max_x && !image_->get(x_ + 1, y_))
         {
-            if (flag_mat.at<uchar>(y, x + 1) == 0)
+            if (flag_mat.at<uchar>(y_, x_ + 1) == 0)
                 point_list.push(cv::Point2f(pt.x + 1, pt.y));
             flag2 = true;
         }
-        if ((y - 1) >= min_y && !image_->get(x, y - 1))
+        if ((y_ - 1) >= min_y && !image_->get(x_, y_ - 1))
         {
-            if (flag_mat.at<uchar>(y - 1, x) == 0)
+            if (flag_mat.at<uchar>(y_ - 1, x_) == 0)
                 point_list.push(cv::Point2f(pt.x, pt.y - 1));
             flag3 = true;
         }
-        if ((y + 1) <= max_y && !image_->get(x, y + 1))
+        if ((y_ + 1) <= max_y && !image_->get(x_, y_ + 1))
         {
-            if (flag_mat.at<uchar>(y + 1, x) == 0)
+            if (flag_mat.at<uchar>(y_ + 1, x_) == 0)
                 point_list.push(cv::Point2f(pt.x, pt.y + 1));
             flag4 = true;
         }
@@ -1129,10 +1129,10 @@ int Detector::getPossibleAlignmentPatterRect(float x, float y) {
             max_diff = diff;
         }
     }
-    cv::Point2f pt1 = corner_list[min_sum_idx];
-    cv::Point2f pt2 = corner_list[max_sum_idx];
-    cv::Point2f pt3 = corner_list[min_diff_idx];
-    cv::Point2f pt4 = corner_list[max_diff_idx];
+    // cv::Point2f pt1 = corner_list[min_sum_idx];
+    // cv::Point2f pt2 = corner_list[max_sum_idx];
+    // cv::Point2f pt3 = corner_list[min_diff_idx];
+    // cv::Point2f pt4 = corner_list[max_diff_idx];
     
     return 0;
 }
@@ -1191,6 +1191,9 @@ Ref<AlignmentPattern> Detector::findPossibleAlignment(int dimension, float modul
 
 Ref<DetectorResult> Detector::getResultViaAlignmentMore(DecodeHints const& hints, size_t patternIdx, size_t alignmentIndex, ArrayRef< Ref<ResultPoint> > points, int dimension, float module_size, int mode, ErrorHandler & err_handler)
 {
+    (void)hints;
+    (void)points;
+
     if (patternIdx >= possiblePatternResults_.size() || patternIdx < 0)
     {
         return Ref<DetectorResult>(NULL);
@@ -1614,6 +1617,8 @@ Ref<DetectorResult> Detector::getResultViaAlignment(size_t patternIdx, size_t al
 
 Ref<DetectorResult> Detector::getResultViaPoints(DecodeHints const& hints, int dimension, std::vector<cv::Point2f>& pts_src, std::vector<cv::Point2f>& pts_dst, bool is_homo,  ErrorHandler & err_handler)
 {
+    (void)hints;
+
     if (is_homo)
     {
         if (pts_src.size() < 4) return Ref<DetectorResult>();
@@ -1739,6 +1744,8 @@ Ref<AlignmentPattern> Detector::getNearestAlignmentPattern(int tryFindRange, flo
 
 Ref<PatternResult> Detector::processFinderPatternInfo(::DecodeHints& hints, Ref<FinderPatternInfo> info, ErrorHandler & err_handler)
 {
+    (void)hints;
+    
     Ref<FinderPattern> topLeft(info->getTopLeft());
     Ref<FinderPattern> topRight(info->getTopRight());
     Ref<FinderPattern> bottomLeft(info->getBottomLeft());
@@ -2285,6 +2292,10 @@ void Detector::fixAlignmentPattern(float &alignmentX, float &alignmentY,
                                    Ref<ResultPoint> topLeft, Ref<ResultPoint> topRight, Ref<ResultPoint> bottomLeft,
                                    float moduleSize)
 {
+    (void)topLeft;
+    (void)topRight;
+    (void)bottomLeft;
+
     int imgWidth = image_->getWidth();
     int imgHeight = image_->getHeight();
     int maxFixStep = moduleSize * 2;
@@ -2371,7 +2382,7 @@ int Detector::fitLine(std::vector<Ref<ResultPoint> > &oldPoints, float& k, float
     if (num < 2)
         return -1;
     
-    double x = 0, y = 0, xx = 0, xy = 0, yy = 0, tem = 0;
+    double x = 0, y = 0, xx = 0, xy = 0, /* yy = 0, */ tem = 0;
     for (int i = 0; i < num; i++)
     {
         int point_x = fitPoints[i]->getX();
@@ -2380,7 +2391,7 @@ int Detector::fitLine(std::vector<Ref<ResultPoint> > &oldPoints, float& k, float
         y += point_y;
         xx += point_x * point_x;
         xy += point_x * point_y;
-        yy += point_y * point_y;
+        // yy += point_y * point_y;
     }
     
     tem = xx*num - x*x;

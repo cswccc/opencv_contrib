@@ -66,7 +66,7 @@ struct QBAR_QRCODE_DETECT_INFO
         sDebugString.resize(1024);
         if (qrcodeBorder.size() == 4)
         {
-            sprintf(const_cast<char *>(sDebugString.data()), "possiblefix: %.4f\n\
+            snprintf(const_cast<char *>(sDebugString.data()), sDebugString.size(), "possiblefix: %.4f\n\
     point_0 (%.0f, %.0f)\n\
     point_1 (%.0f, %.0f)\n\
     point_2 (%.0f, %.0f)\n\

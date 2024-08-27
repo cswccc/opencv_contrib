@@ -50,7 +50,7 @@ private:
                             const char* value);
 };
 
-static INIReader * GetIniParser()
+static inline INIReader * GetIniParser()
 {
     static INIReader iniReader("./global.ini");
     return &iniReader;

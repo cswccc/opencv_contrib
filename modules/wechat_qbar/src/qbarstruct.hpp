@@ -247,23 +247,23 @@ enum QBAR_CODE_FORMAT{
 };
 
 /////////////////////////////////// debug
-enum QBAR_BINARIZER
-{
-    Hybrid = 0,
-    FastWindow = 1,
-    SimpleAdaptive = 2,
-    GlobalHistogram=3,
-    OTSU=4,
-    Niblack=5,
-    Adaptive=6,
-    HistogramBackground=7
-};
+// enum QBAR_BINARIZER
+// {
+//     Hybrid = 0,
+//     FastWindow = 1,
+//     SimpleAdaptive = 2,
+//     GlobalHistogram=3,
+//     OTSU=4,
+//     Niblack=5,
+//     Adaptive=6,
+//     HistogramBackground=7
+// };
 
 
-struct QBAR_DEBUG
-{
-    QBAR_BINARIZER binarizer;
-};
+// struct QBAR_DEBUG
+// {
+//     QBAR_BINARIZER binarizer;
+// };
 
 enum QBAR_CONFIG_TYPE{
     CONFIG_RESERVED0 = 0,

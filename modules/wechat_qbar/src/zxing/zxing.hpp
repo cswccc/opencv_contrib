@@ -106,7 +106,7 @@ namespace zxing {
 
 #endif
 
-#if ZXING_DEBUG
+#ifdef ZXING_DEBUG
 
 #include <iostream>
 #include <string>

@@ -82,10 +82,10 @@ Ref<Result> QRCodeReader::decode(Ref<BinaryBitmap> image, DecodeHints hints) {
         if (err_handler.ErrCode() || invertedMatrix == NULL)
             return Ref<Result>();
         
-        Ref<Result> rst = decodeMore(image, invertedMatrix, hints, err_handler);
+        Ref<Result> rst_ = decodeMore(image, invertedMatrix, hints, err_handler);
         if (err_handler.ErrCode() || rst == NULL)
             return Ref<Result>();
-        return rst;
+        return rst_;
     }
     reader_call_path_ += "0";  // ok
     
@@ -764,7 +764,7 @@ void QRCodeReader::setDecoderFix(float possibleFix, ArrayRef< Ref<ResultPoint> >
         possibleQrcodeInfo_.pyramidLev = nowHints_.getPyramidLev();
         possibleQrcodeInfo_.qrcodeBorder.clear();
         possibleQrcodeInfo_.possibleModuleSize = possibleModuleSize_;
-        if (border != NULL)
+        if (border)
         {
             for (int i = 0; i < 4; ++i)
             {
@@ -781,7 +781,7 @@ void QRCodeReader::setSuccFix(ArrayRef< Ref<ResultPoint> > border)
     possibleQrcodeInfo_.pyramidLev = nowHints_.getPyramidLev();
     possibleQrcodeInfo_.qrcodeBorder.clear();
     possibleQrcodeInfo_.possibleModuleSize = possibleModuleSize_;
-    if (border != NULL)
+    if (border)
     {
         for (int i = 0; i < 4; ++i)
         {
