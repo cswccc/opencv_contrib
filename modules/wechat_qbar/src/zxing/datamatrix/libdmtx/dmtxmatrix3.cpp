@@ -13,12 +13,12 @@
 
 namespace dmtx {
 
-void dmtxMatrix3Copy(DmtxMatrix3 m0, DmtxMatrix3 m1)
+static void dmtxMatrix3Copy(DmtxMatrix3 m0, DmtxMatrix3 m1)
 {
     memcpy(m0, m1, sizeof(DmtxMatrix3));
 }
 
-void dmtxMatrix3Identity(DmtxMatrix3 m)
+static void dmtxMatrix3Identity(DmtxMatrix3 m)
 {
     static DmtxMatrix3 tmp = { {1, 0, 0},
         {0, 1, 0},

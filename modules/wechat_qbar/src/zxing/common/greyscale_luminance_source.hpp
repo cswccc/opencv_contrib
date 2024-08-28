@@ -48,6 +48,7 @@ public:
     return true;
   }
 
+  using LuminanceSource::rotateCounterClockwise;
   Ref<LuminanceSource> rotateCounterClockwise(ErrorHandler & err_handler) const;
 };
 

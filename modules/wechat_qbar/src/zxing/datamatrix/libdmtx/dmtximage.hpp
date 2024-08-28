@@ -17,7 +17,7 @@ public:
     DmtxImage() {}
     ~DmtxImage();
     
-    int dmtxImageCreate(unsigned char *pxl, int width, int height);
+    int dmtxImageCreate(unsigned char *pxl_, int width_, int height_);
     int dmtxImageGetProp(int prop);
     int dmtxImageGetByteOffset(int x, int y);
     unsigned int dmtxImageGetPixelValue(int x, int y, /*@out@*/ int *value);

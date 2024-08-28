@@ -177,6 +177,8 @@ inline int cap(int value, int min, int max) {
 // No use of level now
 ArrayRef<int> HybridBinarizer::getBlackPoints(int level)
 {
+    (void)level;
+
     int blackWidth, blackHeight;
     
     blackWidth = subWidth_;
@@ -414,6 +416,7 @@ void HybridBinarizer::thresholdBlock(Ref<ByteMatrix>& luminances,
                                      int stride,
                                      Ref<BitMatrix> const& matrix,
                                      ErrorHandler & err_handler) {
+    (void)stride;
     
     int rowBitsSize = matrix->getRowBitsSize();
     int rowSize = width;
@@ -451,6 +454,8 @@ void HybridBinarizer::thresholdIrregularBlock(Ref<ByteMatrix>& luminances,
                                               int stride,
                                               Ref<BitMatrix> const& matrix,
                                               ErrorHandler & err_handler){
+    (void)stride;
+
     for (int y = 0; y < blockHeight; y++) {
         unsigned char* pTemp = luminances->getByteRow(yoffset+y, err_handler);
         if (err_handler.ErrCode())   return;
@@ -739,6 +744,8 @@ ArrayRef<int> HybridBinarizer::calculateBlackPoints(Ref<ByteMatrix>& luminances,
 
 int HybridBinarizer::binarizeByBlock(int blockLevel, ErrorHandler & err_handler)
 {
+    (void)blockLevel;
+    
     if (width >= MINIMUM_DIMENSION && height >= MINIMUM_DIMENSION)
     {
         Ref<BitMatrix> newMatrix (new BitMatrix(width, height, err_handler));

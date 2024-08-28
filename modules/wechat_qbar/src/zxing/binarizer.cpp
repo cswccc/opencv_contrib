@@ -163,6 +163,7 @@ Ref<BitMatrix> Binarizer::getInvertedMatrix(ErrorHandler & err_handler)
 // Return different black matrix according to cacheMode
 Ref<BitMatrix> Binarizer::getBlackMatrix(ErrorHandler & err_handler)
 {
+    (void) err_handler;
 #ifdef SUPPORT_ROTATE
     if (_cacheMode == 0)
     {

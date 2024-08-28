@@ -15,20 +15,21 @@ using zxing::ArrayRef;
 using zxing::Ref;
 using zxing::ErrorHandler;
 
-void ByteMatrix::init(int width, int height) {
-    if (width < 1 || height < 1)
+void ByteMatrix::init(int width_, int height_) {
+    if (width_ < 1 || height_ < 1)
     {
-        printf("%s %d %s : Both dimensions must be greater than 0" , __FILE__, __func__, __LINE__);
+        // printf("%s %d %s : Both dimensions must be greater than 0" , __FILE__, __func__, __LINE__);
+        printf("%s %s %d : Both dimensions must be greater than 0" , __FILE__, __func__, __LINE__);
         return;
     }
-    this->width = width;
-    this->height = height;
+    this->width = width_;
+    this->height = height_;
     
-    bytes = new unsigned char[width * height];
-    row_offsets = new int[height];
+    bytes = new unsigned char[width_ * height_];
+    row_offsets = new int[height_];
     row_offsets[0] = 0;
-    for (int i = 1; i < height; i++) {
-        row_offsets[i] = row_offsets[i-1] + width;
+    for (int i = 1; i < height_; i++) {
+        row_offsets[i] = row_offsets[i-1] + width_;
     }
 }
 

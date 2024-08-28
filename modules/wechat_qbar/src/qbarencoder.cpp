@@ -98,6 +98,8 @@ int QBarEncoder::EncodeQRCode(QBAR_IMAGE& code, const std::string content, QBAR_
 
 int QBarEncoder::EncodeOneD(QBAR_IMAGE& code, const std::string content, QBAR_CODE_FORMAT format, QBAR_ENCODE_CONFIG config)
 {
+    (void)config;
+    
     try
     {
         Ref<OneDimensionalCodeWriter> writer;

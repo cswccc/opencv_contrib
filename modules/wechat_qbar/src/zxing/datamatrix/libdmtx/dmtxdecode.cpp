@@ -244,18 +244,18 @@ int DmtxDecode::GetGridCoordinates(DmtxPixelLoc *locPtr)
 
 int DmtxDecode::dmtxRegionScanPixel(int x, int y)
 {
-    unsigned char *cache;
+    unsigned char *cache_;
     DmtxPointFlow flowBegin;
     DmtxPixelLoc loc;
     
     loc.X = x;
     loc.Y = y;
     
-    cache = dmtxDecodeGetCache(loc.X, loc.Y);
-    if (cache == NULL)
+    cache_ = dmtxDecodeGetCache(loc.X, loc.Y);
+    if (cache_ == NULL)
         return -1;
     
-    if (static_cast<int>(*cache & 0x80) != 0x00)
+    if (static_cast<int>(*cache_ & 0x80) != 0x00)
         return -1;
     
     /* Test for presence of any reasonable edge at this location */
@@ -588,7 +588,7 @@ DmtxPointFlow DmtxDecode::FindStrongestNeighbor(DmtxPointFlow center, int sign)
 {
     int strongIdx;
     int attemptDiff;
-    unsigned char *cache;
+    unsigned char *cache_;
     DmtxPixelLoc loc;
     DmtxPointFlow flow[8];
     
@@ -601,11 +601,11 @@ DmtxPointFlow DmtxDecode::FindStrongestNeighbor(DmtxPointFlow center, int sign)
         loc.X = center.loc.X + dmtxPatternX[i];
         loc.Y = center.loc.Y + dmtxPatternY[i];
         
-        cache = dmtxDecodeGetCache(loc.X, loc.Y);
-        if (cache == NULL)
+        cache_ = dmtxDecodeGetCache(loc.X, loc.Y);
+        if (cache_ == NULL)
             continue;
         
-        if (static_cast<int>(*cache & 0x80) != 0x00)
+        if (static_cast<int>(*cache_ & 0x80) != 0x00)
         {
             if (++occupied > 2)
                 return dmtxBlankEdge;
@@ -905,7 +905,7 @@ unsigned int DmtxDecode::TrailBlazeContinuous(DmtxPointFlow flowBegin, int maxDi
     int posAssigns, negAssigns, clears;
     int sign;
     int steps;
-    unsigned char *cache, *cacheNext, *cacheBeg;
+    unsigned char *cache_, *cacheNext, *cacheBeg;
     DmtxPointFlow flow, flowNext;
     DmtxPixelLoc boundMin, boundMax;
     
@@ -921,7 +921,7 @@ unsigned int DmtxDecode::TrailBlazeContinuous(DmtxPointFlow flowBegin, int maxDi
     for (sign = 1; sign >= -1; sign -= 2) {
         
         flow = flowBegin;
-        cache = cacheBeg;
+        cache_ = cacheBeg;
         
         for (steps = 0;; steps++) {
             
@@ -943,7 +943,7 @@ unsigned int DmtxDecode::TrailBlazeContinuous(DmtxPointFlow flowBegin, int maxDi
             /* Mark departure from current location. If flowing downstream
              * (sign < 0) then departure vector here is the arrival vector
              * of the next location. Upstream flow uses the opposite rule. */
-            *cache |= (sign < 0) ? flowNext.arrive : flowNext.arrive << 3;
+            *cache_ |= (sign < 0) ? flowNext.arrive : flowNext.arrive << 3;
             
             /* Mark known direction for next location */
             /* If testing downstream (sign < 0) then next upstream is opposite of next arrival */
@@ -954,7 +954,7 @@ unsigned int DmtxDecode::TrailBlazeContinuous(DmtxPointFlow flowBegin, int maxDi
                 posAssigns++;
             else
                 negAssigns++;
-            cache = cacheNext;
+            cache_ = cacheNext;
             flow = flowNext;
             
             if (flow.loc.X > boundMax.X)
@@ -1387,7 +1387,7 @@ unsigned int DmtxDecode::CacheFillQuad(DmtxPixelLoc p0, DmtxPixelLoc p1, DmtxPix
 {
     DmtxBresLine lines[4];
     DmtxPixelLoc pEmpty = { 0, 0 };
-    unsigned char *cache;
+    unsigned char *cache_;
     int *scanlineMin, *scanlineMax;
     int minY, maxY, sizeY, posY, posX;
     int i, idx;
@@ -1431,9 +1431,9 @@ unsigned int DmtxDecode::CacheFillQuad(DmtxPixelLoc p0, DmtxPixelLoc p1, DmtxPix
     for (posY = minY; posY < maxY && posY < this->yMax; posY++) {
         idx = posY - minY;
         for (posX = scanlineMin[idx]; posX < scanlineMax[idx] && posX < this->xMax; posX++) {
-            cache = dmtxDecodeGetCache(posX, posY);
-            if (cache != NULL)
-                *cache |= 0x80;
+            cache_ = dmtxDecodeGetCache(posX, posY);
+            if (cache_ != NULL)
+                *cache_ |= 0x80;
         }
     }
     
@@ -1920,18 +1920,18 @@ unsigned int DmtxDecode::dmtxRegionUpdateXfrms()
 
 unsigned int DmtxDecode::dmtxRegionUpdateCorners(DmtxVector2 p00, DmtxVector2 p10, DmtxVector2 p11, DmtxVector2 p01)
 {
-    double xMax, yMax;
+    double xMax_, yMax_;
     double tx, ty, phi, shx, scx, scy, skx, sky;
     double dimOT, dimOR, dimTX, dimRX, ratio;
     DmtxVector2 vOT, vOR, vTX, vRX, vTmp;
     DmtxMatrix3 m, mtxy, mphi, mshx, mscx, mscy, mscxy, msky, mskx;
     
-    xMax = static_cast<double>(dmtxDecodeGetProp(DmtxPropWidth) - 1);
-    yMax = static_cast<double>(dmtxDecodeGetProp(DmtxPropHeight) - 1);
+    xMax_ = static_cast<double>(dmtxDecodeGetProp(DmtxPropWidth) - 1);
+    yMax_ = static_cast<double>(dmtxDecodeGetProp(DmtxPropHeight) - 1);
     
-    if (p00.X < 0.0 || p00.Y < 0.0 || p00.X > xMax || p00.Y > yMax ||
-       p01.X < 0.0 || p01.Y < 0.0 || p01.X > xMax || p01.Y > yMax ||
-       p10.X < 0.0 || p10.Y < 0.0 || p10.X > xMax || p10.Y > yMax)
+    if (p00.X < 0.0 || p00.Y < 0.0 || p00.X > xMax_ || p00.Y > yMax_ ||
+       p01.X < 0.0 || p01.Y < 0.0 || p01.X > xMax_ || p01.Y > yMax_ ||
+       p10.X < 0.0 || p10.Y < 0.0 || p10.X > xMax_ || p10.Y > yMax_)
         return DmtxFail;
     
     dimOT = dmtxVector2Mag(dmtxVector2Sub(&vOT, &p01, &p00)); /* XXX could use MagSquared() */

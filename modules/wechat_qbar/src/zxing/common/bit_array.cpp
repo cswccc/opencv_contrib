@@ -137,14 +137,14 @@ void BitArray::initAllNextSetsFromCounters(std::vector<int> counters)
     int count = 0;
     int prevCount = 0;
     int currCount = 0;
-    int size = counters.size();
+    int size_ = counters.size();
     
     int* nextSetArray = nextSets->data();
     int* nextUnsetArray = nextUnSets->data();
     
     int* countersArray = &counters[0];
     
-    while (c < size)
+    while (c < size_)
     {
         currCount = countersArray[c];
         

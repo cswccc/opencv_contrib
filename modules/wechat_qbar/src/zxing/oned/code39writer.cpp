@@ -28,8 +28,8 @@ ArrayRef<boolean> Code39Writer::encode(Ref<String> contents) {
     for (int i = 0; i < length; i++) {
         int indexInString = StrUtil::indexOf(ALPHABET_STRING, contents->charAt(i));
         toIntArray(CHARACTER_ENCODINGS[indexInString], widths);
-        for (int i = 0; i < 9; i++) {
-            int width = widths[i];
+        for (int j = 0; j < 9; j++) {
+            int width = widths[j];
             codeWidth += width;
         }
     }

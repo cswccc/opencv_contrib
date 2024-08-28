@@ -207,7 +207,7 @@ Ref<DetectorResult> Detector::detectV1(ErrorHandler & err_handler) {
     
     // Figure out which point is their intersection by tallying up the number of times we see the
     // endpoints in the four endpoints. One will show up twice.
-    typedef std::map<Ref<ResultPoint>, int> PointMap;
+    // typedef std::map<Ref<ResultPoint>, int> PointMap;
     PointMap pointCount;
     increment(pointCount, lSideOne->getFrom());
     increment(pointCount, lSideOne->getTo());
@@ -1039,16 +1039,16 @@ public:
     };
     
     template <typename T>
-    Value testAt(PointT<T> p) const
+    Value testAt(PointT<T> p_) const
     {
-        bool is_in = (0 <= p.x && p.x < image_->getWidth() && 0 <= p.y && p.y < image_->getHeight());
-        return is_in ? Value{image_->get(p.x, p.y)} : Value{};
+        bool is_in = (0 <= p_.x && p_.x < image_->getWidth() && 0 <= p_.y && p_.y < image_->getHeight());
+        return is_in ? Value{image_->get(p_.x, p_.y)} : Value{};
     }
     
     bool blackAt(POINT pos) const noexcept { return testAt(pos).isBlack(); }
     bool whiteAt(POINT pos) const noexcept { return testAt(pos).isWhite(); }
     
-    bool isIn(POINT p) const noexcept { return (0 <= p.x && p.x < image_->getWidth() && 0 <= p.y && p.y < image_->getHeight()); }
+    bool isIn(POINT p_) const noexcept { return (0 <= p_.x && p_.x < image_->getWidth() && 0 <= p_.y && p_.y < image_->getHeight()); }
     bool isIn() const noexcept { return isIn(p); }
     bool isBlack() const noexcept { return blackAt(p); }
     bool isWhite() const noexcept { return whiteAt(p); }
@@ -1064,10 +1064,10 @@ public:
     void turnRight() noexcept { d = right(); }
     void turn(Direction dir) noexcept { d = direction(dir); }
     
-    Value edgeAt(POINT d) const noexcept
+    Value edgeAt(POINT d_) const noexcept
     {
         Value v = testAt(p);
-        return testAt(p + d) != v ? v : Value();
+        return testAt(p + d_) != v ? v : Value();
     }
     
     Value edgeAtFront() const noexcept { return edgeAt(front()); }
@@ -1084,10 +1084,10 @@ public:
         return isIn(p);
     }
     
-    BitMatrixCursor<POINT> movedBy(POINT d) const
+    BitMatrixCursor<POINT> movedBy(POINT d_) const
     {
         auto res = *this;
-        res.p += d;
+        res.p += d_;
         return res;
     }
     
@@ -1354,7 +1354,7 @@ static inline PointF movedTowardsBy (PointF& a, PointF b1, PointF b2, float d) {
     return a + d * normalized(normalized(b1 - a) + normalized(b2 - a));
 };
 
-int Scan(EdgeTracer& startTracer, std::vector<DMRegressionLine>& lines, zxing::ArrayRef< Ref<ResultPoint> >& final_points, int& dimT, int& dimR)
+static int Scan(EdgeTracer& startTracer, std::vector<DMRegressionLine>& lines, zxing::ArrayRef< Ref<ResultPoint> >& final_points, int& dimT, int& dimR)
 {
     while (startTracer.step()) {
         // continue until we cross from black into white

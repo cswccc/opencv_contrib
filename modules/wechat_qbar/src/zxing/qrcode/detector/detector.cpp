@@ -1036,25 +1036,25 @@ int Detector::getPossibleAlignmentPatterRect(float x, float y) {
         cv::Point2f pt = point_list_1.front();
         point_list_1.pop();
         
-        int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
-        if ((x - 1) >= min_x && !image_->get(x - 1, y))
+        int x_ = static_cast<int>(pt.x), y_ = static_cast<int>(pt.y);
+        if ((x_ - 1) >= min_x && !image_->get(x_ - 1, y_))
         {
-            if (flag_mat.at<uchar>(y, x - 1) == 0)
+            if (flag_mat.at<uchar>(y_, x_ - 1) == 0)
                 point_list.push(cv::Point2f(pt.x - 1, pt.y));
         }
-        if ((x + 1) <= max_x && !image_->get(x + 1, y))
+        if ((x_ + 1) <= max_x && !image_->get(x_ + 1, y_))
         {
-            if (flag_mat.at<uchar>(y, x + 1) == 0)
+            if (flag_mat.at<uchar>(y_, x_ + 1) == 0)
                 point_list.push(cv::Point2f(pt.x + 1, pt.y));
         }
-        if ((y - 1) >= min_y && !image_->get(x, y - 1))
+        if ((y_ - 1) >= min_y && !image_->get(x_, y_ - 1))
         {
-            if (flag_mat.at<uchar>(y - 1, x) == 0)
+            if (flag_mat.at<uchar>(y_ - 1, x_) == 0)
                 point_list.push(cv::Point2f(pt.x, pt.y - 1));
         }
-        if ((y + 1) <= max_y && !image_->get(x, y + 1))
+        if ((y_ + 1) <= max_y && !image_->get(x_, y_ + 1))
         {
-            if (flag_mat.at<uchar>(y + 1, x) == 0)
+            if (flag_mat.at<uchar>(y_ + 1, x_) == 0)
                 point_list.push(cv::Point2f(pt.x, pt.y + 1));
         }
     }
@@ -1103,29 +1103,29 @@ int Detector::getPossibleAlignmentPatterRect(float x, float y) {
     
     if (corner_list.size() == 0) return -1;
     
-    int min_sum_idx = -1, max_sum_idx = -1, min_diff_idx = -1, max_diff_idx = -1;
+    // int min_sum_idx = -1, max_sum_idx = -1, min_diff_idx = -1, max_diff_idx = -1;
     float min_sum = INT_MAX, max_sum = 0, min_diff = INT_MAX, max_diff = -INT_MAX;
     for (size_t i = 0; i < corner_list.size(); i++) {
         float sum = corner_list[i].x + corner_list[i].y;
         float diff = corner_list[i].x - corner_list[i].y;
         if (sum  < min_sum)
         {
-            min_sum_idx = i;
+            // min_sum_idx = i;
             min_sum = sum;
         }
         if (sum > max_sum)
         {
-            max_sum_idx = i;
+            // max_sum_idx = i;
             max_sum = sum;
         }
         if (diff < min_diff)
         {
-            min_diff_idx = i;
+            // min_diff_idx = i;
             min_diff = diff;
         }
         if (diff > max_diff)
         {
-            max_diff_idx = i;
+            // max_diff_idx = i;
             max_diff = diff;
         }
     }

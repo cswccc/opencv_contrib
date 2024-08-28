@@ -11,7 +11,7 @@
 
 namespace dmtx {
 
-DmtxVector2* dmtxVector2AddTo(DmtxVector2 *v1, const DmtxVector2 *v2)
+static DmtxVector2* dmtxVector2AddTo(DmtxVector2 *v1, const DmtxVector2 *v2)
 {
     v1->X += v2->X;
     v1->Y += v2->Y;
@@ -19,14 +19,14 @@ DmtxVector2* dmtxVector2AddTo(DmtxVector2 *v1, const DmtxVector2 *v2)
     return v1;
 }
 
-DmtxVector2* dmtxVector2Add(DmtxVector2 *vOut, const DmtxVector2 *v1, const DmtxVector2 *v2)
+static DmtxVector2* dmtxVector2Add(DmtxVector2 *vOut, const DmtxVector2 *v1, const DmtxVector2 *v2)
 {
     *vOut = *v1;
     
     return dmtxVector2AddTo(vOut, v2);
 }
 
-DmtxVector2* dmtxVector2SubFrom(DmtxVector2 *v1, const DmtxVector2 *v2)
+static DmtxVector2* dmtxVector2SubFrom(DmtxVector2 *v1, const DmtxVector2 *v2)
 {
     v1->X -= v2->X;
     v1->Y -= v2->Y;
@@ -41,7 +41,7 @@ DmtxVector2 * dmtxVector2Sub(DmtxVector2 *vOut, const DmtxVector2 *v1, const Dmt
     return dmtxVector2SubFrom(vOut, v2);
 }
 
-DmtxVector2 * dmtxVector2ScaleBy(DmtxVector2 *v, double s)
+static DmtxVector2 * dmtxVector2ScaleBy(DmtxVector2 *v, double s)
 {
     v->X *= s;
     v->Y *= s;
@@ -49,7 +49,7 @@ DmtxVector2 * dmtxVector2ScaleBy(DmtxVector2 *v, double s)
     return v;
 }
 
-DmtxVector2 * dmtxVector2Scale(DmtxVector2 *vOut, const DmtxVector2 *v, double s)
+static DmtxVector2 * dmtxVector2Scale(DmtxVector2 *vOut, const DmtxVector2 *v, double s)
 {
     *vOut = *v;
     
@@ -86,7 +86,7 @@ double dmtxVector2Mag(const DmtxVector2 *v)
     return sqrt(v->X * v->X + v->Y * v->Y);
 }
 
-double dmtxDistanceAlongRay2(const DmtxRay2 *r, const DmtxVector2 *q)
+static double dmtxDistanceAlongRay2(const DmtxRay2 *r, const DmtxVector2 *q)
 {
     DmtxVector2 vSubTmp;
     

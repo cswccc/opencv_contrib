@@ -6,7 +6,7 @@
 // https:// github.com/benhoyt/inih
 
 #include <zxing/common/util/ini.hpp>
-#include  <zxing/common/util/INIReader.hpp>
+#include  <zxing/common/util/inireader.hpp>
 
 #include <cctype>
 #include <cstdlib>

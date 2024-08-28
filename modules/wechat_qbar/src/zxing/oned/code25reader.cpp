@@ -140,12 +140,12 @@ Ref<Result> Code25Reader::decodeRow(int rowNumber, Ref<BitArray> row) {
         }
         
         {
-            ErrorHandler err_handler;
+            ErrorHandler err_handler_;
             const int range_start = nextStart + (endCounters[0] + endCounters[1] + endCounters[2]);
             const int range_end = range_start + (endCounters[0] + endCounters[1]/2);
-            if (range_end >= row->getSize() || !row->isRange(range_start, range_end, false, err_handler))
+            if (range_end >= row->getSize() || !row->isRange(range_start, range_end, false, err_handler_))
                 return Ref<Result>(NULL);
-            if (err_handler.ErrCode())   return Ref<Result>(NULL);
+            if (err_handler_.ErrCode())   return Ref<Result>(NULL);
         }
         
         Ref<String> resultString = Ref<String>(new String(result));

@@ -58,14 +58,14 @@ public:
     bool isIndecisive() {
         return indecisive;
     }
-    void setIndecisive(bool indecisive) {
-        this->indecisive = indecisive;
+    void setIndecisive(bool indecisive_) {
+        this->indecisive = indecisive_;
     }
     int getVote() {
         return vote;
     }
-    void setVote(int vote) {
-        this->vote = vote;
+    void setVote(int vote_) {
+        this->vote = vote_;
     }
 };
 
@@ -547,11 +547,11 @@ ErrorHandler LinesSampler::linesMatrixToCodewords(vector<vector<int> >& clusterN
                 continue;
             }
             
-            float cwWidth = 0;
+            float cwWidth_ = 0;
             
             // For symbols with 9 bar length simply ignore the last bar.
             for (int j = 0; j < min(BARS_IN_SYMBOL, cwLength); ++j) {
-                cwWidth += static_cast<float>(barWidths[cwStart + j]);
+                cwWidth_ += static_cast<float>(barWidths[cwStart + j]);
             }
             
             if (cwLength == LinesSampler::BARS_IN_SYMBOL)
@@ -582,13 +582,13 @@ ErrorHandler LinesSampler::linesMatrixToCodewords(vector<vector<int> >& clusterN
                 for (int j = 0; j < cwLength; ++j) {
                     cwRatios[i][j] = static_cast<float>(barWidths[cwStart + j]) / symbolWidths[i];
                 }
-                cwRatios[i][7] = (symbolWidths[i] - cwWidth) / symbolWidths[i];
+                cwRatios[i][7] = (symbolWidths[i] - cwWidth_) / symbolWidths[i];
             }
             else
             {
-                if (cwWidth == 0) continue;
+                if (cwWidth_ == 0) continue;
                 for (size_t j = 0; j < cwRatios[i].size(); ++j) {
-                    cwRatios[i][j] = static_cast<float>(barWidths[cwStart + j]) / cwWidth;
+                    cwRatios[i][j] = static_cast<float>(barWidths[cwStart + j]) / cwWidth_;
                 }
             }
             

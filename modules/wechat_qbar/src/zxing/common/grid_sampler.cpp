@@ -504,11 +504,11 @@ int GridSampler::checkAndNudgePoints(int width, int height, std::vector<float> &
 
 int GridSampler::checkAndNudgePoints_new(int width, int height, std::vector<float> &points, ErrorHandler &err_handler) {
     // Modified to support stlport : valiantliu
-    float* pts = NULL;
+    // float* pts = NULL;
     
     if (points.size() > 0)
     {
-        pts = &points[0];
+        // pts = &points[0];
     }
     else
     {

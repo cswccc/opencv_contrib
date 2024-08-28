@@ -109,7 +109,9 @@ Ref<Result> Code39Reader::decodeRow(int rowNumber, Ref<BitArray> row) {
         if (err_handler.ErrCode())   return Ref<Result>(NULL);
         result.append(1, decodedChar);
         lastStart = nextStart;
-        for (int i = 0, end=theCounters.size(); i < end; i++) {
+
+        end=theCounters.size();
+        for (int i = 0; i < end; i++) {
             nextStart += theCounters[i];
         }
         // Read off white space

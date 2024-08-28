@@ -58,6 +58,8 @@ QbarInfoCache QBarInfoFilter::filterFrame(QBAR_CODE_DETECT_INFO* detect_info, QB
 
 
 bool QBarInfoFilter::predictResultFromeCache(QBAR_CODE_DETECT_INFO* detect_info, QBAR_RESULT &result){
+    (void)detect_info;
+    
     size_t cache_size = info_cache_.size();
     int latest_valid_index = -1;
     for (size_t i = 0; i < cache_size; i++)

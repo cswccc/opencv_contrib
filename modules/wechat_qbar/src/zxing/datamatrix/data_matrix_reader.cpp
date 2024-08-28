@@ -52,8 +52,8 @@ Ref<Result> DataMatrixReader::decode(Ref<BinaryBitmap> image, DecodeHints hints)
         err_handler.Reset();
         Ref<BitMatrix> invertedMatrix = image->getInvertedMatrix(err_handler);
         if (err_handler.ErrCode() || invertedMatrix == NULL)   return Ref<Result>();
-        Ref<Result> rst = decodeMore(image, invertedMatrix, hints, err_handler);
-        if (err_handler.ErrCode() || rst == NULL) {
+        Ref<Result> rst_ = decodeMore(image, invertedMatrix, hints, err_handler);
+        if (err_handler.ErrCode() || rst_ == NULL) {
             //使用libdmtx来解码 比较耗时，仅用于相册模式
             if (!hints.getTryVideo() && hints.isUseLibdmtx()) {
                 Ref<LuminanceSource> gray_img = image->getLuminanceSource();
@@ -86,7 +86,7 @@ Ref<Result> DataMatrixReader::decode(Ref<BinaryBitmap> image, DecodeHints hints)
             return Ref<Result>();
         }
         reader_call_path_ += "0";  // ok
-        return rst;
+        return rst_;
     }
     
     reader_call_path_ += "0";  // ok
@@ -95,6 +95,9 @@ Ref<Result> DataMatrixReader::decode(Ref<BinaryBitmap> image, DecodeHints hints)
 
 Ref<Result> DataMatrixReader::decodeMore(Ref<BinaryBitmap> image, Ref<BitMatrix> imageBitMatrix, DecodeHints hints, ErrorHandler & err_handler)
 {
+    (void)image;
+    (void)hints;
+
     Detector detector(imageBitMatrix);
     if (err_handler.ErrCode()) return Ref<Result>();
     

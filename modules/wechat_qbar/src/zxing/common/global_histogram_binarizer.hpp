@@ -43,8 +43,8 @@ public:
     
     virtual Ref<BitArray> getBlackRow(int y, Ref<BitArray> row, ErrorHandler &err_handler);
     virtual Ref<BitMatrix> getBlackMatrix(ErrorHandler &err_handler);
-    int estimateBlackPoint(ArrayRef<int> const& buckets, ErrorHandler & err_handler);
-    int estimateBlackPoint2(ArrayRef<int> const& buckets);
+    int estimateBlackPoint(ArrayRef<int> const& buckets_, ErrorHandler & err_handler);
+    int estimateBlackPoint2(ArrayRef<int> const& buckets_);
     Ref<Binarizer> createBinarizer(Ref<LuminanceSource> source);
 private:
     int binarizeImage0(ErrorHandler & err_handler);

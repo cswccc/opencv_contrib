@@ -207,10 +207,10 @@ std::string
 StringUtils::guessEncodingZXing(char* bytes, int length,
                                 Hashtable const& hints)
 {
-    Hashtable::const_iterator i = hints.find(DecodeHints::CHARACTER_SET);
-    if (i != hints.end())
+    Hashtable::const_iterator i_ = hints.find(DecodeHints::CHARACTER_SET);
+    if (i_ != hints.end())
     {
-        return i->second;
+        return i_->second;
     }
     
     // typedef bool boolean;
@@ -580,14 +580,14 @@ int StringUtils::is_utf8_code(char* str, int length)
         }
         else if (c>>2 == five_byte)
         {
-            unsigned char k = (unsigned char)str[i+1];
-            unsigned char m = (unsigned char)str[i+2];
-            unsigned char n = (unsigned char)str[i+3];
-            unsigned char p = (unsigned char)str[i+4];
-            if (is_utf8_special_byte(k)
-                && is_utf8_special_byte(m)
-                && is_utf8_special_byte(n)
-                && is_utf8_special_byte(p))
+            unsigned char k_ = (unsigned char)str[i+1];
+            unsigned char m_ = (unsigned char)str[i+2];
+            unsigned char n_ = (unsigned char)str[i+3];
+            unsigned char p_ = (unsigned char)str[i+4];
+            if (is_utf8_special_byte(k_)
+                && is_utf8_special_byte(m_)
+                && is_utf8_special_byte(n_)
+                && is_utf8_special_byte(p_))
             {
                 utf8_yes++;
                 i += 5;
@@ -831,6 +831,9 @@ int StringUtils::is_gb18030_code_one(char* str, int length)
 
 int StringUtils::is_shiftjis_code(char* str, int length)
 {
+    (void)str;
+    (void)length;
+
     return 1;
 }
 

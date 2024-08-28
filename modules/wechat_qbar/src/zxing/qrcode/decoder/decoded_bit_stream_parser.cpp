@@ -85,6 +85,8 @@ void DecodedBitStreamParser::append(std::string &result,
                                     size_t nIn,
                                     const char* src,
                                     ErrorHandler & err_handler) {
+    (void)src;
+
     if (nIn == 0) {
         return;
     }
@@ -225,6 +227,8 @@ void DecodedBitStreamParser::decodeByteSegment(Ref<BitSource> bits_,
                                                ArrayRef< ArrayRef<char> >& byteSegments,
                                                Hashtable const& hints,
                                                ErrorHandler & err_handler) {
+    (void)hints;
+    
     BitSource& bits(*bits_);
     
     int available = bits.available();

@@ -32,7 +32,7 @@ int SuperScale::Init(const std::string &config_path) {
     }
     catch (const std::exception &e)
     {
-        printf(e.what());
+        printf("%s", e.what());
         return -3;
     }
     net_loaded_ = true;

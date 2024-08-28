@@ -513,6 +513,11 @@ AlignmentPatternFinder::~AlignmentPatternFinder() {
 
 Ref<AlignmentPattern> AlignmentPatternFinder::findByPattern(Ref<AlignmentPattern>const &estimateCenter, Ref<FinderPattern>const &topLeft,
                                                             Ref<FinderPattern>const &topRight, Ref<FinderPattern>const &bottomLeft){
+    (void)estimateCenter;
+    (void)topLeft;
+    (void)topRight;
+    (void)bottomLeft;
+    
     Ref<AlignmentPattern> result;
     return result;
 }

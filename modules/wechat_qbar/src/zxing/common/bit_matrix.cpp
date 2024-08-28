@@ -32,35 +32,35 @@ using zxing::ArrayRef;
 using zxing::Ref;
 using zxing::ErrorHandler;
 
-void BitMatrix::init(int width, int height, ErrorHandler & err_handler)
+void BitMatrix::init(int width_, int height_, ErrorHandler & err_handler)
 {
-    if (width < 1 || height < 1)
+    if (width_ < 1 || height_ < 1)
     {
         err_handler = IllegalArgumentErrorHandler("Both dimensions must be greater than 0");
         return;
     }
     
-    this->width = width;
-    this->height = height;
-    this->rowBitsSize = width;
-    bits = ArrayRef<unsigned char>(width * height);
-    rowOffsets = ArrayRef<int>(height);
+    this->width = width_;
+    this->height = height_;
+    this->rowBitsSize = width_;
+    bits = ArrayRef<unsigned char>(width_ * height_);
+    rowOffsets = ArrayRef<int>(height_);
     
     rowOffsets[0] = 0;
-    for (int i = 1; i < height; i++)
+    for (int i = 1; i < height_; i++)
     {
-        rowOffsets[i] = rowOffsets[i - 1] + width;
+        rowOffsets[i] = rowOffsets[i - 1] + width_;
     }
     
     isInitRowCounters = false;
     isInitColsCounters = false;
 }
 
-void BitMatrix::init(int width, int height, bool* bitsPtr, ErrorHandler & err_handler)
+void BitMatrix::init(int width_, int height_, bool* bitsPtr, ErrorHandler & err_handler)
 {
-    init(width, height, err_handler);
+    init(width_, height_, err_handler);
     if (err_handler.ErrCode())   return;
-    memcpy(bits->data(), bitsPtr, width * height * sizeof(bool));
+    memcpy(bits->data(), bitsPtr, width_ * height_ * sizeof(bool));
 }
 
 void BitMatrix::initRowCounters()
@@ -111,42 +111,42 @@ BitMatrix::BitMatrix(int width, int height, bool* bitsPtr, ErrorHandler & err_ha
 }
 
 // Copy bitMatrix
-void BitMatrix::copyOf(Ref<BitMatrix> bits, ErrorHandler & err_handler)
+void BitMatrix::copyOf(Ref<BitMatrix> bits_, ErrorHandler & err_handler)
 {
-    int width = bits->getWidth();
-    int height = bits->getHeight();
-    init(width, height, err_handler);
+    int width_ = bits_->getWidth();
+    int height_ = bits_->getHeight();
+    init(width_, height_, err_handler);
     
-    for (int y = 0; y < height; y++)
+    for (int y = 0; y < height_; y++)
     {
-        bool* rowPtr = bits->getRowBoolPtr(y);
+        bool* rowPtr = bits_->getRowBoolPtr(y);
         setRowBool(y, rowPtr);
     }
 }
 
-bool BitMatrix::copyOf2(Ref<BitMatrix> bits)
+bool BitMatrix::copyOf2(Ref<BitMatrix> bits_)
 {
-    if (bits->getWidth() != this->getWidth() || bits->getHeight() != this->getHeight())
+    if (bits_->getWidth() != this->getWidth() || bits_->getHeight() != this->getHeight())
     {
         return false;
     }
-    memcpy(this->getPtr(), bits->getPtr(), width * height * sizeof(bool));
+    memcpy(this->getPtr(), bits_->getPtr(), width * height * sizeof(bool));
     return true;
 }
 
-void BitMatrix::xxor(Ref<BitMatrix> bits)
+void BitMatrix::xxor(Ref<BitMatrix> bits_)
 {
-    if (width != bits->getWidth() || height != bits->getHeight())
+    if (width != bits_->getWidth() || height != bits_->getHeight())
     {
         return;
     }
     
-    for (int y = 0; y < height && y < bits->getHeight(); ++y)
+    for (int y = 0; y < height && y < bits_->getHeight(); ++y)
     {
-        bool* rowPtrA = bits->getRowBoolPtr(y);
+        bool* rowPtrA = bits_->getRowBoolPtr(y);
         bool* rowPtrB = getRowBoolPtr(y);
         
-        for (int x = 0; x < width && x < bits->getWidth(); ++x)
+        for (int x = 0; x < width && x < bits_->getWidth(); ++x)
         {
             rowPtrB[x] = rowPtrB[x] ^ rowPtrA[x];
         }
@@ -172,20 +172,20 @@ void BitMatrix::flipAll()
     }
 }
 
-void BitMatrix::flipRegion(int left, int top, int width, int height, ErrorHandler & err_handler)
+void BitMatrix::flipRegion(int left, int top, int width_, int height_, ErrorHandler & err_handler)
 {
     if (top < 0 || left < 0)
     {
         err_handler = IllegalArgumentErrorHandler("Left and top must be nonnegative");
         return;
     }
-    if (height < 1 || width < 1)
+    if (height_ < 1 || width_ < 1)
     {
         err_handler = IllegalArgumentErrorHandler("Height and width must be at least 1");
         return;
     }
-    int right = left + width;
-    int bottom = top + height;
+    int right = left + width_;
+    int bottom = top + height_;
     if (bottom > this->height || right > this->width)
     {
         err_handler = IllegalArgumentErrorHandler("The region must fit inside the matrix");
@@ -199,20 +199,20 @@ void BitMatrix::flipRegion(int left, int top, int width, int height, ErrorHandle
     }
 }
 
-void BitMatrix::randomFlipRegion(int left, int top, int width, int height, ErrorHandler & err_handler)
+void BitMatrix::randomFlipRegion(int left, int top, int width_, int height_, ErrorHandler & err_handler)
 {
     if (top < 0 || left < 0)
     {
         err_handler = IllegalArgumentErrorHandler("Left and top must be nonnegative");
         return;
     }
-    if (height < 1 || width < 1)
+    if (height_ < 1 || width_ < 1)
     {
         err_handler = IllegalArgumentErrorHandler("Height and width must be at least 1");
         return;
     }
-    int right = left + width;
-    int bottom = top + height;
+    int right = left + width_;
+    int bottom = top + height_;
     if (bottom > this->height || right > this->width)
     {
         err_handler = IllegalArgumentErrorHandler("The region must fit inside the matrix");
@@ -236,20 +236,20 @@ void BitMatrix::randomFlipRegion(int left, int top, int width, int height, Error
 }
 
 
-void BitMatrix::setRegion(int left, int top, int width, int height, ErrorHandler & err_handler)
+void BitMatrix::setRegion(int left, int top, int width_, int height_, ErrorHandler & err_handler)
 {
     if (top < 0 || left < 0)
     {
         err_handler = IllegalArgumentErrorHandler("Left and top must be nonnegative");
         return;
     }
-    if (height < 1 || width < 1)
+    if (height_ < 1 || width_ < 1)
     {
         err_handler = IllegalArgumentErrorHandler("Height and width must be at least 1");
         return;
     }
-    int right = left + width;
-    int bottom = top + height;
+    int right = left + width_;
+    int bottom = top + height_;
     if (bottom > this->height || right > this->width)
     {
         err_handler = IllegalArgumentErrorHandler("The region must fit inside the matrix");
@@ -429,17 +429,32 @@ ArrayRef<int> BitMatrix::getPointOnRight(int x, int y, int x_max, bool flag)
 
 ArrayRef<int> BitMatrix::getPointOnLeft(int x, int y, int x_min, bool flag)
 {
+    (void)x;
+    (void)y;
+    (void)x_min;
+    (void)flag;
+
     ArrayRef<int> res(2);
     
     return res;
 }
 ArrayRef<int> BitMatrix::getPointOnTop(int x, int y, int x_min, bool flag)
 {
+    (void)x;
+    (void)y;
+    (void)x_min;
+    (void)flag;
+
     ArrayRef<int> res(2);
     return res;
 }
 ArrayRef<int> BitMatrix::getPointOnBottom(int x, int y, int x_max, bool flag)
 {
+    (void)x;
+    (void)y;
+    (void)x_max;
+    (void)flag;
+
     ArrayRef<int> res(2);
     return res;
 }

@@ -75,11 +75,11 @@ CharacterSetECI::CharacterSetECI(int const* values,
                                  char const* const* names)
 : values_(values), names_(names) {
     zxing::Ref<CharacterSetECI> this_ref(this);
-    for (int const* values = values_; *values != -1; values++) {
-        VALUE_TO_ECI[*values] = this_ref;
+    for (int const* value = values_; *value != -1; value++) {
+        VALUE_TO_ECI[*value] = this_ref;
     }
-    for (char const* const* names = names_; *names; names++) {
-        NAME_TO_ECI[string(*names)] = this_ref;
+    for (char const* const* name = names_; *name; name++) {
+        NAME_TO_ECI[string(*name)] = this_ref;
     }
 }
 

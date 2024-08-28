@@ -35,7 +35,7 @@ namespace QBarAI
         }
         catch (const std::exception &e)
         {
-            printf(e.what());
+            printf("%s", e.what());
             return -3;
         }
         return 0;
@@ -358,8 +358,8 @@ namespace QBarAI
                     // disPred2Bbox
                     float centerX = col * stride;
                     float centerY = row * stride;
-                    std::vector<float> disPred;
-                    disPred.resize(4);
+                    std::vector<float> disPred_;
+                    disPred_.resize(4);
                     for (int i = 0; i < 4; i++){
                         float dis = 0;
                         float* disAfterSoftmax = new float[RegMax + 1];
@@ -368,13 +368,13 @@ namespace QBarAI
                             dis += j * disAfterSoftmax[j];
                         }
                         dis *= stride;
-                        disPred[i] = dis;
+                        disPred_[i] = dis;
                         delete[] disAfterSoftmax;
                     }
-                    float xMin = (std::max)(centerX - disPred[0], .0f);
-                    float yMin = (std::max)(centerY - disPred[1], .0f);
-                    float xMax = (std::min)(centerX + disPred[2], inputWidth);
-                    float yMax = (std::min)(centerY + disPred[3], inputHeight);
+                    float xMin = (std::max)(centerX - disPred_[0], .0f);
+                    float yMin = (std::max)(centerY - disPred_[1], .0f);
+                    float xMax = (std::min)(centerX + disPred_[2], inputWidth);
+                    float yMax = (std::min)(centerY + disPred_[3], inputHeight);
                     BoxInfo bbox = {xMin, yMin, xMax, yMax, score, label};
                     results[label].push_back(bbox);
                 }

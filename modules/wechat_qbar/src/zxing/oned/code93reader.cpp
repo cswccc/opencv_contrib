@@ -136,6 +136,8 @@ Ref<Result> Code93Reader::decodeRow(int rowNumber, Ref<BitArray> row) {
 }
 
 Code93Reader::Range Code93Reader::findAsteriskPattern(Ref<BitArray> row)  {
+    (void)row;
+    
     {
         int size = counters.size();
         counters.resize(0);

@@ -59,7 +59,7 @@ bool SaveBMP(const char* BMPfname, int nWidth, int nHeight, unsigned char* buffe
     RGBQUAD             *aColors=NULL;
     BYTE                *ptrbmp=NULL;
     BYTE				*pbyPads=NULL;
-    int					i = 0, j = 0;
+    int					i = 0 /* , j = 0 */;
     int					nResidue=0;
     int					nPad=0;
     

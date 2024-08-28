@@ -15,14 +15,14 @@ DmtxImage::~DmtxImage()
     
 }
 
-int DmtxImage::dmtxImageCreate(unsigned char *pxl, int width, int height)
+int DmtxImage::dmtxImageCreate(unsigned char *pxl_, int width_, int height_)
 {
-    if (pxl == NULL || width < 1 || height < 1)
+    if (pxl_ == NULL || width < 1 || height < 1)
         return -1;
     
-    this->pxl = pxl;
-    this->width = width;
-    this->height = height;
+    this->pxl = pxl_;
+    this->width = width_;
+    this->height = height_;
     
     this->bitsPerPixel = 8;  // gray scale
     this->bytesPerPixel = this->bitsPerPixel / 8;

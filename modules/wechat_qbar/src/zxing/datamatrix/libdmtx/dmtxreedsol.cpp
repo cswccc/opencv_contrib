@@ -73,6 +73,7 @@ static DmtxByte antilog301[] =
 
 unsigned int RsDecode(unsigned char *code, int sizeIdx, int fix)
 {
+    (void)fix;
     int i;
     int blockStride, blockIdx;
     int blockDataWords, blockErrorWords, blockMaxCorrectable;

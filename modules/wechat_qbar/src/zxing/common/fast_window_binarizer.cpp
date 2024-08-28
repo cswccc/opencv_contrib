@@ -110,6 +110,8 @@ Ref<BitArray> FastWindowBinarizer::getBlackRow(int y, Ref<BitArray> row, ErrorHa
 
 void FastWindowBinarizer::calcBlockTotals(int* luminancesInt, int* output, int width, int height, int aw, int ah) 
 {
+    (void)height;
+    
     for (int by = 0; by < ah; by++)
     {
         int ey = (by+1)*BLOCK_SIZE;
@@ -328,9 +330,9 @@ int FastWindowBinarizer::binarizeImage0(ErrorHandler &err_handler)
 void FastWindowBinarizer::fastWin2(unsigned char * src, unsigned char *dst, int width, int height){
     int r = static_cast<int>(min(width, height) * WINDOW_FRACTION / BLOCK_SIZE / 2 + 1);
     const unsigned char* _img = src;
-    unsigned int* _internal = new unsigned int[(height + 1) * (width + 1)];
+    unsigned int* _internal_ = new unsigned int[(height + 1) * (width + 1)];
     
-    fastIntegral(_img, _internal, width, height);
+    fastIntegral(_img, _internal_, width, height);
     int aw = width / BLOCK_SIZE;
     int ah = height / BLOCK_SIZE;
     memset(dst, 1, sizeof(char) * height * width);
@@ -339,8 +341,8 @@ void FastWindowBinarizer::fastWin2(unsigned char * src, unsigned char *dst, int 
     {
         int top = 0;
         int bottom = (ai + r) * BLOCK_SIZE;
-        unsigned int* pt = _internal + top * (width + 1);
-        unsigned int* pb = _internal + bottom * (width + 1);
+        unsigned int* pt = _internal_ + top * (width + 1);
+        unsigned int* pb = _internal_ + bottom * (width + 1);
         for (int aj = 0; aj < aw; aj++)
         {
             int left = max(0, (aj - r + 1) * BLOCK_SIZE);
@@ -367,8 +369,8 @@ void FastWindowBinarizer::fastWin2(unsigned char * src, unsigned char *dst, int 
     {
         int top = (ai - r + 1) * BLOCK_SIZE;
         int bottom = (ai + r) * BLOCK_SIZE;
-        unsigned int* pt = _internal + top * (width + 1);
-        unsigned int* pb = _internal + bottom * (width + 1);
+        unsigned int* pt = _internal_ + top * (width + 1);
+        unsigned int* pb = _internal_ + bottom * (width + 1);
         for (int aj = 0; aj < r; aj++)
         {
             int left = 0;
@@ -435,8 +437,8 @@ void FastWindowBinarizer::fastWin2(unsigned char * src, unsigned char *dst, int 
     {
         int top = (ai - r + 1) * BLOCK_SIZE;
         int bottom = height;
-        unsigned int* pt = _internal + top * (width + 1);
-        unsigned int* pb = _internal + bottom * (width + 1);
+        unsigned int* pt = _internal_ + top * (width + 1);
+        unsigned int* pb = _internal_ + bottom * (width + 1);
         for (int aj = 0; aj < aw; aj++)
         {
             int left = max(0, (aj - r + 1) * BLOCK_SIZE);
@@ -458,6 +460,6 @@ void FastWindowBinarizer::fastWin2(unsigned char * src, unsigned char *dst, int 
             }
         }
     }
-    delete [] _internal;
+    delete [] _internal_;
     return;
 }

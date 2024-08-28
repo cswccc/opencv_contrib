@@ -62,14 +62,14 @@ const char DecodedBitStreamParser::MIXED_CHARS[] = {
     '=', '^'};
 
 ArrayRef<BigInteger> DecodedBitStreamParser::initEXP900() {
-    ArrayRef<BigInteger> EXP900 (16);
-    EXP900[0] = BigInteger(1);
+    ArrayRef<BigInteger> EXP900_ (16);
+    EXP900_[0] = BigInteger(1);
     BigInteger nineHundred (900);
-    EXP900[1] = nineHundred;
-    for (int i = 2; i < EXP900->size(); i++) {
-        EXP900[i] = EXP900[i - 1] * nineHundred;
+    EXP900_[1] = nineHundred;
+    for (int i = 2; i < EXP900_->size(); i++) {
+        EXP900_[i] = EXP900_[i - 1] * nineHundred;
     }
-    return EXP900;
+    return EXP900_;
 }
 
 DecodedBitStreamParser::DecodedBitStreamParser()

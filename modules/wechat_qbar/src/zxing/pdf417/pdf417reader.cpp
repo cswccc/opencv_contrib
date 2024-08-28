@@ -98,16 +98,16 @@ Ref<Result> PDF417Reader::decode(Ref<BinaryBitmap> image, DecodeHints hints) {
     for (int i = 0; i < MAX_DECODE_FAIL_RETRY; ++i)
     {
         // decoderResult = decoder.decode(detectorResult->getBits(), hints);
-        ErrorHandler err_handler;
-        decoderResult = decoder.decode(linesGrid, hints, err_handler);
-        if (err_handler.ErrCode()) {
-            std::string cell_result = "zxing::ReaderException: " + err_handler.ErrMsg();
-            err_handler.Reset();
-            linesGrid = oLinesSampler.GetNextPossibleGrid(err_handler);
-            if (err_handler.ErrCode()) return Ref<Result>();
+        ErrorHandler err_handler_;
+        decoderResult = decoder.decode(linesGrid, hints, err_handler_);
+        if (err_handler_.ErrCode()) {
+            std::string cell_result = "zxing::ReaderException: " + err_handler_.ErrMsg();
+            err_handler_.Reset();
+            linesGrid = oLinesSampler.GetNextPossibleGrid(err_handler_);
+            if (err_handler_.ErrCode()) return Ref<Result>();
             // retry logic
             if (!linesGrid || i == MAX_DECODE_FAIL_RETRY - 1){
-                err_handler = ReaderErrorHandler(cell_result);
+                err_handler_ = ReaderErrorHandler(cell_result);
                 reader_call_path_ += "4";  // decode fail
                 return Ref<Result>();
             }
