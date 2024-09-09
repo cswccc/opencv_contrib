@@ -48,7 +48,6 @@ std::vector<std::string> QBar::detectAndDecode(InputArray img, OutputArrayOfArra
     std::vector<std::string> ret;
 
     std::vector<QBAR_RESULT> results = p->ScanImage(input_img);
-
     
     for (size_t i = 0; i < results.size(); i++) {
         ret.push_back(results[i].data);
