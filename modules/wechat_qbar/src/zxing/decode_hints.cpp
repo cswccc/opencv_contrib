@@ -69,6 +69,9 @@ DecodeHints::DecodeHints() {
     hints = 0;
     iPyramidLev = 0;
     useAI_ = false;
+
+    tryVideo = false;
+    frameCnt_ = 0;
     
 #ifdef USE_LANGUAGEICONFIG
     INPUT_CHARSET = "";
@@ -80,6 +83,9 @@ DecodeHints::DecodeHints(DecodeHintType init, int iPyraLev) {
     hints = init;
     iPyramidLev = iPyraLev;
     useAI_ = false;
+
+    tryVideo = false;
+    frameCnt_ = 0;
 }
 
 void DecodeHints::addFormat(BarcodeFormat toadd) {

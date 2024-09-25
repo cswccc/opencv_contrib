@@ -993,7 +993,9 @@ public:
             }
         }
         *i++ = sum + distance(end, project(_points.back()));
-        gapSizes.erase(i, gapSizes.end());
+        if(i < gapSizes.end())
+            gapSizes.erase(i, gapSizes.end());
+        
         auto lineLength = distance(beg, end) - unitPixelDist;
         auto meanGapSize = lineLength / gapSizes.size();
         

@@ -306,8 +306,6 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
         std::vector<DetectInfo> _detect_results_;
         detector_->Detect(srcImage, _detect_results_);
 
-        std::cout << "Total Detected: " << _detect_results_.size() << std::endl;
-
         for(size_t i = 0; i < _detect_results_.size(); i++)
         {
             Align aligner;
@@ -319,7 +317,6 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
                 Mat scaled_img =
                     sr_->ProcessImageScale(crop_image, cur_scale, true);
                 result = this->Decode(scaled_img);
-                // std::cout << "Decoded Info: " << result.data << std::endl;
                 if(result.typeID!=0)
                 {
                     vector<Point2f> points_qr;
@@ -344,8 +341,6 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
                 qbar_results.push_back(result);
             }
         }
-
-        std::cout << "Total Decoded: " << qbar_results.size() << std::endl;
     }
     else
     {

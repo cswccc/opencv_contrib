@@ -17,7 +17,7 @@ DmtxImage::~DmtxImage()
 
 int DmtxImage::dmtxImageCreate(unsigned char *pxl_, int width_, int height_)
 {
-    if (pxl_ == NULL || width < 1 || height < 1)
+    if (pxl_ == NULL || width_ < 1 || height_ < 1)
         return -1;
     
     this->pxl = pxl_;

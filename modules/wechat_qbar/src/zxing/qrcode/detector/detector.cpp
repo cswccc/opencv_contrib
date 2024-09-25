@@ -125,9 +125,9 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
         cv::Point2f pt = cur_point_list.back();
         cur_point_list.pop_back();
         
-        int x_ = static_cast<int>(pt.x), y_ = static_cast<int>(pt.y);
+        int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
         for (int i = 0; i < 4; i++) {
-            int grow_x = x_ + DIR[i][0], grow_y = y_ + DIR[i][1];
+            int grow_x = x + DIR[i][0], grow_y = y + DIR[i][1];
             // 是否边缘点
             if (grow_x < min_x || grow_y < min_y || grow_x > max_x || grow_y > max_y)
                 return -1;
@@ -158,9 +158,9 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
         cv::Point2f pt = next_point_list.back();
         next_point_list.pop_back();
         
-        int x_ = static_cast<int>(pt.x), y_ = static_cast<int>(pt.y);
+        int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
         for (int i = 0; i < 4; i++) {
-            int grow_x = x_ + DIR[i][0], grow_y = y_ + DIR[i][1];
+            int grow_x = x + DIR[i][0], grow_y = y + DIR[i][1];
             // 是否边缘点
             if (grow_x < min_x || grow_y < min_y || grow_x > max_x || grow_y > max_y){
                 return -1;
@@ -192,10 +192,10 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
         cv::Point2f pt = cur_point_list.back();
         cur_point_list.pop_back();
         
-        int x_ = static_cast<int>(pt.x), y_ = static_cast<int>(pt.y);
+        int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
         bool has_add = false;
         for (int i = 0; i < 4; i++) {
-            int grow_x = x_ + DIR[i][0], grow_y = y_ + DIR[i][1];
+            int grow_x = x + DIR[i][0], grow_y = y + DIR[i][1];
             
             // 是否边缘点
             if (grow_x < min_x || grow_y < min_y || grow_x > max_x || grow_y > max_y)
@@ -259,7 +259,7 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
     cv::Point2f pt2 = next_point_list[max_sum_idx];
     cv::Point2f pt3 = next_point_list[min_diff_idx];
     cv::Point2f pt4 = next_point_list[max_diff_idx];
-    
+
     if (fabs(pt2.x - pt1.x) > 10 * module_size) return -1;
     if (fabs(pt2.y - pt1.y) > 10 * module_size) return -1;
     
