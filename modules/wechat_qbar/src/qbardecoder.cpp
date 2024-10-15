@@ -121,6 +121,8 @@ QBAR_RESULT QBarDecoder::Decode(Mat& srcCvImage)
         return QBAR_RESULT::MakeInvalid();
     }
 
+
+
     Mat img = srcCvImage;
     if (!img.isContinuous())
     {
