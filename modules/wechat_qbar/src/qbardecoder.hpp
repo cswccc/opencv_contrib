@@ -47,11 +47,12 @@ public:
     ~QBarDecoder() = default;
 
     void SetReaders(const std::unordered_set<QBAR_READER> &readers) { readers_ = readers; }
+
+    void Detect(Mat srcImage, std::vector<DetectInfo> &bboxes);
     QBAR_RESULT Decode(Mat& srcImage);
+    std::vector<QBAR_RESULT> Decode(Mat srcImage, std::vector<DetectInfo> &_detect_results_);
 
     int InitAIModel(QBAR_ML_MODE &ml_mode);
-
-    std::vector<QBAR_RESULT> ScanImage(Mat& srcImage);
 
 private:
     int Decode(zxing::Ref<zxing::LuminanceSource> source, zxing::Ref<zxing::Result> &result, zxing::DecodeHints& decodeHints);

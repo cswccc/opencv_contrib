@@ -25,6 +25,8 @@ public:
 
     ~QBar() {};
 
+    CV_WRAP bool detect(InputArray img, OutputArrayOfArrays points);
+    CV_WRAP std::vector<std::string> decode(InputArray img, InputArrayOfArrays detect_points, OutputArrayOfArrays points);
     CV_WRAP std::vector<std::string> detectAndDecode(InputArray img, OutputArrayOfArrays points);
     CV_WRAP std::string GetVersion();
     
