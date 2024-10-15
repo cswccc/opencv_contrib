@@ -31,6 +31,7 @@ using namespace cv::dnn;
 #include <time.h>
 #include <windows.h>
 #include <wchar.h>
+#include <chrono>
 
 int gettimeofday(struct timeval *tp, void *tzp)
 {
@@ -62,6 +63,8 @@ QBAR_RESULT QBarDecoder::Decode(Mat& srcCvImage)
     {
         return QBAR_RESULT::MakeInvalid();
     }
+
+
 
     Mat img = srcCvImage;
     if (!img.isContinuous())
@@ -304,7 +307,12 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
     {
         
         std::vector<DetectInfo> _detect_results_;
+
+        auto start_detect = std::chrono::high_resolution_clock::now();
         detector_->Detect(srcImage, _detect_results_);
+        auto end_detect = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double, std::milli> detect_duration = end_detect - start_detect;
+        std::cout << "Detect time: " << detect_duration.count() << " ms" << std::endl;
 
         for(size_t i = 0; i < _detect_results_.size(); i++)
         {
@@ -313,10 +321,18 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
 
             auto scale_list = getScaleList(crop_image.cols, crop_image.rows);
             QBAR_RESULT result;
+
+            double total_decode_time = 0.0;
             for (auto cur_scale : scale_list) {
                 Mat scaled_img =
                     sr_->ProcessImageScale(crop_image, cur_scale, true);
+
+                auto start_decode = std::chrono::high_resolution_clock::now();
                 result = this->Decode(scaled_img);
+                auto end_decode = std::chrono::high_resolution_clock::now();
+                std::chrono::duration<double, std::milli> decode_duration = end_decode - start_decode;
+                total_decode_time += decode_duration.count();
+
                 if(result.typeID!=0)
                 {
                     vector<Point2f> points_qr;
@@ -336,6 +352,8 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
                     break;
                 }
             }
+            std::cout << "Decode time: " << total_decode_time << " ms" << std::endl;
+
             if(result.typeID!=0)
             {
                 qbar_results.push_back(result);
@@ -344,7 +362,12 @@ std::vector<QBAR_RESULT> QBarDecoder::ScanImage(Mat& srcImage)
     }
     else
     {
+        auto start_detect = std::chrono::high_resolution_clock::now();
         QBAR_RESULT result = this->Decode(srcImage);
+        auto end_detect = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double, std::milli> detect_duration = end_detect - start_detect;
+        std::cout << "Detect time: " << detect_duration.count() << " ms" << std::endl;
+
         if(result.typeID!=0)
         {
             qbar_results.push_back(result);
