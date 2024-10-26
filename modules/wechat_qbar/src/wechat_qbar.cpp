@@ -36,7 +36,8 @@ static bool checkQRInputImage(InputArray img, Mat& gray) {
 }
 
 QBar::QBar(const std::string& detection_model_path_,
-                const std::string& super_resolution_model_path_) {
+                const std::string& super_resolution_model_path_,
+                const std::vector<DECODER_READER>& readers) {
     p = makePtr<QBar::Impl>();
     p->qbarDecode_ = make_shared<QBarDecoder>();
 
@@ -44,7 +45,19 @@ QBar::QBar(const std::string& detection_model_path_,
     mode.useAI = true;
     mode.qbar_ml_mode.detection_model_path_ = detection_model_path_;
     mode.qbar_ml_mode.super_resolution_model_path_ = super_resolution_model_path_;
-    p->SetReaders({ONED_BARCODE, QRCODE, PDF417, DATAMATRIX});
+
+    if (readers.empty()) {
+        p->SetReaders({ONED_BARCODE, QRCODE, PDF417, DATAMATRIX});
+    }
+    else {
+        unordered_set<QBAR_READER> readers_;
+        for (const auto& reader : readers) {
+            readers_.insert(static_cast<QBAR_READER>(reader));
+        }
+        
+        p->SetReaders(readers_);
+    }
+    
     p->Init(mode);
 }
 

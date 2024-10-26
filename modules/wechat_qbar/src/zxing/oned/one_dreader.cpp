@@ -124,6 +124,7 @@ Ref<Result> OneDReader::doDecode(Ref<BinaryBitmap> image, DecodeHints hints, Err
         bool isAbove = (x & 0x01) == 0;  // i.e. is x even?
         // changoran-20160102-���м��п�ʼ����ɨ��ʧ�ܣ�����ȡ����rowstep������
         int rowNumber = middle + rowStep * (isAbove ? rowStepsAboveOrBelow : -rowStepsAboveOrBelow);
+        rowNumber = middle;
         if (rowNumber < 0 || rowNumber >= height) {
             // Oops, if we run off the top or bottom, stop
             break;
