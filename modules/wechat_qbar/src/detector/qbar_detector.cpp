@@ -1,5 +1,7 @@
 #include "qbar_detector.hpp"
+#include <iostream>
 #define CLIP(x, x1, x2) (std::fmax<float>)(x1, (std::fmin<float>)(x, x2))
+
 namespace cv {
 namespace QBarAI
 {
@@ -10,7 +12,7 @@ namespace QBarAI
         FileStorage fs(config_path, FileStorage::READ);
         if (!fs.isOpened())
         {
-            // std::cout << "----- Config file not exists" << std::endl;
+            std::cout << "----- Config file not exists" << std::endl;
             return -1;
         }
         std::string detPath = root + "/" + (std::string)fs["MODEL"];
@@ -174,7 +176,7 @@ namespace QBarAI
             }
         }
         // step4: multi-class nms to gen BoxMultiInfo results
-        this->multiclass_nms(rets, dets, 0.92, inputWidth, inputHeight);
+        this->multiclass_nms(rets, dets, 0.6, inputWidth, inputHeight);
         return 0;
     }
     
@@ -196,14 +198,19 @@ namespace QBarAI
             if (skip[i])
                 continue;
             
+            skip[i] = true;
+            BoxInfo box;
+            box.x1 = input_boxes[i].x1;
+            box.y1 = input_boxes[i].y1;
+            box.x2 = input_boxes[i].x2;
+            box.y2 = input_boxes[i].y2;
+            box.score = input_boxes[i].score;
+            
             for (size_t j = i + 1; j < input_boxes.size(); ++j)
             {
                 int labelj = input_boxes[j].label;
                 if (skip[j])
                     continue;
-                
-                //if ((labeli == 0 && labelj == 4) || (labelj == 0 && labeli == 4) || (labeli == 1 && labelj == 5) || (labeli == 5 && labelj == 1))
-                if ((labeli == 0 && labelj == 4) || (labelj == 0 && labeli == 4))
                 {
                     float area_i = (input_boxes[i].x2 - input_boxes[i].x1 + 1) * (input_boxes[i].y2 - input_boxes[i].y1 + 1);
                     float area_j = (input_boxes[j].x2 - input_boxes[j].x1 + 1) * (input_boxes[j].y2 - input_boxes[j].y1 + 1);
@@ -218,39 +225,21 @@ namespace QBarAI
                     float cover = inter / (std::min)(area_i, area_j);
                     
                     if (ovr > thr || cover > 0.96){
-                        BoxInfo box;
-                        box.x1 = (std::min)(input_boxes[i].x1, input_boxes[j].x1);
-                        box.y1 = (std::min)(input_boxes[i].y1, input_boxes[j].y1);
-                        box.x2 = (std::max)(input_boxes[i].x2, input_boxes[j].x2);
-                        box.y2 = (std::max)(input_boxes[i].y2, input_boxes[j].y2);
-                        box.x1 = CLIP(box.x1 / inputWidth, 0, 1);
-                        box.y1 = CLIP(box.y1 / inputHeight, 0, 1);
-                        box.x2 = CLIP(box.x2 / inputWidth, 0, 1);
-                        box.y2 = CLIP(box.y2 / inputHeight, 0, 1);
-                        box.score = (std::max)(input_boxes[i].score, input_boxes[j].score);
-                        /*if ((labeli == 0 && labelj == 4) || (labelj == 0 && labeli == 4))
-                            box.label = 6;
-                        else box.label = 7;*/
+                        box.x1 = (std::min)(box.x1, input_boxes[j].x1);
+                        box.y1 = (std::min)(box.y1, input_boxes[j].y1);
+                        box.x2 = (std::max)(box.x2, input_boxes[j].x2);
+                        box.y2 = (std::max)(box.y2, input_boxes[j].y2);
+                        box.score = (std::max)(box.score, input_boxes[j].score);
                         box.label = 5;
-                        output_boxes.push_back(box);
-                        skip[i] = true;
                         skip[j] = true;
                     }
                 }
             }
-        }
-        // add unmerged results
-        for (size_t i = 0; i < input_boxes.size(); ++i)
-        {
-            if (!skip[i])
-            {
-                BoxInfo & box = input_boxes[i];
-                box.x1 = CLIP(box.x1 / inputWidth, 0, 1);
-                box.y1 = CLIP(box.y1 / inputHeight, 0, 1);
-                box.x2 = CLIP(box.x2 / inputWidth, 0, 1);
-                box.y2 = CLIP(box.y2 / inputHeight, 0, 1);
-                output_boxes.push_back(box);
-            }
+            box.x1 = CLIP(box.x1 / inputWidth, 0, 1);
+            box.y1 = CLIP(box.y1 / inputHeight, 0, 1);
+            box.x2 = CLIP(box.x2 / inputWidth, 0, 1);
+            box.y2 = CLIP(box.y2 / inputHeight, 0, 1);
+            output_boxes.push_back(box);
         }
     }
 

@@ -93,8 +93,8 @@ namespace QBarAI {
     
         private:
             std::shared_ptr<dnn::Net> qbar_detector;
-            int long_side = 480;
-            int short_side = 640;
+            int long_side = 640;
+            int short_side = 480;
     };
 }  // namespace QBarAI
 }  // namespace cv

@@ -68,7 +68,8 @@ private:
     std::string output_charset_ = "UTF-8";
 
     //AI Model
-    bool _init_ai_model_ = false;
+    bool _init_detector_model_ = false;
+    bool _init_sr_model_ = false;
     std::shared_ptr<QBarDetector> detector_;
     std::shared_ptr<SuperScale> sr_;
 
