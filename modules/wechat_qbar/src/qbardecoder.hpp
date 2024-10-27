@@ -47,6 +47,21 @@ public:
     ~QBarDecoder() = default;
 
     void SetReaders(const std::unordered_set<QBAR_READER> &readers) { readers_ = readers; }
+    void setDetectorReferenceSize(int reference_size) {
+        if (_init_detector_model_) {
+            detector_->setReferenceSize(reference_size);
+        }
+    }
+    void setDetectorScoreThres(float score_thres) {
+        if (_init_detector_model_) {
+            detector_->setScoreThres(score_thres);
+        }
+    }
+    void setDetectorIouThres(float iou_thres) {
+        if (_init_detector_model_) {
+            detector_->setIouThres(iou_thres);
+        }
+    }
 
     void Detect(Mat srcImage, std::vector<DetectInfo> &bboxes);
     QBAR_RESULT Decode(Mat& srcImage);

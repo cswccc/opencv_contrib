@@ -40,6 +40,9 @@ namespace QBarAI
             printf("%s", e.what());
             return -3;
         }
+        score_thres = 0.3; iou_thres = 0.6;
+        reference_size = 480;
+        
         return 0;
     }
 
@@ -73,7 +76,7 @@ namespace QBarAI
 
         
         std::vector<BoxInfo> det_bboxes;
-        ret = this->post_process_det(outputs,0.3,0.3,input_blob.size[3],input_blob.size[2],det_bboxes);
+        ret = this->post_process_det(outputs,input_blob.size[3],input_blob.size[2],det_bboxes);
         if (!ret)
         {
             for (size_t i = 0; i < det_bboxes.size(); i++)
@@ -99,27 +102,26 @@ namespace QBarAI
         
         int minInputSize = this->short_side;
         int maxInputSize = this->long_side;
-        int setWidth = minInputSize;
-        int setHeight = minInputSize;
+        int reference_size = this->reference_size;
+        int setWidth, setHeight;
 
 
         // If the width and height of the image are both less than 640, then align the long edge 448
         if (image.cols <= maxInputSize && image.rows <= maxInputSize) {
-            minInputSize = 448;
             if (image.cols >= image.rows)
             {
-                setWidth = minInputSize;
-                setHeight = std::ceil(image.rows * 1.0 * minInputSize / image.cols);
+                setWidth = reference_size;
+                setHeight = std::ceil(image.rows * 1.0 * reference_size / image.cols);
             }
             else
             {
-                setHeight = minInputSize;
-                setWidth = std::ceil(image.cols * 1.0 * minInputSize / image.rows);
+                setHeight = reference_size;
+                setWidth = std::ceil(image.cols * 1.0 * reference_size / image.rows);
             }
         }
         else // If the width or height of the image is greater than 640, ensure that the area is not greater than minInputSize * minInputSize
         {
-            float resizeRatio = sqrt(image.cols * image.rows * 1.0 / (minInputSize * minInputSize));
+            float resizeRatio = sqrt(image.cols * image.rows * 1.0 / (reference_size * reference_size));
             setWidth = image.cols / resizeRatio;
             setHeight = image.rows / resizeRatio;
         }
@@ -134,7 +136,7 @@ namespace QBarAI
     }
 
 
-    int QBarDetector::post_process_det(std::vector<Mat> outputs,float scoreThres1, float scoreThres2, float inputWidth,float inputHeight,std::vector<BoxInfo>& dets)
+    int QBarDetector::post_process_det(std::vector<Mat> outputs,float inputWidth,float inputHeight,std::vector<BoxInfo>& dets)
     {
         // step 1: extract
         std::vector<std::vector<int>> outShape(6);
@@ -158,25 +160,25 @@ namespace QBarAI
         int numClasses = outShape[0][2];
         
         results.resize(numClasses);
-        this->decode_infer(outPtr[0], outPtr[1], 8, results, outShape[0], outShape[1], scoreThres1,inputWidth, inputHeight);
-        this->decode_infer(outPtr[2], outPtr[3], 16, results, outShape[2], outShape[3], scoreThres1,inputWidth, inputHeight);
-        this->decode_infer(outPtr[4], outPtr[5], 32, results, outShape[4], outShape[5], scoreThres1,inputWidth, inputHeight); 
+        this->decode_infer(outPtr[0], outPtr[1], 8, results, outShape[0], outShape[1], score_thres,inputWidth, inputHeight);
+        this->decode_infer(outPtr[2], outPtr[3], 16, results, outShape[2], outShape[3], score_thres,inputWidth, inputHeight);
+        this->decode_infer(outPtr[4], outPtr[5], 32, results, outShape[4], outShape[5], score_thres,inputWidth, inputHeight); 
         // step3: nms
         
         std::vector<BoxInfo> rets;
         for (size_t i = 0; i < results.size(); i++)
         {
-            this->nms(results[i], 0.6);  // 0.5
+            this->nms(results[i], iou_thres);  // 0.5
             for (auto & box : results[i])
             {
-                if (box.score > scoreThres2)
+                if (box.score > score_thres)
                 {
                     rets.push_back(box);
                 }
             }
         }
         // step4: multi-class nms to gen BoxMultiInfo results
-        this->multiclass_nms(rets, dets, 0.6, inputWidth, inputHeight);
+        this->multiclass_nms(rets, dets, iou_thres, inputWidth, inputHeight);
         return 0;
     }
     

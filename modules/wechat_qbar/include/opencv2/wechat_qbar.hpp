@@ -24,11 +24,14 @@ public:
                     const std::string& super_resolution_model_path_ = "");
 
     ~QBar() {};
+    
+    CV_WRAP void setDetectorReferenceSize(int referenceSize);
+    CV_WRAP void setDetectorScoreThres(float score_thres);
+    CV_WRAP void setDetectorIouThres(float iou_thres);
 
     CV_WRAP bool detect(InputArray img, OutputArrayOfArrays points);
     CV_WRAP std::vector<std::string> decode(InputArray img, InputArrayOfArrays detect_points, OutputArrayOfArrays points);
     CV_WRAP std::vector<std::string> detectAndDecode(InputArray img, OutputArrayOfArrays points);
-    CV_WRAP std::string GetVersion();
     
 protected:
     class Impl;

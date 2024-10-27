@@ -11,12 +11,14 @@ public:
     Impl() {};
     ~Impl() {};
     
-    int Init(QBAR_MODE mode);
-    void SetReaders(const std::unordered_set<QBAR_READER> &readers);
+    int init(QBAR_MODE mode);
+    void setReaders(const std::unordered_set<QBAR_READER> &readers);
+    void setDetectorReferenceSize(int reference_size);
+    void setDetectorScoreThres(float score_thres);
+    void setDetectorIouThres(float iou_thres);
 
-    bool Detect(const Mat& img, OutputArrayOfArrays points);
-    std::vector<std::string> Decode(Mat img, InputArrayOfArrays detect_bboxes, OutputArrayOfArrays points);
-    std::string GetVersion();
+    bool detect(const Mat& img, OutputArrayOfArrays points);
+    std::vector<std::string> decode(Mat img, InputArrayOfArrays detect_bboxes, OutputArrayOfArrays points);
     std::shared_ptr<QBarDecoder> qbarDecode_;
 };
 
@@ -44,8 +46,20 @@ QBar::QBar(const std::string& detection_model_path_,
     mode.useAI = true;
     mode.qbar_ml_mode.detection_model_path_ = detection_model_path_;
     mode.qbar_ml_mode.super_resolution_model_path_ = super_resolution_model_path_;
-    p->SetReaders({ONED_BARCODE, QRCODE, PDF417, DATAMATRIX});
-    p->Init(mode);
+    p->setReaders({ONED_BARCODE, QRCODE, PDF417, DATAMATRIX});
+    p->init(mode);
+}
+
+void QBar::setDetectorReferenceSize(int reference_size) {
+    p->setDetectorReferenceSize(reference_size);
+}
+
+void QBar::setDetectorIouThres(float iou_thres) {
+    p->setDetectorIouThres(iou_thres);
+}
+
+void QBar::setDetectorScoreThres(float score_thres) {
+    p->setDetectorScoreThres(score_thres);
 }
 
 bool QBar::detect(InputArray img, OutputArrayOfArrays points) {
@@ -54,7 +68,7 @@ bool QBar::detect(InputArray img, OutputArrayOfArrays points) {
     if (!checkQRInputImage(img, input_img))
         return false;
 
-    return p->Detect(input_img, points);
+    return p->detect(input_img, points);
 }
 
 std::vector<std::string> QBar::decode(InputArray img, InputArrayOfArrays detect_points, OutputArrayOfArrays points) {
@@ -62,7 +76,7 @@ std::vector<std::string> QBar::decode(InputArray img, InputArrayOfArrays detect_
     if (!checkQRInputImage(img, input_img))
         return std::vector<std::string>();
 
-    return p->Decode(input_img, detect_points, points);
+    return p->decode(input_img, detect_points, points);
 }
 
 std::vector<std::string> QBar::detectAndDecode(InputArray img, OutputArrayOfArrays points) {
@@ -72,27 +86,38 @@ std::vector<std::string> QBar::detectAndDecode(InputArray img, OutputArrayOfArra
         return std::vector<std::string>();
 
     vector<Mat> detect_points;
-    p->Detect(input_img, detect_points);
+    p->detect(input_img, detect_points);
 
-    return p->Decode(input_img, detect_points, points);
+    return p->decode(input_img, detect_points, points);
 }
 
-std::string QBar::GetVersion() {
-    return p->GetVersion();
-}
-
-int QBar::Impl::Init(QBAR_MODE mode)
+int QBar::Impl::init(QBAR_MODE mode)
 {
     int ret = qbarDecode_->InitAIModel(mode.qbar_ml_mode);
     return ret;
 }
 
-void QBar::Impl::SetReaders(const std::unordered_set<QBAR_READER> &readers)
+void QBar::Impl::setReaders(const std::unordered_set<QBAR_READER> &readers)
 {
     qbarDecode_->SetReaders(readers);
 }
 
-bool QBar::Impl::Detect(const Mat& img, OutputArrayOfArrays points) {
+void QBar::Impl::setDetectorReferenceSize(int reference_size)
+{
+    qbarDecode_->setDetectorReferenceSize(reference_size);
+}
+
+void QBar::Impl::setDetectorScoreThres(float score_thres)
+{
+    qbarDecode_->setDetectorScoreThres(score_thres);
+}
+
+void QBar::Impl::setDetectorIouThres(float iou_thres)
+{
+    qbarDecode_->setDetectorIouThres(iou_thres);
+}
+
+bool QBar::Impl::detect(const Mat& img, OutputArrayOfArrays points) {
     std::vector<DetectInfo> _detect_results;
 
     qbarDecode_->Detect(img, _detect_results);
@@ -122,7 +147,7 @@ bool QBar::Impl::Detect(const Mat& img, OutputArrayOfArrays points) {
     return _detect_results.size() != 0;
 }
 
-std::vector<std::string> QBar::Impl::Decode(Mat img, InputArrayOfArrays detect_bboxes, OutputArrayOfArrays points)
+std::vector<std::string> QBar::Impl::decode(Mat img, InputArrayOfArrays detect_bboxes, OutputArrayOfArrays points)
 {
     std::vector<DetectInfo> bboxes;
 
@@ -176,11 +201,6 @@ std::vector<std::string> QBar::Impl::Decode(Mat img, InputArrayOfArrays detect_b
     }
 
     return ret;
-}
-
-std::string QBar::Impl::GetVersion()
-{
-    return QBAR_VERSION;
 }
 }  // namespace QBarAI
 }  // namespace cv
