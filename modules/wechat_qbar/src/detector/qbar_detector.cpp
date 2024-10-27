@@ -25,7 +25,7 @@ namespace QBarAI
         if(!fs["long_side"].empty())
         {
             this->long_side = (int)fs["LONG_SIDE"];
-        } 
+        }
         try
         {
             dnn::Net network = dnn::readNetFromONNX(detPath);
@@ -40,8 +40,6 @@ namespace QBarAI
             printf("%s", e.what());
             return -3;
         }
-        score_thres = 0.3; iou_thres = 0.6;
-        reference_size = 480;
         
         return 0;
     }

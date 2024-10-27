@@ -10,12 +10,6 @@ class QBar::Impl {
 public:
     Impl() {};
     ~Impl() {};
-    
-    int init(QBAR_MODE mode);
-    void setReaders(const std::unordered_set<QBAR_READER> &readers);
-    void setDetectorReferenceSize(int reference_size);
-    void setDetectorScoreThres(float score_thres);
-    void setDetectorIouThres(float iou_thres);
 
     bool detect(const Mat& img, OutputArrayOfArrays points);
     std::vector<std::string> decode(Mat img, InputArrayOfArrays detect_bboxes, OutputArrayOfArrays points);
@@ -38,7 +32,11 @@ static bool checkQRInputImage(InputArray img, Mat& gray) {
 }
 
 QBar::QBar(const std::string& detection_model_path_,
-                const std::string& super_resolution_model_path_) {
+                const std::string& super_resolution_model_path_,
+                const std::vector<DECODER_READER>& readers,
+                const float iou_thres,
+                const float score_thres,
+                const int reference_size) {
     p = makePtr<QBar::Impl>();
     p->qbarDecode_ = make_shared<QBarDecoder>();
 
@@ -46,20 +44,38 @@ QBar::QBar(const std::string& detection_model_path_,
     mode.useAI = true;
     mode.qbar_ml_mode.detection_model_path_ = detection_model_path_;
     mode.qbar_ml_mode.super_resolution_model_path_ = super_resolution_model_path_;
-    p->setReaders({ONED_BARCODE, QRCODE, PDF417, DATAMATRIX});
-    p->init(mode);
+
+    int ret = p->qbarDecode_->InitAIModel(mode.qbar_ml_mode);
+
+    if (ret) {
+        return;
+    }
+
+    if (readers.empty()) {
+        p->qbarDecode_->SetReaders({ONED_BARCODE, QRCODE, PDF417, DATAMATRIX});
+    }
+    else {
+        unordered_set<QBAR_READER> readers_;
+        for (const auto& reader : readers) {
+            readers_.insert(static_cast<QBAR_READER>(reader));
+        }
+        
+        p->qbarDecode_->SetReaders(readers_);
+    }
+
+    p->qbarDecode_->setDetectorReferenceSize(reference_size);
+    p->qbarDecode_->setDetectorScoreThres(score_thres);
+    p->qbarDecode_->setDetectorIouThres(iou_thres);
 }
 
 void QBar::setDetectorReferenceSize(int reference_size) {
-    p->setDetectorReferenceSize(reference_size);
+    p->qbarDecode_->setDetectorReferenceSize(reference_size);
 }
-
-void QBar::setDetectorIouThres(float iou_thres) {
-    p->setDetectorIouThres(iou_thres);
-}
-
 void QBar::setDetectorScoreThres(float score_thres) {
-    p->setDetectorScoreThres(score_thres);
+    p->qbarDecode_->setDetectorScoreThres(score_thres);
+}
+void QBar::setDetectorIouThres(float iou_thres) {
+    p->qbarDecode_->setDetectorIouThres(iou_thres);
 }
 
 bool QBar::detect(InputArray img, OutputArrayOfArrays points) {
@@ -89,32 +105,6 @@ std::vector<std::string> QBar::detectAndDecode(InputArray img, OutputArrayOfArra
     p->detect(input_img, detect_points);
 
     return p->decode(input_img, detect_points, points);
-}
-
-int QBar::Impl::init(QBAR_MODE mode)
-{
-    int ret = qbarDecode_->InitAIModel(mode.qbar_ml_mode);
-    return ret;
-}
-
-void QBar::Impl::setReaders(const std::unordered_set<QBAR_READER> &readers)
-{
-    qbarDecode_->SetReaders(readers);
-}
-
-void QBar::Impl::setDetectorReferenceSize(int reference_size)
-{
-    qbarDecode_->setDetectorReferenceSize(reference_size);
-}
-
-void QBar::Impl::setDetectorScoreThres(float score_thres)
-{
-    qbarDecode_->setDetectorScoreThres(score_thres);
-}
-
-void QBar::Impl::setDetectorIouThres(float iou_thres)
-{
-    qbarDecode_->setDetectorIouThres(iou_thres);
 }
 
 bool QBar::Impl::detect(const Mat& img, OutputArrayOfArrays points) {
