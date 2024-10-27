@@ -1,5 +1,7 @@
 #include "opencv2/core.hpp"
 #include <qbardecoder.hpp>
+#include <iostream>
+#include <unordered_map>
 
 #ifdef __NEON__
 #include <arm_neon.h>
@@ -100,7 +102,8 @@ std::vector<QBAR_RESULT> QBarDecoder::Decode(Mat srcImage, std::vector<DetectInf
             results.push_back(result);
         }
     }
-
+    this->nms(results, iou_thres);
+    
     return results;
 }
 
@@ -296,6 +299,75 @@ QBAR_RESULT QBarDecoder::ProcessResult(zxing::Result *zx_result)
     result.reportMsg.has_decode = zx_result->getHasDecode();
 
     return result;
+}
+
+void QBarDecoder::nms(std::vector<QBAR_RESULT>& results, float NMS_THRESH) {
+    if (results.size() <= 1) return;
+    std::unordered_map<int, std::vector<QBAR_RESULT>> class_map;
+
+    for (const auto& result : results) {
+        class_map[result.typeID].push_back(result);
+    }
+
+    std::vector<QBAR_RESULT> final_results;
+
+    for (auto& pair : class_map) {
+        auto& class_results = pair.second;
+        
+        // leftup: p1   rightdown: p3
+        std::sort(class_results.begin(), class_results.end(), [](const QBAR_RESULT& a, const QBAR_RESULT& b) {
+            int widthA = a.points[3].x - a.points[1].x + 1;
+            int heightA = a.points[3].y - a.points[1].y + 1;
+            int widthB = b.points[3].x - b.points[1].x + 1;
+            int heightB = b.points[3].y - b.points[1].y + 1;
+            return (widthA * heightA) > (widthB * heightB); 
+        });
+
+        std::vector<float> vArea(class_results.size());
+        for (size_t i = 0; i < class_results.size(); ++i) {
+            vArea[i] = (class_results[i].points[3].x - class_results[i].points[1].x + 1) * (class_results[i].points[3].y - class_results[i].points[1].y + 1);
+        }
+
+        for (size_t i = 0; i < class_results.size(); ++i) {
+            final_results.push_back(class_results[i]);
+            if (class_results[i].typeID == 0) continue; 
+            // skip oned
+            if (class_results[i].typeID != 6 && class_results[i].typeID != 11 && class_results[i].typeID != 12) continue; 
+
+            for (size_t j = i + 1; j < class_results.size();) {
+                float xx1 = std::max(class_results[i].points[1].x, class_results[j].points[1].x);
+                float yy1 = std::max(class_results[i].points[1].y, class_results[j].points[1].y);
+                float xx2 = std::min(class_results[i].points[3].x, class_results[j].points[3].x);
+                float yy2 = std::min(class_results[i].points[3].y, class_results[j].points[3].y);
+
+                float w = std::max(0.0f, xx2 - xx1 + 1);
+                float h = std::max(0.0f, yy2 - yy1 + 1);
+                float inter = w * h;
+
+                float ovr = inter / (vArea[i] + vArea[j] - inter);
+                float cover = inter / std::min(vArea[i], vArea[j]);
+
+                if (ovr >= NMS_THRESH) {
+                    class_results.erase(class_results.begin() + j);
+                    vArea.erase(vArea.begin() + j);
+                } else if (cover >= 0.96) {  // qiantao
+                    if (vArea[i] > vArea[j]) {
+                        class_results.erase(class_results.begin() + j);
+                        vArea.erase(vArea.begin() + j);
+                    } else {
+                        class_results[i].points[1] = class_results[j].points[1];
+                        class_results[i].points[3] = class_results[j].points[3];
+                        class_results.erase(class_results.begin() + j);
+                        vArea.erase(vArea.begin() + j);
+                    }
+                } else {
+                    j++; 
+                }
+            }
+        }
+    }
+
+    results = final_results;
 }
 
 void QBarDecoder::AddFormatsToDecodeHints(zxing::DecodeHints &hints) {

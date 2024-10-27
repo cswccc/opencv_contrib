@@ -34,7 +34,8 @@ static bool checkQRInputImage(InputArray img, Mat& gray) {
 QBar::QBar(const std::string& detection_model_path_,
                 const std::string& super_resolution_model_path_,
                 const std::vector<DECODER_READER>& readers,
-                const float iou_thres,
+                const float detector_iou_thres,
+                const float decoder_iou_thres,
                 const float score_thres,
                 const int reference_size) {
     p = makePtr<QBar::Impl>();
@@ -65,7 +66,8 @@ QBar::QBar(const std::string& detection_model_path_,
 
     p->qbarDecode_->setDetectorReferenceSize(reference_size);
     p->qbarDecode_->setDetectorScoreThres(score_thres);
-    p->qbarDecode_->setDetectorIouThres(iou_thres);
+    p->qbarDecode_->setDetectorIouThres(detector_iou_thres);
+    p->qbarDecode_->setDecoderIouThres(decoder_iou_thres);
 }
 
 void QBar::setDetectorReferenceSize(int reference_size) {
@@ -76,6 +78,9 @@ void QBar::setDetectorScoreThres(float score_thres) {
 }
 void QBar::setDetectorIouThres(float iou_thres) {
     p->qbarDecode_->setDetectorIouThres(iou_thres);
+}
+void QBar::setDecoderIouThres(float iou_thres) {
+    p->qbarDecode_->setDecoderIouThres(iou_thres);
 }
 
 bool QBar::detect(InputArray img, OutputArrayOfArrays points) {

@@ -62,6 +62,9 @@ public:
             detector_->setIouThres(iou_thres);
         }
     }
+    void setDecoderIouThres(float iou_thres) {
+        this->iou_thres = iou_thres;
+    }
 
     void Detect(Mat srcImage, std::vector<DetectInfo> &bboxes);
     QBAR_RESULT Decode(Mat& srcImage);
@@ -73,6 +76,7 @@ private:
     int Decode(zxing::Ref<zxing::LuminanceSource> source, zxing::Ref<zxing::Result> &result, zxing::DecodeHints& decodeHints);
     QBAR_RESULT ProcessResult(zxing::Result *zx_result);
     void AddFormatsToDecodeHints(zxing::DecodeHints &hints);
+    void nms(std::vector<QBAR_RESULT>& results, float NMS_THRESH);
 
     Mat cropObj(const Mat& img, const DetectInfo& bbox, Align& aligner);
     std::vector<float> getScaleList(const int width, const int height);
@@ -81,6 +85,8 @@ private:
     BinarizerMgr binarizer_mgr_;
     std::unordered_set<QBAR_READER> readers_;
     std::string output_charset_ = "UTF-8";
+
+    float iou_thres;
 
     //AI Model
     bool _init_detector_model_ = false;

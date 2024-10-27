@@ -30,7 +30,8 @@ public:
     CV_WRAP QBar(const std::string& detection_model_path_ = "",
                     const std::string& super_resolution_model_path_ = "",
                     const std::vector<DECODER_READER>& readers = std::vector<DECODER_READER>(),
-                    const float iou_thres = 0.6,
+                    const float detector_iou_thres = 0.6,
+                    const float decoder_iou_thres = 0.5,
                     const float score_thres = 0.3,
                     const int reference_size = 480);
 
@@ -39,6 +40,7 @@ public:
     CV_WRAP void setDetectorReferenceSize(int reference_size);
     CV_WRAP void setDetectorScoreThres(float score_thres);
     CV_WRAP void setDetectorIouThres(float iou_thres);
+    CV_WRAP void setDecoderIouThres(float iou_thres);
 
     CV_WRAP bool detect(InputArray img, OutputArrayOfArrays points);
     CV_WRAP std::vector<std::string> decode(InputArray img, InputArrayOfArrays detect_points, OutputArrayOfArrays points);
