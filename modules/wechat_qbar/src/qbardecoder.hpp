@@ -42,6 +42,8 @@ namespace cv {
 namespace QBarAI {
 class QBarDecoder
 {
+friend class ParallelDecode;
+
 public:
     QBarDecoder() = default;
     ~QBarDecoder() = default;
@@ -64,11 +66,12 @@ public:
     }
     void setDecoderIouThres(float iou_thres) {
         this->iou_thres = iou_thres;
-    }
+    }   
 
     void Detect(Mat srcImage, std::vector<DetectInfo> &bboxes);
     QBAR_RESULT Decode(Mat& srcImage);
     std::vector<QBAR_RESULT> Decode(Mat srcImage, std::vector<DetectInfo> &_detect_results_);
+    std::vector<QBAR_RESULT> DecodeParallel(Mat srcImage, std::vector<DetectInfo>& detect_results);
 
     int InitAIModel(QBAR_ML_MODE &ml_mode);
 
@@ -94,6 +97,7 @@ private:
     std::shared_ptr<QBarDetector> detector_;
     std::shared_ptr<SuperScale> sr_;
 
+    std::mutex res_mutex;
 };
 }  // namespace QBarAI
 }  // namespace cv

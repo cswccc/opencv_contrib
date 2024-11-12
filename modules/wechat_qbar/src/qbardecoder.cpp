@@ -301,6 +301,74 @@ QBAR_RESULT QBarDecoder::ProcessResult(zxing::Result *zx_result)
     return result;
 }
 
+class ParallelDecode : public cv::ParallelLoopBody {
+public:
+    ParallelDecode(QBarDecoder* decoder, const Mat& srcImage, const std::vector<DetectInfo>& detect_results, 
+                   std::vector<QBAR_RESULT>& results)
+        : decoder(decoder), srcImage(srcImage), detect_results(detect_results), results(results) {}
+
+    void operator()(const cv::Range& range) const CV_OVERRIDE {
+        QBarDecoder local_decoder;
+        local_decoder.SetReaders(decoder->readers_);
+
+        for (int i = range.start; i < range.end; ++i) {
+            const DetectInfo& detect_info = detect_results[i];
+            Align aligner;
+            Mat crop_image = decoder->cropObj(srcImage, detect_info, aligner);
+
+            auto scale_list = decoder->getScaleList(crop_image.cols, crop_image.rows);
+            QBAR_RESULT result;
+
+            for (auto cur_scale : scale_list) {
+                Mat scaled_img = decoder->sr_->ProcessImageScale(crop_image, cur_scale, decoder->_init_sr_model_);
+                result = local_decoder.Decode(scaled_img); 
+
+                if (result.typeID != 0) {
+                    std::vector<Point2f> points_qr;
+                    for (size_t j = 0; j < result.points.size(); ++j) {
+                        Point2f point(result.points[j].x, result.points[j].y);
+                        point /= cur_scale;
+                        points_qr.push_back(point);
+                    }
+                    if (decoder->_init_sr_model_) {
+                        points_qr = aligner.warpBack(points_qr);
+                    }
+                    for (size_t j = 0; j < points_qr.size(); ++j) {
+                        result.points[j].x = points_qr[j].x;
+                        result.points[j].y = points_qr[j].y;
+                    }
+                    break; 
+                }
+            }
+            if (result.typeID != 0) {
+                {
+                    std::lock_guard<std::mutex> lock(decoder->res_mutex);
+                    results.push_back(result); 
+                }               
+            }
+        }
+    }
+
+private:
+    QBarDecoder* decoder;
+    const Mat& srcImage;
+    const std::vector<DetectInfo>& detect_results;
+    std::vector<QBAR_RESULT>& results;
+};
+
+std::vector<QBAR_RESULT> QBarDecoder::DecodeParallel(Mat srcImage, std::vector<DetectInfo>& detect_results) {
+    // std::vector<QBAR_RESULT> results(detect_results.size());
+    std::vector<QBAR_RESULT> results;
+
+    ParallelDecode parallelDecode(this, srcImage, detect_results, results);
+    
+    parallel_for_(Range(0, int(detect_results.size())), parallelDecode);
+    
+    this->nms(results, iou_thres);
+    
+    return results;
+}
+
 void QBarDecoder::nms(std::vector<QBAR_RESULT>& results, float NMS_THRESH) {
     if (results.size() <= 1) return;
     std::unordered_map<int, std::vector<QBAR_RESULT>> class_map;
