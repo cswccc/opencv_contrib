@@ -64,49 +64,6 @@ void QBarDecoder::Detect(Mat srcImage, std::vector<DetectInfo> &bboxes) {
         detector_->Detect(srcImage, bboxes);
 }
 
-std::vector<QBAR_RESULT> QBarDecoder::Decode(Mat srcImage, std::vector<DetectInfo> &_detect_results_) {
-    std::vector<QBAR_RESULT> results;
-    
-    for(size_t i = 0; i < _detect_results_.size(); i++)
-    {
-        Align aligner;
-        Mat crop_image = this->cropObj(srcImage, _detect_results_[i], aligner);
-
-        auto scale_list = getScaleList(crop_image.cols, crop_image.rows);
-        QBAR_RESULT result;
-        for (auto cur_scale : scale_list) {
-            Mat scaled_img =
-                sr_->ProcessImageScale(crop_image, cur_scale, _init_sr_model_);
-            result = this->Decode(scaled_img);
-            if(result.typeID!=0)
-            {
-                vector<Point2f> points_qr;
-                for (size_t j = 0; j < result.points.size(); j++) {
-                    Point2f point(result.points[j].x, result.points[j].y);
-                    point /= cur_scale;
-
-                    points_qr.push_back(point);
-                }
-                if (_init_sr_model_)
-                    points_qr = aligner.warpBack(points_qr);
-                    
-                for (size_t j = 0; j < points_qr.size(); j++) {
-                    result.points[j].x = points_qr[j].x;
-                    result.points[j].y = points_qr[j].y;
-                }
-                break;
-            }
-        }
-        if(result.typeID!=0)
-        {
-            results.push_back(result);
-        }
-    }
-    this->nms(results, iou_thres);
-    
-    return results;
-}
-
 QBAR_RESULT QBarDecoder::Decode(Mat& srcCvImage)
 {
     if (srcCvImage.data == nullptr || (srcCvImage.rows < 1) || (srcCvImage.cols < 1))
@@ -356,7 +313,7 @@ private:
     std::vector<QBAR_RESULT>& results;
 };
 
-std::vector<QBAR_RESULT> QBarDecoder::DecodeParallel(Mat srcImage, std::vector<DetectInfo>& detect_results) {
+std::vector<QBAR_RESULT> QBarDecoder::Decode(Mat srcImage, std::vector<DetectInfo>& detect_results) {
     // std::vector<QBAR_RESULT> results(detect_results.size());
     std::vector<QBAR_RESULT> results;
 

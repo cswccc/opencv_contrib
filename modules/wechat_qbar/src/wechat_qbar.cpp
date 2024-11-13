@@ -101,14 +101,6 @@ std::vector<std::string> QBar::decode(InputArray img, InputArrayOfArrays detect_
     return p->decode(input_img, detect_points, points);
 }
 
-std::vector<std::string> QBar::decodeParallel(InputArray img, InputArrayOfArrays detect_points, OutputArrayOfArrays points) {
-    Mat input_img;
-    if (!checkQRInputImage(img, input_img))
-        return std::vector<std::string>();
-
-    return p->decodeParallel(input_img, detect_points, points);
-}
-
 std::vector<std::string> QBar::detectAndDecode(InputArray img, OutputArrayOfArrays points) {
     Mat input_img;
 
@@ -180,62 +172,6 @@ std::vector<std::string> QBar::Impl::decode(Mat img, InputArrayOfArrays detect_b
 
     std::vector<QBAR_RESULT> results;
     results = qbarDecode_->Decode(img, bboxes);
-
-    std::vector<std::string> ret;
-    for (size_t i = 0; i < results.size(); i++) {
-        ret.push_back(results[i].data);
-    }
-
-    vector<Mat> tmp_points;
-    if (points.needed()) {
-        for (size_t i = 0; i < results.size(); i++) {
-            auto point_to_save = Mat(results[i].points.size(), 2, CV_32FC1);
-            for (size_t j = 0; j < results[i].points.size(); j++) {
-                point_to_save.at<float>(j, 0) = results[i].points[j].x;
-                point_to_save.at<float>(j, 1) = results[i].points[j].y;
-            }
-
-            Mat tmp_point;
-            tmp_points.push_back(tmp_point);
-            point_to_save.convertTo(((OutputArray)tmp_points[i]), CV_32FC2);
-        }
-
-        points.createSameSize(tmp_points, CV_32FC2);
-        points.assign(tmp_points);
-    }
-
-    return ret;
-}
-
-std::vector<std::string> QBar::Impl::decodeParallel(Mat img, InputArrayOfArrays detect_bboxes, OutputArrayOfArrays points)
-{
-    std::vector<DetectInfo> bboxes;
-
-    std::vector<cv::Mat> points_vec;
-    detect_bboxes.getMatVector(points_vec);
-    for (size_t i = 0; i < points_vec.size(); i++) {
-        DetectInfo bbox;
-        cv::Mat point_mat = points_vec[i];
-
-        bbox.x = point_mat.at<cv::Vec2f>(0)[0];
-        bbox.y = point_mat.at<cv::Vec2f>(0)[1];
-        bbox.width = point_mat.at<cv::Vec2f>(3)[0] - bbox.x;
-        bbox.height = point_mat.at<cv::Vec2f>(3)[1] - bbox.y;
-
-        bboxes.push_back(bbox);
-    }
-    if (bboxes.size() == 0) {
-        DetectInfo bbox;
-        bbox.x = 0;
-        bbox.y = 0;
-        bbox.width = img.cols;
-        bbox.height = img.rows;
-
-        bboxes.push_back(bbox);
-    }
-
-    std::vector<QBAR_RESULT> results;
-    results = qbarDecode_->DecodeParallel(img, bboxes);
 
     std::vector<std::string> ret;
     for (size_t i = 0; i < results.size(); i++) {

@@ -71,7 +71,6 @@ public:
     void Detect(Mat srcImage, std::vector<DetectInfo> &bboxes);
     QBAR_RESULT Decode(Mat& srcImage);
     std::vector<QBAR_RESULT> Decode(Mat srcImage, std::vector<DetectInfo> &_detect_results_);
-    std::vector<QBAR_RESULT> DecodeParallel(Mat srcImage, std::vector<DetectInfo>& detect_results);
 
     int InitAIModel(QBAR_ML_MODE &ml_mode);
 
