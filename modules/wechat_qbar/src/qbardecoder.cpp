@@ -277,7 +277,11 @@ public:
             QBAR_RESULT result;
 
             for (auto cur_scale : scale_list) {
-                Mat scaled_img = decoder->sr_->ProcessImageScale(crop_image, cur_scale, decoder->_init_sr_model_);
+                Mat scaled_img;
+                {
+                    std::lock_guard<std::mutex> lock(decoder->sr_mutex);
+                    scaled_img = decoder->sr_->ProcessImageScale(crop_image, cur_scale, decoder->_init_sr_model_);
+                }
                 result = local_decoder.Decode(scaled_img); 
 
                 if (result.typeID != 0) {
@@ -297,11 +301,8 @@ public:
                     break; 
                 }
             }
-            if (result.typeID != 0) {
-                {
-                    std::lock_guard<std::mutex> lock(decoder->res_mutex);
-                    results.push_back(result); 
-                }               
+            if (result.typeID != 0) {            
+                results[i] = result;
             }
         }
     }
@@ -314,13 +315,21 @@ private:
 };
 
 std::vector<QBAR_RESULT> QBarDecoder::Decode(Mat srcImage, std::vector<DetectInfo>& detect_results) {
-    // std::vector<QBAR_RESULT> results(detect_results.size());
-    std::vector<QBAR_RESULT> results;
+    std::vector<QBAR_RESULT> results(detect_results.size());
 
     ParallelDecode parallelDecode(this, srcImage, detect_results, results);
     
     parallel_for_(Range(0, int(detect_results.size())), parallelDecode);
     
+    std::vector<QBAR_RESULT> for_copy;
+    for (size_t i = 0; i < results.size(); i++) {
+        if (results[i].typeID != 0) {  
+            for_copy.push_back(results[i]);
+        }
+    }
+    
+    results = for_copy;
+
     this->nms(results, iou_thres);
     
     return results;

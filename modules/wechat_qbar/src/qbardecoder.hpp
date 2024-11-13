@@ -96,7 +96,7 @@ private:
     std::shared_ptr<QBarDetector> detector_;
     std::shared_ptr<SuperScale> sr_;
 
-    std::mutex res_mutex;
+    std::mutex sr_mutex;
 };
 }  // namespace QBarAI
 }  // namespace cv
