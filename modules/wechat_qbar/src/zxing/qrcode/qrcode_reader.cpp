@@ -21,7 +21,6 @@
 
 
 #include <zxing/qrcode/qrcode_reader.hpp>
-#include <zxing/qrcode/qrcode_writer.hpp>
 #include <zxing/qrcode/detector/detector.hpp>
 #include <zxing/reader_exception.hpp>
 #include <zxing/common/bit_array.hpp>

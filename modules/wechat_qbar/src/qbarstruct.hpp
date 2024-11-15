@@ -98,10 +98,10 @@ struct QBAR_MODE
 
 // reader config, if not set, try all reader
 enum QBAR_READER{
-    ONED_BARCODE = 1,//一维码，包含UPC_A、UPC_E、EAN_8、EAN_13、CODE_39、CODE_93、CODE_128、ITF、CODABAR
-    QRCODE = 2,// QRCODE二维码
-    PDF417 = 3,// PDF417码
-    DATAMATRIX = 4,// dATAMATRIX 码
+    ONED_BARCODE = 1,// barcode, which includes UPC_A, UPC_E, EAN_8, EAN_13, CODE_39, CODE_93, CODE_128, ITF, CODABAR
+    QRCODE = 2,// QRCODE
+    PDF417 = 3,// PDF417
+    DATAMATRIX = 4,// DATAMATRIX
 };
 
 ///////////////////////////// result struct
@@ -127,29 +127,29 @@ struct QBAR_AREA
 
 struct QBAR_REPORT_MSG
 {
-    int qrcodeVersion;  //二维码版本号 (0-40), 一维码和pdf417为-1
-    int pyramidLv;  //金字塔层数
-    std::string binaryMethod;  //使用的二值化方法
+    int qrcodeVersion;  // version of qrcode(0-40), -1 for barcode and pdf417
+    int pyramidLv;  // pyramid level
+    std::string binaryMethod;  // the binarization method used
     std::string ecLevel;
     std::string charsetMode;
     std::string scale_list_;
     float decode_scale_;
-    uint32_t detect_time_;  // 检测耗时，针对整图
+    uint32_t detect_time_;  // detection time, for the whole image
     uint32_t sr_time_;
     bool has_sr;
-    uint32_t decode_time_;  // 旧的decodeTime，成功帧解码耗时
+    uint32_t decode_time_;  // old decodeTime, time takes to decode a successful frame
     bool in_white_list_;
     bool in_black_list_;
     
-    uint32_t pre_detect_time_;  // 针对整图，前置检测耗时
-    uint32_t detect_infer_pre_time_;  // 针对整图，检测模型推理前预处理耗时
-    uint32_t detect_infer_time_; // 针对整图，检测模型推理耗时
-    uint32_t detect_infer_after_time_; // 针对整图，检测模型推理后处理耗时
-    uint32_t after_detect_time_; // 针对整图，后置检测耗时
-    uint32_t seg_time_;  // 针对单码，seg耗时
-    bool has_seg;  // 针对单码，seg耗时
-    uint32_t after_seg_time_; // 针对单码，after seg耗时
-    uint32_t decode_all_time_; // 针对单码，解码的全部耗时，包括重试
+    uint32_t pre_detect_time_;  // pre-detection time cost for the whole image
+    uint32_t detect_infer_pre_time_;  // time cost preprocessing before the detection model inference for the whole image
+    uint32_t detect_infer_time_; // time cost detection model inference for the whole image
+    uint32_t detect_infer_after_time_; // time cost postprocessing after the model inference for the whole image
+    uint32_t after_detect_time_; // time cost post detection the whole image
+    uint32_t seg_time_;  // seg time cost for a single code
+    bool has_seg;
+    uint32_t after_seg_time_; // time cost after seg for a single code
+    uint32_t decode_all_time_; // decode time cost for a single code, includes retry
     bool has_decode;
     
     QBAR_REPORT_MSG() : qrcodeVersion(-1), pyramidLv(-1), binaryMethod(""), ecLevel("0"),
@@ -169,7 +169,7 @@ struct QBAR_RESULT
     std::vector<QBAR_POINT> points;
     QBAR_AREA area = QBAR_AREA();
     QBAR_REPORT_MSG reportMsg;
-    int priorityLevel;  // 0-其他, 1-白名单, 2-黑名单
+    int priorityLevel;  // 0-other, 1-white list, 2-black list
 
     static QBAR_RESULT MakeInvalid() {
         return QBAR_RESULT();
@@ -192,9 +192,9 @@ struct QBAR_ZOOM_INFO
 
 struct QBAR_INFO {
     int track_id;
-    QBAR_CODE_DETECT_INFO detect_info;  //检测结果
-    QBAR_RESULT result_info;  // decode结果
-    float result_confidence;  // decode结果置信度
+    QBAR_CODE_DETECT_INFO detect_info;  //detect result
+    QBAR_RESULT result_info;  // decode result
+    float result_confidence;  // decode result confidence
     int info_frame_delay;
 };
 
@@ -203,10 +203,10 @@ struct QBAR_INFO {
 class QBAR_IMAGE
 {
 public:
-    int width;  //点阵宽度
-    int height;  //点阵高度
+    int width;  // dot matrix width
+    int height;  // dot matrix height
     
-    std::vector<uint8_t> data;  //按行排列的点阵数据，其中0表示白色，1表示黑色。
+    std::vector<uint8_t> data;  // Dot matrix data arranged by row, where 0 represents white and 1 represents black.
     
     uint8_t get(int x, int y)
     {
@@ -385,16 +385,16 @@ struct QBarDrawParam {
 
 struct QBAR_ENCODE_CONFIG
 {
-    QBAR_CODE_FORMAT format;  //需要生成的一/二维码格式（支持类型见文档表格）
+    QBAR_CODE_FORMAT format;  // The barcode/qrcode format to be generated
 
     // Used for qrcode encoding
-    QBAR_QRCODE_ERROR_LEVEL ecLevel;  // QR_CODE需要选择的纠错等级，有QBAR_ERROR_LEVEL::L, M, Q, H四个等级可选
+    QBAR_QRCODE_ERROR_LEVEL ecLevel;  // The error correction level to be selected for qrcode. There are four levels to choose from: QBAR_ERROR_LEVEL::L, M, Q, H
 
     // Version should be 1-40
-    int version;  // QR_CODE 的版本号，如果不需指定版本号，请赋值为-1
+    int version;  // The version number of QR_CODE. If you do not need to specify a version number, please set it to -1
 
     // Used for both qrcode & oned barcode
-    std::string encoding;  // 字符集，支持：ISO-8859-X(X可选1-16，常用**ISO-8859-1**), Shift_JIS, **UTF-8**, UTF-16BE, ASCII, GBK, windows-1250, windows-1251, windows-1252, windows-1256, ECU_KR
+    std::string encoding;  // Character set, supports: ISO-8859-X (X can be 1-16, commonly used is **ISO-8859-1**), Shift_JIS, **UTF-8**, UTF-16BE, ASCII, GBK, windows-1250, windows-1251, windows-1252, windows-1256, ECU_KR
 
     // for encode visualize
     PersonalParam personal_param_;

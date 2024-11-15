@@ -1,7 +1,6 @@
 #include <opencv2/wechat_qbar.hpp>
 #include <qbarstruct.hpp>
 #include <qbardecoder.hpp>
-#include <qbarencoder.hpp>
 #include "opencv2/core.hpp"
 
 namespace cv {

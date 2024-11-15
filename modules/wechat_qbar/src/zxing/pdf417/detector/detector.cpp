@@ -75,7 +75,6 @@ const int Detector::STOP_PATTERN_LENGTH = sizeof(STOP_PATTERN) / sizeof(int);
 const int Detector::STOP_PATTERN_REVERSE[] = {1, 2, 1, 1, 1, 3, 1, 1, 7};
 const int Detector::STOP_PATTERN_REVERSE_LENGTH = sizeof(STOP_PATTERN_REVERSE) / sizeof(int);
 
-//�����л������õ�
 const int Detector::INDEXES_START_PATTERN[] = { 0, 4, 1, 5 };
 const int Detector::INDEXES_START_PATTERN_LENGTH = sizeof(INDEXES_START_PATTERN) / sizeof(int);
 const int Detector::INDEXES_STOP_PATTERN[] = { 6, 2, 7, 3 };
@@ -182,7 +181,6 @@ ArrayRef< Ref<ResultPoint> > Detector::FindRowsWithPattern(Ref<BitMatrix> matrix
     const int height = matrix->getHeight();
     const int width = matrix->getWidth();
     
-    //�ȴ��м俪ʼߣ��Ч������Ŷ
     int iFastDetectBeginHeight = height / 2 - DETAIL_ROW_COUNT / 2 * DETAIL_ROW_STEP;
     int iFastDetectEndHeight = height / 2 + DETAIL_ROW_COUNT / 2 * DETAIL_ROW_STEP;
     iFastDetectBeginHeight = max(0, iFastDetectBeginHeight);

@@ -74,7 +74,6 @@ Ref<Result> PDF417Reader::decode(Ref<BinaryBitmap> image, DecodeHints hints) {
     
     if (!linesGrid)
     {
-        //����ĳ�ֵ����һ�����ϱ�����������matrix������ת
         Ref<BitMatrix> linesMatrixRotate(new BitMatrix(detectorResult->getBits()->getWidth(), detectorResult->getBits()->getHeight(), err_handler));
         if (err_handler.ErrCode()) return Ref<Result>();
         for (int i = 0; i<detectorResult->getBits()->getHeight(); i++)

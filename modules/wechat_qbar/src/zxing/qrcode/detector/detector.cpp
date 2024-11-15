@@ -128,11 +128,9 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
         int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
         for (int i = 0; i < 4; i++) {
             int grow_x = x + DIR[i][0], grow_y = y + DIR[i][1];
-            // 是否边缘点
             if (grow_x < min_x || grow_y < min_y || grow_x > max_x || grow_y > max_y)
                 return -1;
             
-            // 蔓延黑色
             if (image_->get(grow_x, grow_y))
             {
                 if (flag_mat.at<uchar>(grow_y, grow_x) == 0)
@@ -161,12 +159,10 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
         int x = static_cast<int>(pt.x), y = static_cast<int>(pt.y);
         for (int i = 0; i < 4; i++) {
             int grow_x = x + DIR[i][0], grow_y = y + DIR[i][1];
-            // 是否边缘点
             if (grow_x < min_x || grow_y < min_y || grow_x > max_x || grow_y > max_y){
                 return -1;
             }
             
-            // 蔓延白色
             if (image_->get(grow_x, grow_y) == 0)
             {
                 if (flag_mat.at<uchar>(grow_y, grow_x) == 0)
@@ -197,7 +193,6 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
         for (int i = 0; i < 4; i++) {
             int grow_x = x + DIR[i][0], grow_y = y + DIR[i][1];
             
-            // 是否边缘点
             if (grow_x < min_x || grow_y < min_y || grow_x > max_x || grow_y > max_y)
             {
                 if (!has_add){
@@ -207,7 +202,6 @@ int Detector::locatePatternRect(float x, float y, std::vector<cv::Point2f>& poin
                 continue;
             }
             
-            // 蔓延黑色
             if (image_->get(grow_x, grow_y))
             {
                 if (flag_mat.at<uchar>(grow_y, grow_x) == 0)
@@ -1215,7 +1209,6 @@ Ref<DetectorResult> Detector::getResultViaAlignmentMore(DecodeHints const& hints
     
     std::vector<cv::Point2f> pts_src, pts_dst;
     
-    //右下角校正点
     if (alignmentIndex < possiblePatternResults_[patternIdx]->possibleAlignmentPatterns.size() && alignmentIndex >= 0)
     {
         if (possiblePatternResults_[patternIdx]->possibleAlignmentPatterns[alignmentIndex]->getX() != 0 ||
@@ -1255,7 +1248,6 @@ Ref<DetectorResult> Detector::getResultViaAlignmentMore(DecodeHints const& hints
     
     int ret = getPossiblePatternRect(patternIdx, module_size, ori);
     if ((mode == 0 || mode == 1) && ret != 0) return Ref<DetectorResult>(NULL);
-    // 4个角点
     if (mode == 0 || mode == 1 || mode == 4 || mode == 5)
     {
         bool flag = false;
@@ -1322,7 +1314,6 @@ Ref<DetectorResult> Detector::getResultViaAlignmentMore(DecodeHints const& hints
     // find aligments
     if (mode == 2 || mode == 3 || mode == 4 || mode == 5)
     {
-        // 3个码点
         if (mode == 2 || mode == 3)
         {
             if (possiblePatternResults_[patternIdx]->topLeftPoints.size() == 4)
@@ -1342,7 +1333,6 @@ Ref<DetectorResult> Detector::getResultViaAlignmentMore(DecodeHints const& hints
             }
         }
         
-        //辅助校正点
         std::vector<int> alignmentPatternCenters = provisionalVersion->getAlignmentPatternCenters();
         if (getPossibleAlignmentPointsMore(patternIdx, alignmentIndex, dimension, module_size, alignmentPatternCenters.size()) == 0) {
             if (possiblePatternResults_[patternIdx]->moreAlignmentPoints[alignmentIndex].size() > 0)
@@ -1765,7 +1755,6 @@ Ref<PatternResult> Detector::processFinderPatternInfo(::DecodeHints& hints, Ref<
     
     float moduleSize = (moduleSizeX_ + moduleSizeY_) / 2.0f;
     
-    // 兜底逻辑 add by chicodai
     if (moduleSize > topLeft->getEstimatedModuleSize() * 1.05 &&
         moduleSize > topRight->getEstimatedModuleSize() * 1.05 &&
         moduleSize > bottomLeft->getEstimatedModuleSize() * 1.05)

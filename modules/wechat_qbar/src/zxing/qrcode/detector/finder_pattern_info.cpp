@@ -110,11 +110,10 @@ void FinderPatternInfo::estimateFinderPatternInfo()
     float fAngleShort2 = acos( CosShort2) * 180 / acos(-1.0);
     if (fAngleShort1 < fAngleShort2) std::swap(fAngleShort1, fAngleShort2);
     
-    //直角误差
     float fLongDiff = fabs(fAngleLong - 90);
     float fLongScore = 100.0 - fLongDiff;
     
-    //小角的最大误差
+    // The maximum error of the small angle.
     float fShortDiff = (std::max)(fabs(fAngleShort1 - 45), fabs(fAngleShort2 - 45));
     float fShortScore = 100.0 - 2 * fShortDiff;
     

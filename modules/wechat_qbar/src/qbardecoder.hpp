@@ -31,7 +31,7 @@
 #include <binarzermgr.hpp>
 #include <qbarstruct.hpp>
 
-#include "qbarinfofilter.hpp"
+// #include "qbarinfofilter.hpp"
 
 //ai
 #include "detector/qbar_detector.hpp"

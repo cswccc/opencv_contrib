@@ -31,16 +31,11 @@ double cal_distance(std::vector<double> a, std::vector<double> b)
     return pow(val, 0.5);
 }
 
-/*
- * maxepoches ����������
- * minchanged ��С���ĵ�䶯��
- */
 std::vector<Cluster> k_means(std::vector<std::vector<double> > trainX, uint k, uint maxepoches, uint minchanged)
 {
     const uint row_num = trainX.size();
     const uint col_num = trainX[0].size();
     
-    /*��ʼ����������*/
     std::vector<Cluster> clusters(k);
     int step = trainX.size() / k;
     
@@ -49,18 +44,14 @@ std::vector<Cluster> k_means(std::vector<std::vector<double> > trainX, uint k, u
         clusters[i].centroid = trainX[i*step];
     }
     
-    /*��ε���ֱ�������������������100��*/
     for (uint it = 0; it < maxepoches; it++)
     {
-        /*ÿһ�����¼����������������֮ǰ�����ԭ����������Ϣ*/
         for (uint i = 0; i < k; i++)
         {
             clusters[i].samples.clear();
         }
-        /*���ÿ���������Ӧ��������һ������*/
         for (uint j = 0; j < row_num; j++)
         {
-            /*����ʼ�����ڵ�0������*/
             uint c = 0;
             double min_distance = cal_distance(trainX[j], clusters[c].centroid);
             for (uint i = 1; i < k; i++)

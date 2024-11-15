@@ -54,7 +54,6 @@ Ref<Result> DataMatrixReader::decode(Ref<BinaryBitmap> image, DecodeHints hints)
         if (err_handler.ErrCode() || invertedMatrix == NULL)   return Ref<Result>();
         Ref<Result> rst_ = decodeMore(image, invertedMatrix, hints, err_handler);
         if (err_handler.ErrCode() || rst_ == NULL) {
-            //使用libdmtx来解码 比较耗时，仅用于相册模式
             if (!hints.getTryVideo() && hints.isUseLibdmtx()) {
                 Ref<LuminanceSource> gray_img = image->getLuminanceSource();
                 dmtx::DmtxDecode dec;

@@ -122,7 +122,6 @@ Ref<Result> OneDReader::doDecode(Ref<BinaryBitmap> image, DecodeHints hints, Err
         // Scanning from the middle out. Determine which row we're looking at next:
         int rowStepsAboveOrBelow = (x + 1) >> 1;
         bool isAbove = (x & 0x01) == 0;  // i.e. is x even?
-        // changoran-20160102-���м��п�ʼ����ɨ��ʧ�ܣ�����ȡ����rowstep������
         int rowNumber = middle + rowStep * (isAbove ? rowStepsAboveOrBelow : -rowStepsAboveOrBelow);
         if (rowNumber < 0 || rowNumber >= height) {
             // Oops, if we run off the top or bottom, stop
@@ -130,14 +129,12 @@ Ref<Result> OneDReader::doDecode(Ref<BinaryBitmap> image, DecodeHints hints, Err
         }
         
         // Estimate black point for this row and load it:
-        // row ĳ�е�λ����1*width
         row = image->getBlackRow(rowNumber, row, err_handler);
         if (err_handler.ErrCode()){
             err_handler.Reset();
             continue;
         }
         
-        // changoran-20160102-_onedReaderData�����˵�ǰ��01����ۺϺ��conters
         recordAllPattern(matrix, rowNumber, _onedReaderData);
         
         // To speed up get next sets function
@@ -180,7 +177,6 @@ Ref<Result> OneDReader::doDecode(Ref<BinaryBitmap> image, DecodeHints hints, Err
             if (sCurrBarcodeText.size() < 14)
                 // Check result only for UPC-A / UPC-E / ITF / EAN-8, others usually right
             {
-                // ���μ�飬�����ͬ����Ϊdecode�ɹ�
                 bChecked = checkResultRight(sPreTexts, sCurrBarcodeText);
                 
                 if ((bChecked == false) && (sCurrBarcodeText.size() > 0))
