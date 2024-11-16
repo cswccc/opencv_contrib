@@ -1,7 +1,5 @@
 #include <iostream>
 
-// using namespace std;
-
 #ifndef ZXing_Integer_h
 #define ZXing_Integer_h
 

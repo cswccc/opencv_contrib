@@ -11,19 +11,10 @@
 #define CLIP(x, x1, x2) max(x1, min(x, x2))
 namespace cv {
 namespace QBarAI {
-int SuperScale::Init(const std::string &config_path) {
-    
-    std::string root = config_path.rfind('/') == std::string::npos ? "./" : config_path.substr(0, config_path.rfind('/'));
-    FileStorage fs(config_path, FileStorage::READ);
-    if (!fs.isOpened())
-    {
-        std::cout << "----- Config file not exists" << std::endl;
-        return -1;
-    }
-    std::string srPath = root + "/" + (std::string)fs["MODEL"];
+int SuperScale::Init(const std::string &sr_path) {
     try
     {
-        dnn::Net network = dnn::readNetFromONNX(srPath);
+        dnn::Net network = dnn::readNetFromONNX(sr_path);
         if(network.empty())
         {
             return -101;

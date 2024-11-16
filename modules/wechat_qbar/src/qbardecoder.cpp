@@ -234,7 +234,6 @@ QBAR_RESULT QBarDecoder::ProcessResult(zxing::Result *zx_result)
     result.reportMsg.qrcodeVersion = zx_result->getQRCodeVersion();
     result.reportMsg.pyramidLv = zx_result->getPyramidLv();
 
-    //TODO
     result.reportMsg.ecLevel = zx_result->getEcLevel();
     result.reportMsg.charsetMode = zx_result->getChartsetMode();
     result.reportMsg.scale_list_ = zx_result->getScaleList();
@@ -384,7 +383,7 @@ void QBarDecoder::nms(std::vector<QBAR_RESULT>& results, float NMS_THRESH) {
                 if (ovr >= NMS_THRESH) {
                     class_results.erase(class_results.begin() + j);
                     vArea.erase(vArea.begin() + j);
-                } else if (cover >= 0.96) {  // qiantao
+                } else if (cover >= 0.96) {
                     if (vArea[i] > vArea[j]) {
                         class_results.erase(class_results.begin() + j);
                         vArea.erase(vArea.begin() + j);

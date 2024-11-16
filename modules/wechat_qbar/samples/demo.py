@@ -13,7 +13,7 @@ backend_target_pairs = [
 
 
 parser = argparse.ArgumentParser(
-    description="WeChat QR code detector for detecting and parsing QR code (https://github.com/opencv/opencv_contrib/tree/master/modules/wechat_qrcode)")
+    description="WeChat code detector for detecting and parsing QR code, bar code, pdf417 and datamatrix (https://github.com/opencv/opencv_contrib/tree/master/modules/wechat_qbar)")
 parser.add_argument('--input', '-i', type=str,
                     help='Usage: Set path to the input image. Omit for using default camera.')
 parser.add_argument('--backend_target', '-bt', type=int, default=0,
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     backend_id = backend_target_pairs[args.backend_target][0]
     target_id = backend_target_pairs[args.backend_target][1]
     
-    qbar = cv.QBarAI_QBar("models/detector/qbar_det.yml", "models/sr/qbar_sr.yml")
+    qbar = cv.QBarAI_QBar("models/qbar_det.onnx", "models/qbar_sr.onnx")
 
     if args.input is not None:
         image = cv.imread(args.input)

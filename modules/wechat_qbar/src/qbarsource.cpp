@@ -42,7 +42,6 @@ namespace cv {
 namespace QBarAI {
 inline unsigned char QBarSource::convertPixel(unsigned char const* pixel, ErrorHandler & err_handler) const 
 {
-    // unsigned char const* pixel = (unsigned char const*)pixel_;
     if (_comps == 1 || _comps == 2)
     {
         // Gray or gray+alpha
@@ -102,7 +101,6 @@ QBarSource::QBarSource(unsigned char* pixels, int width, int height, int left_, 
     maxDataWidth = width;
     maxDataHeight = height;
     
-    // super(width, height);
     if ((left_ + cropWidth) > dataWidth || (top_ + cropHeight) > dataHeight || top_ < 0 || left_ < 0)
     {
         err_handler = zxing::IllegalArgumentErrorHandler("Crop rectangle does not fit within image data.");
@@ -438,16 +436,16 @@ void QBarSource::tvDenoising() const{
                 int tmp_j1 = (j+1) < nx ? (j+1): (nx-1);
                 int tmp_i2 = (i-1) > -1 ? (i-1) : 0;
                 int tmp_j2 = (j-1) > -1 ? (j-1) : 0;
-                double tmp_x = (luminances[i*nx+tmp_j1] - luminances[i*nx+tmp_j2])/2;  // i_x  = (I(:,[2:nx nx])-I(:,[1 1:nx-1]))/2;
-                double tmp_y= (luminances[tmp_i1*nx+j]-luminances[tmp_i2*nx+j])/2;  // i_y  = (I([2:ny ny],:)-I([1 1:ny-1],:))/2;
-                double tmp_xx = luminances[i*nx+tmp_j1] + luminances[i*nx+tmp_j2]- luminances[i*nx+j]*2;  // i_xx = I(:,[2:nx nx])+I(:,[1 1:nx-1])-2*I;
-                double tmp_yy= luminances[tmp_i1*nx+j]+luminances[tmp_i2*nx+j] - luminances[i*nx+j]*2;  // i_yy = I([2:ny ny],:)+I([1 1:ny-1],:)-2*I;
-                double tmp_dp=luminances[tmp_i1*nx+tmp_j1]+luminances[tmp_i2*nx+tmp_j2];  // dp = I([2:ny ny],[2:nx nx])+I([1 1:ny-1],[1 1:nx-1]);
-                double tmp_dm=luminances[tmp_i2*nx+tmp_j1]+luminances[tmp_i1*nx+tmp_j2];  // dm = I([1 1:ny-1],[2:nx nx])+I([2:ny ny],[1 1:nx-1]);
-                double tmp_xy = (tmp_dp - tmp_dm)/4;  // i_xy = (Dp-Dm)/4;
+                double tmp_x = (luminances[i*nx+tmp_j1] - luminances[i*nx+tmp_j2])/2;
+                double tmp_y= (luminances[tmp_i1*nx+j]-luminances[tmp_i2*nx+j])/2;
+                double tmp_xx = luminances[i*nx+tmp_j1] + luminances[i*nx+tmp_j2]- luminances[i*nx+j]*2;
+                double tmp_yy= luminances[tmp_i1*nx+j]+luminances[tmp_i2*nx+j] - luminances[i*nx+j]*2;
+                double tmp_dp=luminances[tmp_i1*nx+tmp_j1]+luminances[tmp_i2*nx+tmp_j2];
+                double tmp_dm=luminances[tmp_i2*nx+tmp_j1]+luminances[tmp_i1*nx+tmp_j2];
+                double tmp_xy = (tmp_dp - tmp_dm)/4;
                 double tmp_num = tmp_xx*(tmp_y*tmp_y + ep2)
-                - 2*tmp_x*tmp_y*tmp_xy +tmp_yy*(tmp_x*tmp_x + ep2);  //Num = I_xx.*(ep2+I_y.^2)-2*I_x.*I_y.*I_xy+I_yy.*(ep2+I_x.^2);
-                double tmp_den= pow((tmp_x*tmp_x + tmp_y*tmp_y + ep2), 1.5);  // den = (ep2+I_x.^2+I_y.^2).^(3/2);
+                - 2*tmp_x*tmp_y*tmp_xy +tmp_yy*(tmp_x*tmp_x + ep2);
+                double tmp_den= pow((tmp_x*tmp_x + tmp_y*tmp_y + ep2), 1.5);
                 luminances[i*nx+j] += dt*(tmp_num/tmp_den+ lam*(pre_img[i*nx+j] - luminances[i*nx+j]));
             }
         }

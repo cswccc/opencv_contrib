@@ -95,7 +95,6 @@ namespace QBarAI {
     
         private:
             std::shared_ptr<dnn::Net> qbar_detector;
-            int long_side = 640, short_side = 480;
             int reference_size;
             float score_thres, iou_thres;
     };

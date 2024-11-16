@@ -31,9 +31,7 @@
 #include <binarzermgr.hpp>
 #include <qbarstruct.hpp>
 
-// #include "qbarinfofilter.hpp"
-
-//ai
+// ai
 #include "detector/qbar_detector.hpp"
 #include "detector/align.hpp"
 #include "sr_scale/super_scale.hpp"
@@ -90,7 +88,7 @@ private:
 
     float iou_thres;
 
-    //AI Model
+    // AI Model
     bool _init_detector_model_ = false;
     bool _init_sr_model_ = false;
     std::shared_ptr<QBarDetector> detector_;

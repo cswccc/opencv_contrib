@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
     bool save_flag = parser.get<bool>("save");
     bool vis_flag = parser.get<bool>("vis");
 
-    QBarAI::QBar qbar("models/detector/qbar_det.yml", "models/sr/qbar_sr.yml");
+    QBarAI::QBar qbar("models/qbar_det.onnx", "models/qbar_sr.onnx");
 
     if (!input_path.empty()) {
         auto img = cv::imread(input_path);

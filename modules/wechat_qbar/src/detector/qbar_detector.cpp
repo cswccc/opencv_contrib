@@ -6,29 +6,11 @@ namespace cv {
 namespace QBarAI
 {
     
-    int QBarDetector::Init(const std::string &config_path)
+    int QBarDetector::Init(const std::string &det_path)
     {
-        std::string root = config_path.rfind('/') == std::string::npos ? "./" : config_path.substr(0, config_path.rfind('/'));
-        FileStorage fs(config_path, FileStorage::READ);
-        if (!fs.isOpened())
-        {
-            std::cout << "----- Config file not exists" << std::endl;
-            return -1;
-        }
-        std::string detPath = root + "/" + (std::string)fs["MODEL"];
-
-        if(!fs["short_side"].empty())
-        {
-            this->short_side = (int)fs["SHORT_SIDE"];
-        } 
-
-        if(!fs["long_side"].empty())
-        {
-            this->long_side = (int)fs["LONG_SIDE"];
-        }
         try
         {
-            dnn::Net network = dnn::readNetFromONNX(detPath);
+            dnn::Net network = dnn::readNetFromONNX(det_path);
             if(network.empty())
             {
                 return -101;
@@ -97,15 +79,10 @@ namespace QBarAI
 
     int QBarDetector::pre_process_det(const Mat &image,Mat &out_blob)
     {
-        
-        int minInputSize = this->short_side;
-        int maxInputSize = this->long_side;
         int reference_size = this->reference_size;
         int setWidth, setHeight;
 
-
-        // If the width and height of the image are both less than 640, then align the long edge 448
-        if (image.cols <= maxInputSize && image.rows <= maxInputSize) {
+        if (image.cols <= reference_size && image.rows <= reference_size) {
             if (image.cols >= image.rows)
             {
                 setWidth = reference_size;
@@ -117,7 +94,7 @@ namespace QBarAI
                 setWidth = std::ceil(image.cols * 1.0 * reference_size / image.rows);
             }
         }
-        else // If the width or height of the image is greater than 640, ensure that the area is not greater than minInputSize * minInputSize
+        else
         {
             float resizeRatio = sqrt(image.cols * image.rows * 1.0 / (reference_size * reference_size));
             setWidth = image.cols / resizeRatio;

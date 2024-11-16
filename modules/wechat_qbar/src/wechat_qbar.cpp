@@ -2,6 +2,7 @@
 #include <qbarstruct.hpp>
 #include <qbardecoder.hpp>
 #include "opencv2/core.hpp"
+#include "opencv2/core/utils/filesystem.hpp"
 
 namespace cv {
 namespace QBarAI {
@@ -12,7 +13,6 @@ public:
 
     bool detect(const Mat& img, OutputArrayOfArrays points);
     std::vector<std::string> decode(Mat img, InputArrayOfArrays detect_bboxes, OutputArrayOfArrays points);
-    std::vector<std::string> decodeParallel(Mat img, InputArrayOfArrays detect_bboxes, OutputArrayOfArrays points);
     std::shared_ptr<QBarDecoder> qbarDecode_;
 };
 
@@ -31,8 +31,8 @@ static bool checkQRInputImage(InputArray img, Mat& gray) {
     return true;
 }
 
-QBar::QBar(const std::string& detection_model_path_,
-                const std::string& super_resolution_model_path_,
+QBar::QBar(const String& detection_model_path_,
+                const String& super_resolution_model_path_,
                 const std::vector<DECODER_READER>& readers,
                 const float detector_iou_thres,
                 const float decoder_iou_thres,
@@ -41,15 +41,17 @@ QBar::QBar(const std::string& detection_model_path_,
     p = makePtr<QBar::Impl>();
     p->qbarDecode_ = make_shared<QBarDecoder>();
 
-    QBAR_MODE mode;
-    mode.useAI = true;
-    mode.qbar_ml_mode.detection_model_path_ = detection_model_path_;
-    mode.qbar_ml_mode.super_resolution_model_path_ = super_resolution_model_path_;
+    if (!detection_model_path_.empty() && !super_resolution_model_path_.empty()) {
+        QBAR_MODE mode;
+        mode.useAI = true;
+        mode.qbar_ml_mode.detection_model_path_ = detection_model_path_;
+        mode.qbar_ml_mode.super_resolution_model_path_ = super_resolution_model_path_;
 
-    int ret = p->qbarDecode_->InitAIModel(mode.qbar_ml_mode);
+        CV_Assert(utils::fs::exists(detection_model_path_));
+        CV_Assert(utils::fs::exists(super_resolution_model_path_));
 
-    if (ret) {
-        return;
+        int ret = p->qbarDecode_->InitAIModel(mode.qbar_ml_mode);
+        CV_Assert(ret == 0);
     }
 
     if (readers.empty()) {

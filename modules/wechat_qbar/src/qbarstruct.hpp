@@ -98,10 +98,10 @@ struct QBAR_MODE
 
 // reader config, if not set, try all reader
 enum QBAR_READER{
-    ONED_BARCODE = 1,// barcode, which includes UPC_A, UPC_E, EAN_8, EAN_13, CODE_39, CODE_93, CODE_128, ITF, CODABAR
-    QRCODE = 2,// QRCODE
-    PDF417 = 3,// PDF417
-    DATAMATRIX = 4,// DATAMATRIX
+    ONED_BARCODE = 1, // barcode, which includes UPC_A, UPC_E, EAN_8, EAN_13, CODE_39, CODE_93, CODE_128, ITF, CODABAR
+    QRCODE = 2, // QRCODE
+    PDF417 = 3, // PDF417
+    DATAMATRIX = 4, // DATAMATRIX
 };
 
 ///////////////////////////// result struct
@@ -134,22 +134,22 @@ struct QBAR_REPORT_MSG
     std::string charsetMode;
     std::string scale_list_;
     float decode_scale_;
-    uint32_t detect_time_;  // detection time, for the whole image
+    uint32_t detect_time_;
     uint32_t sr_time_;
     bool has_sr;
-    uint32_t decode_time_;  // old decodeTime, time takes to decode a successful frame
+    uint32_t decode_time_;
     bool in_white_list_;
     bool in_black_list_;
     
-    uint32_t pre_detect_time_;  // pre-detection time cost for the whole image
-    uint32_t detect_infer_pre_time_;  // time cost preprocessing before the detection model inference for the whole image
-    uint32_t detect_infer_time_; // time cost detection model inference for the whole image
-    uint32_t detect_infer_after_time_; // time cost postprocessing after the model inference for the whole image
-    uint32_t after_detect_time_; // time cost post detection the whole image
-    uint32_t seg_time_;  // seg time cost for a single code
+    uint32_t pre_detect_time_;
+    uint32_t detect_infer_pre_time_;
+    uint32_t detect_infer_time_;
+    uint32_t detect_infer_after_time_;
+    uint32_t after_detect_time_;
+    uint32_t seg_time_;
     bool has_seg;
-    uint32_t after_seg_time_; // time cost after seg for a single code
-    uint32_t decode_all_time_; // decode time cost for a single code, includes retry
+    uint32_t after_seg_time_;
+    uint32_t decode_all_time_;
     bool has_decode;
     
     QBAR_REPORT_MSG() : qrcodeVersion(-1), pyramidLv(-1), binaryMethod(""), ecLevel("0"),
@@ -206,7 +206,7 @@ public:
     int width;  // dot matrix width
     int height;  // dot matrix height
     
-    std::vector<uint8_t> data;  // Dot matrix data arranged by row, where 0 represents white and 1 represents black.
+    std::vector<uint8_t> data;
     
     uint8_t get(int x, int y)
     {
@@ -381,24 +381,6 @@ struct QBarDrawParam {
         bg_color_ = QBAR_COLOR(255, 255, 255);
         module_size_ = 20;
     }
-};
-
-struct QBAR_ENCODE_CONFIG
-{
-    QBAR_CODE_FORMAT format;  // The barcode/qrcode format to be generated
-
-    // Used for qrcode encoding
-    QBAR_QRCODE_ERROR_LEVEL ecLevel;  // The error correction level to be selected for qrcode. There are four levels to choose from: QBAR_ERROR_LEVEL::L, M, Q, H
-
-    // Version should be 1-40
-    int version;  // The version number of QR_CODE. If you do not need to specify a version number, please set it to -1
-
-    // Used for both qrcode & oned barcode
-    std::string encoding;  // Character set, supports: ISO-8859-X (X can be 1-16, commonly used is **ISO-8859-1**), Shift_JIS, **UTF-8**, UTF-16BE, ASCII, GBK, windows-1250, windows-1251, windows-1252, windows-1256, ECU_KR
-
-    // for encode visualize
-    PersonalParam personal_param_;
-    QBarDrawParam draw_param_;
 };
 }  // namespace QBarAI
 }  // namespace cv
